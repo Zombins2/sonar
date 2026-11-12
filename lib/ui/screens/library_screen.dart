@@ -281,11 +281,32 @@ class _SongsTab extends ConsumerStatefulWidget {
 }
 
 class _SongsTabState extends _PagedState<_SongsTab, Song> {
+  /// The most random songs the Subsonic API hands out at once.
+  static const shuffleSize = 500;
+  bool _shuffling = false;
+
   // Navidrome returns every song for an empty search3 query, paged by offset.
   @override
   Future<List<Song>> fetch(int offset) async => (await requireClientOf(
     ref,
   ).search3('', artistCount: 0, albumCount: 0, songCount: _PagedState.pageSize, songOffset: offset)).songs;
+
+  /// Shuffles the whole library, not just the songs loaded so far.
+  Future<void> _shuffle() async {
+    setState(() => _shuffling = true);
+    try {
+      final songs = await requireClientOf(ref).getRandomSongs(size: shuffleSize);
+      if (songs.isEmpty) {
+        if (mounted) showSnack(context, 'No songs to shuffle');
+        return;
+      }
+      await ref.read(controlsProvider).playSongs(songs, shuffle: true);
+    } catch (e) {
+      if (mounted) showSnack(context, errorText(e));
+    } finally {
+      if (mounted) setState(() => _shuffling = false);
+    }
+  }
 
   @override
   Widget build(BuildContext context) => buildPaged(
@@ -293,8 +314,41 @@ class _SongsTabState extends _PagedState<_SongsTab, Song> {
     empty: const EmptyState(icon: Icons.music_note_rounded, title: 'No songs'),
     builder: () => ListView.builder(
       padding: _listPadding(context),
-      itemCount: items.length,
-      itemBuilder: (_, i) => SongTile(song: items[i], queue: items, index: i),
+      itemCount: items.length + 1,
+      itemBuilder: (_, i) => i == 0
+          ? _ShuffleHeader(label: 'All songs', busy: _shuffling, onShuffle: _shuffle)
+          : SongTile(song: items[i - 1], queue: items, index: i - 1),
+    ),
+  );
+}
+
+/// "N songs ... [Shuffle]" above the Songs and Downloads lists.
+class _ShuffleHeader extends StatelessWidget {
+  const _ShuffleHeader({required this.label, required this.onShuffle, this.busy = false});
+  final String label;
+
+  /// Null greys the button out.
+  final VoidCallback? onShuffle;
+  final bool busy;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+    padding: const EdgeInsets.fromLTRB(SonarSpacing.gutter, 8, SonarSpacing.gutter, 12),
+    child: Row(
+      children: [
+        Expanded(child: Text(label, style: Theme.of(context).textTheme.bodyMedium)),
+        FilledButton.icon(
+          style: FilledButton.styleFrom(
+            minimumSize: const Size(0, 40),
+            padding: const EdgeInsets.symmetric(horizontal: 18),
+          ),
+          onPressed: busy ? null : onShuffle,
+          icon: busy
+              ? const SizedBox.square(dimension: 18, child: CircularProgressIndicator(strokeWidth: 2))
+              : const Icon(Icons.shuffle_rounded, size: 20),
+          label: const Text('Shuffle'),
+        ),
+      ],
     ),
   );
 }
@@ -325,34 +379,12 @@ class _DownloadsTab extends ConsumerWidget {
         for (final s in c.songs)
           if (dm.isDownloaded(s.id)) s.id: s,
     }.values.toList();
-    final text = Theme.of(context).textTheme;
-
     return ListView(
       padding: _listPadding(context),
       children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(SonarSpacing.gutter, 8, SonarSpacing.gutter, 12),
-          child: Row(
-            children: [
-              Expanded(
-                child: Text(
-                  '${allSongs.length} songs${bytes == null ? '' : ' · ${_formatBytes(bytes)}'}',
-                  style: text.bodyMedium,
-                ),
-              ),
-              FilledButton.icon(
-                style: FilledButton.styleFrom(
-                  minimumSize: const Size(0, 40),
-                  padding: const EdgeInsets.symmetric(horizontal: 18),
-                ),
-                onPressed: allSongs.isEmpty
-                    ? null
-                    : () => ref.read(controlsProvider).playSongs(allSongs, shuffle: true),
-                icon: const Icon(Icons.shuffle_rounded, size: 20),
-                label: const Text('Shuffle'),
-              ),
-            ],
-          ),
+        _ShuffleHeader(
+          label: '${allSongs.length} songs${bytes == null ? '' : ' · ${_formatBytes(bytes)}'}',
+          onShuffle: allSongs.isEmpty ? null : () => ref.read(controlsProvider).playSongs(allSongs, shuffle: true),
         ),
         for (final c in collections) _DownloadRow(collection: c),
       ],

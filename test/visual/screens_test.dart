@@ -86,6 +86,8 @@ void main() {
     await shot('07_library_playlists');
     await tester.tap(find.text('Albums'));
     await shot('08_library_albums');
+    await tester.tap(find.text('Songs'));
+    await shot('08b_library_songs');
     router.go('/library/playlist/pl0');
     await shot('09_playlist');
 

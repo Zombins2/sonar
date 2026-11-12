@@ -287,12 +287,16 @@ class FakeLibraryAdapter implements HttpClientAdapter {
   /// Holds getAlbum back, to catch a page in its loading state.
   Future<void>? holdAlbums;
 
+  /// Every request, in order.
+  final requests = <Uri>[];
+
   @override
   Future<ResponseBody> fetch(
     RequestOptions options,
     Stream<Uint8List>? requestStream,
     Future<void>? cancelFuture,
   ) async {
+    requests.add(options.uri);
     final endpoint = options.uri.pathSegments.last;
     if (endpoint == 'getAlbum' && holdAlbums != null) await holdAlbums;
     final body = FakeLibrary.respond(endpoint, options.uri.queryParameters);
