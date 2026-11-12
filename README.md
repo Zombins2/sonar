@@ -73,7 +73,7 @@ appears by itself when the server has it.
 
 Sonar isn't on the App Store, so an iPhone takes it the way it takes any app
 you build yourself: signed with your own (free) Apple ID. The iPhone version
-is new and less tried than Android and Windows: please open an issue if
+needs iOS 14 or later, and is new and less tried than Android and Windows: please open an issue if
 something doesn't work.
 
 **From a Windows PC or a Mac, with [AltStore](https://altstore.io/)** (free):
