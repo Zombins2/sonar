@@ -99,6 +99,11 @@ class SoulbeetClient {
     for (final f in (await _list('GET', '/api/folders')).whereType<SbJson>()) SbFolder.fromJson(f),
   ];
 
+  /// Makes a library folder for this login. Soulbeet's folders belong to
+  /// each user, so every new login starts with none.
+  Future<SbFolder> createFolder({String name = 'Music', String path = '/music'}) async =>
+      SbFolder.fromJson(await _map('POST', '/api/folders', {'name': name, 'path': path}));
+
   Future<List<SbAlbum>> searchAlbums(String query, {String? artist}) async {
     final r = await _map('POST', '/api/metadata/search/album', {
       'input': {'query': query, 'artist': _blankToNull(artist), 'provider': 'musicbrainz'},

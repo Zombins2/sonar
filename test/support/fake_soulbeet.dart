@@ -115,6 +115,11 @@ class FakeSoulbeet {
       }
       return;
     }
+    if (path == '/api/folders' && req.method == 'POST') {
+      if (overrides['POST /api/folders'] case (final status, final reply)) return _reply(res, status, reply);
+      final made = soulbeetFixture('create_folder')['response']! as Map<String, Object?>;
+      return _reply(res, 200, {...made, ...?(body as Map?)?.cast<String, Object?>()});
+    }
     if (overrides[path] case (final status, final reply)) return _reply(res, status, reply);
     switch (path) {
       case '/api/auto-download':

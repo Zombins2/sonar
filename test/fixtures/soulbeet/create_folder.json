@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/folders",
+    "body": {
+      "name": "Music",
+      "path": "/music"
+    }
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": {
+    "id": "a214b68d-a268-446d-b1c3-19f1f5b8afae",
+    "user_id": "8e22c3a7-f0b5-4204-9837-ba5f8250c45c",
+    "name": "Music",
+    "path": "/music"
+  }
+}

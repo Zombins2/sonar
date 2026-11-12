@@ -1,0 +1,5 @@
+# Some downloaders write time-stamped (LRC) lyrics to a SYNCEDLYRICS tag and
+# plain text to LYRICS. Navidrome only reads the latter by default, so add the
+# synced tag to the lyrics aliases (the first three are Navidrome's defaults).
+# Changing tag mappings needs a full scan: docker compose exec navidrome /app/navidrome scan --full
+Tags.Lyrics.Aliases = ["uslt:description", "lyrics", "unsyncedlyrics", "syncedlyrics"]

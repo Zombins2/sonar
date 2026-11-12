@@ -1,0 +1,168 @@
+# Sonar's server side, all optional parts in one file.
+#
+# The installer (install.ps1 / install.sh) writes .env next to this file and
+# chooses the parts with COMPOSE_PROFILES there:
+#   navidrome  the music server (leave out if you already run Navidrome)
+#   connect    Sonar Connect: phone and PC see and control each other
+#   getmusic   Get music: Soulbeet + slskd behind a VPN
+# Run the installer again to add or remove a part, or edit COMPOSE_PROFILES
+# and run `docker compose up -d`.
+#
+# Every port is published on 127.0.0.1 only. Devices reach them through
+# Tailscale serve (or your own reverse proxy) over https.
+name: ${COMPOSE_PROJECT_NAME:-sonar}
+
+x-navidrome-url: &navidrome-url ${NAVIDROME_INTERNAL_URL:-http://navidrome:4533}
+
+services:
+  # ---- navidrome ------------------------------------------------------------
+  navidrome:
+    profiles: [navidrome]
+    image: deluan/navidrome:0.64.2
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${NAVIDROME_PORT:-4533}:4533"
+    environment:
+      ND_SCANSCHEDULE: "1h"
+      ND_LOGLEVEL: "info"
+      ND_SESSIONTIMEOUT: "168h"
+      ND_ENABLEDOWNLOADS: "true"
+      ND_ENABLESHARING: "true"
+      # On a Docker volume: reading cache files back through a Windows folder
+      # fails ("no data available"), which breaks lower-quality streaming.
+      ND_CACHEFOLDER: "/cache"
+      ND_CONFIGFILE: "/config/navidrome.toml"
+    volumes:
+      - navidrome-data:/data
+      - navidrome-cache:/cache
+      - ./navidrome:/config:ro
+      - ${MUSIC_DIR:?run the installer, or set MUSIC_DIR in .env}:/music:ro
+
+  # ---- connect --------------------------------------------------------------
+  sonar-connect:
+    profiles: [connect]
+    build: ./sonar_connect
+    image: sonar-connect:latest
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${CONNECT_PORT:-4534}:4534"
+    environment:
+      NAVIDROME_URL: *navidrome-url
+      # A Navidrome admin login turns on instant rescans after Get music
+      # imports an album (Navidrome only lets admins start a scan).
+      NAVIDROME_ADMIN_USER: ${NAVIDROME_ADMIN_USER:-}
+      NAVIDROME_ADMIN_PASSWORD: ${NAVIDROME_ADMIN_PASSWORD:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # ---- getmusic -------------------------------------------------------------
+  # slskd runs INSIDE gluetun's network: Soulseek only ever sees the VPN's
+  # address, and if the tunnel drops slskd has no other way out.
+  gluetun:
+    profiles: [getmusic]
+    image: qmcgaw/gluetun:v3.41.3
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    environment:
+      VPN_SERVICE_PROVIDER: ${VPN_SERVICE_PROVIDER:-protonvpn}
+      VPN_TYPE: wireguard
+      WIREGUARD_PRIVATE_KEY: ${WIREGUARD_PRIVATE_KEY:-}
+      SERVER_COUNTRIES: ${VPN_COUNTRIES:-}
+      # Only servers that forward a port to us: Soulseek needs incoming
+      # connections to download reliably.
+      PORT_FORWARD_ONLY: "on"
+      VPN_PORT_FORWARDING: "on"
+      # slskd's API, for Soulbeet on the Docker network.
+      FIREWALL_INPUT_PORTS: "5030"
+      # gluetun's own API: only port-sync uses it, from inside.
+      HTTP_CONTROL_SERVER_AUTH_DEFAULT_ROLE: '{"auth":"apikey","apikey":"${GLUETUN_API_KEY:-}"}'
+    ports:
+      - "127.0.0.1:${SLSKD_PORT:-5030}:5030" # slskd's web page, this computer only
+
+  slskd:
+    profiles: [getmusic]
+    image: slskd/slskd:0.26.2
+    restart: unless-stopped
+    network_mode: "service:gluetun"
+    depends_on: [gluetun]
+    environment:
+      SLSKD_SLSK_USERNAME: ${SOULSEEK_USERNAME:-}
+      SLSKD_SLSK_PASSWORD: ${SOULSEEK_PASSWORD:-}
+      SLSKD_USERNAME: ${SLSKD_WEB_USERNAME:-slskd}
+      SLSKD_PASSWORD: ${SLSKD_WEB_PASSWORD:-}
+      SLSKD_API_KEY: ${SLSKD_API_KEY:-}
+      SLSKD_DOWNLOADS_DIR: /app/downloads
+      # Only the share folder is shared: never the library or the downloads.
+      SLSKD_SHARED_DIR: /share
+      SLSKD_UPLOAD_SLOTS: "2"
+      SLSKD_UPLOAD_SPEED_LIMIT: "250" # KiB/s
+      # Lets port-sync change the listen port while running.
+      SLSKD_REMOTE_CONFIGURATION: "true"
+    volumes:
+      - slskd-app:/app
+      - ${DOWNLOADS_DIR:-./downloads}:/app/downloads
+      - ${SHARE_DIR:-./share}:/share:ro
+
+  port-sync:
+    profiles: [getmusic]
+    build: ./port-sync
+    image: sonar-port-sync:latest
+    restart: unless-stopped
+    network_mode: "service:gluetun"
+    depends_on: [gluetun]
+    environment:
+      GLUETUN_API_KEY: ${GLUETUN_API_KEY:-}
+      SLSKD_API_KEY: ${SLSKD_API_KEY:-}
+
+  soulbeet:
+    profiles: [getmusic]
+    image: docker.io/docccccc/soulbeet:full
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${SOULBEET_PORT:-9765}:9765"
+    environment:
+      DATABASE_URL: sqlite:/data/soulbeet.db
+      DOWNLOAD_PATH: /downloads
+      SECRET_KEY: ${SOULBEET_SECRET_KEY:-}
+      # Logins are Navidrome accounts.
+      NAVIDROME_URL: *navidrome-url
+      BEETS_CONFIG: /config/config.yaml
+      # Import a download as one album matched on MusicBrainz.
+      BEETS_ALBUM_MODE: "true"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - soulbeet-data:/data
+      - ./beets:/config
+      - ${DOWNLOADS_DIR:-./downloads}:/downloads
+      # The only part of the library Soulbeet can write to.
+      - ${GETMUSIC_DIR:-./getmusic}:/music
+
+  # ---- setup (run by the installer, then exits) ------------------------------
+  setup:
+    profiles: [setup]
+    image: python:3.12-alpine
+    command: ["python", "-u", "/setup/configure.py"]
+    volumes:
+      - ./setup:/setup:ro
+    environment:
+      COMPOSE_PROFILES: ${COMPOSE_PROFILES:-}
+      NAVIDROME_URL: *navidrome-url
+      SOULBEET_URL: http://soulbeet:9765
+      NAVIDROME_ADMIN_USER: ${NAVIDROME_ADMIN_USER:-}
+      NAVIDROME_ADMIN_PASSWORD: ${NAVIDROME_ADMIN_PASSWORD:-}
+      SLSKD_API_KEY: ${SLSKD_API_KEY:-}
+      # Only for this run, from the installer; never written to .env.
+      SONAR_USER: ${SONAR_USER:-}
+      SONAR_USER_PASSWORD: ${SONAR_USER_PASSWORD:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  navidrome-data:
+  navidrome-cache:
+  slskd-app:
+  soulbeet-data:

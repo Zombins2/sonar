@@ -9,25 +9,29 @@ Standard-library Python, no packages. Logins are checked against Navidrome's
 
 ## Run
 
+The server installer sets it up (`../README.md`): it runs as the
+`sonar-connect` service in `../docker-compose.yml`, and Tailscale serves it at
+`https://<your-server>/sonar-connect`, next to Navidrome at `/`.
+
+By hand, beside a Navidrome you already run:
+
 ```
-docker compose up -d --build
+docker build -t sonar-connect .
+docker run -d --name sonar-connect --restart unless-stopped -p 127.0.0.1:4534:4534 \
+  -e NAVIDROME_URL=http://host.docker.internal:4533 --add-host host.docker.internal:host-gateway \
+  sonar-connect
 tailscale serve --bg --set-path /sonar-connect http://127.0.0.1:4534
 ```
-
-The first line builds and starts the container (restarts with Docker). The
-second makes it reachable to your tailnet at
-`https://<your-server>/sonar-connect`, next to Navidrome at `/`. It stays
-tailnet-only, like Navidrome.
 
 Check: `curl https://<your-server>/sonar-connect/health` -> `{"ok": true}`.
 
 ## New albums straight away (optional)
 
 Sonar asks the relay to rescan Navidrome when Soulbeet has filed an album
-(`POST /rescan`). Navidrome only lets an admin start a scan, so copy
-`.env.example` to `.env`, put a Navidrome admin login in it, and run
-`docker compose up -d` again. The log then says `rescan on`. Without it,
-new albums wait for Navidrome's own scan (hourly).
+(`POST /rescan`). Navidrome only lets an admin start a scan, so the relay
+needs an admin login in `NAVIDROME_ADMIN_USER` / `NAVIDROME_ADMIN_PASSWORD`
+(the installer sets them from `.env`). The log then says `rescan on`.
+Without it, new albums wait for Navidrome's own scan (hourly).
 
 ## Test
 

@@ -1,0 +1,42 @@
+# beets settings for Soulbeet. This is Soulbeet's own default config
+# (github.com/terry90/soulbeet, MIT License, Copyright (c) 2025 Terry Raimondo),
+# shipped here so it can be edited without entering the container.
+plugins: chroma musicbrainz mbtwopass fetchart embedart lyrics lastgenre scrub replaygain mbsync the duplicates missing importadded info smartplaylist inline types ftintitle
+# /opt/beets-plugins ships with the image and must come first: /data is a bind
+# mount in every deployment, so anything baked under it is hidden at runtime.
+# The Dockerfile pre-creates /data/beets-plugins as an empty 0755 directory;
+# users may bind-mount their own directory there to extend any tier.
+pluginpath:
+  - /opt/beets-plugins
+  - /data/beets-plugins
+directory: /music # Mapped in docker-compose
+import:
+  copy: no
+  move: yes
+  resume: no
+  duplicate_action: remove
+paths:
+  default: $albumartist/$album%aunique{}/$track $title
+  singleton: $albumartist/$album%aunique{}/$title
+match:
+  strong_rec_thresh: 0.10
+  max_rec:
+    missing_tracks: low
+musicbrainz:
+  searchlimit: 20            # Recommendation from: https://github.com/kernitus/beets-oldestdate
+  extra_tags:                # Enable improved MediaBrainz queries from tags.
+    [
+      catalognum,
+      country,
+      label,
+      media,
+      year
+    ]
+# Wire the replaygain plugin to the ffmpeg backend. Dormant on light / medium
+# tiers (the plugin is not enabled in `plugins:` there). Load-bearing on full,
+# where it avoids beets' gstreamer default which requires PyGObject and is not
+# available on distroless. Plan 16-03 ships the static ffmpeg binary that
+# satisfies this backend at runtime.
+replaygain:
+  backend: ffmpeg
+  overwrite: yes

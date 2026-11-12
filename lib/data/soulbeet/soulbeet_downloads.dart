@@ -197,10 +197,9 @@ class SoulbeetDownloads extends ChangeNotifier {
     _changed();
     unawaited(_listen());
     try {
-      final folder = _folder ??= (await client.folders()).firstOrNull;
-      if (folder == null) {
-        throw const SoulbeetException(SoulbeetErrorKind.refused, 'Soulbeet has no music folder set up.');
-      }
+      // A login's first download: Soulbeet keeps folders per user, so make
+      // this one its own (the part of the library Soulbeet files into).
+      final folder = _folder ??= (await client.folders()).firstOrNull ?? await client.createFolder();
       var source = chosen;
       var asked = album;
       if (source == null) {

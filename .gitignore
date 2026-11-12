@@ -46,3 +46,9 @@ app.*.map.json
 
 # Server secrets
 server/sonar_connect/.env
+
+# Server installs (passwords and keys) and their data folders
+.env
+server/downloads/
+server/share/
+server/getmusic/

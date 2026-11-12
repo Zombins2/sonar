@@ -29,21 +29,32 @@ make it yours. There's no support promise and no app store listing.
   download them through [Soulbeet](https://github.com/terry90/soulbeet), and
   watch them land in your library. Hidden unless you set it up.
 
-## What you need
+## Set up the server (one installer)
 
-1. **A Navidrome server** with your music on it. See Navidrome's
-   [install guide](https://www.navidrome.org/docs/installation/); Docker is
-   the easy way.
-2. **An `https://` address for it.** Sonar refuses plain `http://` (except on
-   the same computer), because your login goes over it. Two easy ways:
-   - [Tailscale](https://tailscale.com/) (free for personal use): install it
-     on the server and your devices, then
-     `tailscale serve --bg http://127.0.0.1:4533` gives Navidrome a private
-     `https://<your-pc>.<your-tailnet>.ts.net` address only your devices can
-     reach. This is what Sonar is mostly used with.
-   - A reverse proxy with a certificate (Caddy, nginx, Traefik) on your own
-     domain.
-3. **A Navidrome user for Sonar.** Use an ordinary (non-admin) user.
+Sonar plays from a music server on your own computer. The installer in
+[`server/`](server/README.md) sets everything up in Docker:
+
+- **Navidrome**, the music server, reading your music folder (skip it if you
+  already run Navidrome);
+- **Sonar Connect** (on by default): your phone and PC see what each other is
+  playing, control each other, and hand playback over;
+- **Get music** (off unless you choose it): find and download albums you
+  don't have, through [Soulbeet](https://github.com/terry90/soulbeet) and
+  Soulseek, behind a VPN;
+- an **https address** for your phone, through
+  [Tailscale](https://tailscale.com/) (free).
+
+You need [Docker](https://www.docker.com/products/docker-desktop/), and
+Tailscale on the server and your phone. Then download this repository and run
+**`server\install.cmd`** (Windows, double-click) or **`bash server/install.sh`**
+(Mac / Linux). It asks a few questions, each with a default, and ends by
+printing the address and login to type into Sonar. Run it again any time to
+add Get music or change something. Details: [`server/README.md`](server/README.md).
+
+Already have Navidrome? Sonar works with any Navidrome or Subsonic server
+that has an `https://` address (Sonar refuses plain `http://` except on the
+same computer, because your login goes over it). Use an ordinary, non-admin
+user for the app.
 
 ## Install the app
 
@@ -54,31 +65,15 @@ Download from the [Releases](../../releases) page:
   when asked).
 - **Windows:** unzip `sonar-windows.zip` anywhere and run `sonar.exe`.
 
-Then log in with your server address, username and password.
+Then log in with your server address, username and password. **Get music**
+appears by itself when the server has it.
 
 iPhone: not yet. An iOS build is planned.
 
-## Optional server add-ons
-
-### Sonar Connect (control playback across devices)
-
-A tiny relay that runs beside Navidrome in Docker. See
-[`server/sonar_connect/README.md`](server/sonar_connect/README.md). Sonar
-finds it at `https://<your-server>/sonar-connect`.
-
-### Get music (download albums you don't have)
-
-Get music talks to a [Soulbeet](https://github.com/terry90/soulbeet) server,
-which searches MusicBrainz, downloads over Soulseek with
-[slskd](https://github.com/slskd/slskd), and files the music with
-[beets](https://beets.io/). Sonar looks for Soulbeet at
-`https://<your-server>:8443` and only shows **Get music** when it answers.
-
-How it works and the API Sonar uses: [`docs/SOULBEET_PLAN.md`](docs/SOULBEET_PLAN.md).
-
-> You are responsible for what you download and share. Soulseek is a
-> peer-to-peer network: run slskd behind a VPN, share only what you have the
-> right to share, and respect the law where you live.
+> Get music: you are responsible for what you download and share. Soulseek is
+> a peer-to-peer network: share only what you have the right to share, and
+> respect the law where you live. How Sonar talks to Soulbeet:
+> [`docs/SOULBEET_PLAN.md`](docs/SOULBEET_PLAN.md).
 
 ## Building from source
 

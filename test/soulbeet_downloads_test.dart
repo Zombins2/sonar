@@ -369,10 +369,22 @@ void main() {
     expect(d.error, contains('Nobody on Soulseek'));
   });
 
-  test('no music folder is a clear failure', () async {
+  test('a login with no music folder yet gets one made, then downloads into it', () async {
+    // Soulbeet keeps folders per user; a new login has none (recorded 2026-11-12).
     server.overrides['/api/folders'] = (200, <Object>[]);
     final d = await downloads.download(legalizeIt());
+    expect(server.bodiesFor('/api/folders').whereType<Map>().single, {'name': 'Music', 'path': '/music'});
+    final queued = (server.bodiesFor('/api/downloads/queue').single! as Map)['req'] as Map;
+    expect(queued['target_folder'], '/music');
+    expect(d.phase, AlbumPhase.downloading);
+  });
+
+  test('Soulbeet refusing to make the folder fails clearly', () async {
+    server.overrides['/api/folders'] = (200, <Object>[]);
+    server.overrides['POST /api/folders'] = (500, 'Failed to create directory: Permission denied');
+    final d = await downloads.download(legalizeIt());
     expect(d.phase, AlbumPhase.failed);
-    expect(d.error, contains('no music folder'));
+    expect(d.error, contains('Permission denied'));
+    expect(server.bodiesFor('/api/downloads/queue'), isEmpty);
   });
 }
