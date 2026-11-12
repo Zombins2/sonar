@@ -3,6 +3,7 @@
 // - Android: an adaptive icon (green background + mark foreground, which the
 //   phone cuts to its own shape; the mark doubles as the themed-icon layer)
 //   and the same rounded square as Windows for phones before Android 8.
+// - iPhone: every size in ios/Runner/Assets.xcassets/AppIcon.appiconset.
 //
 //   flutter test tool/make_icon.dart
 library;
@@ -28,11 +29,14 @@ const _adaptiveMark = 0.7 * 72 / 108;
 
 /// [square]: the green rounded square under the mark (Windows, older
 /// Android). Without it, just the mark on transparent (adaptive foreground).
-Future<Uint8List> _render(int size, {bool square = true, double mark = 0.7}) async {
+/// [fullBleed]: green to every edge (iPhone, which rounds the corners itself).
+Future<Uint8List> _render(int size, {bool square = true, double mark = 0.7, bool fullBleed = false}) async {
   final recorder = ui.PictureRecorder();
   final canvas = Canvas(recorder);
   final s = size.toDouble();
-  if (square) {
+  if (fullBleed) {
+    canvas.drawRect(Rect.fromLTWH(0, 0, s, s), Paint()..color = SonarColors.accentDefault);
+  } else if (square) {
     // A rounded square, a touch inset so small sizes keep a crisp edge.
     final inset = s * 0.04;
     canvas.drawRRect(
@@ -89,8 +93,21 @@ void main() {
       File('windows/runner/resources/app_icon.ico').writeAsBytesSync(_ico(images));
       File('build/app_icon_256.png').writeAsBytesSync(images.last.$2);
       await _android();
+      await _ios();
     });
   });
+}
+
+/// iPhone: every size the app icon set lists, green to the edges.
+Future<void> _ios() async {
+  final dir = Directory('ios/Runner/Assets.xcassets/AppIcon.appiconset');
+  final name = RegExp(r'^Icon-App-([\d.]+)x[\d.]+@(\d)x\.png$');
+  for (final f in dir.listSync().whereType<File>()) {
+    final m = name.firstMatch(f.uri.pathSegments.last);
+    if (m == null) continue;
+    final px = (double.parse(m[1]!) * int.parse(m[2]!)).round();
+    f.writeAsBytesSync(await _render(px, fullBleed: true, mark: 0.62));
+  }
 }
 
 /// build/android_icon_preview.png: the adaptive icon as phones cut it (circle,

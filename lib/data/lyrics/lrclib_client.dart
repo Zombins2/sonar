@@ -14,7 +14,7 @@ class LrclibClient {
               baseUrl: 'https://lrclib.net',
               connectTimeout: const Duration(seconds: 6),
               receiveTimeout: const Duration(seconds: 10),
-              headers: {'User-Agent': 'Sonar (Navidrome client for Android)'},
+              headers: {'User-Agent': 'Sonar (Navidrome client; github.com/Zombins2/sonar)'},
             ),
           );
 

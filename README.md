@@ -2,7 +2,7 @@
 
 A music player for your own music server. Sonar plays from
 [Navidrome](https://www.navidrome.org/) (or any server that speaks the
-Subsonic API) on **Android** and **Windows**.
+Subsonic API) on **Android**, **Windows** and **iPhone**.
 
 It's a hobby project, shared as-is under the MIT license: take it, change it,
 make it yours. There's no support promise and no app store listing.
@@ -64,11 +64,36 @@ Download from the [Releases](../../releases) page:
   2017. Open it to install (allow installs from your browser or file manager
   when asked).
 - **Windows:** unzip `sonar-windows.zip` anywhere and run `sonar.exe`.
+- **iPhone:** `sonar-ios.ipa`, see below.
 
 Then log in with your server address, username and password. **Get music**
 appears by itself when the server has it.
 
-iPhone: not yet. An iOS build is planned.
+### iPhone
+
+Sonar isn't on the App Store, so an iPhone takes it the way it takes any app
+you build yourself: signed with your own (free) Apple ID. The iPhone version
+is new and less tried than Android and Windows: please open an issue if
+something doesn't work.
+
+**From a Windows PC or a Mac, with [AltStore](https://altstore.io/)** (free):
+
+1. Install AltServer on your computer and AltStore on your iPhone, following
+   AltStore's own guide (on Windows it needs iTunes and iCloud from Apple's
+   website, not the Microsoft Store versions).
+2. Download `sonar-ios.ipa` from Releases, then in AltStore on the phone tap
+   **+** and pick it (or use AltServer's **Sideload .ipa** with the phone
+   plugged in).
+3. On iOS 16 or later, turn on **Settings > Privacy & Security > Developer
+   Mode** when asked.
+
+With a free Apple ID the app has to be re-signed every 7 days. AltStore does
+that by itself over Wi-Fi while AltServer runs on your computer. (With a paid
+Apple Developer account a signature lasts a year.)
+
+**From a Mac with Xcode:** build it yourself (below), open
+`ios/Runner.xcworkspace`, pick your Apple ID under Runner > Signing &
+Capabilities > Team, and run it on the phone plugged in.
 
 > Get music: you are responsible for what you download and share. Soulseek is
 > a peer-to-peer network: share only what you have the right to share, and
@@ -78,14 +103,21 @@ iPhone: not yet. An iOS build is planned.
 ## Building from source
 
 You need [Flutter](https://docs.flutter.dev/get-started/install) (3.41 or
-newer), plus Android Studio for Android or Visual Studio 2022 with "Desktop
-development with C++" for Windows.
+newer), plus Android Studio for Android, Visual Studio 2022 with "Desktop
+development with C++" for Windows, or a Mac with Xcode for iPhone.
 
 ```
 flutter pub get
 flutter build apk --release --split-per-abi   # build/app/outputs/flutter-apk/
 flutter build windows --release               # build/windows/x64/runner/Release/
+flutter build ios --release                   # on a Mac; or open ios/Runner.xcworkspace
 ```
+
+Releases are built by GitHub Actions (`.github/workflows/release.yml`): push
+a tag like `v1.2.0` and it builds all three and publishes them. Android
+release APKs are signed with the project's release key (`android/key.properties`
+locally, two repository secrets on GitHub); without one, release builds use
+your debug key.
 
 To pre-fill your server on the login screen:
 `--dart-define=SONAR_SERVER=https://music.example.com`.
