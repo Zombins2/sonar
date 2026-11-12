@@ -1,0 +1,320 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/metadata/search/track",
+    "body": {
+      "input": {
+        "artist": "John Holt",
+        "query": "Police in Helicopter",
+        "provider": "musicbrainz"
+      }
+    }
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": {
+    "provider": "musicbrainz",
+    "results": [
+      {
+        "kind": "Track",
+        "id": "c762f72e-96bc-4c46-93b8-1324249deee1",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "5ff39976-346b-427d-8760-b8c81947ae87",
+        "album_title": "Looking Back: The Definitive Collection",
+        "release_date": "2005",
+        "duration": "03:38",
+        "mbid": "c762f72e-96bc-4c46-93b8-1324249deee1",
+        "release_mbid": "5ff39976-346b-427d-8760-b8c81947ae87"
+      },
+      {
+        "kind": "Track",
+        "id": "4fa33b7c-18df-4fb1-b423-1f0904c21345",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "97795def-eef0-4669-b842-21c66eb42d48",
+        "album_title": "Volcano Eruption",
+        "release_date": "2010-02-22",
+        "duration": null,
+        "mbid": "4fa33b7c-18df-4fb1-b423-1f0904c21345",
+        "release_mbid": "97795def-eef0-4669-b842-21c66eb42d48"
+      },
+      {
+        "kind": "Track",
+        "id": "3d50c49d-be80-4a83-b48c-cdebad163eb3",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "e9d032e2-8621-405e-9a57-b38bc297d977",
+        "album_title": "100x Reggae",
+        "release_date": "2012",
+        "duration": "03:37",
+        "mbid": "3d50c49d-be80-4a83-b48c-cdebad163eb3",
+        "release_mbid": "e9d032e2-8621-405e-9a57-b38bc297d977"
+      },
+      {
+        "kind": "Track",
+        "id": "28d72a79-e5c4-4382-a88e-341e7016089c",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "ee7d8e7c-9b47-4bda-a04c-7e177c20248f",
+        "album_title": "The Kings of Reggae",
+        "release_date": "2007",
+        "duration": "03:38",
+        "mbid": "28d72a79-e5c4-4382-a88e-341e7016089c",
+        "release_mbid": "ee7d8e7c-9b47-4bda-a04c-7e177c20248f"
+      },
+      {
+        "kind": "Track",
+        "id": "c3eddb7e-a1ef-4eb4-b537-9c6c2a0cb7a9",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "1c7b838a-7725-4bd3-90c5-602173a4bf19",
+        "album_title": "Greensleeves: The First 10 Years",
+        "release_date": "2010-06",
+        "duration": "01:45",
+        "mbid": "c3eddb7e-a1ef-4eb4-b537-9c6c2a0cb7a9",
+        "release_mbid": "1c7b838a-7725-4bd3-90c5-602173a4bf19"
+      },
+      {
+        "kind": "Track",
+        "id": "a731b0c5-3e36-4961-9065-0382d54d227f",
+        "title": "Police In Helicopter",
+        "artist": "John Holt",
+        "album_id": "47bce480-80ee-46a9-be3b-bb47ce508349",
+        "album_title": "Memories by the Score",
+        "release_date": "2015",
+        "duration": "07:50",
+        "mbid": "a731b0c5-3e36-4961-9065-0382d54d227f",
+        "release_mbid": "47bce480-80ee-46a9-be3b-bb47ce508349"
+      },
+      {
+        "kind": "Track",
+        "id": "1966455f-1636-4c93-8a8e-357ee0976df9",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "25323e25-e816-461c-80c6-0c5020a0ebda",
+        "album_title": "24K Gold Dancehall Megamix",
+        "release_date": null,
+        "duration": "02:04",
+        "mbid": "1966455f-1636-4c93-8a8e-357ee0976df9",
+        "release_mbid": "25323e25-e816-461c-80c6-0c5020a0ebda"
+      },
+      {
+        "kind": "Track",
+        "id": "e1afcf17-576a-40e1-b1a9-c8339335e5c6",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "9f95c560-323a-4a8f-ad9e-57f123eb93bb",
+        "album_title": "Riddimentary: Diplo Selects Greensleeves",
+        "release_date": "2011-02-18",
+        "duration": "03:27",
+        "mbid": "e1afcf17-576a-40e1-b1a9-c8339335e5c6",
+        "release_mbid": "9f95c560-323a-4a8f-ad9e-57f123eb93bb"
+      },
+      {
+        "kind": "Track",
+        "id": "21c39598-69aa-4f8d-8b2d-381e3c85c3b1",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "c6451a78-593e-4645-8a0b-ad40651a3cf3",
+        "album_title": "Reggae Masterpieces",
+        "release_date": "2009",
+        "duration": "03:36",
+        "mbid": "21c39598-69aa-4f8d-8b2d-381e3c85c3b1",
+        "release_mbid": "c6451a78-593e-4645-8a0b-ad40651a3cf3"
+      },
+      {
+        "kind": "Track",
+        "id": "8bf1115e-83c1-4b51-8e51-deef8f80c841",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "ff68fa1a-b478-43eb-9a05-ce30be1c4645",
+        "album_title": "Total Reggae: Greensleeves 40th (1977-2017)",
+        "release_date": "2017-05-19",
+        "duration": "03:38",
+        "mbid": "8bf1115e-83c1-4b51-8e51-deef8f80c841",
+        "release_mbid": "ff68fa1a-b478-43eb-9a05-ce30be1c4645"
+      },
+      {
+        "kind": "Track",
+        "id": "fad09e84-4245-4c18-bfdf-015e6da93972",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "573858b9-cddc-4930-bff3-df7a13994db8",
+        "album_title": "Throwback: Reggae Dancehall",
+        "release_date": "2018-06-01",
+        "duration": "03:37",
+        "mbid": "fad09e84-4245-4c18-bfdf-015e6da93972",
+        "release_mbid": "573858b9-cddc-4930-bff3-df7a13994db8"
+      },
+      {
+        "kind": "Track",
+        "id": "4ff58349-80a0-4a49-bebd-45f4cd391744",
+        "title": "Police In Helicopter",
+        "artist": "John Holt",
+        "album_id": "e19755b1-bab5-4ccd-8a90-43b96de49045",
+        "album_title": "Spirit of Reggae",
+        "release_date": "2018",
+        "duration": "03:29",
+        "mbid": "4ff58349-80a0-4a49-bebd-45f4cd391744",
+        "release_mbid": "e19755b1-bab5-4ccd-8a90-43b96de49045"
+      },
+      {
+        "kind": "Track",
+        "id": "6e946324-8c22-47eb-99aa-1bfc79b9bb19",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "6d14ec4f-86c6-4eec-89b5-19192d9c2eed",
+        "album_title": "Spex CD #09",
+        "release_date": "2001-06",
+        "duration": "03:39",
+        "mbid": "6e946324-8c22-47eb-99aa-1bfc79b9bb19",
+        "release_mbid": "6d14ec4f-86c6-4eec-89b5-19192d9c2eed"
+      },
+      {
+        "kind": "Track",
+        "id": "3e9c05ec-3f54-4b27-ac7b-d4f55163953e",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "87ddcd69-ebcc-41b0-b68b-e80018411de7",
+        "album_title": "Big Blunts, Volume 2",
+        "release_date": "1996",
+        "duration": "03:33",
+        "mbid": "3e9c05ec-3f54-4b27-ac7b-d4f55163953e",
+        "release_mbid": "87ddcd69-ebcc-41b0-b68b-e80018411de7"
+      },
+      {
+        "kind": "Track",
+        "id": "64a8ac0c-da86-463a-b1fb-6251e67105e0",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "679cddf4-8954-42c9-af0c-e73b4c0d138d",
+        "album_title": "Greensleeves Document",
+        "release_date": "2017-02-10",
+        "duration": "01:21",
+        "mbid": "64a8ac0c-da86-463a-b1fb-6251e67105e0",
+        "release_mbid": "679cddf4-8954-42c9-af0c-e73b4c0d138d"
+      },
+      {
+        "kind": "Track",
+        "id": "5b2574aa-6b9e-497b-b57e-406c4c19eab5",
+        "title": "Police In Helicopter",
+        "artist": "John Holt",
+        "album_id": "84f3d611-bd6f-4986-a2f3-bba3c4a02a07",
+        "album_title": "Beginner’s Guide to Reggae",
+        "release_date": null,
+        "duration": "03:32",
+        "mbid": "5b2574aa-6b9e-497b-b57e-406c4c19eab5",
+        "release_mbid": "84f3d611-bd6f-4986-a2f3-bba3c4a02a07"
+      },
+      {
+        "kind": "Track",
+        "id": "7ecad9cb-534c-49a6-9931-0b9524684c4d",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "aa8c6e41-7977-4b4e-926d-2d2ff321602f",
+        "album_title": "Reggae Classics, Volume 3",
+        "release_date": "",
+        "duration": "03:14",
+        "mbid": "7ecad9cb-534c-49a6-9931-0b9524684c4d",
+        "release_mbid": "aa8c6e41-7977-4b4e-926d-2d2ff321602f"
+      },
+      {
+        "kind": "Track",
+        "id": "099dc6b0-28ab-445b-8928-e55b84ee2801",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "f3dcf77c-76c3-4ff9-998c-65ba8887b014",
+        "album_title": "Chilled Reggae",
+        "release_date": "2016-09-09",
+        "duration": "03:36",
+        "mbid": "099dc6b0-28ab-445b-8928-e55b84ee2801",
+        "release_mbid": "f3dcf77c-76c3-4ff9-998c-65ba8887b014"
+      },
+      {
+        "kind": "Track",
+        "id": "78ea6a8b-0543-4a22-ab46-19fa87611773",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "bdeb3c10-b21e-418b-a7ce-2d07aa8d9096",
+        "album_title": "Police in Helicopter / Youths Pon the Corner",
+        "release_date": "1983",
+        "duration": "06:49",
+        "mbid": "78ea6a8b-0543-4a22-ab46-19fa87611773",
+        "release_mbid": "bdeb3c10-b21e-418b-a7ce-2d07aa8d9096"
+      },
+      {
+        "kind": "Track",
+        "id": "124ef94c-68c2-4663-91d3-b0a61a731bc6",
+        "title": "Police In Helicopter",
+        "artist": "John Holt",
+        "album_id": "60da1cc5-13b0-474f-aecb-9ac66876b665",
+        "album_title": "Police In Helicopter",
+        "release_date": "2001",
+        "duration": "03:39",
+        "mbid": "124ef94c-68c2-4663-91d3-b0a61a731bc6",
+        "release_mbid": "60da1cc5-13b0-474f-aecb-9ac66876b665"
+      },
+      {
+        "kind": "Track",
+        "id": "1693c536-7ea9-4179-a7fc-1b57e7741cf8",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "fbe1f14c-f091-4184-bb51-9729f3dc263f",
+        "album_title": "People's Choice - The Reggae Collection",
+        "release_date": "",
+        "duration": "03:39",
+        "mbid": "1693c536-7ea9-4179-a7fc-1b57e7741cf8",
+        "release_mbid": "fbe1f14c-f091-4184-bb51-9729f3dc263f"
+      },
+      {
+        "kind": "Track",
+        "id": "8a92e6be-f83c-4588-b779-11118b1c5a1d",
+        "title": "Police in Helicopter",
+        "artist": "John Holt",
+        "album_id": "fd6438f7-bc2c-40ea-b807-401e63146d8e",
+        "album_title": "Ska for Life",
+        "release_date": "2019-06-07",
+        "duration": "03:37",
+        "mbid": "8a92e6be-f83c-4588-b779-11118b1c5a1d",
+        "release_mbid": "fd6438f7-bc2c-40ea-b807-401e63146d8e"
+      },
+      {
+        "kind": "Track",
+        "id": "2c03a818-50c3-4c9e-a4cc-62e38b325092",
+        "title": "Police in Helicopter",
+        "artist": "John Holt, Sizzla",
+        "album_id": "ecc9f951-132f-4ded-aeb9-cfae63db05df",
+        "album_title": "Police in Helicopter Rhythm",
+        "release_date": null,
+        "duration": null,
+        "mbid": "2c03a818-50c3-4c9e-a4cc-62e38b325092",
+        "release_mbid": "ecc9f951-132f-4ded-aeb9-cfae63db05df"
+      },
+      {
+        "kind": "Track",
+        "id": "a8d63d81-625d-47d0-8d29-a3025400b017",
+        "title": "Police in Helicopter",
+        "artist": "John Holt, Sizzla",
+        "album_id": "8d17f19b-820a-421b-82c1-399da0bdbe82",
+        "album_title": "Jah Protect Us",
+        "release_date": "2006",
+        "duration": "02:30",
+        "mbid": "a8d63d81-625d-47d0-8d29-a3025400b017",
+        "release_mbid": "8d17f19b-820a-421b-82c1-399da0bdbe82"
+      },
+      {
+        "kind": "Track",
+        "id": "80ab0b2e-9635-4c60-9f5c-42293fdc2974",
+        "title": "Police in Helicopter (Police)",
+        "artist": "John Holt",
+        "album_id": "4be8d4b3-5d90-4b80-b074-5aae8e318c71",
+        "album_title": "21st Century Mixes Book 1/VOL. 9",
+        "release_date": null,
+        "duration": "01:33",
+        "mbid": "80ab0b2e-9635-4c60-9f5c-42293fdc2974",
+        "release_mbid": "4be8d4b3-5d90-4b80-b074-5aae8e318c71"
+      }
+    ]
+  }
+}

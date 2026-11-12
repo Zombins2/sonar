@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/downloads/retry-import",
+    "body": {
+      "item": "@@share\\Itunes\\Peter Tosh\\Legalize It\\01 - Legalize It.m4a",
+      "choice": {
+        "MusicBrainz": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      }
+    }
+  },
+  "status": 200,
+  "response": null
+}

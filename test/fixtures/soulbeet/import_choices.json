@@ -1,0 +1,188 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/downloads/import-choices",
+    "body": {
+      "item": "@@share\\Itunes\\Peter Tosh\\Legalize It\\01 - Legalize It.m4a"
+    }
+  },
+  "status": 200,
+  "response": {
+    "kind": "Album",
+    "candidates": [
+      {
+        "data_source": "MusicBrainz",
+        "id": "969098f4-b742-408d-80e5-0738fba78379",
+        "artist": "Peter Tosh",
+        "title": "Legalize It",
+        "album": null,
+        "year": 1976,
+        "country": "NL",
+        "disambig": null,
+        "per_mille": 880,
+        "differs": [
+          "tracks",
+          "data source"
+        ],
+        "length_secs": null,
+        "tracks": {
+          "matched": 9,
+          "total": 9,
+          "extra_files": 0
+        }
+      },
+      {
+        "data_source": "MusicBrainz",
+        "id": "391c0aa5-cee2-313c-b4e8-781281456a4c",
+        "artist": "Peter Tosh",
+        "title": "Legalize It",
+        "album": null,
+        "year": 1987,
+        "country": "US",
+        "disambig": null,
+        "per_mille": 880,
+        "differs": [
+          "tracks",
+          "data source"
+        ],
+        "length_secs": null,
+        "tracks": {
+          "matched": 9,
+          "total": 9,
+          "extra_files": 0
+        }
+      },
+      {
+        "data_source": "MusicBrainz",
+        "id": "e9d52ec5-6fe5-4ff1-a253-aac5327ed196",
+        "artist": "Peter Tosh",
+        "title": "Legalize It",
+        "album": null,
+        "year": 1976,
+        "country": "US",
+        "disambig": null,
+        "per_mille": 880,
+        "differs": [
+          "tracks",
+          "data source"
+        ],
+        "length_secs": null,
+        "tracks": {
+          "matched": 9,
+          "total": 9,
+          "extra_files": 0
+        }
+      },
+      {
+        "data_source": "MusicBrainz",
+        "id": "938f474f-a23f-4a5d-98d7-35fab0b8a62e",
+        "artist": "Peter Tosh",
+        "title": "Legalize It",
+        "album": null,
+        "year": 1976,
+        "country": "GB",
+        "disambig": "Compact Price",
+        "per_mille": 880,
+        "differs": [
+          "tracks",
+          "data source"
+        ],
+        "length_secs": null,
+        "tracks": {
+          "matched": 9,
+          "total": 9,
+          "extra_files": 0
+        }
+      },
+      {
+        "data_source": "MusicBrainz",
+        "id": "26688c57-4c82-4711-bdcd-76ffe8b59d24",
+        "artist": "Peter Tosh",
+        "title": "Legalize It",
+        "album": null,
+        "year": 1976,
+        "country": null,
+        "disambig": null,
+        "per_mille": 878,
+        "differs": [
+          "tracks",
+          "data source"
+        ],
+        "length_secs": null,
+        "tracks": {
+          "matched": 9,
+          "total": 9,
+          "extra_files": 0
+        }
+      },
+      {
+        "data_source": "MusicBrainz",
+        "id": "8d7f7606-510c-48ce-a4d3-8e2cab66f034",
+        "artist": "Peter Tosh",
+        "title": "Legalize It",
+        "album": null,
+        "year": 1999,
+        "country": "US",
+        "disambig": null,
+        "per_mille": 851,
+        "differs": [
+          "tracks",
+          "data source",
+          "missing tracks"
+        ],
+        "length_secs": null,
+        "tracks": {
+          "matched": 9,
+          "total": 10,
+          "extra_files": 0
+        }
+      },
+      {
+        "data_source": "MusicBrainz",
+        "id": "74875c06-1ad9-45d8-b7a4-30b6bc47edc5",
+        "artist": "Peter Tosh",
+        "title": "Legalize It",
+        "album": null,
+        "year": 2002,
+        "country": "US",
+        "disambig": null,
+        "per_mille": 644,
+        "differs": [
+          "missing tracks",
+          "tracks",
+          "data source"
+        ],
+        "length_secs": null,
+        "tracks": {
+          "matched": 9,
+          "total": 20,
+          "extra_files": 0
+        }
+      },
+      {
+        "data_source": "MusicBrainz",
+        "id": "6cadbcf1-2aa6-4e79-ba01-a90603d1ec5e",
+        "artist": "Peter Tosh",
+        "title": "Collection Gold",
+        "album": null,
+        "year": 1994,
+        "country": "DE",
+        "disambig": null,
+        "per_mille": 548,
+        "differs": [
+          "missing tracks",
+          "tracks",
+          "album",
+          "data source",
+          "year"
+        ],
+        "length_secs": null,
+        "tracks": {
+          "matched": 9,
+          "total": 16,
+          "extra_files": 0
+        }
+      }
+    ]
+  }
+}

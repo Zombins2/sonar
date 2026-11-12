@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/auth/me",
+    "body": null
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": {
+    "username": "me",
+    "user_id": "9959d06a-9750-4c54-b082-94dc9a7b5600",
+    "navidrome_status": "Connected"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/auth/me",
+    "body": null
+  },
+  "status": 401,
+  "contentType": "text/plain; charset=utf-8",
+  "response": "No auth token found"
+}

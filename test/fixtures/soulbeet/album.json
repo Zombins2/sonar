@@ -1,0 +1,124 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/metadata/album",
+    "body": {
+      "input": {
+        "id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "provider": "musicbrainz"
+      }
+    }
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": {
+    "album": {
+      "id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+      "title": "Legalize It",
+      "artist": "Peter Tosh",
+      "release_date": null,
+      "mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+    },
+    "tracks": [
+      {
+        "id": "46766af3-f2ea-4802-967b-4bea1a0679ba",
+        "title": "Legalize It",
+        "artist": "Peter Tosh",
+        "album_id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "album_title": "Legalize It",
+        "release_date": null,
+        "duration": "04:41",
+        "mbid": "46766af3-f2ea-4802-967b-4bea1a0679ba",
+        "release_mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      },
+      {
+        "id": "493f985a-ba0c-4b68-9f7a-640a5a147b9a",
+        "title": "Burial",
+        "artist": "Peter Tosh",
+        "album_id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "album_title": "Legalize It",
+        "release_date": null,
+        "duration": "03:55",
+        "mbid": "493f985a-ba0c-4b68-9f7a-640a5a147b9a",
+        "release_mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      },
+      {
+        "id": "4f67e5b2-176c-404d-97ab-2261e14953a7",
+        "title": "Whatcha Gonna Do",
+        "artist": "Peter Tosh",
+        "album_id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "album_title": "Legalize It",
+        "release_date": null,
+        "duration": "02:29",
+        "mbid": "4f67e5b2-176c-404d-97ab-2261e14953a7",
+        "release_mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      },
+      {
+        "id": "2573dfd9-1faf-43f7-80e9-c2b86e8d8a0f",
+        "title": "No Sympathy",
+        "artist": "Peter Tosh",
+        "album_id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "album_title": "Legalize It",
+        "release_date": null,
+        "duration": "04:37",
+        "mbid": "2573dfd9-1faf-43f7-80e9-c2b86e8d8a0f",
+        "release_mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      },
+      {
+        "id": "90481736-b5a9-469e-9ad1-72131e1da498",
+        "title": "Why Must I Cry",
+        "artist": "Peter Tosh",
+        "album_id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "album_title": "Legalize It",
+        "release_date": null,
+        "duration": "03:12",
+        "mbid": "90481736-b5a9-469e-9ad1-72131e1da498",
+        "release_mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      },
+      {
+        "id": "2266a18d-953e-4409-bd91-a71afb06e917",
+        "title": "Igziabeher (Let Jah Be Praised)",
+        "artist": "Peter Tosh",
+        "album_id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "album_title": "Legalize It",
+        "release_date": null,
+        "duration": "04:38",
+        "mbid": "2266a18d-953e-4409-bd91-a71afb06e917",
+        "release_mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      },
+      {
+        "id": "6b39e30b-e62b-4b10-a0e9-6208778f4045",
+        "title": "Ketchy Shuby",
+        "artist": "Peter Tosh",
+        "album_id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "album_title": "Legalize It",
+        "release_date": null,
+        "duration": "04:59",
+        "mbid": "6b39e30b-e62b-4b10-a0e9-6208778f4045",
+        "release_mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      },
+      {
+        "id": "33ec6304-0f87-4b10-905e-b5e027cea9ca",
+        "title": "Till Your Well Runs Dry",
+        "artist": "Peter Tosh",
+        "album_id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "album_title": "Legalize It",
+        "release_date": null,
+        "duration": "06:11",
+        "mbid": "33ec6304-0f87-4b10-905e-b5e027cea9ca",
+        "release_mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      },
+      {
+        "id": "ae5cd664-ca0f-4e46-8b21-535fa52e6cdc",
+        "title": "Brand New Second Hand",
+        "artist": "Peter Tosh",
+        "album_id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+        "album_title": "Legalize It",
+        "release_date": null,
+        "duration": "04:05",
+        "mbid": "ae5cd664-ca0f-4e46-8b21-535fa52e6cdc",
+        "release_mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+      }
+    ]
+  }
+}

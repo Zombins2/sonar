@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/system/health",
+    "body": null
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": {
+    "downloader_online": true,
+    "importer": {
+      "level": "Ready",
+      "issues": [],
+      "facts": [
+        [
+          "Config",
+          "/config/config.yaml"
+        ],
+        [
+          "Base config",
+          "/tmp/.config/beets/config.yaml"
+        ],
+        [
+          "Plugins",
+          "chroma, musicbrainz, mbtwopass, fetchart, embedart, lyrics, lastgenre, scrub, replaygain, mbsync, the, duplicates, missing, importadded, info, smartplaylist, inline, types, ftintitle"
+        ],
+        [
+          "Metadata sources",
+          "Acoustid, MusicBrainz"
+        ]
+      ]
+    },
+    "navidrome_online": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/folders",
+    "body": null
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": [
+    {
+      "id": "96aed54f-a290-4c72-b261-761f2e5e6a7e",
+      "user_id": "9959d06a-9750-4c54-b082-94dc9a7b5600",
+      "name": "SoulBeet",
+      "path": "/music"
+    }
+  ]
+}

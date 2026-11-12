@@ -1,0 +1,140 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/metadata/search/album",
+    "body": {
+      "input": {
+        "artist": null,
+        "query": "Exodus",
+        "provider": "musicbrainz"
+      }
+    }
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": {
+    "provider": "musicbrainz",
+    "results": [
+      {
+        "kind": "Album",
+        "id": "2fd8d540-aae1-42bf-b9d4-8cbe8effa863",
+        "title": "Exodus",
+        "artist": "Nathan Mahl",
+        "release_date": null,
+        "mbid": "2fd8d540-aae1-42bf-b9d4-8cbe8effa863"
+      },
+      {
+        "kind": "Album",
+        "id": "e9003c58-5833-4043-97b7-892d3a8b24a6",
+        "title": "Exodus",
+        "artist": "Moonn",
+        "release_date": null,
+        "mbid": "e9003c58-5833-4043-97b7-892d3a8b24a6"
+      },
+      {
+        "kind": "Album",
+        "id": "0e6f0135-3fff-4100-8f54-7feed75f7b25",
+        "title": "Exodus",
+        "artist": "Shaped Signs",
+        "release_date": null,
+        "mbid": "0e6f0135-3fff-4100-8f54-7feed75f7b25"
+      },
+      {
+        "kind": "Album",
+        "id": "5455fff1-4c5d-4991-99e3-b92eca0d2d08",
+        "title": "Exodus",
+        "artist": "Paul Kunigis",
+        "release_date": null,
+        "mbid": "5455fff1-4c5d-4991-99e3-b92eca0d2d08"
+      },
+      {
+        "kind": "Album",
+        "id": "671e20ff-f9cd-43b0-a3e7-c4f1c54fac80",
+        "title": "Exodus",
+        "artist": "Antares",
+        "release_date": null,
+        "mbid": "671e20ff-f9cd-43b0-a3e7-c4f1c54fac80"
+      },
+      {
+        "kind": "Album",
+        "id": "1b87d512-c880-41d9-b7cc-60dc1949d0e4",
+        "title": "Exodus",
+        "artist": "Erblast",
+        "release_date": null,
+        "mbid": "1b87d512-c880-41d9-b7cc-60dc1949d0e4"
+      },
+      {
+        "kind": "Album",
+        "id": "77cfed3c-5cc6-4a59-91bd-a440a09abde8",
+        "title": "Exodus",
+        "artist": "Bob Marley & The Wailers",
+        "release_date": null,
+        "mbid": "77cfed3c-5cc6-4a59-91bd-a440a09abde8"
+      },
+      {
+        "kind": "Album",
+        "id": "29662c77-f6b3-4a40-8d1c-d7f7ee844903",
+        "title": "Exodus",
+        "artist": "Alex Moulton",
+        "release_date": null,
+        "mbid": "29662c77-f6b3-4a40-8d1c-d7f7ee844903"
+      },
+      {
+        "kind": "Album",
+        "id": "ccb6fcf6-8f0d-4713-8290-79ae8e7bd4cf",
+        "title": "Exodus",
+        "artist": "Willie Nelson",
+        "release_date": null,
+        "mbid": "ccb6fcf6-8f0d-4713-8290-79ae8e7bd4cf"
+      },
+      {
+        "kind": "Album",
+        "id": "856910a2-eb04-41a1-9931-5aedde5581e1",
+        "title": "Exodus",
+        "artist": "Plus One",
+        "release_date": null,
+        "mbid": "856910a2-eb04-41a1-9931-5aedde5581e1"
+      },
+      {
+        "kind": "Album",
+        "id": "5ef87836-a164-4623-a7b8-08ada29ef77c",
+        "title": "Exodus",
+        "artist": "Toby Emerson",
+        "release_date": null,
+        "mbid": "5ef87836-a164-4623-a7b8-08ada29ef77c"
+      },
+      {
+        "kind": "Album",
+        "id": "621966ae-46d9-459e-a313-fe7d54409c15",
+        "title": "Exodus",
+        "artist": "Automatik Greatness, Su-Preme",
+        "release_date": null,
+        "mbid": "621966ae-46d9-459e-a313-fe7d54409c15"
+      },
+      {
+        "kind": "Album",
+        "id": "414ccaf8-5ed6-45f7-a06d-ac72c03d82f5",
+        "title": "Exodus",
+        "artist": "Waken Eyes",
+        "release_date": null,
+        "mbid": "414ccaf8-5ed6-45f7-a06d-ac72c03d82f5"
+      },
+      {
+        "kind": "Album",
+        "id": "31322299-2147-4800-a550-37515f31053d",
+        "title": "Exodus",
+        "artist": "Paint",
+        "release_date": null,
+        "mbid": "31322299-2147-4800-a550-37515f31053d"
+      },
+      {
+        "kind": "Album",
+        "id": "aee530b1-4006-4d3a-8572-008b0489bc97",
+        "title": "Exodus",
+        "artist": "Blush Response",
+        "release_date": null,
+        "mbid": "aee530b1-4006-4d3a-8572-008b0489bc97"
+      }
+    ]
+  }
+}

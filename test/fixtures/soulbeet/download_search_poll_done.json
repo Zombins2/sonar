@@ -1,0 +1,165 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/download/search/poll",
+    "body": {
+      "input": {
+        "search_id": "635ad2c9-4a75-401b-8c23-cf917095dea2",
+        "backend": null
+      }
+    }
+  },
+  "status": 200,
+  "response": {
+    "search_id": "635ad2c9-4a75-401b-8c23-cf917095dea2",
+    "groups": [
+      {
+        "source": "peer1",
+        "group_id": "music\\Peter Tosh\\Legalize It\\17 Legalize It.flac",
+        "title": "Legalize It",
+        "artist": "Peter Tosh",
+        "item_count": 9,
+        "total_size": 188570383,
+        "items": [
+          {
+            "id": "music\\Peter Tosh\\Legalize It\\17 Legalize It.flac",
+            "source": "peer1",
+            "title": "Legalize It",
+            "artist": "Peter Tosh",
+            "album": "Legalize It",
+            "size": 22107198,
+            "duration": 282,
+            "quality": "flac",
+            "quality_score": 1,
+            "backend_data": "{\"username\":\"peer1\",\"filename\":\"music\\\\Peter Tosh\\\\Legalize It\\\\17 Legalize It.flac\",\"size\":22107198,\"bitrate\":null,\"duration\":282,\"sampleRate\":44100,\"bitDepth\":16,\"hasFreeUploadSlot\":true,\"uploadSpeed\":4991388,\"queueLength\":0}"
+          },
+          {
+            "id": "music\\Peter Tosh\\Legalize It\\18 Burial.flac",
+            "source": "peer1",
+            "title": "Burial",
+            "artist": "Peter Tosh",
+            "album": "Legalize It",
+            "size": 17791387,
+            "duration": 235,
+            "quality": "flac",
+            "quality_score": 1,
+            "backend_data": "{\"username\":\"peer1\",\"filename\":\"music\\\\Peter Tosh\\\\Legalize It\\\\18 Burial.flac\",\"size\":17791387,\"bitrate\":null,\"duration\":235,\"sampleRate\":44100,\"bitDepth\":16,\"hasFreeUploadSlot\":true,\"uploadSpeed\":4991388,\"queueLength\":0}"
+          },
+          {
+            "id": "music\\Peter Tosh\\Legalize It\\19 Whatcha Gonna Do.flac",
+            "source": "peer1",
+            "title": "Whatcha Gonna Do",
+            "artist": "Peter Tosh",
+            "album": "Legalize It",
+            "size": 11551085,
+            "duration": 152,
+            "quality": "flac",
+            "quality_score": 1,
+            "backend_data": "{\"username\":\"peer1\",\"filename\":\"music\\\\Peter Tosh\\\\Legalize It\\\\19 Whatcha Gonna Do.flac\",\"size\":11551085,\"bitrate\":null,\"duration\":152,\"sampleRate\":44100,\"bitDepth\":16,\"hasFreeUploadSlot\":true,\"uploadSpeed\":4991388,\"queueLength\":0}"
+          }
+        ],
+        "quality": "flac",
+        "score": 0.988158152958153
+      },
+      {
+        "source": "peer2",
+        "group_id": "@@share\\Music\\Peter Tosh\\Legalize It\\01 Legalize It.m4a",
+        "title": "Legalize It",
+        "artist": "Peter Tosh",
+        "item_count": 9,
+        "total_size": 94861157,
+        "items": [
+          {
+            "id": "@@share\\Music\\Peter Tosh\\Legalize It\\01 Legalize It.m4a",
+            "source": "peer2",
+            "title": "Legalize It",
+            "artist": "Peter Tosh",
+            "album": "Legalize It",
+            "size": 11407641,
+            "duration": 278,
+            "quality": "m4a",
+            "quality_score": 1,
+            "backend_data": "{\"username\":\"peer2\",\"filename\":\"@@share\\\\Music\\\\Peter Tosh\\\\Legalize It\\\\01 Legalize It.m4a\",\"size\":11407641,\"bitrate\":321,\"duration\":278,\"sampleRate\":null,\"bitDepth\":null,\"hasFreeUploadSlot\":true,\"uploadSpeed\":3479242,\"queueLength\":0}"
+          },
+          {
+            "id": "@@share\\Music\\Peter Tosh\\Legalize It\\02 Burial.m4a",
+            "source": "peer2",
+            "title": "Burial",
+            "artist": "Peter Tosh",
+            "album": "Legalize It",
+            "size": 9588507,
+            "duration": 233,
+            "quality": "m4a",
+            "quality_score": 1,
+            "backend_data": "{\"username\":\"peer2\",\"filename\":\"@@share\\\\Music\\\\Peter Tosh\\\\Legalize It\\\\02 Burial.m4a\",\"size\":9588507,\"bitrate\":321,\"duration\":233,\"sampleRate\":null,\"bitDepth\":null,\"hasFreeUploadSlot\":true,\"uploadSpeed\":3479242,\"queueLength\":0}"
+          },
+          {
+            "id": "@@share\\Music\\Peter Tosh\\Legalize It\\03 Whatcha Gonna Do.m4a",
+            "source": "peer2",
+            "title": "Whatcha Gonna Do",
+            "artist": "Peter Tosh",
+            "album": "Legalize It",
+            "size": 6012366,
+            "duration": 146,
+            "quality": "m4a",
+            "quality_score": 1,
+            "backend_data": "{\"username\":\"peer2\",\"filename\":\"@@share\\\\Music\\\\Peter Tosh\\\\Legalize It\\\\03 Whatcha Gonna Do.m4a\",\"size\":6012366,\"bitrate\":321,\"duration\":146,\"sampleRate\":null,\"bitDepth\":null,\"hasFreeUploadSlot\":true,\"uploadSpeed\":3479242,\"queueLength\":0}"
+          }
+        ],
+        "quality": "m4a",
+        "score": 0.988158152958153
+      },
+      {
+        "source": "peer3",
+        "group_id": "@@share\\Músicas\\Peter Tosh\\Legalize It\\01 Legalize It.flac",
+        "title": "Legalize It",
+        "artist": "Peter Tosh",
+        "item_count": 9,
+        "total_size": 252768781,
+        "items": [
+          {
+            "id": "@@share\\Músicas\\Peter Tosh\\Legalize It\\01 Legalize It.flac",
+            "source": "peer3",
+            "title": "Legalize It",
+            "artist": "Peter Tosh",
+            "album": "Legalize It",
+            "size": 32609094,
+            "duration": 281,
+            "quality": "flac",
+            "quality_score": 1,
+            "backend_data": "{\"username\":\"peer3\",\"filename\":\"@@share\\\\M\\u00fasicas\\\\Peter Tosh\\\\Legalize It\\\\01 Legalize It.flac\",\"size\":32609094,\"bitrate\":null,\"duration\":281,\"sampleRate\":44100,\"bitDepth\":16,\"hasFreeUploadSlot\":true,\"uploadSpeed\":3196800,\"queueLength\":81}"
+          },
+          {
+            "id": "@@share\\Músicas\\Peter Tosh\\Legalize It\\02 Burial.flac",
+            "source": "peer3",
+            "title": "Burial",
+            "artist": "Peter Tosh",
+            "album": "Legalize It",
+            "size": 24189271,
+            "duration": 235,
+            "quality": "flac",
+            "quality_score": 1,
+            "backend_data": "{\"username\":\"peer3\",\"filename\":\"@@share\\\\M\\u00fasicas\\\\Peter Tosh\\\\Legalize It\\\\02 Burial.flac\",\"size\":24189271,\"bitrate\":null,\"duration\":235,\"sampleRate\":44100,\"bitDepth\":16,\"hasFreeUploadSlot\":true,\"uploadSpeed\":3196800,\"queueLength\":81}"
+          },
+          {
+            "id": "@@share\\Músicas\\Peter Tosh\\Legalize It\\03 Whatcha Gonna Do.flac",
+            "source": "peer3",
+            "title": "Whatcha Gonna Do",
+            "artist": "Peter Tosh",
+            "album": "Legalize It",
+            "size": 16347243,
+            "duration": 147,
+            "quality": "flac",
+            "quality_score": 1,
+            "backend_data": "{\"username\":\"peer3\",\"filename\":\"@@share\\\\M\\u00fasicas\\\\Peter Tosh\\\\Legalize It\\\\03 Whatcha Gonna Do.flac\",\"size\":16347243,\"bitrate\":null,\"duration\":147,\"sampleRate\":44100,\"bitDepth\":16,\"hasFreeUploadSlot\":true,\"uploadSpeed\":3196800,\"queueLength\":81}"
+          }
+        ],
+        "quality": "flac",
+        "score": 0.988158152958153
+      }
+    ],
+    "has_more": false,
+    "state": "Completed"
+  },
+  "note": "groups cut to the first 3 of 50; items per group cut to 3"
+}

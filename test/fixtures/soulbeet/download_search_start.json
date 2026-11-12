@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/download/search/start",
+    "body": {
+      "data": {
+        "album": {
+          "id": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a",
+          "title": "Legalize It",
+          "artist": "Peter Tosh",
+          "release_date": null,
+          "mbid": "e7d77d74-15e5-49a6-ba72-5b60b911ca2a"
+        },
+        "tracks": [],
+        "backend": null
+      }
+    }
+  },
+  "status": 200,
+  "response": "635ad2c9-4a75-401b-8c23-cf917095dea2"
+}
