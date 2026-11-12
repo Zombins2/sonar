@@ -110,11 +110,16 @@ function PortInUse([int]$port) {
   return [bool](Get-NetTCPConnection -State Listen -LocalPort $port -ErrorAction SilentlyContinue)
 }
 
-# The first free port from $start up, unless the port is already ours.
+# The first free port from $start up, unless the port is already ours. Ports
+# handed out earlier in this run count as taken: nothing listens on them yet.
+$script:handedOut = @()
 function FreePort([int]$start, [string]$current) {
-  if ($current) { return [int]$current }
-  $p = $start
-  while (PortInUse $p) { $p++ }
+  if ($current) { $p = [int]$current }
+  else {
+    $p = $start
+    while ((PortInUse $p) -or ($script:handedOut -contains $p)) { $p++ }
+  }
+  $script:handedOut += $p
   return $p
 }
 

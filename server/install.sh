@@ -93,15 +93,27 @@ new_key() { od -An -N24 -tx1 /dev/urandom | tr -d ' \n'; }
 port_in_use() {
   if command -v lsof >/dev/null 2>&1; then lsof -nP -iTCP:"$1" -sTCP:LISTEN >/dev/null 2>&1 && return 0; fi
   if command -v ss >/dev/null 2>&1; then ss -ltn 2>/dev/null | grep -q "[:.]$1 " && return 0; fi
+  if command -v netstat >/dev/null 2>&1; then netstat -an 2>/dev/null | grep -iE "[:.]$1 .*LISTEN" >/dev/null && return 0; fi
   return 1
 }
 
-# free_port START CURRENT -> CURRENT if set, else the first free port from START
+# free_port START CURRENT -> CURRENT if set, else the first free port from
+# START. Ports handed out earlier in this run count as taken (nothing listens
+# on them yet). Called as $(...), a subshell, so the caller records them:
+# see take_port.
+HANDED_OUT=" "
 free_port() {
   if [ -n "$2" ]; then printf '%s' "$2"; return; fi
   local p="$1"
-  while port_in_use "$p"; do p=$((p + 1)); done
+  while port_in_use "$p" || case "$HANDED_OUT" in *" $p "*) true ;; *) false ;; esac; do p=$((p + 1)); done
   printf '%s' "$p"
+}
+# take_port KEY OVERRIDE START: sets KEY to OVERRIDE, the earlier answer, or a free port.
+take_port() {
+  local p
+  p="$(first_of "$2" "$(free_port "$3" "$(old "$1")")")"
+  HANDED_OUT="$HANDED_OUT$p "
+  set_cfg "$1" "$p"
 }
 
 # An absolute path Docker understands (on Git Bash for Windows: C:/...).
@@ -190,7 +202,7 @@ while true; do
   warn "  Can't find $music. Check the path."
 done
 set_cfg MUSIC_DIR "$(abs_dir "$music")"
-set_cfg NAVIDROME_PORT "$(first_of "${SONAR_NAVIDROME_PORT:-}" "$(free_port 4533 "$(old NAVIDROME_PORT)")")"
+take_port NAVIDROME_PORT "${SONAR_NAVIDROME_PORT:-}" 4533
 
 say ""
 if [ "$USE_EXISTING" = yes ]; then say "An admin login of your Navidrome (used to start scans and set up Get music):"
@@ -222,7 +234,7 @@ WANT_CONNECT=no
 yesno "${SONAR_CONNECT:-}" "Add Sonar Connect?" "$had_connect" && WANT_CONNECT=yes
 if [ "$WANT_CONNECT" = yes ]; then
   add_profile connect
-  set_cfg CONNECT_PORT "$(first_of "${SONAR_CONNECT_PORT:-}" "$(free_port 4534 "$(old CONNECT_PORT)")")"
+  take_port CONNECT_PORT "${SONAR_CONNECT_PORT:-}" 4534
 fi
 
 had_getmusic=no
@@ -258,8 +270,8 @@ if [ "$WANT_GETMUSIC" = yes ]; then
   # New albums are filed into a folder inside your library, so Navidrome sees them.
   mkdir -p "$music/Soulbeet"
   set_cfg GETMUSIC_DIR "$(abs_dir "$music/Soulbeet")"
-  set_cfg SOULBEET_PORT "$(first_of "${SONAR_SOULBEET_PORT:-}" "$(free_port 9765 "$(old SOULBEET_PORT)")")"
-  set_cfg SLSKD_PORT "$(first_of "${SONAR_SLSKD_PORT:-}" "$(free_port 5030 "$(old SLSKD_PORT)")")"
+  take_port SOULBEET_PORT "${SONAR_SOULBEET_PORT:-}" 9765
+  take_port SLSKD_PORT "${SONAR_SLSKD_PORT:-}" 5030
 fi
 set_cfg COMPOSE_PROFILES "$profiles"
 
