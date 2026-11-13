@@ -1,0 +1,89 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group/c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+  "query": {
+   "inc": "releases",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+  "disambiguation": "",
+  "secondary-types": [],
+  "first-release-date": "2005-03",
+  "title": "Late Registration",
+  "releases": [
+   {
+    "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+    "packaging": null,
+    "release-events": [
+     {
+      "area": {
+       "sort-name": "United States",
+       "disambiguation": "",
+       "name": "United States",
+       "id": "489ce91b-6658-3307-9877-795b68554c98",
+       "type-id": null,
+       "iso-3166-1-codes": [
+        "US"
+       ],
+       "type": null
+      },
+      "date": "2005-03"
+     }
+    ],
+    "packaging-id": null,
+    "text-representation": {
+     "script": "Latn",
+     "language": "eng"
+    },
+    "quality": "normal",
+    "title": "Late Registration",
+    "id": "05b67f03-9593-4bef-bb61-01b28ec1600e",
+    "date": "2005-03",
+    "status": "Promotion",
+    "disambiguation": "",
+    "country": "US",
+    "barcode": null
+   },
+   {
+    "status": "Official",
+    "country": "JP",
+    "disambiguation": "",
+    "barcode": "4988005404107",
+    "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+    "packaging": "Gatefold Cover",
+    "release-events": [
+     {
+      "area": {
+       "name": "Japan",
+       "disambiguation": "",
+       "sort-name": "Japan",
+       "type": null,
+       "iso-3166-1-codes": [
+        "JP"
+       ],
+       "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+       "type-id": null
+      },
+      "date": "2005-08-26"
+     }
+    ],
+    "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+    "text-representation": {
+     "script": "Latn",
+     "language": "eng"
+    },
+    "quality": "normal",
+    "title": "Late Registration",
+    "id": "c4a2e331-9b7d-429f-8117-7749e64f75e8",
+    "date": "2005-08-26"
+   }
+  ],
+  "primary-type": "Album",
+  "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+  "secondary-type-ids": []
+ }
+}

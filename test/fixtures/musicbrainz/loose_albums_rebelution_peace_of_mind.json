@@ -1,0 +1,744 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group",
+  "query": {
+   "query": "rebelution peace of mind",
+   "dismax": "true",
+   "limit": "25",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-13T05:38:57.477Z",
+  "count": 338510,
+  "offset": 0,
+  "release-groups": [
+   {
+    "id": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 100,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "count": 2,
+    "title": "Peace of Mind",
+    "first-release-date": "2012-01-10",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "cf64de75-3fa5-42ba-8bc1-4184363a89d5",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "ea8d6edd-55d6-3518-ba72-40487944f60f",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 67,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "427b1495-2cc6-3b58-bf20-c4ec86ace601",
+    "count": 1,
+    "title": "Rebelution",
+    "first-release-date": "2003",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Yami Bolo",
+      "artist": {
+       "id": "106e0414-95a7-45e9-8176-bbc938deed68",
+       "name": "Yami Bolo",
+       "sort-name": "Bolo, Yami"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "3afead53-eb9c-4de3-b7d3-0c4f19171210",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Rebelution",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "fb496f7f-a55a-3848-b8a2-2f39df9e26c0",
+    "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "score": 67,
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "count": 1,
+    "title": "Rebelution",
+    "first-release-date": "2006-05-04",
+    "primary-type": "EP",
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "abb48d87-1b25-4cbc-a4fc-8b6739983d07",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Rebelution",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "005f891c-0825-3dd2-8a39-c269378c9270",
+    "score": 67,
+    "artist-credit-id": "d4b5c31f-580d-37ad-99ea-a17b078d38a4",
+    "count": 1,
+    "title": "Rebelution",
+    "artist-credit": [
+     {
+      "name": "Tony Stampley",
+      "artist": {
+       "id": "ce35136e-3ab4-4d6f-b1dd-373c04fe4939",
+       "name": "Tony Stampley",
+       "sort-name": "Stampley, Tony"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "e56ab347-dfbd-4803-94c7-32b27fa6cb02",
+      "title": "Rebelution"
+     }
+    ]
+   },
+   {
+    "id": "9c6d2ef1-d57b-3a09-b0b3-c4138b657c05",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 67,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "c2f0dde1-1103-36f7-a620-363279b41d22",
+    "count": 1,
+    "title": "Rebelution",
+    "first-release-date": "2006-08-29",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Tanya Stephens",
+      "artist": {
+       "id": "2eef73b4-a222-4669-9f2c-7284b076e9c7",
+       "name": "Tanya Stephens",
+       "sort-name": "Stephens, Tanya"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "b0fd04b7-0c1f-442c-89b5-5e28e3bf13a3",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Rebelution",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "e8338be6-f186-43f2-8e2e-503cbf1ba94d",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 67,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "e8ceed99-8011-3c75-baae-59586cc47283",
+    "count": 2,
+    "title": "Rebelution",
+    "first-release-date": "2006-01-27",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Star☠Rats",
+      "artist": {
+       "id": "0100b564-fab9-41d5-acba-adcc1a6df641",
+       "name": "Star Rats",
+       "sort-name": "Star Rats"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "3d75766a-0e14-400d-ad74-d52779b8e218",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Rebelution",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "d3d5a92b-a2bf-4502-bf18-f162690d9a4b",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 67,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "aec84db9-bcf1-30b1-89da-e0042383e87f",
+    "count": 1,
+    "title": "Rebelution",
+    "first-release-date": "2004",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "The Soul Rebels",
+      "artist": {
+       "id": "a05add38-ccf0-4e27-a701-d4a09079682e",
+       "name": "The Soul Rebels",
+       "sort-name": "Soul Rebels, The"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "b443227b-e2e7-49ed-8528-d84c877a2421",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Rebelution",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "1060287c-e241-4005-83b6-55544d3c4bae",
+    "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "score": 67,
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit-id": "1f46b83f-d2c2-4e40-8979-26ae0382f568",
+    "count": 1,
+    "title": "Rebelution",
+    "first-release-date": "1983",
+    "primary-type": "EP",
+    "artist-credit": [
+     {
+      "name": "20th Century Rebels",
+      "artist": {
+       "id": "1ab94ad9-09bb-4335-baaf-e4863d51b41f",
+       "name": "20th Century Rebels",
+       "sort-name": "20th Century Rebels"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "fc68d237-76f0-4445-b861-63c464aae958",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Rebelution",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "76f88b43-f945-41a5-bf17-c40db7c5702d",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 67,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "baf5cb5f-baec-337d-8884-4ce68c9bf396",
+    "count": 11,
+    "title": "Rebelution",
+    "first-release-date": "2009-08-27",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Pitbull",
+      "artist": {
+       "id": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+       "name": "Pitbull",
+       "sort-name": "Pitbull",
+       "disambiguation": "US rapper"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "1a68cf8e-d389-4798-8089-1eb4812aaa96",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Pitbull Starring In: Rebelution",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "1f961be3-4938-3d1b-a5e1-5048a6693ad0",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "a18bc4a1-6f86-3efe-8466-f7f5f66967e1",
+    "count": 1,
+    "title": "Peace of mind",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Black Dream",
+      "artist": {
+       "id": "7b25921d-ed9a-453a-8263-e34728944d7b",
+       "name": "Black Dream",
+       "sort-name": "Black Dream"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "5e1fc96a-a01f-49a5-ba78-2039471b0bbd",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "5182b172-7f1e-393b-adea-a08cede31470",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "83b873ea-d9cf-3ea6-9b4a-0cd9dc809854",
+    "count": 2,
+    "title": "Peace of Mind",
+    "first-release-date": "2007",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Steven Halpern",
+      "artist": {
+       "id": "37986d18-e8af-4502-8e08-2a87d7e5853f",
+       "name": "Steven Halpern",
+       "sort-name": "Halpern, Steven"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "88736b81-ca80-44f4-8803-a442f96d47bc",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "1c185155-889f-33a7-bf02-0f510486bb7b",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "0e0d741e-b996-4eb2-9676-268935a5dac7",
+    "count": 1,
+    "title": "Peace of Mind",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Carmen Cuesta-Loeb",
+      "artist": {
+       "id": "5e92038d-6122-4230-8479-31ff9324cf3b",
+       "name": "Carmen Cuesta",
+       "sort-name": "Cuesta, Carmen"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "75dcdc2d-6198-486a-b67a-e30eedd1365b",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "cf3b0d3c-62c7-36ed-a10d-f4e803eac4e3",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "34637e1c-eb25-33fc-887f-a1b1fa42507e",
+    "count": 1,
+    "title": "Peace of Mind",
+    "first-release-date": "1998-05-09",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Rad Kick",
+      "artist": {
+       "id": "f8c2e50c-9a38-4d7a-9bbe-615d5701a8b5",
+       "name": "Rad Kick",
+       "sort-name": "Rad Kick",
+       "disambiguation": "German heavy/power metal band"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "b76d03dc-8cec-4e99-8347-3bf17792e80d",
+      "status-id": "41121bb9-3413-3818-8a9a-9742318349aa",
+      "title": "Peace of Mind",
+      "status": "Pseudo-Release"
+     }
+    ]
+   },
+   {
+    "id": "e45d2a9e-8b5f-3e70-b33f-db1bf723682b",
+    "score": 63,
+    "artist-credit-id": "5aa31165-24b2-3a78-87bc-bb51a93d3ba4",
+    "count": 1,
+    "title": "Peace Of Mind",
+    "artist-credit": [
+     {
+      "name": "Espirito",
+      "artist": {
+       "id": "760636b5-6c6d-4b6f-94bf-fb1adcae6aa9",
+       "name": "Espirito",
+       "sort-name": "Espirito"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "8458726f-4684-4b25-85ae-0097f9d7515a",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace Of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "0a20d426-9629-33dc-8f4f-28c2150a83ea",
+    "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+    "score": 63,
+    "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+    "artist-credit-id": "cc7536c8-fbcb-3953-8903-eebd7e80b00a",
+    "count": 4,
+    "title": "Peace of mind",
+    "first-release-date": "2005-12-21",
+    "primary-type": "Single",
+    "artist-credit": [
+     {
+      "name": "angela",
+      "artist": {
+       "id": "904dfcc4-6973-4311-9580-b052a124b0cd",
+       "name": "angela",
+       "sort-name": "angela",
+       "disambiguation": "J-pop duo"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "fc7c19d3-e974-4fcf-ad0f-296dd840e47c",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "1cb4da27-ca4b-3780-a262-b06191cb34a5",
+    "score": 63,
+    "artist-credit-id": "9dbfb3e2-b861-312c-9952-4fdb6b44dceb",
+    "count": 1,
+    "title": "Peace of Mind",
+    "artist-credit": [
+     {
+      "name": "Jeff Kashiwa",
+      "artist": {
+       "id": "d51fe709-258e-476a-be35-db7b962d945b",
+       "name": "Jeff Kashiwa",
+       "sort-name": "Kashiwa, Jeff"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "2988d7b9-5c46-45ee-8ae1-3321ac94210a",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "d105b9d6-2ee8-3878-958b-d401cf3a3f6d",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "89864fbf-fcd5-3150-84de-e33ce5e457d3",
+    "count": 3,
+    "title": "Peace Of Mind",
+    "first-release-date": "2004-09-22",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "稲葉浩志",
+      "artist": {
+       "id": "d05f99dc-7fe5-44a6-93b8-8947ef90d09b",
+       "name": "稲葉浩志",
+       "sort-name": "Inaba, Koshi"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "5c3ff204-62f4-4f7a-b951-f0741af71006",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace Of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "0630d1cc-90b6-4857-906a-4a9b54c357a9",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "c5f960b9-0838-33a2-b8e4-fb4315136b49",
+    "count": 1,
+    "title": "Peace of Mind",
+    "first-release-date": "2013-01-28",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Watios",
+      "artist": {
+       "id": "be59efcd-2cec-4632-a4a8-76a826ea6b9c",
+       "name": "Watios",
+       "sort-name": "Watios"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "f64602d9-8fa7-4381-810a-e0dbac09e6df",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "2ee89095-b155-4d64-bcab-6c08de0af514",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "2ea366ee-d37f-3f00-9dba-0323e3358e4e",
+    "count": 1,
+    "title": "Peace of Mind",
+    "first-release-date": "2001-05-28",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Oboken",
+      "artist": {
+       "id": "4c40ba58-30ba-493e-a84a-d9be567e4066",
+       "name": "Oboken",
+       "sort-name": "Oboken",
+       "disambiguation": "French band from Strasbourg"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "2a16cbe4-8d03-44a6-a2ae-27226071c235",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "772e0f35-fea5-4ef2-8b95-e60f47b51d0d",
+    "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+    "score": 63,
+    "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+    "artist-credit-id": "d23e9b69-a93a-33f3-aa04-ba74aaeaf364",
+    "count": 1,
+    "title": "Peace of Mind",
+    "first-release-date": "2008-06-17",
+    "primary-type": "Single",
+    "artist-credit": [
+     {
+      "name": "Stryper",
+      "artist": {
+       "id": "89621490-e0ef-4915-8b1f-6ad57dba3d7a",
+       "name": "Stryper",
+       "sort-name": "Stryper"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "870cae91-8a8e-46ff-b5ce-c6355533f304",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "a3e92dcd-3d3d-4209-8226-18c921cd0225",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "c6fdbd36-d053-35df-b5cf-c65593878bbe",
+    "count": 4,
+    "title": "Peace of Mind",
+    "first-release-date": "2013-02-01",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "AnikaBoh&Hollie",
+      "artist": {
+       "id": "4d2f7b79-8175-480f-b280-4ebaaa3a28a4",
+       "name": "AnikaBoh&Hollie",
+       "sort-name": "AnikaBoh&Hollie"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "cb4b3de2-123b-4d97-b1ad-6098ffcc37e2",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind (Deluxe Edition)",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "e406db14-ea43-4bd5-b10e-e20ed85e7e83",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "e261d369-59b3-37c8-8150-c94ba691a562",
+    "count": 1,
+    "title": "Peace of Mind",
+    "first-release-date": "2008",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Kondor",
+      "artist": {
+       "id": "3044d648-db6c-45e8-a7b5-8ff0d6caca8e",
+       "name": "Kondor",
+       "sort-name": "Kondor",
+       "disambiguation": "Polish Jazz-hop producer"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "1f15f86d-1ee8-432d-90da-7f4ff4f8ea40",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "6f082474-4446-4544-bb45-7ceb5d7f461e",
+    "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "score": 63,
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit-id": "38202586-db61-382a-8e51-1263d9f5d39f",
+    "count": 1,
+    "title": "Peace of Mind",
+    "first-release-date": "2010-11-01",
+    "primary-type": "EP",
+    "artist-credit": [
+     {
+      "joinphrase": " & ",
+      "name": "Blake",
+      "artist": {
+       "id": "c1dd980e-41bc-425e-a9eb-472ca6bdeceb",
+       "name": "Blake",
+       "sort-name": "Blake",
+       "disambiguation": "Deepcutt collaborator"
+      }
+     },
+     {
+      "name": "Deepcutt",
+      "artist": {
+       "id": "4d84a633-d97e-4b7e-a25c-f7b5a388c29e",
+       "name": "Deepcutt",
+       "sort-name": "Deepcutt"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "d4578367-fe66-4c84-ab15-8abe57c9b0be",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "b19adf2b-664e-40d5-a0d8-fca1dd6278ea",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 63,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "d8e8636e-3fcc-38fd-95c0-af8c7d084659",
+    "count": 1,
+    "title": "Peace of Mind",
+    "first-release-date": "2000",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Julie Dexter",
+      "artist": {
+       "id": "c095a503-7115-4fe2-8032-b0b560c26e6c",
+       "name": "Julie Dexter",
+       "sort-name": "Dexter, Julie"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "ecc86429-830f-47ad-8afd-32f4cb0d9248",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace of Mind",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "5c037dab-1a47-439f-9ad2-5a2da9981209",
+    "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "score": 63,
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit-id": "3348051e-d319-31d8-ae19-49659a802511",
+    "count": 1,
+    "title": "Peace Of Mind",
+    "first-release-date": "2016-06-23",
+    "primary-type": "EP",
+    "artist-credit": [
+     {
+      "name": "Short Handed",
+      "artist": {
+       "id": "d0f152c6-c9cf-4930-8865-81bf8f7ab968",
+       "name": "Short Handed",
+       "sort-name": "Short Handed"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "31b67527-c69b-41d2-9dfa-857cec0f49f2",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Peace Of Mind",
+      "status": "Official"
+     }
+    ]
+   }
+  ]
+ }
+}

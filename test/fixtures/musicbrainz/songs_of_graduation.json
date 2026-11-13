@@ -1,0 +1,989 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release/06a81817-093d-40f0-aef2-90673fa550ae",
+  "query": {
+   "inc": "recordings+artist-credits",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "cover-art-archive": {
+   "count": 11,
+   "back": true,
+   "darkened": false,
+   "artwork": true,
+   "front": true
+  },
+  "country": "JP",
+  "quality": "normal",
+  "barcode": "4988005486547",
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "media": [
+   {
+    "track-offset": 0,
+    "title": "",
+    "track-count": 15,
+    "format": "CD",
+    "tracks": [
+     {
+      "title": "Good Morning",
+      "length": 195000,
+      "id": "50eacfa9-9692-3842-9612-a6ac61c8a13b",
+      "position": 1,
+      "recording": {
+       "id": "8885a72a-14b5-4c70-9f7d-095fac771e67",
+       "first-release-date": "2007-09-05",
+       "length": 195133,
+       "title": "Good Morning",
+       "video": false,
+       "disambiguation": "explicit",
+       "artist-credit": [
+        {
+         "artist": {
+          "name": "Ye",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         },
+         "joinphrase": "",
+         "name": "Kanye West"
+        }
+       ]
+      },
+      "number": "1",
+      "artist-credit": [
+       {
+        "artist": {
+         "name": "Ye",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ]
+     },
+     {
+      "title": "Champion",
+      "id": "3ae15e2c-62ed-3771-a02b-8aa2588f404a",
+      "recording": {
+       "title": "Champion",
+       "video": false,
+       "id": "55e0110c-78f0-4574-9633-5d3da7349654",
+       "first-release-date": "2007-09-05",
+       "length": 167693,
+       "artist-credit": [
+        {
+         "artist": {
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West"
+         },
+         "joinphrase": "",
+         "name": "Kanye West"
+        }
+       ],
+       "disambiguation": "explicit"
+      },
+      "position": 2,
+      "length": 168000,
+      "number": "2",
+      "artist-credit": [
+       {
+        "artist": {
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        },
+        "joinphrase": "",
+        "name": "Kanye West"
+       }
+      ]
+     },
+     {
+      "length": 312000,
+      "recording": {
+       "first-release-date": "2007-08-13",
+       "id": "8009d470-912b-42fa-8261-b88c488eb935",
+       "length": 312000,
+       "title": "Stronger",
+       "video": false,
+       "disambiguation": "explicit",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "name": "Kanye West",
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "type": "Person"
+         }
+        }
+       ]
+      },
+      "position": 3,
+      "id": "c6f1e41e-1ead-3d90-8d17-77bdc0aa3cbb",
+      "title": "Stronger",
+      "artist-credit": [
+       {
+        "artist": {
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "type": "Person",
+         "name": "Ye"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "number": "3"
+     },
+     {
+      "length": 243000,
+      "id": "3c3c3ef6-f3b9-341b-bc29-74abba328252",
+      "recording": {
+       "title": "I Wonder",
+       "video": false,
+       "id": "b3a7eae7-1515-45ae-8ca1-ee05544e8965",
+       "first-release-date": "2007-09-05",
+       "length": 243440,
+       "artist-credit": [
+        {
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "name": "Ye",
+          "type": "Person",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+         },
+         "name": "Kanye West",
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": "explicit"
+      },
+      "position": 4,
+      "title": "I Wonder",
+      "number": "4",
+      "artist-credit": [
+       {
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US"
+        },
+        "joinphrase": "",
+        "name": "Kanye West"
+       }
+      ]
+     },
+     {
+      "title": "Good Life",
+      "id": "27c2aa1d-5b61-3fd2-bc22-2fa7a6508cfd",
+      "position": 5,
+      "recording": {
+       "disambiguation": "explicit",
+       "artist-credit": [
+        {
+         "artist": {
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye"
+         },
+         "joinphrase": " feat. ",
+         "name": "Kanye West"
+        },
+        {
+         "name": "T‐Pain",
+         "joinphrase": "",
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "sort-name": "T‐Pain",
+          "name": "T‐Pain",
+          "type": "Person",
+          "id": "ce55e49a-32f4-4757-9849-bf04d06d5fcc",
+          "country": "US"
+         }
+        }
+       ],
+       "length": 207026,
+       "first-release-date": "2007-09-05",
+       "id": "f36ec2db-ca2b-49fb-9fcc-ff9058f66d3c",
+       "video": false,
+       "title": "Good Life"
+      },
+      "length": 207000,
+      "number": "5",
+      "artist-credit": [
+       {
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "type": "Person",
+         "name": "Ye"
+        },
+        "name": "Kanye West",
+        "joinphrase": " feat. "
+       },
+       {
+        "joinphrase": "",
+        "name": "T‐Pain",
+        "artist": {
+         "name": "T‐Pain",
+         "type": "Person",
+         "id": "ce55e49a-32f4-4757-9849-bf04d06d5fcc",
+         "country": "US",
+         "disambiguation": "",
+         "sort-name": "T‐Pain",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+       }
+      ]
+     },
+     {
+      "number": "6",
+      "artist-credit": [
+       {
+        "artist": {
+         "name": "Ye",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye"
+        },
+        "joinphrase": "",
+        "name": "Kanye West"
+       }
+      ],
+      "title": "Can’t Tell Me Nothing",
+      "id": "6299d2de-4f8f-3271-9976-2123c82f508a",
+      "position": 6,
+      "recording": {
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "name": "Kanye West",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "name": "Ye"
+         }
+        }
+       ],
+       "disambiguation": "explicit",
+       "title": "Can’t Tell Me Nothing",
+       "video": false,
+       "first-release-date": "2007-05-15",
+       "id": "4efea515-d670-4715-b99c-71df72f980fa",
+       "length": 271600
+      },
+      "length": 272000
+     },
+     {
+      "artist-credit": [
+       {
+        "joinphrase": " feat. ",
+        "name": "Kanye West",
+        "artist": {
+         "name": "Ye",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+       },
+       {
+        "artist": {
+         "sort-name": "Lil Wayne",
+         "disambiguation": "",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Lil Wayne",
+         "id": "ac9a487a-d9d2-4f27-bb23-0f4686488345",
+         "country": "US",
+         "type": "Person"
+        },
+        "joinphrase": "",
+        "name": "Lil Wayne"
+       }
+      ],
+      "number": "7",
+      "position": 7,
+      "recording": {
+       "length": 204306,
+       "id": "a08a7c15-7864-4c3b-b1b2-e8b3b8f70b15",
+       "first-release-date": "2007-09-05",
+       "video": false,
+       "title": "Barry Bonds",
+       "disambiguation": "explicit",
+       "artist-credit": [
+        {
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "name": "Ye"
+         },
+         "name": "Kanye West",
+         "joinphrase": " feat. "
+        },
+        {
+         "artist": {
+          "disambiguation": "",
+          "sort-name": "Lil Wayne",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Lil Wayne",
+          "type": "Person",
+          "country": "US",
+          "id": "ac9a487a-d9d2-4f27-bb23-0f4686488345"
+         },
+         "joinphrase": "",
+         "name": "Lil Wayne"
+        }
+       ]
+      },
+      "id": "ff79b1cb-8518-3191-8c0e-f3783dfc43ee",
+      "length": 204000,
+      "title": "Barry Bonds"
+     },
+     {
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "joinphrase": " feat. ",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US"
+        }
+       },
+       {
+        "joinphrase": "",
+        "name": "Mos Def",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "fka Mos Def",
+         "sort-name": "Bey, Yasiin",
+         "type": "Person",
+         "id": "f5c4c27e-5902-4fc0-adfb-7775da3d5363",
+         "country": "US",
+         "name": "Yasiin Bey"
+        }
+       }
+      ],
+      "number": "8",
+      "title": "Drunk & Hot Girls",
+      "length": 313000,
+      "position": 8,
+      "recording": {
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "joinphrase": " feat. ",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US"
+         }
+        },
+        {
+         "artist": {
+          "sort-name": "Bey, Yasiin",
+          "disambiguation": "fka Mos Def",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Yasiin Bey",
+          "id": "f5c4c27e-5902-4fc0-adfb-7775da3d5363",
+          "country": "US",
+          "type": "Person"
+         },
+         "name": "Mos Def",
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": "explicit",
+       "title": "Drunk and Hot Girls",
+       "video": false,
+       "first-release-date": "2007-09-05",
+       "id": "0ee17159-10e8-4337-aecb-442757df132e",
+       "length": 313226
+      },
+      "id": "e2668ed9-28d4-3086-b2cd-ea735c23424d"
+     },
+     {
+      "id": "5241ec6b-b4b7-352a-aa2b-5b9171d7367c",
+      "position": 9,
+      "recording": {
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "joinphrase": " feat. ",
+         "artist": {
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West"
+         }
+        },
+        {
+         "artist": {
+          "name": "Dwele",
+          "id": "808c1fbb-ccfb-4b15-a541-72bec155e696",
+          "country": "US",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Dwele",
+          "disambiguation": ""
+         },
+         "name": "Dwele",
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": "explicit",
+       "title": "Flashing Lights",
+       "video": false,
+       "first-release-date": "2007-09-05",
+       "id": "078c6b81-8e6c-4403-accf-c634b742143c",
+       "length": 238000
+      },
+      "length": 238000,
+      "title": "Flashing Lights",
+      "number": "9",
+      "artist-credit": [
+       {
+        "joinphrase": " feat. ",
+        "name": "Kanye West",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "type": "Person",
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+        }
+       },
+       {
+        "name": "Dwele",
+        "joinphrase": "",
+        "artist": {
+         "sort-name": "Dwele",
+         "disambiguation": "",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "808c1fbb-ccfb-4b15-a541-72bec155e696",
+         "country": "US",
+         "type": "Person",
+         "name": "Dwele"
+        }
+       }
+      ]
+     },
+     {
+      "number": "10",
+      "artist-credit": [
+       {
+        "artist": {
+         "name": "Ye",
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": " feat. ",
+        "name": "Kanye West"
+       },
+       {
+        "artist": {
+         "disambiguation": "US hip hop producer & DJ",
+         "sort-name": "Premier, DJ",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "DJ Premier",
+         "type": "Person",
+         "id": "084e06f5-3c82-4b71-bd94-dd69e7bd515e",
+         "country": "US"
+        },
+        "name": "DJ Premier",
+        "joinphrase": ""
+       }
+      ],
+      "id": "55e06061-4ec0-33d1-ac62-d30a063ce508",
+      "recording": {
+       "artist-credit": [
+        {
+         "joinphrase": " feat. ",
+         "name": "Kanye West",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye"
+         }
+        },
+        {
+         "joinphrase": "",
+         "name": "DJ Premier",
+         "artist": {
+          "disambiguation": "US hip hop producer & DJ",
+          "sort-name": "Premier, DJ",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "DJ Premier",
+          "type": "Person",
+          "country": "US",
+          "id": "084e06f5-3c82-4b71-bd94-dd69e7bd515e"
+         }
+        }
+       ],
+       "disambiguation": "explicit",
+       "title": "Everything I Am",
+       "video": false,
+       "first-release-date": "2007-09-05",
+       "id": "f046e413-3ff0-49d5-9971-3576395acf91",
+       "length": 227893
+      },
+      "position": 10,
+      "length": 228000,
+      "title": "Everything I Am"
+     },
+     {
+      "id": "e8483942-a8ae-3ed4-8889-969ec311dfbe",
+      "recording": {
+       "disambiguation": "explicit",
+       "artist-credit": [
+        {
+         "artist": {
+          "type": "Person",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye"
+         },
+         "name": "Kanye West",
+         "joinphrase": ""
+        }
+       ],
+       "first-release-date": "2007-09-05",
+       "id": "e8586f0d-6d41-4f93-b371-85f3238a7344",
+       "length": 212706,
+       "title": "The Glory",
+       "video": false
+      },
+      "position": 11,
+      "length": 213000,
+      "title": "The Glory",
+      "number": "11",
+      "artist-credit": [
+       {
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "name": "Ye"
+        },
+        "joinphrase": "",
+        "name": "Kanye West"
+       }
+      ]
+     },
+     {
+      "number": "12",
+      "artist-credit": [
+       {
+        "joinphrase": " feat. ",
+        "name": "Kanye West",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US"
+        }
+       },
+       {
+        "joinphrase": "",
+        "name": "Chris Martin",
+        "artist": {
+         "country": "GB",
+         "id": "98d1ec5a-dd97-4c0b-9c83-7928aac89bca",
+         "type": "Person",
+         "name": "Chris Martin",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Martin, Chris",
+         "disambiguation": "lead singer of Coldplay"
+        }
+       }
+      ],
+      "title": "Homecoming",
+      "length": 204000,
+      "id": "a50eec46-6b41-39c7-a856-224eab82bd51",
+      "position": 12,
+      "recording": {
+       "video": false,
+       "title": "Homecoming",
+       "length": 203493,
+       "id": "0d20345f-345c-459b-9d05-34b2906e5da9",
+       "first-release-date": "2007-09-05",
+       "artist-credit": [
+        {
+         "joinphrase": " feat. ",
+         "name": "Kanye West",
+         "artist": {
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         }
+        },
+        {
+         "artist": {
+          "name": "Chris Martin",
+          "id": "98d1ec5a-dd97-4c0b-9c83-7928aac89bca",
+          "country": "GB",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Martin, Chris",
+          "disambiguation": "lead singer of Coldplay"
+         },
+         "joinphrase": "",
+         "name": "Chris Martin"
+        }
+       ],
+       "disambiguation": "explicit"
+      }
+     },
+     {
+      "number": "13",
+      "artist-credit": [
+       {
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "name": "Ye"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "id": "7f3185b5-f7f1-370a-9983-b0a479e6081d",
+      "position": 13,
+      "recording": {
+       "title": "Big Brother",
+       "video": false,
+       "id": "c2914387-416b-42fc-a2a7-1978f4eb35d1",
+       "first-release-date": "2007-09-05",
+       "length": 587560,
+       "artist-credit": [
+        {
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person"
+         },
+         "joinphrase": "",
+         "name": "Kanye West"
+        }
+       ],
+       "disambiguation": ""
+      },
+      "length": 287000,
+      "title": "Big Brother"
+     },
+     {
+      "position": 14,
+      "recording": {
+       "artist-credit": [
+        {
+         "artist": {
+          "name": "Ye",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye"
+         },
+         "joinphrase": " feat. ",
+         "name": "Kanye West"
+        },
+        {
+         "artist": {
+          "id": "f5c4c27e-5902-4fc0-adfb-7775da3d5363",
+          "country": "US",
+          "type": "Person",
+          "name": "Yasiin Bey",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Bey, Yasiin",
+          "disambiguation": "fka Mos Def"
+         },
+         "name": "Mos Def",
+         "joinphrase": " & "
+        },
+        {
+         "joinphrase": "",
+         "name": "Al Be Back",
+         "artist": {
+          "disambiguation": "",
+          "sort-name": "Albe Back",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Albe Back",
+          "type": "Person",
+          "id": "cc0b5bc9-0c62-4313-8532-d531cdadf704",
+          "country": "US"
+         }
+        }
+       ],
+       "disambiguation": "explicit",
+       "title": "Good Night",
+       "video": false,
+       "id": "7c43fc8c-4ffb-4c51-b8a3-51f755abd1be",
+       "first-release-date": "2007-09-05",
+       "length": 185986
+      },
+      "id": "d770f996-2354-3ee9-b4b3-fa3ccee6a0bc",
+      "length": 186000,
+      "title": "Good Night",
+      "artist-credit": [
+       {
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US"
+        },
+        "joinphrase": " feat. ",
+        "name": "Kanye West"
+       },
+       {
+        "artist": {
+         "name": "Yasiin Bey",
+         "id": "f5c4c27e-5902-4fc0-adfb-7775da3d5363",
+         "country": "US",
+         "type": "Person",
+         "sort-name": "Bey, Yasiin",
+         "disambiguation": "fka Mos Def",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": " & ",
+        "name": "Mos Def"
+       },
+       {
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "",
+         "sort-name": "Albe Back",
+         "name": "Albe Back",
+         "type": "Person",
+         "country": "US",
+         "id": "cc0b5bc9-0c62-4313-8532-d531cdadf704"
+        },
+        "joinphrase": "",
+        "name": "Al Be Back"
+       }
+      ],
+      "number": "14"
+     },
+     {
+      "number": "15",
+      "artist-credit": [
+       {
+        "artist": {
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person"
+        },
+        "name": "Kanye West",
+        "joinphrase": " feat. "
+       },
+       {
+        "artist": {
+         "sort-name": "Mayer, John",
+         "disambiguation": "US singer‐songwriter",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "144ef525-85e9-40c3-8335-02c32d0861f3",
+         "country": "US",
+         "type": "Person",
+         "name": "John Mayer"
+        },
+        "name": "John Mayer",
+        "joinphrase": ""
+       }
+      ],
+      "title": "Bittersweet Poetry",
+      "length": 394000,
+      "id": "892ea919-fac8-3716-a565-f6b9c7bf7a79",
+      "position": 15,
+      "recording": {
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "joinphrase": " feat. ",
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "name": "Ye"
+         }
+        },
+        {
+         "joinphrase": "",
+         "name": "John Mayer",
+         "artist": {
+          "id": "144ef525-85e9-40c3-8335-02c32d0861f3",
+          "country": "US",
+          "type": "Person",
+          "name": "John Mayer",
+          "sort-name": "Mayer, John",
+          "disambiguation": "US singer‐songwriter",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         }
+        }
+       ],
+       "disambiguation": "",
+       "video": false,
+       "title": "Bittersweet Poetry",
+       "length": 394000,
+       "first-release-date": "2007-09-05",
+       "id": "c9bb50ba-c628-4ed3-aeb2-3abb9022260b"
+      }
+     }
+    ],
+    "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+    "position": 1,
+    "id": "dcfc0dd6-d303-3262-87d4-f9e40500c7a4"
+   }
+  ],
+  "packaging": null,
+  "disambiguation": "",
+  "asin": "B000RY42PS",
+  "artist-credit": [
+   {
+    "artist": {
+     "country": "US",
+     "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+     "type": "Person",
+     "name": "Ye",
+     "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+     "sort-name": "Ye",
+     "disambiguation": "formerly Kanye West"
+    },
+    "name": "Kanye West",
+    "joinphrase": ""
+   }
+  ],
+  "date": "2007-09-05",
+  "text-representation": {
+   "language": "eng",
+   "script": "Latn"
+  },
+  "id": "06a81817-093d-40f0-aef2-90673fa550ae",
+  "status": "Official",
+  "packaging-id": null,
+  "release-events": [
+   {
+    "date": "2007-09-05",
+    "area": {
+     "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+     "type": null,
+     "name": "Japan",
+     "sort-name": "Japan",
+     "disambiguation": "",
+     "iso-3166-1-codes": [
+      "JP"
+     ],
+     "type-id": null
+    }
+   }
+  ],
+  "title": "Graduation"
+ }
+}

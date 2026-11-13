@@ -1,0 +1,1427 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group",
+  "query": {
+   "artist": "164f0d73-1234-4e2c-8743-d77bf2191051",
+   "type": "album|ep",
+   "inc": "artist-credits",
+   "limit": "100",
+   "offset": "100",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "release-group-count": 141,
+  "release-groups": [
+   {
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "primary-type": "Album",
+    "id": "0587f018-39de-4f38-94d5-ed07f1e8ac2e",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "first-release-date": "2009",
+    "title": "Air Yeezy (Presented by Tapemasters Inc.)",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2010-07-21",
+    "title": "Check the Resume",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type": "Album",
+    "id": "05a6b07b-ae61-4c0b-8f35-caa8dbfdafde"
+   },
+   {
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": " & ",
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person"
+      }
+     },
+     {
+      "artist": {
+       "id": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JAŸ-Z",
+       "sort-name": "Jay-Z",
+       "type": "Person",
+       "disambiguation": "US rapper"
+      },
+      "joinphrase": "",
+      "name": "Jay-Z"
+     }
+    ],
+    "id": "05e38383-1545-420f-a19b-0617d6113ce3",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "WTT2",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2013",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "id": "0ab0315f-dd17-4b71-a163-d04ae2370f9b",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "Eyes Closed",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2011-01-15"
+   },
+   {
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "title": "Demo Beat Tape [c. Sept. 97']",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "1997-09",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ],
+    "id": "121ae389-961f-4355-9cea-271281d1551f",
+    "primary-type": "EP",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "secondary-types": [],
+    "disambiguation": "",
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "first-release-date": "2009",
+    "secondary-type-ids": [],
+    "title": "Supernova",
+    "artist-credit": [
+     {
+      "name": "Mr Hudson",
+      "joinphrase": " feat. ",
+      "artist": {
+       "type": "Person",
+       "disambiguation": "",
+       "sort-name": "Mr Hudson",
+       "name": "Mr Hudson",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "GB",
+       "id": "585fee48-98c7-45b4-a47c-78d629b773b8"
+      }
+     },
+     {
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type": "EP",
+    "id": "1282e548-9d31-4cd8-a7a7-1af7ee3e1f57"
+   },
+   {
+    "secondary-types": [
+     "Remix"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Ye",
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "id": "19894e5b-e559-4835-9bf7-a451b8c6c810",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+     "0c60f497-ff81-3818-befd-abfc84a4858b"
+    ],
+    "title": "Yeezus (Andre's Rework)",
+    "first-release-date": "2026-04-11"
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2010-08-16",
+    "title": "G.O.O.D. Ass Mixtape",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "artist-credit": [
+     {
+      "joinphrase": " & ",
+      "name": "Kanye West",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person"
+      }
+     },
+     {
+      "joinphrase": "",
+      "name": "Perajok",
+      "artist": {
+       "sort-name": "Perajok",
+       "disambiguation": "",
+       "type": null,
+       "country": null,
+       "id": "3811409b-1b0e-4be1-80fa-878825024511",
+       "type-id": null,
+       "name": "Perajok"
+      }
+     }
+    ],
+    "primary-type": "Album",
+    "id": "1a7561ec-65d4-4cf6-9de5-27145f2953a2",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": ", ",
+      "name": "Kanye West"
+     },
+     {
+      "joinphrase": ", ",
+      "name": "Kid Cudi",
+      "artist": {
+       "type": "Person",
+       "disambiguation": "",
+       "sort-name": "Kid Cudi",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Kid Cudi",
+       "country": "US",
+       "id": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460"
+      }
+     },
+     {
+      "artist": {
+       "name": "Pusha T",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "14ecd19f-7121-4192-8549-e5056241a42f",
+       "country": "US",
+       "type": "Person",
+       "disambiguation": "US rapper Terrence Thornton, member of Clipse",
+       "sort-name": "Pusha T"
+      },
+      "name": "Pusha T",
+      "joinphrase": ", "
+     },
+     {
+      "artist": {
+       "name": "Lloyd Banks",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "8a6ccf62-b8fa-46d7-87df-f2dd14e6280d",
+       "country": "US",
+       "disambiguation": "US rapper",
+       "type": "Person",
+       "sort-name": "Banks, Lloyd"
+      },
+      "name": "Lloyd Banks",
+      "joinphrase": ", "
+     },
+     {
+      "joinphrase": "",
+      "name": "John Legend",
+      "artist": {
+       "type": "Person",
+       "disambiguation": "",
+       "sort-name": "Legend, John",
+       "name": "John Legend",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "75a72702-a5ef-4513-bca5-c5b944903546"
+      }
+     }
+    ],
+    "id": "2311aa7c-5f02-4f2f-b771-3e09899bf19f",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "GOOD Fridays",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2010",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "id": "242d3c11-f39b-4703-a305-310f318ff73d",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Dub Floyd",
+       "type": "Person",
+       "disambiguation": "",
+       "country": null,
+       "id": "3fff046b-0982-4be0-8d53-0578f9653f25",
+       "name": "Dub Floyd",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": ", ",
+      "name": "Dub Floyd"
+     },
+     {
+      "joinphrase": " & ",
+      "name": "Kanye West",
+      "artist": {
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     },
+     {
+      "name": "Hevehitta",
+      "joinphrase": "",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Hevehitta",
+       "id": "762f0cea-c07c-42ce-85a2-fc50a2f8c8f3",
+       "country": "US",
+       "type": "Person",
+       "disambiguation": "",
+       "sort-name": "Hevehitta"
+      }
+     }
+    ],
+    "title": "Fast Forward",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2008-06-28",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ]
+   },
+   {
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "first-release-date": "",
+    "title": "Good Ass Job: Employee of the Month Edition",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+     {
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West"
+      },
+      "name": "Ye",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type": "EP",
+    "id": "272f89cd-a81d-4272-9d12-9894c33c4c09",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "title": "Welcome to Kanye’s Soul Mix Show",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2006-09-05",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "31bfac71-6fba-40bd-9699-4d40f3a7a57e",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye"
+      },
+      "joinphrase": " & ",
+      "name": "Kanye West"
+     },
+     {
+      "artist": {
+       "type": "Person",
+       "disambiguation": "",
+       "sort-name": "A‐Trak",
+       "name": "A‐Trak",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "47ea59b7-81c2-4001-8ac3-567877b3172a",
+       "country": "CA"
+      },
+      "name": "DJ A‐Trak",
+      "joinphrase": ""
+     }
+    ],
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ]
+   },
+   {
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "first-release-date": "2005",
+    "title": "We Major in This",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "336f8e15-8e38-3d49-a700-48a8b360281c",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+      }
+     }
+    ]
+   },
+   {
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "id": "3584f709-ff60-32b1-8e49-0404d36b55c9",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "College Dropout: The Mixtape",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2003"
+   },
+   {
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye"
+      }
+     }
+    ],
+    "id": "3c2d6ffe-61b9-46e5-b935-3b8df01f900d",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "My Beautiful Dark Twisted Fantasy",
+    "secondary-type-ids": [
+     "81598169-0d6c-3bce-b4be-866fa658eda3"
+    ],
+    "first-release-date": "2020-07-26",
+    "secondary-types": [
+     "Demo"
+    ],
+    "disambiguation": "July 9, 2010 \"recordforhype.zip\""
+   },
+   {
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type": "Album",
+    "id": "4304c426-faa7-3e3e-ac14-40945a593391",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2006",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "The Lost Tapes",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Jay-Z",
+       "type": "Person",
+       "disambiguation": "US rapper",
+       "id": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+       "country": "US",
+       "name": "JAŸ-Z",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "name": "JAY‐Z",
+      "joinphrase": " & "
+     },
+     {
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person"
+      },
+      "name": "Ye",
+      "joinphrase": ""
+     }
+    ],
+    "id": "457ae5f8-a35d-40e4-b67c-e02c7826c257",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "The Throne",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2011"
+   },
+   {
+    "primary-type": "Album",
+    "id": "4e642f77-65b1-3a40-a626-607503633177",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ],
+    "first-release-date": "2003",
+    "title": "Early Enrollment",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ]
+   },
+   {
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "Get Well Soon…",
+    "first-release-date": "2002-11-21",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "id": "51438fb1-d569-307b-abff-0c2bb62c9abd",
+    "primary-type": "Album"
+   },
+   {
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Tapemasters Inc.",
+       "disambiguation": "",
+       "type": "Group",
+       "country": "US",
+       "id": "759dd4ad-5b0a-4ce6-906d-0ff539b9d8cf",
+       "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+       "name": "Tapemasters Inc."
+      },
+      "joinphrase": " & ",
+      "name": "Tapemasters Inc."
+     },
+     {
+      "joinphrase": "",
+      "name": "Ye",
+      "artist": {
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye"
+      }
+     }
+    ],
+    "id": "560848f9-2b73-489a-8ef0-b7b8736f6c88",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "Power.",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2011-01",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2007",
+    "title": "Alter Ego",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "artist-credit": [
+     {
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type": "Album",
+    "id": "5a1ec321-9076-4cf6-8a8c-f602c82b10a2",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "id": "5d18569c-980f-3438-bb58-b447e1f1a0bc",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ],
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "Time",
+    "first-release-date": "2007",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ]
+   },
+   {
+    "first-release-date": "2007-07-14",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "The Graduate",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "5e0f1f4d-68c1-46c8-b551-eff5736f1af9",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ]
+   },
+   {
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+      }
+     }
+    ],
+    "id": "61cbd0b2-d146-3a6a-9ecf-5babd75e3730",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "Kon the Louis Vuitton Don",
+    "first-release-date": "2004-01-24",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "id": "6883a883-3027-4444-b3cd-8d3d3a80bc6c",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "Akademiks (Jeanius Level Musik, Vol. 2)",
+    "first-release-date": "2003-10-23",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ],
+    "id": "704646d5-7bbe-4a0e-b4b8-c64f57ba51de",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "Good Times",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2013"
+   },
+   {
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ],
+    "primary-type": "Album",
+    "id": "762cb6f1-ec7d-4ba4-a304-b2869dce748e",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2019-07-27",
+    "secondary-type-ids": [
+     "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+    ],
+    "title": "Never See Me Again",
+    "secondary-types": [
+     "DJ-mix"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "secondary-types": [
+     "Demo"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "id": "80b01534-6010-4d95-9740-7a03b822ade9",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+     "81598169-0d6c-3bce-b4be-866fa658eda3"
+    ],
+    "title": "The Prerequisite",
+    "first-release-date": "2013-04"
+   },
+   {
+    "primary-type": "Album",
+    "id": "80f23ecb-a267-462d-9f25-cdc48470e0ef",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ],
+    "first-release-date": "2013",
+    "title": "Yeezus Demos",
+    "secondary-type-ids": [
+     "81598169-0d6c-3bce-b4be-866fa658eda3"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "secondary-types": [
+     "Demo"
+    ]
+   },
+   {
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "id": "8c7d4ff2-a6c7-40e3-8bd2-530298b3132b",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "joinphrase": " presents ",
+      "name": "Team 20/20",
+      "artist": {
+       "sort-name": "Team 20/20",
+       "type": "Group",
+       "disambiguation": "Dub & Floyd",
+       "country": null,
+       "id": "c230d395-22b3-4f2c-9ffe-63db11f2f2b1",
+       "name": "Team 20/20",
+       "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+      }
+     },
+     {
+      "artist": {
+       "name": "Lupe Fiasco",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "cf15719f-51f9-4db8-a15d-5eed9664ce69",
+       "disambiguation": "",
+       "type": "Person",
+       "sort-name": "Fiasco, Lupe"
+      },
+      "name": "Lupe",
+      "joinphrase": ", "
+     },
+     {
+      "artist": {
+       "sort-name": "Williams, Pharrell",
+       "disambiguation": "",
+       "type": "Person",
+       "country": "US",
+       "id": "149f91ef-1287-46da-9a8e-87fee02f1471",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Pharrell Williams"
+      },
+      "name": "Pharrell",
+      "joinphrase": " & "
+     },
+     {
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West"
+      },
+      "name": "Kanye",
+      "joinphrase": ""
+     }
+    ],
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "Rebel Music",
+    "first-release-date": "2008",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "disambiguation": "",
+    "secondary-types": [
+     "Demo"
+    ],
+    "id": "8f01a292-ba4a-4992-9555-f3a7a4a215f3",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+       "name": "¥$",
+       "id": "58daf317-be5f-439f-a04d-0d6727f1a3b2",
+       "country": "US",
+       "type": "Group",
+       "disambiguation": "Ye & Ty Dolla $ign",
+       "sort-name": "¥$"
+      },
+      "name": "¥$",
+      "joinphrase": ", "
+     },
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      },
+      "name": "Ye",
+      "joinphrase": ", "
+     },
+     {
+      "artist": {
+       "country": "US",
+       "id": "7bd66c18-cb33-49aa-9279-140acedbdb49",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ty Dolla $ign",
+       "sort-name": "Ty Dolla Sign",
+       "type": "Person",
+       "disambiguation": ""
+      },
+      "name": "Ty Dolla $ign",
+      "joinphrase": ""
+     }
+    ],
+    "secondary-type-ids": [
+     "81598169-0d6c-3bce-b4be-866fa658eda3"
+    ],
+    "title": "Bad Bitch Play Book Vol. 2",
+    "first-release-date": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "The Menu",
+    "first-release-date": "2015-05-25",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person"
+      }
+     }
+    ],
+    "id": "98b5d089-392a-40e4-9faf-ceb4491f5b0f",
+    "primary-type": "Album",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type": "Album",
+    "id": "9addbf3e-e0f8-4184-afec-ad8e913cc33f",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2019",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "Sunday Service Week 2",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "secondary-types": [
+     "Remix"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Ye"
+     }
+    ],
+    "primary-type": "Album",
+    "id": "af790bd8-ce53-4b01-a0de-6a12f9a51c73",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2026-01-23",
+    "secondary-type-ids": [
+     "0c60f497-ff81-3818-befd-abfc84a4858b"
+    ],
+    "title": "ye (Slowed)"
+   },
+   {
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "id": "b7911ece-99c3-43fe-ae5e-ecd17e44aaa7",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "title": "Blackout",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "first-release-date": "2015-10-02",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "disambiguation": "",
+    "secondary-types": [
+     "Remix"
+    ],
+    "first-release-date": "2025-05-09",
+    "secondary-type-ids": [
+     "0c60f497-ff81-3818-befd-abfc84a4858b"
+    ],
+    "title": "IN A PERFECT WORLD",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "bba23c27-bdff-4593-9ae4-e9d33d90e29b",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Ye",
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person"
+      }
+     }
+    ]
+   },
+   {
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "primary-type": "Album",
+    "id": "c3099544-7f67-4b24-ad2c-97df6098f769",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2010-06-02",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "Mr. West"
+   },
+   {
+    "secondary-types": [
+     "Demo"
+    ],
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2025-05-18",
+    "secondary-type-ids": [
+     "81598169-0d6c-3bce-b4be-866fa658eda3"
+    ],
+    "title": "CUCK",
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ],
+    "primary-type": "Album",
+    "id": "c3e942b3-a557-4b1e-8f9a-5b9b4dfd6944"
+   },
+   {
+    "primary-type": "Album",
+    "id": "c96996bf-c616-3343-a68b-e5a892c059e3",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "first-release-date": "2003",
+    "title": "I’m Good…",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ]
+   },
+   {
+    "primary-type": "Album",
+    "id": "ca1b69dc-51e8-319d-9310-7d41c6608d59",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "disambiguation": "formerly Kanye West",
+       "type": "Person",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "first-release-date": "2005",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "title": "The Late Mixtape",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ]
+   },
+   {
+    "first-release-date": "2013-09-07",
+    "title": "Faith",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "db47a2fd-0692-42e1-8aa2-2c89504647dc",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "type": "Person",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ]
+   }
+  ],
+  "release-group-offset": 100
+ }
+}

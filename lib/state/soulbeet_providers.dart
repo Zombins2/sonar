@@ -1,5 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/musicbrainz/musicbrainz_client.dart';
+import '../data/soulbeet/get_music_search.dart';
 import '../data/soulbeet/library_match.dart';
 import '../data/soulbeet/soulbeet_client.dart';
 import '../data/soulbeet/soulbeet_downloads.dart';
@@ -70,25 +72,28 @@ final libraryAlbumForProvider = FutureProvider.autoDispose.family<Album?, ({Stri
   (ref, a) => _inLibrary(ref, a.title, a.artist),
 );
 
-/// Albums on MusicBrainz for a search ("Album", or "Artist - Album").
-final soulbeetAlbumSearchProvider = FutureProvider.autoDispose.family<List<SbAlbum>, String>((ref, raw) async {
-  final client = ref.watch(soulbeetClientProvider);
-  if (client == null || raw.trim().isEmpty) return const [];
-  final (query, artist) = splitArtistQuery(raw);
-  return client.searchAlbums(query, artist: artist);
+/// One MusicBrainz client for the app, so its one-request-a-second pacing
+/// covers every search.
+final musicBrainzClientProvider = Provider<MusicBrainzClient>((ref) {
+  final client = MusicBrainzClient();
+  ref.onDispose(client.close);
+  return client;
 });
 
-final soulbeetAlbumDetailProvider = FutureProvider.autoDispose.family<SbAlbumDetail, String>((ref, id) {
-  final client = ref.watch(soulbeetClientProvider);
-  if (client == null) throw const SoulbeetException(SoulbeetErrorKind.unreachable, 'Get music is off.');
-  return client.album(id);
+/// What MusicBrainz has for a Get music search (see [searchGetMusic]),
+/// filling in part by part.
+final soulbeetSearchProvider = StreamProvider.autoDispose.family<GetMusicResults, String>((ref, raw) {
+  if (ref.watch(soulbeetClientProvider) == null || raw.trim().isEmpty) {
+    return Stream.value(const GetMusicResults(done: true));
+  }
+  // Typed on, or left: what this search still has waiting drops out of line.
+  final cancel = MbCancel();
+  ref.onDispose(cancel.cancel);
+  return searchGetMusic(ref.watch(musicBrainzClientProvider), raw, cancel: cancel);
 });
 
-/// "Peter Tosh - Legalize It" searches Legalize It by Peter Tosh; anything
-/// else is the album name alone.
-(String query, String? artist) splitArtistQuery(String raw) {
-  final s = raw.trim();
-  final m = RegExp(r'^(.+?)\s+[-–—]\s+(.+)$').firstMatch(s);
-  if (m == null) return (s, null);
-  return (m.group(2)!.trim(), m.group(1)!.trim());
-}
+/// An album found in Get music, as the pressing to download, with its songs
+/// (see [MusicBrainzClient.songsOf]): usually already fetched by the search.
+final albumSongsProvider = FutureProvider.autoDispose.family<SbAlbumDetail, SbAlbum>(
+  (ref, album) => ref.watch(musicBrainzClientProvider).songsOf(album),
+);

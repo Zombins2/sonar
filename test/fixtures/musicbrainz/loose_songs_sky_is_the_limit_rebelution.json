@@ -1,0 +1,2202 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/recording",
+  "query": {
+   "query": "sky is the limit rebelution",
+   "dismax": "true",
+   "limit": "25",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-13T05:38:55.114Z",
+  "count": 12404533,
+  "offset": 0,
+  "recordings": [
+   {
+    "id": "a979023f-d299-4f85-86f7-dc33164a93ef",
+    "score": 100,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit",
+    "length": 277929,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "b8b3ac01-f7ca-43cd-8ed3-b387e38ed434",
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "count": 1,
+      "title": "2014-11-10: Austin City Limits Festival, Austin, TX, USA",
+      "status": "Bootleg",
+      "release-group": {
+       "id": "51ae2e77-e107-440c-8806-e4e3f26ff656",
+       "title": "2014-11-10: Austin City Limits Festival, Austin, TX, USA"
+      },
+      "track-count": 13,
+      "media": [
+       {
+        "id": "7b7ed9b8-1b82-3a5d-91b1-b3fc257ce328",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "7080d011-704d-4621-8702-ec2e576fc5be",
+          "number": "2",
+          "title": "Sky Is the Limit",
+          "length": 277929
+         }
+        ],
+        "track-count": 13,
+        "track-offset": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "b67a28b9-a3a0-4086-bc81-d14c9aaf2f2e",
+    "score": 100,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit",
+    "length": 316000,
+    "disambiguation": "live",
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2016-10-26",
+    "releases": [
+     {
+      "id": "f41b82ea-ca32-40a9-9daf-51a20799701c",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Live at Red Rocks",
+      "status": "Official",
+      "release-group": {
+       "id": "2627bb2c-e476-4945-8001-7b291f6b358f",
+       "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Live at Red Rocks",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Live"
+       ],
+       "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+       ]
+      },
+      "track-count": 21,
+      "media": [
+       {
+        "id": "46149473-9083-3e90-8e87-2b9670016d7f",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "35b09ef9-217c-41e0-b6f7-175b669cb35a",
+          "number": "21",
+          "title": "Sky Is the Limit",
+          "length": 316000
+         }
+        ],
+        "track-count": 21,
+        "track-offset": 20
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "571320d6-45b2-4c14-b193-1b5bfcbadfc3",
+    "score": 100,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit",
+    "length": 249000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2012-01-10",
+    "releases": [
+     {
+      "id": "f5b47b45-9390-42c6-9397-b71a45f3c250",
+      "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "Monitor This! Feb/Mar 12",
+      "status": "Promotion",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "67041f16-b0c5-4718-a331-5fb160cc4566",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Monitor This! Feb/Mar 12",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2012-02",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2012-02",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 10,
+      "media": [
+       {
+        "id": "c852d733-2742-32e7-a402-e0f71b8e54c9",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "86c90cdf-21db-43d6-8f24-feff5aad13a8",
+          "number": "3",
+          "title": "Sky Is the Limit",
+          "length": 247613
+         }
+        ],
+        "track-count": 10,
+        "track-offset": 2
+       }
+      ]
+     },
+     {
+      "id": "1721b155-e157-4358-bf48-155691b97b51",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Peace of Mind",
+      "status": "Official",
+      "release-group": {
+       "id": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Peace of Mind",
+       "primary-type": "Album"
+      },
+      "date": "2012",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2012",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 12,
+      "media": [
+       {
+        "id": "6e4c7777-b2d2-3ec1-8f6a-501bbc4ec662",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "9432efa0-c4f4-3b5a-87c6-b79b2e57c71b",
+          "number": "1",
+          "title": "Sky is the Limit",
+          "length": 249213
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     },
+     {
+      "id": "cf64de75-3fa5-42ba-8bc1-4184363a89d5",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 3,
+      "title": "Peace of Mind",
+      "status": "Official",
+      "release-group": {
+       "id": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Peace of Mind",
+       "primary-type": "Album"
+      },
+      "track-count": 36,
+      "media": [
+       {
+        "id": "741eecd7-2245-36db-ad1b-486d1cd7d8a3",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "5405417b-3613-3ef9-a606-b89775adc5c7",
+          "number": "1",
+          "title": "Sky Is the Limit",
+          "length": 249000
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "4cb6df64-c379-457c-b4e0-4b1bb45784e5",
+    "score": 93,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit (Acoustic)",
+    "length": 214000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2012-01-10",
+    "releases": [
+     {
+      "id": "cf64de75-3fa5-42ba-8bc1-4184363a89d5",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 3,
+      "title": "Peace of Mind",
+      "status": "Official",
+      "release-group": {
+       "id": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Peace of Mind",
+       "primary-type": "Album"
+      },
+      "track-count": 36,
+      "media": [
+       {
+        "id": "36293b72-94b7-3bda-9908-ccd1fcec61aa",
+        "position": 2,
+        "format": "CD",
+        "track": [
+         {
+          "id": "8401cc1b-c28f-3d6d-8f2b-c115d4b56fc2",
+          "number": "1",
+          "title": "Sky Is the Limit (acoustic)",
+          "length": 214000
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "75394289-0b92-486f-b062-85f975e6c507",
+    "score": 93,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit (Dub)",
+    "length": 274000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2012-01-10",
+    "releases": [
+     {
+      "id": "cf64de75-3fa5-42ba-8bc1-4184363a89d5",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 3,
+      "title": "Peace of Mind",
+      "status": "Official",
+      "release-group": {
+       "id": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Peace of Mind",
+       "primary-type": "Album"
+      },
+      "track-count": 36,
+      "media": [
+       {
+        "id": "86f608b1-3543-3782-9a45-876432d44015",
+        "position": 3,
+        "format": "CD",
+        "track": [
+         {
+          "id": "931bdbc6-614b-38e7-81ab-d73e9499266f",
+          "number": "1",
+          "title": "Sky Is the Limit (dub)",
+          "length": 274000
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "77a77750-aaa3-430c-9a7b-f2f217553ce7",
+    "score": 78,
+    "artist-credit-id": "a75e2d73-96da-3ef8-8e2a-bf7d1d112833",
+    "title": "Rebelution",
+    "length": 339000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Fist to the Sky",
+      "artist": {
+       "id": "e20a92b9-ec17-44ea-ae0a-74e49a481ca8",
+       "name": "Fist to the Sky",
+       "sort-name": "Fist to the Sky",
+       "disambiguation": "Hard rock band from Chicago, Illinois"
+      }
+     }
+    ],
+    "first-release-date": "2007-10",
+    "releases": [
+     {
+      "id": "331a98c7-04f0-489c-8b94-6c0fb75feae2",
+      "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+      "count": 1,
+      "title": "Fist to the Sky EP",
+      "status": "Promotion",
+      "release-group": {
+       "id": "1da9558c-d257-4d15-81a1-09333a965040",
+       "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+       "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+       "title": "Fist to the Sky EP",
+       "primary-type": "EP"
+      },
+      "date": "2007-10",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2007-10",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 6,
+      "media": [
+       {
+        "id": "12d49df6-b654-3d29-b3d1-a1be36e15d36",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "12da2243-6e90-3d1c-ae89-9474dd95108d",
+          "number": "5",
+          "title": "Rebelution",
+          "length": 339000
+         }
+        ],
+        "track-count": 6,
+        "track-offset": 4
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "9ffe7227-4689-4138-b8eb-be0cf09bc27e",
+    "score": 73,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit (live at the St. Augustine Amphitheatre, St. Augustine, Fl / September 16, 2021)",
+    "length": 294000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2022-05-20",
+    "releases": [
+     {
+      "id": "20e0e863-7d9a-4624-8379-ad9f3b7fa42b",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 2,
+      "title": "Live In St. Augustine",
+      "status": "Official",
+      "release-group": {
+       "id": "167aed72-c589-4799-b48d-4655d532f81a",
+       "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Live In St. Augustine",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Live"
+       ],
+       "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+       ]
+      },
+      "track-count": 23,
+      "media": [
+       {
+        "id": "a48ea752-4994-478c-9b30-96d9d19e2298",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "970116c3-9a1b-4fdd-a313-90bc1ccb95ac",
+          "number": "1",
+          "title": "Sky Is the Limit (live at the St. Augustine Amphitheatre, St. Augustine, Fl / September 16, 2021)",
+          "length": 295000
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     },
+     {
+      "id": "9a44076a-5ce1-4e38-a37f-0fd299a4e692",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Live In St. Augustine",
+      "status": "Official",
+      "release-group": {
+       "id": "167aed72-c589-4799-b48d-4655d532f81a",
+       "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Live In St. Augustine",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Live"
+       ],
+       "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+       ]
+      },
+      "track-count": 23,
+      "media": [
+       {
+        "id": "2b03b025-97a5-33bb-abd4-fea78f55d6a5",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "6c841529-2ea8-4b2d-bc36-ce32a43e3844",
+          "number": "1",
+          "title": "Sky Is the Limit (live at the St. Augustine Amphitheatre, St. Augustine, Fl / September 16, 2021)",
+          "length": 294000
+         }
+        ],
+        "track-count": 23,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "25af2e12-9dd7-40db-9252-6f2124662a5b",
+    "score": 65,
+    "artist-credit-id": "8e63669e-389b-3df7-a546-68072ac046de",
+    "title": "REBELUTION",
+    "length": 111000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "The Cummies",
+      "artist": {
+       "id": "abdda32d-54aa-4298-a451-c75ce9eaba8c",
+       "name": "The Cummies",
+       "sort-name": "Cummies, The",
+       "disambiguation": "US proto punk/thrash band"
+      }
+     }
+    ],
+    "first-release-date": "2003",
+    "releases": [
+     {
+      "id": "f0448d83-8856-4087-9604-41b5e0f60974",
+      "count": 1,
+      "title": "The Cummies",
+      "release-group": {
+       "id": "f1aa5199-d4e8-483c-80aa-77558aad9569",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "The Cummies",
+       "primary-type": "Album"
+      },
+      "date": "2003",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2003",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 9,
+      "media": [
+       {
+        "id": "aad1ef53-3463-37de-81e0-9ff4d53f32f0",
+        "position": 1,
+        "format": "CD-R",
+        "track": [
+         {
+          "id": "0ca2095c-8301-44ec-a7d3-6d447b8f8f34",
+          "number": "3",
+          "title": "REBELUTION",
+          "length": 111000
+         }
+        ],
+        "track-count": 9,
+        "track-offset": 2
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ba6e93af-c494-4b32-a0e4-d717dddd486e",
+    "score": 64,
+    "artist-credit-id": "68d7a1d3-5fe2-4363-8a6d-d32649d590e3",
+    "title": "Rebelution",
+    "length": 228600,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "The Joint Family",
+      "artist": {
+       "id": "32f240e6-3c12-4bd2-a0f8-34c23e6be405",
+       "name": "The Joint Family",
+       "sort-name": "Joint Family, The"
+      }
+     }
+    ],
+    "first-release-date": "2009",
+    "releases": [
+     {
+      "id": "7b11d538-131b-4858-8566-74276fe4993b",
+      "status-id": "41121bb9-3413-3818-8a9a-9742318349aa",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "Rock 202",
+      "status": "Pseudo-Release",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "cf073774-3020-4a61-8e6d-38533b69fa43",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Rock 202",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "track-count": 14,
+      "media": [
+       {
+        "id": "abf83016-d282-3060-beb4-e2aa1d561390",
+        "position": 1,
+        "track": [
+         {
+          "id": "fd2839d3-4e7e-498b-876d-83ecb0666400",
+          "number": "6",
+          "title": "রেবেলিউশন"
+         }
+        ],
+        "track-count": 14,
+        "track-offset": 5
+       }
+      ]
+     },
+     {
+      "id": "9d09c223-4928-43c1-9980-304d28423ec3",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "Rock 202",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "cf073774-3020-4a61-8e6d-38533b69fa43",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Rock 202",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2009",
+      "country": "BD",
+      "release-events": [
+       {
+        "date": "2009",
+        "area": {
+         "id": "20395c3e-610c-34fd-9995-6b6f299121f2",
+         "name": "Bangladesh",
+         "sort-name": "Bangladesh",
+         "iso-3166-1-codes": [
+          "BD"
+         ]
+        }
+       }
+      ],
+      "track-count": 14,
+      "media": [
+       {
+        "id": "0a42ce31-0d3a-37d2-9b5f-864db19edf1c",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "abeeca21-34e9-47ed-b4e4-72b44a0792bf",
+          "number": "6",
+          "title": "Rebelution",
+          "length": 228600
+         }
+        ],
+        "track-count": 14,
+        "track-offset": 5
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "178f4245-fff7-46b5-86e8-6554e0c4a1fb",
+    "score": 63,
+    "artist-credit-id": "fab22591-c9fd-3f53-b443-8a05b4491db3",
+    "title": "Sky's the Limit",
+    "length": 156763,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "C.A.S.H.",
+      "artist": {
+       "id": "aea6bf6e-9ea4-479c-8cb3-8e3efcf44271",
+       "name": "C.A.S.H.",
+       "sort-name": "C.A.S.H.",
+       "disambiguation": "Georgia-based rapper"
+      }
+     }
+    ],
+    "first-release-date": "2010-03-21",
+    "releases": [
+     {
+      "id": "4f354a49-2512-4a9d-a06c-abce39986eed",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "CASH Is KING",
+      "status": "Official",
+      "release-group": {
+       "id": "3c3f19be-b610-4fdb-808c-89ddff31d972",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "CASH Is KING",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Mixtape/Street"
+       ],
+       "secondary-type-ids": [
+        "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+       ]
+      },
+      "date": "2010-03-21",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2010-03-21",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 25,
+      "media": [
+       {
+        "id": "4f26a5a2-16f8-3198-8ba0-e85f0031c6a6",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "16b7ca42-293e-418c-a46f-1b36c20cb07a",
+          "number": "11",
+          "title": "Sky's the Limit",
+          "length": 156763
+         }
+        ],
+        "track-count": 25,
+        "track-offset": 10
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ce34be22-988d-408f-9a9a-283102c6af94",
+    "score": 62,
+    "artist-credit-id": "94bba1a0-a354-4b6a-9c7c-dc60a074495a",
+    "title": "Sky Is the Limit",
+    "length": 271425,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "The Striders",
+      "artist": {
+       "id": "581b56cb-203f-4365-ae0a-04428f954f7d",
+       "name": "The Striders",
+       "sort-name": "Striders, The",
+       "disambiguation": "Swedish rock band"
+      }
+     }
+    ],
+    "first-release-date": "2023-06-16",
+    "releases": [
+     {
+      "id": "35ea62ad-7ef8-4284-9238-124e525d280c",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "The Striders",
+      "status": "Official",
+      "release-group": {
+       "id": "08b047d3-142c-41ce-aaf6-c52e402e626d",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "The Striders",
+       "primary-type": "Album"
+      },
+      "date": "2023-06-16",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2023-06-16",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 10,
+      "media": [
+       {
+        "id": "6b19e5b7-f98b-33ce-a225-43850ae01f68",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "19a7bd79-838f-45c3-997c-1766b840535e",
+          "number": "3",
+          "title": "Sky Is the Limit",
+          "length": 271425
+         }
+        ],
+        "track-count": 10,
+        "track-offset": 2
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "SE6HB2300503"
+    ]
+   },
+   {
+    "id": "227afd79-0498-4b60-8c91-c562b9a33514",
+    "score": 62,
+    "artist-credit-id": "e622d8f1-3dcc-3cd8-a74c-614ce01c6685",
+    "title": "Sky Is the Limit",
+    "length": 23866,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Safariari",
+      "artist": {
+       "id": "f9ceee71-927b-406b-bd14-af8d0db000ac",
+       "name": "Safariari",
+       "sort-name": "Safariari"
+      }
+     }
+    ],
+    "first-release-date": "2002-04-15",
+    "releases": [
+     {
+      "id": "fe6bb04a-9b1b-4fb6-9bc2-95c7e0f683a7",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Zebra Knights",
+      "status": "Official",
+      "release-group": {
+       "id": "375fee85-df75-34ad-850a-2c42fbfff5d1",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Zebra Knights",
+       "primary-type": "Album"
+      },
+      "date": "2002-04-15",
+      "country": "GB",
+      "release-events": [
+       {
+        "date": "2002-04-15",
+        "area": {
+         "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+         "name": "United Kingdom",
+         "sort-name": "United Kingdom",
+         "iso-3166-1-codes": [
+          "GB"
+         ]
+        }
+       }
+      ],
+      "track-count": 13,
+      "media": [
+       {
+        "id": "633e1830-dc71-3268-b3dc-ce1d6b9bbb92",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "49bcbf10-df03-312d-a320-2924eaa092eb",
+          "number": "12",
+          "title": "Sky Is the Limit",
+          "length": 23866
+         }
+        ],
+        "track-count": 13,
+        "track-offset": 11
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "52459e85-c040-435a-8844-71f067a6e2f1",
+    "score": 62,
+    "artist-credit-id": "a4c54168-22fa-3ec9-8ef0-e070a1a61dc6",
+    "title": "Sky Is the Limit",
+    "length": 477030,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Sebastian Weikum",
+      "artist": {
+       "id": "9bbf4700-4117-4c53-8729-77e5ba9f19b0",
+       "name": "Sebastian Weikum",
+       "sort-name": "Weikum, Sebastian"
+      }
+     }
+    ],
+    "first-release-date": "2013-07-15",
+    "releases": [
+     {
+      "id": "236af1c6-9250-47c2-8d1c-416584acdb53",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Sky Is the Limit",
+      "status": "Official",
+      "release-group": {
+       "id": "2f296f73-81c5-4f11-8f4a-a9b6f0e38681",
+       "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "title": "Sky Is the Limit",
+       "primary-type": "Single"
+      },
+      "date": "2013-07-15",
+      "country": "GB",
+      "release-events": [
+       {
+        "date": "2013-07-15",
+        "area": {
+         "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+         "name": "United Kingdom",
+         "sort-name": "United Kingdom",
+         "iso-3166-1-codes": [
+          "GB"
+         ]
+        }
+       }
+      ],
+      "track-count": 1,
+      "media": [
+       {
+        "id": "4e9dd194-3b32-3404-9a7d-6f5735e1fa90",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "0441748d-38e7-4b5c-8de1-1630177a0631",
+          "number": "1",
+          "title": "Sky Is the Limit",
+          "length": 477030
+         }
+        ],
+        "track-count": 1,
+        "track-offset": 0
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "GBKQU1385808"
+    ]
+   },
+   {
+    "id": "bfeb27e5-42a4-4003-a288-8c0a622d35c9",
+    "score": 62,
+    "artist-credit-id": "6ce17b64-ddca-4957-8d4a-1bc3b3b28fc4",
+    "title": "Sky Is the Limit",
+    "length": 314026,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Flat Three",
+      "artist": {
+       "id": "2d364425-7a07-46e5-acf2-2110b0e7973f",
+       "name": "Flat Three",
+       "sort-name": "Flat Three",
+       "disambiguation": "Japanese jazz band"
+      }
+     }
+    ],
+    "first-release-date": "2008-03-19",
+    "releases": [
+     {
+      "id": "cc6edccd-8a72-4534-b357-b5e981897507",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Sky Is the Limit",
+      "status": "Official",
+      "release-group": {
+       "id": "e564e4eb-8c2f-4597-be93-0f8416b6ad22",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Sky Is the Limit",
+       "primary-type": "Album"
+      },
+      "date": "2008-03-19",
+      "country": "JP",
+      "release-events": [
+       {
+        "date": "2008-03-19",
+        "area": {
+         "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+         "name": "Japan",
+         "sort-name": "Japan",
+         "iso-3166-1-codes": [
+          "JP"
+         ]
+        }
+       }
+      ],
+      "track-count": 12,
+      "media": [
+       {
+        "id": "23203042-e6e9-3a7b-809d-05d4eada9178",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "f5e7bbfb-ae6d-4cf3-9487-cb8f7791e6c2",
+          "number": "12",
+          "title": "Sky Is the Limit",
+          "length": 314026
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 11
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "c660014c-b029-4ee6-be95-b3efbda00d63",
+    "score": 62,
+    "artist-credit-id": "a59bd4a0-d75f-315f-bde2-22ba2717cd87",
+    "title": "Sky Is the Limit",
+    "length": 215000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "DJ Antoine vs. Mad Mark",
+      "artist": {
+       "id": "2a203b1c-0c7e-4514-85f9-29513b7d5dee",
+       "name": "DJ Antoine vs. Mad Mark",
+       "sort-name": "Antoine, DJ vs. Mad Mark"
+      }
+     }
+    ],
+    "first-release-date": "2013-10-29",
+    "releases": [
+     {
+      "id": "0a167d9a-a6f7-4527-9429-d7c7321b9e6f",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 2,
+      "title": "Discoradio Compilation 4.0",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "f4e418f4-d4dc-44c3-8d3d-efadd9404b80",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Discoradio Compilation 4.0",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation",
+        "DJ-mix"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+        "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+       ]
+      },
+      "date": "2013-10-29",
+      "country": "IT",
+      "release-events": [
+       {
+        "date": "2013-10-29",
+        "area": {
+         "id": "c6500277-9a3d-349b-bf30-41afdbf42add",
+         "name": "Italy",
+         "sort-name": "Italy",
+         "iso-3166-1-codes": [
+          "IT"
+         ]
+        }
+       }
+      ],
+      "track-count": 41,
+      "media": [
+       {
+        "id": "1bfd33c4-9c32-4377-9467-ce07e0679a9d",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "e304a5b3-6f2e-4428-b938-283d310a0197",
+          "number": "11",
+          "title": "Sky Is the Limit",
+          "length": 215000
+         }
+        ],
+        "track-count": 22,
+        "track-offset": 10
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "f088e188-eef8-42d3-8438-a1e104cc70ed",
+    "score": 62,
+    "artist-credit-id": "f3bc7152-6fbd-3993-bf85-d1276c8f155c",
+    "title": "Sky Is The Limit",
+    "length": 204000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Junior Reid",
+      "artist": {
+       "id": "065324d1-12c2-485f-955d-9eef408f92a6",
+       "name": "Junior Reid",
+       "sort-name": "Reid, Junior"
+      }
+     }
+    ],
+    "first-release-date": "2000",
+    "releases": [
+     {
+      "id": "be8801b7-c259-4b68-9634-b255528fcd7b",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "f3bc7152-6fbd-3993-bf85-d1276c8f155c",
+      "count": 1,
+      "title": "Emmanuel Calling",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Junior Reid",
+        "artist": {
+         "id": "065324d1-12c2-485f-955d-9eef408f92a6",
+         "name": "Junior Reid",
+         "sort-name": "Reid, Junior"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "2a81d83d-3594-4d16-a638-6f3ebffef452",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Emmanuel Calling",
+       "primary-type": "Album"
+      },
+      "track-count": 19,
+      "media": [
+       {
+        "id": "2f9a803d-59ac-3e6c-a8a4-366b679ace2a",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "e5fe3482-b2a3-3b88-bd0b-90a5ea5a9df8",
+          "number": "5",
+          "title": "Sky Is The Limit",
+          "length": 204000
+         }
+        ],
+        "track-count": 19,
+        "track-offset": 4
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "a5ba35e9-14b7-4521-9f1c-ba1c7d393bfb",
+    "score": 62,
+    "artist-credit-id": "91e6caa2-0dd1-319f-80f6-dc3f72b75dde",
+    "title": "Sky Is the Limit",
+    "length": 245000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Timescape",
+      "artist": {
+       "id": "b152bb5d-b101-4028-a4f7-601142498e41",
+       "name": "Timescape",
+       "sort-name": "Timescape",
+       "disambiguation": "Danish electronic/ambient group"
+      }
+     }
+    ],
+    "first-release-date": "2007-07-29",
+    "releases": [
+     {
+      "id": "3160d63a-f108-4c53-b749-68d0ce610345",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Travelling Light",
+      "status": "Official",
+      "release-group": {
+       "id": "2ee305b2-f6cd-4e55-9cef-bfb9ef6d72ae",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Travelling Light",
+       "primary-type": "Album"
+      },
+      "date": "2007-07-29",
+      "country": "DK",
+      "release-events": [
+       {
+        "date": "2007-07-29",
+        "area": {
+         "id": "4757b525-2a60-324a-b060-578765d2c993",
+         "name": "Denmark",
+         "sort-name": "Denmark",
+         "iso-3166-1-codes": [
+          "DK"
+         ]
+        }
+       }
+      ],
+      "track-count": 14,
+      "media": [
+       {
+        "id": "299b13cd-b4bd-3762-b840-855fda57433b",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "3415c2b3-35f2-49ec-955e-4a1d01b0fad0",
+          "number": "7",
+          "title": "Sky Is the Limit",
+          "length": 245000
+         }
+        ],
+        "track-count": 14,
+        "track-offset": 6
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "76713e0e-3297-410a-ae63-3d8286b6ce46",
+    "score": 62,
+    "artist-credit-id": "66053ce0-62b0-3dde-9aee-e723638f13d9",
+    "title": "Sky is the Limit",
+    "length": 264000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "FELT",
+      "artist": {
+       "id": "174596bf-3906-49a9-a448-bc1c17092634",
+       "name": "FELT",
+       "sort-name": "FELT",
+       "disambiguation": "dōjin circle"
+      }
+     }
+    ],
+    "first-release-date": "2016-08-12",
+    "releases": [
+     {
+      "id": "31c3fd2a-d4c6-4825-b5ce-a4f3f6963303",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 3,
+      "title": "東方PARTYBOX02",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "46d1975d-74fb-40f5-aeee-920814db03f0",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "東方PARTYBOX02",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2016-08-12",
+      "country": "JP",
+      "release-events": [
+       {
+        "date": "2016-08-12",
+        "area": {
+         "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+         "name": "Japan",
+         "sort-name": "Japan",
+         "iso-3166-1-codes": [
+          "JP"
+         ]
+        }
+       }
+      ],
+      "track-count": 40,
+      "media": [
+       {
+        "id": "38ec7f66-f3ba-3d3a-a2e3-4fa634724879",
+        "position": 2,
+        "format": "CD",
+        "track": [
+         {
+          "id": "d7c73e97-b24e-49d6-acc6-216cd2a781fa",
+          "number": "1",
+          "title": "Sky is the Limit",
+          "length": 264000
+         }
+        ],
+        "track-count": 13,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "54bbc0fe-b370-4e15-aa80-4bed087c7fe9",
+    "score": 62,
+    "artist-credit-id": "cf45b661-0f48-34bf-9b56-8ebfc25cb104",
+    "title": "Sky is the limit",
+    "length": 222933,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "佐久間きらら",
+      "artist": {
+       "id": "aa810d4c-fe41-4dfa-85fc-0f82533074bb",
+       "name": "佐久間きらら",
+       "sort-name": "Sakuma, Kirara"
+      }
+     }
+    ],
+    "first-release-date": "2015-12-29",
+    "releases": [
+     {
+      "id": "0540249f-4ba4-43e7-8e9f-6d2f3cf7574b",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "ea0ca7a7-f706-3262-805e-f52066365e7c",
+      "count": 1,
+      "title": "Melty Sky -sprite PIANO Selection-",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "joinphrase": " & ",
+        "name": "佐久間きらら",
+        "artist": {
+         "id": "aa810d4c-fe41-4dfa-85fc-0f82533074bb",
+         "name": "佐久間きらら",
+         "sort-name": "Sakuma, Kirara"
+        }
+       },
+       {
+        "name": "岸田勇気",
+        "artist": {
+         "id": "e6fc3695-b510-4439-a0c7-a2c56166e413",
+         "name": "岸田勇気",
+         "sort-name": "Kishida, Yūki"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "9e007956-5841-4946-bfc7-071f376a945e",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Melty Sky -sprite PIANO Selection-",
+       "primary-type": "Album"
+      },
+      "date": "2015-12-29",
+      "country": "JP",
+      "release-events": [
+       {
+        "date": "2015-12-29",
+        "area": {
+         "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+         "name": "Japan",
+         "sort-name": "Japan",
+         "iso-3166-1-codes": [
+          "JP"
+         ]
+        }
+       }
+      ],
+      "track-count": 12,
+      "media": [
+       {
+        "id": "8a3857e8-dba9-38b8-a859-06f1e96b7fa4",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "4d994190-b104-4f90-98ba-7dd0ecd92367",
+          "number": "12",
+          "title": "Sky is the limit",
+          "length": 222933
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 11
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "d72c02c1-0f4e-4452-9754-fd587b242646",
+    "score": 62,
+    "artist-credit-id": "b4dbe695-9246-3efa-9e5a-654f77b478bf",
+    "title": "SKY IS THE LIMIT",
+    "length": 185000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "BankyEj",
+      "artist": {
+       "id": "b52a7c3d-052c-4df3-9c52-587d7b56134b",
+       "name": "BankyEj",
+       "sort-name": "BankyEj"
+      }
+     }
+    ],
+    "first-release-date": "2020-12-30",
+    "releases": [
+     {
+      "id": "a0d371b3-e131-4946-a9b2-fbf407289927",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Crimes Pays 2 (X6)",
+      "status": "Official",
+      "release-group": {
+       "id": "d5151dbe-d4f9-40a7-af48-2010ac3b20b6",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Crimes Pays 2 (X6)",
+       "primary-type": "Album"
+      },
+      "date": "2020-12-30",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2020-12-30",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 15,
+      "media": [
+       {
+        "id": "0a0fc963-4cac-3e5c-85c0-44eda9618e9d",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "fcc5957f-04cf-4d54-926f-2a8b0774c277",
+          "number": "9",
+          "title": "SKY IS THE LIMIT",
+          "length": 185000
+         }
+        ],
+        "track-count": 15,
+        "track-offset": 8
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ad05d0bd-bab6-4c72-bbe4-5c5baadcf854",
+    "score": 62,
+    "artist-credit-id": "e2afb10a-0dd0-31c6-917e-f44766b3fe76",
+    "title": "Limit Is the Sky",
+    "video": null,
+    "artist-credit": [
+     {
+      "joinphrase": ", ",
+      "name": "Mono & Nikitaman",
+      "artist": {
+       "id": "fa2fab41-614a-4568-b31a-04a8f4bf3f5f",
+       "name": "Mono & Nikitaman",
+       "sort-name": "Mono & Nikitaman"
+      }
+     },
+     {
+      "name": "Degree",
+      "artist": {
+       "id": "18dabe70-0c78-47c1-80b1-b8e574c8f525",
+       "name": "Degree",
+       "sort-name": "Degree",
+       "disambiguation": "hip hop, member of Soul Jugglerz"
+      }
+     }
+    ],
+    "first-release-date": "2004",
+    "releases": [
+     {
+      "id": "91888a46-2f43-4dc8-835f-a1bec872ed0b",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e0a1cbd8-4f7e-3676-9107-d59c7e409ac4",
+      "count": 1,
+      "title": "Limit Is the Sky / Seid ihr bereit",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Mono & Nikitaman",
+        "artist": {
+         "id": "fa2fab41-614a-4568-b31a-04a8f4bf3f5f",
+         "name": "Mono & Nikitaman",
+         "sort-name": "Mono & Nikitaman"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "dc397811-2892-443e-af90-1284cb93e299",
+       "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "title": "Limit Is the Sky / Seid ihr bereit",
+       "primary-type": "Single"
+      },
+      "date": "2004",
+      "country": "DE",
+      "release-events": [
+       {
+        "date": "2004",
+        "area": {
+         "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+         "name": "Germany",
+         "sort-name": "Germany",
+         "iso-3166-1-codes": [
+          "DE"
+         ]
+        }
+       }
+      ],
+      "track-count": 2,
+      "media": [
+       {
+        "id": "9fc99acb-533b-382f-b157-6016c70445df",
+        "position": 1,
+        "format": "7\" Vinyl",
+        "track": [
+         {
+          "id": "133c03c2-e699-453f-8fbc-d8398bbb9ac1",
+          "number": "A1",
+          "title": "Limit Is the Sky"
+         }
+        ],
+        "track-count": 2,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "eed1c925-97b8-44db-9168-4302894a0519",
+    "score": 62,
+    "artist-credit-id": "5ca1142c-6366-3f82-94fc-80c5d9ef2b37",
+    "title": "Sky Is the Limit",
+    "length": 300000,
+    "video": null,
+    "artist-credit": [
+     {
+      "joinphrase": " & ",
+      "name": "WestBam/ML",
+      "artist": {
+       "id": "12d5646a-b9e3-4510-ad37-5682c02a66ef",
+       "name": "WestBam",
+       "sort-name": "WestBam",
+       "disambiguation": "German DJ"
+      }
+     },
+     {
+      "name": "The Beloved",
+      "artist": {
+       "id": "2b87e134-b4a3-48d8-afac-9501d4c6e931",
+       "name": "The Beloved",
+       "sort-name": "Beloved, The",
+       "disambiguation": "UK electronic"
+      }
+     }
+    ],
+    "first-release-date": "2021-05-21",
+    "releases": [
+     {
+      "id": "bc5507ec-5c75-4034-8ecc-f769841c93ed",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "dc7137f0-8df4-30b8-9893-9a1ebf276b9c",
+      "count": 1,
+      "title": "Famous Last Songs Vol. 1",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "WestBam/ML",
+        "artist": {
+         "id": "12d5646a-b9e3-4510-ad37-5682c02a66ef",
+         "name": "WestBam",
+         "sort-name": "WestBam",
+         "disambiguation": "German DJ"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "62b921ed-c1cc-4467-b1b7-812434f76c66",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Famous Last Songs Vol. 1",
+       "primary-type": "Album"
+      },
+      "track-count": 12,
+      "media": [
+       {
+        "id": "e22471ce-85c2-3499-b455-a01f897b8da3",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "757cdee5-1106-4086-b659-a8055f9b4188",
+          "number": "1",
+          "title": "Sky Is the Limit",
+          "length": 300000
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "0afc88ee-882a-4ed1-a36d-f4b719de4d29",
+    "score": 62,
+    "artist-credit-id": "ed84ef88-0f52-3ca3-824e-24dd66525155",
+    "title": "Sky is the Limit",
+    "length": 289000,
+    "video": null,
+    "artist-credit": [
+     {
+      "joinphrase": " feat. ",
+      "name": "lecca",
+      "artist": {
+       "id": "6001c72e-19e4-41ac-8468-c5ce9c6e5ee0",
+       "name": "lecca",
+       "sort-name": "lecca"
+      }
+     },
+     {
+      "name": "RHYMESTER",
+      "artist": {
+       "id": "3ebf9b8d-755e-4f98-adcc-a0089a40b8a5",
+       "name": "RHYMESTER",
+       "sort-name": "RHYMESTER"
+      }
+     }
+    ],
+    "first-release-date": "2013-12-11",
+    "releases": [
+     {
+      "id": "532d21f5-1bff-40ed-bdab-64debeacfeae",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "feca18fa-f243-3f25-8bdc-a3fa56971667",
+      "count": 1,
+      "title": "TOP JUNCTION",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "lecca",
+        "artist": {
+         "id": "6001c72e-19e4-41ac-8468-c5ce9c6e5ee0",
+         "name": "lecca",
+         "sort-name": "lecca"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "98ba31f3-5448-457f-9b39-859a5e3b36bb",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "TOP JUNCTION",
+       "primary-type": "Album"
+      },
+      "date": "2013-12-11",
+      "country": "JP",
+      "release-events": [
+       {
+        "date": "2013-12-11",
+        "area": {
+         "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+         "name": "Japan",
+         "sort-name": "Japan",
+         "iso-3166-1-codes": [
+          "JP"
+         ]
+        }
+       }
+      ],
+      "track-count": 13,
+      "media": [
+       {
+        "id": "a0261566-d6cc-385f-8264-8b7bd17b112d",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "324d5f71-cbcc-47ac-a3d0-173643c5227c",
+          "number": "2",
+          "title": "Sky is the Limit",
+          "length": 287000
+         }
+        ],
+        "track-count": 13,
+        "track-offset": 1
+       }
+      ]
+     },
+     {
+      "id": "4c3411ea-1e7d-46f9-bd5b-2d7f6c39ccec",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "feca18fa-f243-3f25-8bdc-a3fa56971667",
+      "count": 1,
+      "title": "BEST POSITIVE",
+      "status": "Official",
+      "disambiguation": "Mastered for iTunes",
+      "artist-credit": [
+       {
+        "name": "lecca",
+        "artist": {
+         "id": "6001c72e-19e4-41ac-8468-c5ce9c6e5ee0",
+         "name": "lecca",
+         "sort-name": "lecca"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "38d5ade7-d7d7-4e75-af8b-37b6469099d5",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BEST POSITIVE",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2016-01-27",
+      "country": "JP",
+      "release-events": [
+       {
+        "date": "2016-01-27",
+        "area": {
+         "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+         "name": "Japan",
+         "sort-name": "Japan",
+         "iso-3166-1-codes": [
+          "JP"
+         ]
+        }
+       }
+      ],
+      "track-count": 16,
+      "media": [
+       {
+        "id": "4c1d3fe7-02e2-39ff-bca0-c78c11c09173",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "8c43a5b0-3999-400b-baa5-7c7fede45e9d",
+          "number": "13",
+          "title": "Sky is the Limit",
+          "length": 290000
+         }
+        ],
+        "track-count": 16,
+        "track-offset": 12
+       }
+      ]
+     },
+     {
+      "id": "bc4e252b-7f7b-4dac-9f5b-12a8169a7a35",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "feca18fa-f243-3f25-8bdc-a3fa56971667",
+      "count": 1,
+      "title": "BEST POSITIVE",
+      "status": "Official",
+      "disambiguation": "24bit/48kHz",
+      "artist-credit": [
+       {
+        "name": "lecca",
+        "artist": {
+         "id": "6001c72e-19e4-41ac-8468-c5ce9c6e5ee0",
+         "name": "lecca",
+         "sort-name": "lecca"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "38d5ade7-d7d7-4e75-af8b-37b6469099d5",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BEST POSITIVE",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2016-06-29",
+      "country": "JP",
+      "release-events": [
+       {
+        "date": "2016-06-29",
+        "area": {
+         "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+         "name": "Japan",
+         "sort-name": "Japan",
+         "iso-3166-1-codes": [
+          "JP"
+         ]
+        }
+       }
+      ],
+      "track-count": 16,
+      "media": [
+       {
+        "id": "1bee5e5c-2bec-36ae-a6a2-ec55a91d9b34",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "eb7194e1-1222-477d-bb29-46c3e890820b",
+          "number": "13",
+          "title": "Sky is the Limit",
+          "length": 289000
+         }
+        ],
+        "track-count": 16,
+        "track-offset": 12
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "JPB601304794"
+    ]
+   },
+   {
+    "id": "c4441684-3e39-45d0-9968-d5118e1f2156",
+    "score": 62,
+    "artist-credit-id": "9dee0edb-f148-47e2-9f22-ed9cee7b48e1",
+    "title": "Sky Is The Limit",
+    "length": 226084,
+    "video": null,
+    "artist-credit": [
+     {
+      "joinphrase": " feat. ",
+      "name": "Iron Dubz",
+      "artist": {
+       "id": "d1a48873-5521-4be6-881d-0ac70062820a",
+       "name": "Iron Dubz",
+       "sort-name": "Iron Dubz",
+       "disambiguation": "Dubmaker"
+      }
+     },
+     {
+      "name": "Daddy Freddy",
+      "artist": {
+       "id": "8128c6d5-7f42-4308-9803-00c69de41503",
+       "name": "Daddy Freddy",
+       "sort-name": "Daddy Freddy"
+      }
+     }
+    ],
+    "first-release-date": "2021-10-29",
+    "releases": [
+     {
+      "id": "7e45d759-feea-40d8-8437-bcd2fd23a0df",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "247607e7-6269-4105-99ae-dee88de1332c",
+      "count": 1,
+      "title": "Sky Is The Limit",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "joinphrase": " feat. ",
+        "name": "Iron Dubz",
+        "artist": {
+         "id": "d1a48873-5521-4be6-881d-0ac70062820a",
+         "name": "Iron Dubz",
+         "sort-name": "Iron Dubz",
+         "disambiguation": "Dubmaker"
+        }
+       },
+       {
+        "joinphrase": " & ",
+        "name": "Daddy Freddy",
+        "artist": {
+         "id": "8128c6d5-7f42-4308-9803-00c69de41503",
+         "name": "Daddy Freddy",
+         "sort-name": "Daddy Freddy"
+        }
+       },
+       {
+        "name": "Bunny General",
+        "artist": {
+         "id": "df4eabb7-9116-4485-bb24-8100663c2a58",
+         "name": "Bunny General",
+         "sort-name": "Bunny General"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "9573f501-4dfb-40a6-a687-6123b5369cad",
+       "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+       "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+       "title": "Sky Is The Limit",
+       "primary-type": "EP",
+       "secondary-types": [
+        "Remix"
+       ],
+       "secondary-type-ids": [
+        "0c60f497-ff81-3818-befd-abfc84a4858b"
+       ]
+      },
+      "date": "2021-10-29",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2021-10-29",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 4,
+      "media": [
+       {
+        "id": "9b877e2f-4d2b-3943-bb11-b6599a80eaeb",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "3d431c15-5231-461e-8f59-07580b0b2144",
+          "number": "1",
+          "title": "Sky Is The Limit",
+          "length": 226084
+         }
+        ],
+        "track-count": 4,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "8e1e606a-6367-488f-86cf-29e933b0c81c",
+    "score": 62,
+    "artist-credit-id": "8e62e1dd-9b0a-3d99-94fc-0ad8e2dcce0d",
+    "title": "Sky is the limit",
+    "length": 259000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "ふぇありーているず！",
+      "artist": {
+       "id": "a60487ef-c884-4095-8740-50027ba5b25b",
+       "name": "ふぇありーているず！",
+       "sort-name": "fairytales!"
+      }
+     }
+    ],
+    "first-release-date": "2021-08-24",
+    "releases": [
+     {
+      "id": "dcfe1f0e-5a8c-4088-8846-aec8ababfe06",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "御伽の国と7人のお姫様",
+      "status": "Official",
+      "release-group": {
+       "id": "07c86e1e-ff04-4e81-9920-70711a585691",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "御伽の国と7人のお姫様",
+       "primary-type": "Album"
+      },
+      "date": "2021-08-24",
+      "country": "JP",
+      "release-events": [
+       {
+        "date": "2021-08-24",
+        "area": {
+         "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+         "name": "Japan",
+         "sort-name": "Japan",
+         "iso-3166-1-codes": [
+          "JP"
+         ]
+        }
+       }
+      ],
+      "track-count": 11,
+      "media": [
+       {
+        "id": "24d58277-df3e-3aed-a3a5-e2c61b13fa18",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "2b89a0de-ef1f-40a9-bbe6-34b6c1ac6993",
+          "number": "10",
+          "title": "Sky is the limit",
+          "length": 259000
+         }
+        ],
+        "track-count": 11,
+        "track-offset": 9
+       }
+      ]
+     },
+     {
+      "id": "5dc4b76c-6d18-41f7-8c33-d9777331d8f8",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "御伽の国と7人のお姫様",
+      "status": "Official",
+      "release-group": {
+       "id": "07c86e1e-ff04-4e81-9920-70711a585691",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "御伽の国と7人のお姫様",
+       "primary-type": "Album"
+      },
+      "date": "2021-08-25",
+      "country": "JP",
+      "release-events": [
+       {
+        "date": "2021-08-25",
+        "area": {
+         "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+         "name": "Japan",
+         "sort-name": "Japan",
+         "iso-3166-1-codes": [
+          "JP"
+         ]
+        }
+       }
+      ],
+      "track-count": 11,
+      "media": [
+       {
+        "id": "731a9c87-a097-386a-83fd-47dc0772cf0c",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "a26c8591-469c-426b-b31d-89b8b4c94f51",
+          "number": "10",
+          "title": "Sky is the limit",
+          "length": 260983
+         }
+        ],
+        "track-count": 11,
+        "track-offset": 9
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "JPN752110232"
+    ]
+   }
+  ]
+ }
+}

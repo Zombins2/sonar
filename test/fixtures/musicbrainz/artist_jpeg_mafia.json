@@ -1,0 +1,167 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/artist",
+  "query": {
+   "query": "jpeg mafia",
+   "limit": "5",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-12T23:58:32.927Z",
+  "count": 569,
+  "offset": 0,
+  "artists": [
+   {
+    "id": "026a73e0-c529-415a-9923-59c8afe5640a",
+    "type": "Person",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "score": 100,
+    "gender-id": "b239bbd8-aa84-4f11-8bdb-c4159e730ee5",
+    "name": "JPEG",
+    "sort-name": "JPEG",
+    "gender": "non-binary",
+    "area": {
+     "id": "1f40c6e1-47ba-4e35-996f-fe6ee5840e62",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Los Angeles",
+     "sort-name": "Los Angeles",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "begin-area": {
+     "id": "1f40c6e1-47ba-4e35-996f-fe6ee5840e62",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Los Angeles",
+     "sort-name": "Los Angeles",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "disambiguation": "DJ from Hollywood",
+    "life-span": {
+     "ended": null
+    }
+   },
+   {
+    "id": "f77478c8-103a-46c2-b5c7-7afcb3b0bcdc",
+    "type": "Person",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "score": 99,
+    "name": "JPEG",
+    "sort-name": "JPEG",
+    "disambiguation": "Winnipeg producer",
+    "life-span": {
+     "ended": null
+    }
+   },
+   {
+    "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+    "type": "Person",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "score": 90,
+    "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+    "name": "JPEGMAFIA",
+    "sort-name": "JPEGMAFIA",
+    "gender": "male",
+    "country": "US",
+    "area": {
+     "id": "489ce91b-6658-3307-9877-795b68554c98",
+     "type": "Country",
+     "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+     "name": "United States",
+     "sort-name": "United States",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "begin-area": {
+     "id": "49a18344-3e78-4bdd-a32e-030ecd89bee1",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Flatbush",
+     "sort-name": "Flatbush",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "ipis": [
+     "00792343619",
+     "00792343717"
+    ],
+    "isnis": [
+     "0000000466526056"
+    ],
+    "life-span": {
+     "begin": "1989-10-22",
+     "ended": null
+    },
+    "aliases": [
+     {
+      "sort-name": "DJ SNITCH BITCH",
+      "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+      "name": "DJ SNITCH BITCH",
+      "locale": null,
+      "type": "Artist name",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "Hendricks, Barrington DeVaughn",
+      "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+      "name": "Barrington DeVaughn Hendricks",
+      "locale": null,
+      "type": "Legal name",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "Hendricks, Barrington",
+      "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+      "name": "Barrington Hendricks",
+      "locale": null,
+      "type": "Legal name",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "Peggy",
+      "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+      "name": "Peggy",
+      "locale": null,
+      "type": "Artist name",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     }
+    ]
+   },
+   {
+    "id": "11f76085-3700-47ae-a9ef-6ba25436d0b3",
+    "score": 87,
+    "name": ".jpeg Artifacts",
+    "sort-name": ".jpeg Artifacts",
+    "life-span": {
+     "ended": null
+    }
+   },
+   {
+    "id": "551bc45e-f768-4805-8466-1ced2ee52fa2",
+    "score": 86,
+    "name": "girl jpeg",
+    "sort-name": "girl jpeg",
+    "life-span": {
+     "ended": null
+    }
+   }
+  ]
+ }
+}

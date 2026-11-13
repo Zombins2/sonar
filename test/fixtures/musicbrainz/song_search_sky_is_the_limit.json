@@ -1,0 +1,496 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/recording",
+  "query": {
+   "query": "recording:\"sky is the limit\" AND artist:\"rebelution\"",
+   "limit": "25",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-13T05:38:52.042Z",
+  "count": 6,
+  "offset": 0,
+  "recordings": [
+   {
+    "id": "571320d6-45b2-4c14-b193-1b5bfcbadfc3",
+    "score": 100,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit",
+    "length": 249000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2012-01-10",
+    "releases": [
+     {
+      "id": "f5b47b45-9390-42c6-9397-b71a45f3c250",
+      "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "Monitor This! Feb/Mar 12",
+      "status": "Promotion",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "67041f16-b0c5-4718-a331-5fb160cc4566",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Monitor This! Feb/Mar 12",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2012-02",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2012-02",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 10,
+      "media": [
+       {
+        "id": "c852d733-2742-32e7-a402-e0f71b8e54c9",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "86c90cdf-21db-43d6-8f24-feff5aad13a8",
+          "number": "3",
+          "title": "Sky Is the Limit",
+          "length": 247613
+         }
+        ],
+        "track-count": 10,
+        "track-offset": 2
+       }
+      ]
+     },
+     {
+      "id": "1721b155-e157-4358-bf48-155691b97b51",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Peace of Mind",
+      "status": "Official",
+      "release-group": {
+       "id": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Peace of Mind",
+       "primary-type": "Album"
+      },
+      "date": "2012",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2012",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 12,
+      "media": [
+       {
+        "id": "6e4c7777-b2d2-3ec1-8f6a-501bbc4ec662",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "9432efa0-c4f4-3b5a-87c6-b79b2e57c71b",
+          "number": "1",
+          "title": "Sky is the Limit",
+          "length": 249213
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     },
+     {
+      "id": "cf64de75-3fa5-42ba-8bc1-4184363a89d5",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 3,
+      "title": "Peace of Mind",
+      "status": "Official",
+      "release-group": {
+       "id": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Peace of Mind",
+       "primary-type": "Album"
+      },
+      "track-count": 36,
+      "media": [
+       {
+        "id": "741eecd7-2245-36db-ad1b-486d1cd7d8a3",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "5405417b-3613-3ef9-a606-b89775adc5c7",
+          "number": "1",
+          "title": "Sky Is the Limit",
+          "length": 249000
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "a979023f-d299-4f85-86f7-dc33164a93ef",
+    "score": 100,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit",
+    "length": 277929,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "b8b3ac01-f7ca-43cd-8ed3-b387e38ed434",
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "count": 1,
+      "title": "2014-11-10: Austin City Limits Festival, Austin, TX, USA",
+      "status": "Bootleg",
+      "release-group": {
+       "id": "51ae2e77-e107-440c-8806-e4e3f26ff656",
+       "title": "2014-11-10: Austin City Limits Festival, Austin, TX, USA"
+      },
+      "track-count": 13,
+      "media": [
+       {
+        "id": "7b7ed9b8-1b82-3a5d-91b1-b3fc257ce328",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "7080d011-704d-4621-8702-ec2e576fc5be",
+          "number": "2",
+          "title": "Sky Is the Limit",
+          "length": 277929
+         }
+        ],
+        "track-count": 13,
+        "track-offset": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "b67a28b9-a3a0-4086-bc81-d14c9aaf2f2e",
+    "score": 100,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit",
+    "length": 316000,
+    "disambiguation": "live",
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2016-10-26",
+    "releases": [
+     {
+      "id": "f41b82ea-ca32-40a9-9daf-51a20799701c",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Live at Red Rocks",
+      "status": "Official",
+      "release-group": {
+       "id": "2627bb2c-e476-4945-8001-7b291f6b358f",
+       "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Live at Red Rocks",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Live"
+       ],
+       "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+       ]
+      },
+      "track-count": 21,
+      "media": [
+       {
+        "id": "46149473-9083-3e90-8e87-2b9670016d7f",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "35b09ef9-217c-41e0-b6f7-175b669cb35a",
+          "number": "21",
+          "title": "Sky Is the Limit",
+          "length": 316000
+         }
+        ],
+        "track-count": 21,
+        "track-offset": 20
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "4cb6df64-c379-457c-b4e0-4b1bb45784e5",
+    "score": 94,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit (Acoustic)",
+    "length": 214000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2012-01-10",
+    "releases": [
+     {
+      "id": "cf64de75-3fa5-42ba-8bc1-4184363a89d5",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 3,
+      "title": "Peace of Mind",
+      "status": "Official",
+      "release-group": {
+       "id": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Peace of Mind",
+       "primary-type": "Album"
+      },
+      "track-count": 36,
+      "media": [
+       {
+        "id": "36293b72-94b7-3bda-9908-ccd1fcec61aa",
+        "position": 2,
+        "format": "CD",
+        "track": [
+         {
+          "id": "8401cc1b-c28f-3d6d-8f2b-c115d4b56fc2",
+          "number": "1",
+          "title": "Sky Is the Limit (acoustic)",
+          "length": 214000
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "75394289-0b92-486f-b062-85f975e6c507",
+    "score": 94,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit (Dub)",
+    "length": 274000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2012-01-10",
+    "releases": [
+     {
+      "id": "cf64de75-3fa5-42ba-8bc1-4184363a89d5",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 3,
+      "title": "Peace of Mind",
+      "status": "Official",
+      "release-group": {
+       "id": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Peace of Mind",
+       "primary-type": "Album"
+      },
+      "track-count": 36,
+      "media": [
+       {
+        "id": "86f608b1-3543-3782-9a45-876432d44015",
+        "position": 3,
+        "format": "CD",
+        "track": [
+         {
+          "id": "931bdbc6-614b-38e7-81ab-d73e9499266f",
+          "number": "1",
+          "title": "Sky Is the Limit (dub)",
+          "length": 274000
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "9ffe7227-4689-4138-b8eb-be0cf09bc27e",
+    "score": 66,
+    "artist-credit-id": "082d91bb-a653-3ec0-a97a-71fd384aa7ed",
+    "title": "Sky Is the Limit (live at the St. Augustine Amphitheatre, St. Augustine, Fl / September 16, 2021)",
+    "length": 294000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Rebelution",
+      "artist": {
+       "id": "bf225245-fce7-4d30-b648-887cb33529e4",
+       "name": "Rebelution",
+       "sort-name": "Rebelution"
+      }
+     }
+    ],
+    "first-release-date": "2022-05-20",
+    "releases": [
+     {
+      "id": "20e0e863-7d9a-4624-8379-ad9f3b7fa42b",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 2,
+      "title": "Live In St. Augustine",
+      "status": "Official",
+      "release-group": {
+       "id": "167aed72-c589-4799-b48d-4655d532f81a",
+       "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Live In St. Augustine",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Live"
+       ],
+       "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+       ]
+      },
+      "track-count": 23,
+      "media": [
+       {
+        "id": "a48ea752-4994-478c-9b30-96d9d19e2298",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "970116c3-9a1b-4fdd-a313-90bc1ccb95ac",
+          "number": "1",
+          "title": "Sky Is the Limit (live at the St. Augustine Amphitheatre, St. Augustine, Fl / September 16, 2021)",
+          "length": 295000
+         }
+        ],
+        "track-count": 12,
+        "track-offset": 0
+       }
+      ]
+     },
+     {
+      "id": "9a44076a-5ce1-4e38-a37f-0fd299a4e692",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "count": 1,
+      "title": "Live In St. Augustine",
+      "status": "Official",
+      "release-group": {
+       "id": "167aed72-c589-4799-b48d-4655d532f81a",
+       "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Live In St. Augustine",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Live"
+       ],
+       "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+       ]
+      },
+      "track-count": 23,
+      "media": [
+       {
+        "id": "2b03b025-97a5-33bb-abd4-fea78f55d6a5",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "6c841529-2ea8-4b2d-bc36-ce32a43e3844",
+          "number": "1",
+          "title": "Sky Is the Limit (live at the St. Augustine Amphitheatre, St. Augustine, Fl / September 16, 2021)",
+          "length": 294000
+         }
+        ],
+        "track-count": 23,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

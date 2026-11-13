@@ -1,0 +1,475 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/1/popularity/recording",
+  "body": {
+   "recording_mbids": [
+    "5db818b8-9d0c-4c33-9fa1-c7c0a837afde",
+    "571320d6-45b2-4c14-b193-1b5bfcbadfc3",
+    "a979023f-d299-4f85-86f7-dc33164a93ef",
+    "b67a28b9-a3a0-4086-bc81-d14c9aaf2f2e",
+    "4cb6df64-c379-457c-b4e0-4b1bb45784e5",
+    "75394289-0b92-486f-b062-85f975e6c507",
+    "9ffe7227-4689-4138-b8eb-be0cf09bc27e",
+    "77a77750-aaa3-430c-9a7b-f2f217553ce7",
+    "25af2e12-9dd7-40db-9252-6f2124662a5b",
+    "ba6e93af-c494-4b32-a0e4-d717dddd486e",
+    "178f4245-fff7-46b5-86e8-6554e0c4a1fb",
+    "ce34be22-988d-408f-9a9a-283102c6af94",
+    "227afd79-0498-4b60-8c91-c562b9a33514",
+    "52459e85-c040-435a-8844-71f067a6e2f1",
+    "bfeb27e5-42a4-4003-a288-8c0a622d35c9",
+    "c660014c-b029-4ee6-be95-b3efbda00d63",
+    "f088e188-eef8-42d3-8438-a1e104cc70ed",
+    "a5ba35e9-14b7-4521-9f1c-ba1c7d393bfb",
+    "76713e0e-3297-410a-ae63-3d8286b6ce46",
+    "54bbc0fe-b370-4e15-aa80-4bed087c7fe9",
+    "d72c02c1-0f4e-4452-9754-fd587b242646",
+    "ad05d0bd-bab6-4c72-bbe4-5c5baadcf854",
+    "eed1c925-97b8-44db-9168-4302894a0519",
+    "0afc88ee-882a-4ed1-a36d-f4b719de4d29",
+    "c4441684-3e39-45d0-9968-d5118e1f2156",
+    "8e1e606a-6367-488f-86cf-29e933b0c81c",
+    "66ea2ad7-1eee-4436-8e2b-428b7344c835",
+    "0ee6c11f-0952-4381-aa87-abc7446e5314",
+    "2bc961e7-21af-41f8-8414-99e3a7c563a2",
+    "ca2d4efe-89e3-4e63-9f69-27a2ec6cbe96",
+    "7566b71b-77ac-4b89-9abb-a034e14f9a96",
+    "28ff09dd-afc9-4eb9-bdc0-df88992a84d7",
+    "6cbcea9d-7dd6-4f8e-9667-d8cc31731c81",
+    "15316644-edf0-47c1-a438-3c0f25f6a1e5",
+    "bf91133f-e0cd-4b0f-a940-ba7be12b75b9",
+    "026e8892-cbc8-4edf-bc8e-bed1cbebb938",
+    "52bc6f21-2c6d-48d0-be24-6ddb06a8461c",
+    "6b9f9693-ec4c-4f92-a6dc-7985cd66b586",
+    "4216d786-159c-4813-96a8-05743ae0dc71",
+    "6eb8b69a-6150-4b8c-941a-2170e2cc2013",
+    "6a7b25fe-b916-4c45-a36c-d9aebd77a108",
+    "a169e398-244c-48f5-b81f-13f8cbe1f7e1",
+    "d7121779-9df6-4f8a-bd83-51744fe2b8c1",
+    "3c5e6765-9c85-4510-9e4b-75531379f375",
+    "14a9e4fa-1c8a-4339-9477-18a4c7802022",
+    "a60613a5-a31a-459f-ad3e-a0bee45891d7",
+    "560e7dc3-d41b-4e89-a295-e93ef626bb82",
+    "32477201-11ce-43d6-8553-3f2834cc1aa2",
+    "885ccb38-4057-4d1a-8fb0-52804f79d653",
+    "b3c6aa0a-6960-4db6-bf27-ed50de88309c",
+    "f42e84ef-f23e-4b8c-b3a1-8f407be68ea5",
+    "48299852-b44c-46a3-b635-1a34f2fe61e5",
+    "a4c4457b-577e-4fac-b820-713bb91dbb6c",
+    "2beff74d-69fe-4e53-9a47-26f29b64c6d4",
+    "36e2b944-e497-4b83-9bbb-0723fcb197f8",
+    "c8da6e46-d517-4930-87d8-5be5ab9ca3c9",
+    "a24f67ff-a81e-4a95-817d-c0b4e5af3e6b",
+    "e848d5fd-4590-468a-89af-45e88262c8e3",
+    "8089efd2-b32a-4b43-963f-7743e888793a",
+    "a7bade00-f8be-47ae-a0ab-3ce42931213a",
+    "db232387-83c8-4578-8a1d-b7759520ed5a",
+    "2619bbe9-e40d-4e96-8b5b-a3d9bbe5d7a1",
+    "8885a72a-14b5-4c70-9f7d-095fac771e67",
+    "55e0110c-78f0-4574-9633-5d3da7349654",
+    "8009d470-912b-42fa-8261-b88c488eb935",
+    "b3a7eae7-1515-45ae-8ca1-ee05544e8965",
+    "f36ec2db-ca2b-49fb-9fcc-ff9058f66d3c",
+    "4efea515-d670-4715-b99c-71df72f980fa",
+    "a08a7c15-7864-4c3b-b1b2-e8b3b8f70b15",
+    "0ee17159-10e8-4337-aecb-442757df132e",
+    "078c6b81-8e6c-4403-accf-c634b742143c",
+    "f046e413-3ff0-49d5-9971-3576395acf91",
+    "e8586f0d-6d41-4f93-b371-85f3238a7344",
+    "0d20345f-345c-459b-9d05-34b2906e5da9",
+    "c2914387-416b-42fc-a2a7-1978f4eb35d1",
+    "7c43fc8c-4ffb-4c51-b8a3-51f755abd1be",
+    "c9bb50ba-c628-4ed3-aeb2-3abb9022260b"
+   ]
+  }
+ },
+ "status": 200,
+ "response": [
+  {
+   "recording_mbid": "5db818b8-9d0c-4c33-9fa1-c7c0a837afde",
+   "total_listen_count": 198,
+   "total_user_count": 82
+  },
+  {
+   "recording_mbid": "571320d6-45b2-4c14-b193-1b5bfcbadfc3",
+   "total_listen_count": 17709,
+   "total_user_count": 3079
+  },
+  {
+   "recording_mbid": "a979023f-d299-4f85-86f7-dc33164a93ef",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "recording_mbid": "b67a28b9-a3a0-4086-bc81-d14c9aaf2f2e",
+   "total_listen_count": 1,
+   "total_user_count": 1
+  },
+  {
+   "recording_mbid": "4cb6df64-c379-457c-b4e0-4b1bb45784e5",
+   "total_listen_count": 3853,
+   "total_user_count": 821
+  },
+  {
+   "recording_mbid": "75394289-0b92-486f-b062-85f975e6c507",
+   "total_listen_count": 1559,
+   "total_user_count": 522
+  },
+  {
+   "recording_mbid": "9ffe7227-4689-4138-b8eb-be0cf09bc27e",
+   "total_listen_count": 7,
+   "total_user_count": 4
+  },
+  {
+   "recording_mbid": "77a77750-aaa3-430c-9a7b-f2f217553ce7",
+   "total_listen_count": 27,
+   "total_user_count": 3
+  },
+  {
+   "recording_mbid": "25af2e12-9dd7-40db-9252-6f2124662a5b",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "recording_mbid": "ba6e93af-c494-4b32-a0e4-d717dddd486e",
+   "total_listen_count": 3,
+   "total_user_count": 3
+  },
+  {
+   "recording_mbid": "178f4245-fff7-46b5-86e8-6554e0c4a1fb",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "recording_mbid": "ce34be22-988d-408f-9a9a-283102c6af94",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "recording_mbid": "227afd79-0498-4b60-8c91-c562b9a33514",
+   "total_listen_count": 1,
+   "total_user_count": 1
+  },
+  {
+   "recording_mbid": "52459e85-c040-435a-8844-71f067a6e2f1",
+   "total_listen_count": 13,
+   "total_user_count": 5
+  },
+  {
+   "recording_mbid": "bfeb27e5-42a4-4003-a288-8c0a622d35c9",
+   "total_listen_count": 68,
+   "total_user_count": 11
+  },
+  {
+   "recording_mbid": "c660014c-b029-4ee6-be95-b3efbda00d63",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "recording_mbid": "f088e188-eef8-42d3-8438-a1e104cc70ed",
+   "total_listen_count": 34,
+   "total_user_count": 16
+  },
+  {
+   "recording_mbid": "a5ba35e9-14b7-4521-9f1c-ba1c7d393bfb",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "recording_mbid": "76713e0e-3297-410a-ae63-3d8286b6ce46",
+   "total_listen_count": 23,
+   "total_user_count": 9
+  },
+  {
+   "recording_mbid": "54bbc0fe-b370-4e15-aa80-4bed087c7fe9",
+   "total_listen_count": 44,
+   "total_user_count": 4
+  },
+  {
+   "recording_mbid": "d72c02c1-0f4e-4452-9754-fd587b242646",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "recording_mbid": "ad05d0bd-bab6-4c72-bbe4-5c5baadcf854",
+   "total_listen_count": 17,
+   "total_user_count": 5
+  },
+  {
+   "recording_mbid": "eed1c925-97b8-44db-9168-4302894a0519",
+   "total_listen_count": 15,
+   "total_user_count": 12
+  },
+  {
+   "recording_mbid": "0afc88ee-882a-4ed1-a36d-f4b719de4d29",
+   "total_listen_count": 73,
+   "total_user_count": 6
+  },
+  {
+   "recording_mbid": "c4441684-3e39-45d0-9968-d5118e1f2156",
+   "total_listen_count": 2,
+   "total_user_count": 1
+  },
+  {
+   "recording_mbid": "8e1e606a-6367-488f-86cf-29e933b0c81c",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "recording_mbid": "66ea2ad7-1eee-4436-8e2b-428b7344c835",
+   "total_listen_count": 121188,
+   "total_user_count": 30600
+  },
+  {
+   "recording_mbid": "0ee6c11f-0952-4381-aa87-abc7446e5314",
+   "total_listen_count": 39029,
+   "total_user_count": 4519
+  },
+  {
+   "recording_mbid": "2bc961e7-21af-41f8-8414-99e3a7c563a2",
+   "total_listen_count": 116944,
+   "total_user_count": 16639
+  },
+  {
+   "recording_mbid": "ca2d4efe-89e3-4e63-9f69-27a2ec6cbe96",
+   "total_listen_count": 196,
+   "total_user_count": 104
+  },
+  {
+   "recording_mbid": "7566b71b-77ac-4b89-9abb-a034e14f9a96",
+   "total_listen_count": 150643,
+   "total_user_count": 36039
+  },
+  {
+   "recording_mbid": "28ff09dd-afc9-4eb9-bdc0-df88992a84d7",
+   "total_listen_count": 138780,
+   "total_user_count": 28635
+  },
+  {
+   "recording_mbid": "6cbcea9d-7dd6-4f8e-9667-d8cc31731c81",
+   "total_listen_count": 17872,
+   "total_user_count": 3276
+  },
+  {
+   "recording_mbid": "15316644-edf0-47c1-a438-3c0f25f6a1e5",
+   "total_listen_count": 14762,
+   "total_user_count": 4005
+  },
+  {
+   "recording_mbid": "bf91133f-e0cd-4b0f-a940-ba7be12b75b9",
+   "total_listen_count": 250159,
+   "total_user_count": 48330
+  },
+  {
+   "recording_mbid": "026e8892-cbc8-4edf-bc8e-bed1cbebb938",
+   "total_listen_count": 86529,
+   "total_user_count": 21464
+  },
+  {
+   "recording_mbid": "52bc6f21-2c6d-48d0-be24-6ddb06a8461c",
+   "total_listen_count": 253559,
+   "total_user_count": 46637
+  },
+  {
+   "recording_mbid": "6b9f9693-ec4c-4f92-a6dc-7985cd66b586",
+   "total_listen_count": 123673,
+   "total_user_count": 30171
+  },
+  {
+   "recording_mbid": "4216d786-159c-4813-96a8-05743ae0dc71",
+   "total_listen_count": 9104,
+   "total_user_count": 1767
+  },
+  {
+   "recording_mbid": "6eb8b69a-6150-4b8c-941a-2170e2cc2013",
+   "total_listen_count": 9596,
+   "total_user_count": 1931
+  },
+  {
+   "recording_mbid": "6a7b25fe-b916-4c45-a36c-d9aebd77a108",
+   "total_listen_count": 2928,
+   "total_user_count": 1248
+  },
+  {
+   "recording_mbid": "a169e398-244c-48f5-b81f-13f8cbe1f7e1",
+   "total_listen_count": 326799,
+   "total_user_count": 52747
+  },
+  {
+   "recording_mbid": "d7121779-9df6-4f8a-bd83-51744fe2b8c1",
+   "total_listen_count": 192496,
+   "total_user_count": 41208
+  },
+  {
+   "recording_mbid": "3c5e6765-9c85-4510-9e4b-75531379f375",
+   "total_listen_count": 98802,
+   "total_user_count": 28221
+  },
+  {
+   "recording_mbid": "14a9e4fa-1c8a-4339-9477-18a4c7802022",
+   "total_listen_count": 95828,
+   "total_user_count": 17294
+  },
+  {
+   "recording_mbid": "a60613a5-a31a-459f-ad3e-a0bee45891d7",
+   "total_listen_count": 279755,
+   "total_user_count": 47729
+  },
+  {
+   "recording_mbid": "560e7dc3-d41b-4e89-a295-e93ef626bb82",
+   "total_listen_count": 2,
+   "total_user_count": 2
+  },
+  {
+   "recording_mbid": "32477201-11ce-43d6-8553-3f2834cc1aa2",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "recording_mbid": "885ccb38-4057-4d1a-8fb0-52804f79d653",
+   "total_listen_count": 963029,
+   "total_user_count": 105014
+  },
+  {
+   "recording_mbid": "b3c6aa0a-6960-4db6-bf27-ed50de88309c",
+   "total_listen_count": 24709,
+   "total_user_count": 3434
+  },
+  {
+   "recording_mbid": "f42e84ef-f23e-4b8c-b3a1-8f407be68ea5",
+   "total_listen_count": 1215514,
+   "total_user_count": 116187
+  },
+  {
+   "recording_mbid": "48299852-b44c-46a3-b635-1a34f2fe61e5",
+   "total_listen_count": 752614,
+   "total_user_count": 93045
+  },
+  {
+   "recording_mbid": "a4c4457b-577e-4fac-b820-713bb91dbb6c",
+   "total_listen_count": 1470222,
+   "total_user_count": 123940
+  },
+  {
+   "recording_mbid": "2beff74d-69fe-4e53-9a47-26f29b64c6d4",
+   "total_listen_count": 71781,
+   "total_user_count": 9305
+  },
+  {
+   "recording_mbid": "36e2b944-e497-4b83-9bbb-0723fcb197f8",
+   "total_listen_count": 9615,
+   "total_user_count": 1602
+  },
+  {
+   "recording_mbid": "c8da6e46-d517-4930-87d8-5be5ab9ca3c9",
+   "total_listen_count": 31913,
+   "total_user_count": 3916
+  },
+  {
+   "recording_mbid": "a24f67ff-a81e-4a95-817d-c0b4e5af3e6b",
+   "total_listen_count": 378874,
+   "total_user_count": 50324
+  },
+  {
+   "recording_mbid": "e848d5fd-4590-468a-89af-45e88262c8e3",
+   "total_listen_count": 612786,
+   "total_user_count": 83437
+  },
+  {
+   "recording_mbid": "8089efd2-b32a-4b43-963f-7743e888793a",
+   "total_listen_count": 13838,
+   "total_user_count": 2446
+  },
+  {
+   "recording_mbid": "a7bade00-f8be-47ae-a0ab-3ce42931213a",
+   "total_listen_count": 18222,
+   "total_user_count": 2728
+  },
+  {
+   "recording_mbid": "db232387-83c8-4578-8a1d-b7759520ed5a",
+   "total_listen_count": 479278,
+   "total_user_count": 79086
+  },
+  {
+   "recording_mbid": "2619bbe9-e40d-4e96-8b5b-a3d9bbe5d7a1",
+   "total_listen_count": 5,
+   "total_user_count": 3
+  },
+  {
+   "recording_mbid": "8885a72a-14b5-4c70-9f7d-095fac771e67",
+   "total_listen_count": 166025,
+   "total_user_count": 22632
+  },
+  {
+   "recording_mbid": "55e0110c-78f0-4574-9633-5d3da7349654",
+   "total_listen_count": 581270,
+   "total_user_count": 76014
+  },
+  {
+   "recording_mbid": "8009d470-912b-42fa-8261-b88c488eb935",
+   "total_listen_count": 900343,
+   "total_user_count": 84139
+  },
+  {
+   "recording_mbid": "b3a7eae7-1515-45ae-8ca1-ee05544e8965",
+   "total_listen_count": 601366,
+   "total_user_count": 75357
+  },
+  {
+   "recording_mbid": "f36ec2db-ca2b-49fb-9fcc-ff9058f66d3c",
+   "total_listen_count": 32870,
+   "total_user_count": 4933
+  },
+  {
+   "recording_mbid": "4efea515-d670-4715-b99c-71df72f980fa",
+   "total_listen_count": 796541,
+   "total_user_count": 90867
+  },
+  {
+   "recording_mbid": "a08a7c15-7864-4c3b-b1b2-e8b3b8f70b15",
+   "total_listen_count": 26089,
+   "total_user_count": 4584
+  },
+  {
+   "recording_mbid": "0ee17159-10e8-4337-aecb-442757df132e",
+   "total_listen_count": 19399,
+   "total_user_count": 3578
+  },
+  {
+   "recording_mbid": "078c6b81-8e6c-4403-accf-c634b742143c",
+   "total_listen_count": 436281,
+   "total_user_count": 53866
+  },
+  {
+   "recording_mbid": "f046e413-3ff0-49d5-9971-3576395acf91",
+   "total_listen_count": 373371,
+   "total_user_count": 56631
+  },
+  {
+   "recording_mbid": "e8586f0d-6d41-4f93-b371-85f3238a7344",
+   "total_listen_count": 407655,
+   "total_user_count": 63817
+  },
+  {
+   "recording_mbid": "0d20345f-345c-459b-9d05-34b2906e5da9",
+   "total_listen_count": 36488,
+   "total_user_count": 4576
+  },
+  {
+   "recording_mbid": "c2914387-416b-42fc-a2a7-1978f4eb35d1",
+   "total_listen_count": 342154,
+   "total_user_count": 60399
+  },
+  {
+   "recording_mbid": "7c43fc8c-4ffb-4c51-b8a3-51f755abd1be",
+   "total_listen_count": 10596,
+   "total_user_count": 1926
+  },
+  {
+   "recording_mbid": "c9bb50ba-c628-4ed3-aeb2-3abb9022260b",
+   "total_listen_count": 7583,
+   "total_user_count": 1239
+  }
+ ]
+}

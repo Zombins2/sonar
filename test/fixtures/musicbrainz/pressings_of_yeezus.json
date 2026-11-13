@@ -1,0 +1,56 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group/5d4d0f2d-9be7-4922-bc9a-cbd2880b12c2",
+  "query": {
+   "inc": "releases",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "title": "Yeezus",
+  "disambiguation": "",
+  "id": "5d4d0f2d-9be7-4922-bc9a-cbd2880b12c2",
+  "primary-type": "Album",
+  "releases": [
+   {
+    "packaging": "Jewel Case",
+    "country": "AU",
+    "text-representation": {
+     "script": "Latn",
+     "language": "eng"
+    },
+    "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+    "barcode": "602537432134",
+    "release-events": [
+     {
+      "date": "2013-06-18",
+      "area": {
+       "disambiguation": "",
+       "sort-name": "Australia",
+       "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+       "name": "Australia",
+       "type": null,
+       "iso-3166-1-codes": [
+        "AU"
+       ],
+       "type-id": null
+      }
+     }
+    ],
+    "date": "2013-06-18",
+    "disambiguation": "",
+    "quality": "normal",
+    "id": "5b78aa6b-67be-43b5-8f56-a89116e48087",
+    "title": "Yeezus",
+    "status": "Official",
+    "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+   }
+  ],
+  "secondary-type-ids": [],
+  "first-release-date": "2013-06-18",
+  "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+  "secondary-types": []
+ }
+}

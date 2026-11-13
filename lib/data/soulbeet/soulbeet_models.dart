@@ -29,7 +29,16 @@ double _double(Object? v) => v is num ? v.toDouble() : 0;
 /// An album on MusicBrainz (a release), from a search or an album lookup.
 /// [raw] is sent back unchanged when asking Soulbeet to download it.
 class SbAlbum {
-  SbAlbum._(this.raw, {required this.id, required this.title, required this.artist, this.releaseDate, this.mbid});
+  SbAlbum._(
+    this.raw, {
+    required this.id,
+    required this.title,
+    required this.artist,
+    this.releaseDate,
+    this.mbid,
+    this.groupId,
+    this.kinds = const [],
+  });
 
   factory SbAlbum.fromJson(SbJson j) => SbAlbum._(
     Map.unmodifiable(j),
@@ -40,6 +49,37 @@ class SbAlbum {
     mbid: _str(j['mbid']),
   );
 
+  /// An album Sonar found on MusicBrainz itself, shaped as Soulbeet's own
+  /// search sends it: [pressing] is the release to download, [groupId] the
+  /// album across all its pressings. Found without a pressing (an artist's
+  /// list), it [needsPressing] before its songs load or it downloads.
+  factory SbAlbum.found({
+    String? pressing,
+    required String groupId,
+    required String title,
+    required String artist,
+    String? releaseDate,
+    List<String> kinds = const [],
+  }) => SbAlbum._(
+    Map.unmodifiable({
+      'id': pressing ?? groupId,
+      'title': title,
+      'artist': artist,
+      'release_date': releaseDate,
+      'mbid': pressing,
+    }),
+    id: pressing ?? groupId,
+    title: title,
+    artist: artist,
+    releaseDate: _str(releaseDate),
+    mbid: pressing,
+    groupId: groupId,
+    kinds: List.unmodifiable(kinds),
+  );
+
+  /// Found without a pressing: [id] is the release group's for now.
+  bool get needsPressing => mbid == null && groupId != null;
+
   final SbJson raw;
   final String id;
   final String title;
@@ -48,6 +88,14 @@ class SbAlbum {
 
   /// The MusicBrainz release id (the same as [id] for MusicBrainz results).
   final String? mbid;
+
+  /// The MusicBrainz release group (the album across all its pressings),
+  /// when known: what listener counts are kept by.
+  final String? groupId;
+
+  /// What else MusicBrainz says the album is, besides an album or EP:
+  /// "Compilation", "Live", "Remix", "Mixtape/Street"... Empty for a studio one.
+  final List<String> kinds;
 
   /// The album as Soulbeet's own page sends it back (no `kind`).
   SbJson get request => {
@@ -122,6 +170,19 @@ class SbTrack {
   final String? album;
   final String? albumId;
   final Duration? duration;
+
+  /// The album this song is on, as far as a search knows it. Its artist is
+  /// the song's (with any featured names); the album sheet swaps in the
+  /// album's own details once they load.
+  SbAlbum? get onAlbum => albumId == null || album == null
+      ? null
+      : SbAlbum.fromJson({
+          'id': albumId,
+          'title': album,
+          'artist': artist,
+          'release_date': raw['release_date'],
+          'mbid': albumId,
+        });
 
   /// Soulbeet sends `"04:41"` (or `"1:02:03"`).
   static Duration? _parseDuration(Object? v) {

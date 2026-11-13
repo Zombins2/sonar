@@ -4,6 +4,8 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 import '../../core/theme.dart';
+import '../../data/musicbrainz/musicbrainz_client.dart';
+import '../../data/soulbeet/soulbeet_client.dart';
 import '../../data/subsonic/subsonic_client.dart';
 
 String formatDuration(Duration d) {
@@ -18,7 +20,12 @@ String formatLongDuration(Duration d) {
   return '${d.inMinutes} min';
 }
 
-String errorText(Object e) => e is SubsonicException ? e.message : 'Something went wrong.';
+String errorText(Object e) => switch (e) {
+  SubsonicException() => e.message,
+  SoulbeetException() => e.message,
+  MusicBrainzException() => e.message,
+  _ => 'Something went wrong.',
+};
 
 class SectionHeader extends StatelessWidget {
   const SectionHeader(this.title, {super.key, this.trailing});

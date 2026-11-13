@@ -1,0 +1,135 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/metadata/album",
+    "body": {
+      "input": {
+        "id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "provider": "musicbrainz"
+      }
+    }
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": {
+    "album": {
+      "id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+      "title": "Oh yeah?",
+      "artist": "Steve Lacy",
+      "release_date": "2026-07-17",
+      "mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+    },
+    "tracks": [
+      {
+        "id": "4633ac63-8179-41cb-a4b0-11631b28ffa1",
+        "title": "oh yeah?",
+        "artist": "Steve Lacy",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "02:51",
+        "mbid": "4633ac63-8179-41cb-a4b0-11631b28ffa1",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      },
+      {
+        "id": "84f263f6-e60c-49f0-afe8-c205059d75aa",
+        "title": "is it cool?",
+        "artist": "Steve Lacy, SZA",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "02:54",
+        "mbid": "84f263f6-e60c-49f0-afe8-c205059d75aa",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      },
+      {
+        "id": "197eb7c2-b690-4ba6-bf58-f73a39ae6cbe",
+        "title": "the feeling",
+        "artist": "Steve Lacy",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "04:35",
+        "mbid": "197eb7c2-b690-4ba6-bf58-f73a39ae6cbe",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      },
+      {
+        "id": "5db818b8-9d0c-4c33-9fa1-c7c0a837afde",
+        "title": "pure colour",
+        "artist": "Steve Lacy, Erykah Badu",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "03:07",
+        "mbid": "5db818b8-9d0c-4c33-9fa1-c7c0a837afde",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      },
+      {
+        "id": "54a5a30c-8b03-4d93-9678-dd60fd715548",
+        "title": "show you me",
+        "artist": "Steve Lacy",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "03:23",
+        "mbid": "54a5a30c-8b03-4d93-9678-dd60fd715548",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      },
+      {
+        "id": "fc1e6a4e-4a7a-4ec7-b6d0-b910fda84299",
+        "title": "doom",
+        "artist": "Steve Lacy",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "04:53",
+        "mbid": "fc1e6a4e-4a7a-4ec7-b6d0-b910fda84299",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      },
+      {
+        "id": "b2cec810-2976-4ef4-94e7-1afc9dc5a4b4",
+        "title": "nothing",
+        "artist": "Steve Lacy",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "02:30",
+        "mbid": "b2cec810-2976-4ef4-94e7-1afc9dc5a4b4",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      },
+      {
+        "id": "32fcf8b3-8aa8-4c64-8d9f-30656af8b688",
+        "title": "lovesexdrugbomb",
+        "artist": "Steve Lacy, Cecile Believe",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "03:57",
+        "mbid": "32fcf8b3-8aa8-4c64-8d9f-30656af8b688",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      },
+      {
+        "id": "8751481d-da37-4341-95a4-1c446d0e67f9",
+        "title": "nice shoes / in your world",
+        "artist": "Steve Lacy",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "09:03",
+        "mbid": "8751481d-da37-4341-95a4-1c446d0e67f9",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      },
+      {
+        "id": "c11b6ced-393a-440b-9715-1d011d49afe1",
+        "title": "bebe",
+        "artist": "Steve Lacy",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "02:48",
+        "mbid": "c11b6ced-393a-440b-9715-1d011d49afe1",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      }
+    ]
+  }
+}

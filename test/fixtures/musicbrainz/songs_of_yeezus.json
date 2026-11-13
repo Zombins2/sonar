@@ -1,0 +1,556 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release/5b78aa6b-67be-43b5-8f56-a89116e48087",
+  "query": {
+   "inc": "recordings+artist-credits",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "id": "5b78aa6b-67be-43b5-8f56-a89116e48087",
+  "date": "2013-06-18",
+  "quality": "normal",
+  "title": "Yeezus",
+  "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+  "asin": null,
+  "release-events": [
+   {
+    "date": "2013-06-18",
+    "area": {
+     "type-id": null,
+     "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+     "iso-3166-1-codes": [
+      "AU"
+     ],
+     "type": null,
+     "disambiguation": "",
+     "name": "Australia",
+     "sort-name": "Australia"
+    }
+   }
+  ],
+  "artist-credit": [
+   {
+    "name": "Kanye West",
+    "artist": {
+     "sort-name": "Ye",
+     "disambiguation": "formerly Kanye West",
+     "country": "US",
+     "name": "Ye",
+     "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+     "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+     "type": "Person"
+    },
+    "joinphrase": ""
+   }
+  ],
+  "text-representation": {
+   "script": "Latn",
+   "language": "eng"
+  },
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "media": [
+   {
+    "position": 1,
+    "title": "",
+    "track-count": 10,
+    "id": "32cacc08-c079-305a-8a6d-792422adfe72",
+    "tracks": [
+     {
+      "number": "1",
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "length": 156893,
+      "recording": {
+       "first-release-date": "2013-06-18",
+       "id": "1912fd49-90be-4409-9b98-f5781409e732",
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "artist": {
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person"
+         },
+         "name": "Kanye West",
+         "joinphrase": ""
+        }
+       ],
+       "length": 156893,
+       "title": "On Sight"
+      },
+      "id": "57a0f1ac-dd41-4ccf-8791-014c83f208aa",
+      "position": 1,
+      "title": "On Sight"
+     },
+     {
+      "length": 188306,
+      "number": "2",
+      "artist-credit": [
+       {
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person",
+         "sort-name": "Ye",
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "title": "Black Skinhead",
+      "position": 2,
+      "id": "59f68cf3-9ead-4d95-a3e5-01e8bb23e807",
+      "recording": {
+       "title": "Black Skinhead",
+       "length": 188306,
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "sort-name": "Ye"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "first-release-date": "2013-06-18",
+       "id": "2e48f30b-7ad2-4fea-97f1-edef65565d7c"
+      }
+     },
+     {
+      "position": 3,
+      "title": "I Am a God",
+      "id": "2abba010-cfda-44a0-bab5-27361de27139",
+      "recording": {
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": " feat. ",
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye"
+         },
+         "name": "Kanye West"
+        },
+        {
+         "joinphrase": "",
+         "name": "God",
+         "artist": {
+          "disambiguation": "Special Purpose Artist – Do not add releases here, if possible.",
+          "country": "XW",
+          "name": "[unknown]",
+          "sort-name": "[unknown]",
+          "type-id": "ac897045-5043-3294-969b-187360e45d86",
+          "id": "125ec42a-7229-4250-afc5-e057484327fe",
+          "type": "Other"
+         }
+        }
+       ],
+       "video": false,
+       "id": "fbd22b45-0d7a-4942-bca1-a1c8b5fb4584",
+       "first-release-date": "2013-06-18",
+       "title": "I Am a God",
+       "length": 231520
+      },
+      "length": 231520,
+      "artist-credit": [
+       {
+        "artist": {
+         "sort-name": "Ye",
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "name": "Kanye West",
+        "joinphrase": " feat. "
+       },
+       {
+        "artist": {
+         "sort-name": "[unknown]",
+         "country": "XW",
+         "disambiguation": "Special Purpose Artist – Do not add releases here, if possible.",
+         "name": "[unknown]",
+         "type-id": "ac897045-5043-3294-969b-187360e45d86",
+         "id": "125ec42a-7229-4250-afc5-e057484327fe",
+         "type": "Other"
+        },
+        "name": "God",
+        "joinphrase": ""
+       }
+      ],
+      "number": "3"
+     },
+     {
+      "number": "4",
+      "artist-credit": [
+       {
+        "artist": {
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "length": 256093,
+      "id": "4a1c76a5-bd5c-444b-8d41-91c6a1e968b5",
+      "recording": {
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person"
+         },
+         "name": "Kanye West"
+        }
+       ],
+       "first-release-date": "2013-06-18",
+       "id": "fa20c1c7-4ef7-4638-b7a5-46c3e86a3bc8",
+       "title": "New Slaves",
+       "length": 256093
+      },
+      "position": 4,
+      "title": "New Slaves"
+     },
+     {
+      "length": 326946,
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "sort-name": "Ye",
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "number": "5",
+      "position": 5,
+      "title": "Hold My Liquor",
+      "id": "1bdc3413-028a-4071-ad28-e9efd24321ca",
+      "recording": {
+       "video": false,
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye"
+         },
+         "name": "Kanye West"
+        }
+       ],
+       "disambiguation": "",
+       "first-release-date": "2013-06-18",
+       "id": "b57591e9-4849-4d95-a0a4-fbb5563dbb6c",
+       "title": "Hold My Liquor",
+       "length": 326946
+      }
+     },
+     {
+      "position": 6,
+      "title": "I’m in It",
+      "recording": {
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "name": "Kanye West",
+         "artist": {
+          "sort-name": "Ye",
+          "name": "Ye",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         }
+        }
+       ],
+       "disambiguation": "",
+       "video": false,
+       "id": "e1cce612-9f53-42a9-82fc-640411bd518d",
+       "first-release-date": "2013-06-18",
+       "title": "I’m in It",
+       "length": 234853
+      },
+      "id": "172dbc67-38b1-4d3d-8a9a-ed506567b40a",
+      "length": 234853,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Kanye West",
+        "artist": {
+         "sort-name": "Ye",
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+       }
+      ],
+      "number": "6"
+     },
+     {
+      "id": "218948aa-5671-493f-9ab3-ac09cad6f9e3",
+      "recording": {
+       "id": "e6795931-6628-4f91-8509-37e74575f80b",
+       "first-release-date": "2013-06-18",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "artist": {
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "video": false,
+       "length": 360280,
+       "title": "Blood on the Leaves"
+      },
+      "title": "Blood on the Leaves",
+      "position": 7,
+      "number": "7",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Kanye West",
+        "artist": {
+         "sort-name": "Ye",
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+        }
+       }
+      ],
+      "length": 360280
+     },
+     {
+      "position": 8,
+      "title": "Guilt Trip",
+      "recording": {
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "sort-name": "Ye"
+         },
+         "name": "Kanye West"
+        }
+       ],
+       "video": false,
+       "id": "a91aa600-0698-41f7-8d98-8d197c3ebb64",
+       "first-release-date": "2013-06-18",
+       "title": "Guilt Trip",
+       "length": 243746
+      },
+      "id": "e43a92f9-a292-4c1a-970d-d6a3de1a1aa2",
+      "length": 243746,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Kanye West",
+        "artist": {
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person"
+        }
+       }
+      ],
+      "number": "8"
+     },
+     {
+      "number": "9",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person"
+        },
+        "name": "Kanye West"
+       }
+      ],
+      "length": 178040,
+      "id": "c6029784-063c-48bf-945e-bdb16d04f756",
+      "recording": {
+       "title": "Send It Up",
+       "length": 178040,
+       "video": false,
+       "artist-credit": [
+        {
+         "artist": {
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "sort-name": "Ye"
+         },
+         "name": "Kanye West",
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": "",
+       "first-release-date": "2013-06-18",
+       "id": "0a450e88-492e-4da0-bbd8-d873cf1351ce"
+      },
+      "position": 9,
+      "title": "Send It Up"
+     },
+     {
+      "recording": {
+       "first-release-date": "2013-06-18",
+       "id": "d823ad32-96ee-4ff0-9653-b99c4d39310a",
+       "video": false,
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "sort-name": "Ye",
+          "name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+         },
+         "name": "Kanye West"
+        }
+       ],
+       "disambiguation": "",
+       "length": 229253,
+       "title": "Bound 2"
+      },
+      "id": "891bbfb1-49cd-401b-957d-f9bb0ec74a95",
+      "position": 10,
+      "title": "Bound 2",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Kanye West",
+        "artist": {
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye"
+        }
+       }
+      ],
+      "number": "10",
+      "length": 229253
+     }
+    ],
+    "track-offset": 0,
+    "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+    "format": "CD"
+   }
+  ],
+  "packaging": "Jewel Case",
+  "barcode": "602537432134",
+  "disambiguation": "",
+  "country": "AU",
+  "cover-art-archive": {
+   "count": 5,
+   "front": true,
+   "artwork": true,
+   "back": true,
+   "darkened": false
+  },
+  "status": "Official"
+ }
+}

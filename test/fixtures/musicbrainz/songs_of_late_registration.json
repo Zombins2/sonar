@@ -1,0 +1,1239 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release/c4a2e331-9b7d-429f-8117-7749e64f75e8",
+  "query": {
+   "inc": "recordings+artist-credits",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "barcode": "4988005404107",
+  "disambiguation": "",
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "cover-art-archive": {
+   "back": false,
+   "count": 35,
+   "darkened": false,
+   "front": true,
+   "artwork": true
+  },
+  "country": "JP",
+  "media": [
+   {
+    "track-offset": 0,
+    "position": 1,
+    "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+    "format": "CD",
+    "tracks": [
+     {
+      "id": "5fb16a74-e772-45aa-839a-2637426615ae",
+      "length": 41000,
+      "title": "Wake Up Mr. West",
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person",
+         "country": "US",
+         "disambiguation": "formerly Kanye West"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "position": 1,
+      "number": "1",
+      "recording": {
+       "length": 41000,
+       "title": "Wake Up Mr. West",
+       "video": false,
+       "first-release-date": "2005-08-26",
+       "id": "66ea2ad7-1eee-4436-8e2b-428b7344c835",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person",
+          "country": "US"
+         },
+         "name": "Kanye West"
+        }
+       ]
+      }
+     },
+     {
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "country": "US"
+        },
+        "name": "Kanye West"
+       }
+      ],
+      "length": 204000,
+      "title": "Heard ’Em Say",
+      "id": "4cad9cb9-142b-4740-94e8-efa6f7b11d20",
+      "recording": {
+       "first-release-date": "2005-01-01",
+       "id": "0ee6c11f-0952-4381-aa87-abc7446e5314",
+       "length": 204000,
+       "title": "Heard ’Em Say",
+       "video": false,
+       "artist-credit": [
+        {
+         "artist": {
+          "country": "US",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person",
+          "disambiguation": "formerly Kanye West"
+         },
+         "name": "Kanye West",
+         "joinphrase": " feat. "
+        },
+        {
+         "joinphrase": "",
+         "artist": {
+          "sort-name": "Levine, Adam",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Adam Levine",
+          "id": "a1421d73-1a21-484b-97ad-77c9a5676daf",
+          "type": "Person",
+          "country": "US",
+          "disambiguation": "Maroon 5’s lead vocalist"
+         },
+         "name": "Adam Levine"
+        }
+       ],
+       "disambiguation": "explicit"
+      },
+      "number": "2",
+      "position": 2
+     },
+     {
+      "id": "32b99d4a-5012-46c5-8a8d-e29d1bed203f",
+      "length": 237000,
+      "title": "Touch the Sky",
+      "artist-credit": [
+       {
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "country": "US"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "position": 3,
+      "number": "3",
+      "recording": {
+       "artist-credit": [
+        {
+         "joinphrase": " feat. ",
+         "name": "Kanye West",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "type": "Person",
+          "country": "US"
+         }
+        },
+        {
+         "artist": {
+          "country": "US",
+          "type": "Person",
+          "name": "Lupe Fiasco",
+          "id": "cf15719f-51f9-4db8-a15d-5eed9664ce69",
+          "sort-name": "Fiasco, Lupe",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": ""
+         },
+         "name": "Lupe Fiasco",
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": "explicit",
+       "first-release-date": "2005-08-26",
+       "id": "2bc961e7-21af-41f8-8414-99e3a7c563a2",
+       "video": false,
+       "title": "Touch the Sky",
+       "length": 237000
+      }
+     },
+     {
+      "id": "4ac6d9ce-2061-4a54-9097-0d1d7f34def5",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US"
+        },
+        "name": "Kanye West"
+       }
+      ],
+      "length": 208000,
+      "title": "Gold Digger",
+      "position": 4,
+      "recording": {
+       "artist-credit": [
+        {
+         "artist": {
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "disambiguation": "formerly Kanye West"
+         },
+         "name": "Kanye West",
+         "joinphrase": " feat. "
+        },
+        {
+         "joinphrase": "",
+         "artist": {
+          "id": "15a5da16-8b89-4047-aefe-81473c97b5b2",
+          "name": "Jamie Foxx",
+          "sort-name": "Foxx, Jamie",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "country": "US",
+          "disambiguation": "actor, comedian, and singer"
+         },
+         "name": "Jamie Foxx"
+        }
+       ],
+       "disambiguation": "album version / explicit",
+       "video": false,
+       "title": "Gold Digger",
+       "length": 208000,
+       "id": "ca2d4efe-89e3-4e63-9f69-27a2ec6cbe96",
+       "first-release-date": "2005-08-26"
+      },
+      "number": "4"
+     },
+     {
+      "id": "7e04a05d-ad91-4fbd-9ca1-aaca354eb584",
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "country": "US"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "length": 34000,
+      "title": "Skit #1",
+      "position": 5,
+      "recording": {
+       "id": "7566b71b-77ac-4b89-9abb-a034e14f9a96",
+       "first-release-date": "2005-08-26",
+       "video": false,
+       "title": "Skit #1",
+       "length": 33573,
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "name": "Kanye West",
+         "artist": {
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "type": "Person",
+          "disambiguation": "formerly Kanye West"
+         }
+        }
+       ],
+       "disambiguation": ""
+      },
+      "number": "5"
+     },
+     {
+      "number": "6",
+      "recording": {
+       "video": false,
+       "length": 272826,
+       "title": "Drive Slow",
+       "id": "28ff09dd-afc9-4eb9-bdc0-df88992a84d7",
+       "first-release-date": "2005-08-26",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "country": "US"
+         },
+         "joinphrase": " feat. "
+        },
+        {
+         "artist": {
+          "disambiguation": "US rapper & DJ",
+          "country": "US",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Wall, Paul",
+          "name": "Paul Wall",
+          "id": "505cc7ac-b92c-46dd-94f2-e22b18fdcf57"
+         },
+         "name": "Paul Wall",
+         "joinphrase": " & "
+        },
+        {
+         "joinphrase": "",
+         "artist": {
+          "disambiguation": "US rapper",
+          "country": "US",
+          "sort-name": "GLC",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "9bb6be36-0e7b-4d49-9d1e-9ae5cc84210d",
+          "name": "GLC",
+          "type": "Person"
+         },
+         "name": "GLC"
+        }
+       ]
+      },
+      "position": 6,
+      "length": 273000,
+      "title": "Drive Slow",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US"
+        },
+        "name": "Kanye West"
+       }
+      ],
+      "id": "44e748d1-3011-48ed-be8e-8732dcb232df"
+     },
+     {
+      "length": 104000,
+      "title": "My Way Home",
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "type": "Person",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "country": "US",
+         "disambiguation": "formerly Kanye West"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "id": "db63c32f-0aeb-4104-a2ba-2d379e63a5cd",
+      "number": "7",
+      "recording": {
+       "title": "My Way Home",
+       "length": 104000,
+       "video": false,
+       "first-release-date": "2005-08-26",
+       "id": "6cbcea9d-7dd6-4f8e-9667-d8cc31731c81",
+       "artist-credit": [
+        {
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person",
+          "country": "US"
+         },
+         "name": "Kanye West",
+         "joinphrase": " feat. "
+        },
+        {
+         "artist": {
+          "disambiguation": "US rapper",
+          "country": "US",
+          "sort-name": "Common",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "c0a1179b-b14a-4d68-a3c1-1fdab16ed602",
+          "name": "Common",
+          "type": "Person"
+         },
+         "name": "Common",
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": ""
+      },
+      "position": 7
+     },
+     {
+      "position": 8,
+      "number": "8",
+      "recording": {
+       "title": "Crack Music",
+       "length": 271000,
+       "video": false,
+       "id": "15316644-edf0-47c1-a438-3c0f25f6a1e5",
+       "first-release-date": "2005-08-26",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": " feat. ",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US"
+         },
+         "name": "Kanye West"
+        },
+        {
+         "artist": {
+          "disambiguation": "US rapper, aka Game",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Game, The",
+          "name": "The Game",
+          "id": "07cc14fb-4784-4a25-804b-2686ed5ef52c",
+          "type": "Person"
+         },
+         "name": "The Game",
+         "joinphrase": ""
+        }
+       ]
+      },
+      "id": "49a13977-426a-425f-b363-7281b47acfa3",
+      "title": "Crack Music",
+      "length": 271000,
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person",
+         "country": "US"
+        },
+        "joinphrase": ""
+       }
+      ]
+     },
+     {
+      "length": 246000,
+      "title": "Roses",
+      "artist-credit": [
+       {
+        "artist": {
+         "country": "US",
+         "type": "Person",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "disambiguation": "formerly Kanye West"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "id": "73b24957-dd79-496e-8f46-86cd9c0487d2",
+      "number": "9",
+      "recording": {
+       "video": false,
+       "title": "Roses",
+       "length": 246000,
+       "first-release-date": "2005-08-26",
+       "id": "bf91133f-e0cd-4b0f-a940-ba7be12b75b9",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "type": "Person",
+          "country": "US"
+         },
+         "name": "Kanye West",
+         "joinphrase": ""
+        }
+       ]
+      },
+      "position": 9
+     },
+     {
+      "position": 10,
+      "number": "10",
+      "recording": {
+       "first-release-date": "2005-08-26",
+       "id": "026e8892-cbc8-4edf-bc8e-bed1cbebb938",
+       "title": "Bring Me Down",
+       "length": 199000,
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": " feat. ",
+         "artist": {
+          "country": "US",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "formerly Kanye West"
+         },
+         "name": "Kanye West"
+        },
+        {
+         "name": "Brandy",
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Brandy",
+          "id": "01e60eba-52df-4694-8f09-39f43abe54e9",
+          "name": "Brandy",
+          "type": "Person",
+          "country": "US",
+          "disambiguation": "US R&B singer"
+         },
+         "joinphrase": ""
+        }
+       ]
+      },
+      "id": "0358faae-5d4e-459f-9816-b657a9ce2481",
+      "length": 199000,
+      "title": "Bring Me Down",
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "type": "Person",
+         "country": "US"
+        },
+        "joinphrase": ""
+       }
+      ]
+     },
+     {
+      "number": "11",
+      "recording": {
+       "length": 267000,
+       "title": "Addiction",
+       "video": false,
+       "id": "52bc6f21-2c6d-48d0-be24-6ddb06a8461c",
+       "first-release-date": "2005-08-26",
+       "disambiguation": "explicit",
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "artist": {
+          "country": "US",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "type": "Person",
+          "disambiguation": "formerly Kanye West"
+         },
+         "joinphrase": ""
+        }
+       ]
+      },
+      "position": 11,
+      "length": 267000,
+      "title": "Addiction",
+      "artist-credit": [
+       {
+        "artist": {
+         "type": "Person",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "disambiguation": "formerly Kanye West"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "id": "40d4b11a-bce0-41e0-9444-9ec7c2562711"
+     },
+     {
+      "recording": {
+       "first-release-date": "2005-08-26",
+       "id": "6b9f9693-ec4c-4f92-a6dc-7985cd66b586",
+       "video": false,
+       "title": "Skit #2",
+       "length": 31000,
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": ""
+      },
+      "number": "12",
+      "position": 12,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "country": "US",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "disambiguation": "formerly Kanye West"
+        },
+        "name": "Kanye West"
+       }
+      ],
+      "length": 31000,
+      "title": "Skit #2",
+      "id": "96cb41c7-5d30-4a25-919b-db828a8cd966"
+     },
+     {
+      "number": "13",
+      "recording": {
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "artist": {
+          "type": "Person",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "disambiguation": "formerly Kanye West"
+         },
+         "joinphrase": " feat. "
+        },
+        {
+         "joinphrase": "",
+         "artist": {
+          "country": "US",
+          "id": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "name": "JAŸ-Z",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Jay-Z",
+          "type": "Person",
+          "disambiguation": "US rapper"
+         },
+         "name": "JAY‐Z"
+        }
+       ],
+       "video": false,
+       "title": "Diamonds From Sierra Leone (remix)",
+       "length": 233000,
+       "id": "4216d786-159c-4813-96a8-05743ae0dc71",
+       "first-release-date": "2005-08-26"
+      },
+      "position": 13,
+      "title": "Diamonds From Sierra Leone (remix)",
+      "length": 233000,
+      "artist-credit": [
+       {
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "type": "Person"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "id": "3b6628d5-c85e-43fb-8fcd-7c13775c2e25"
+     },
+     {
+      "length": 449000,
+      "title": "We Major",
+      "artist-credit": [
+       {
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person",
+         "country": "US"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "id": "52982c23-dab3-4d30-98ee-4359364ea9ee",
+      "number": "14",
+      "recording": {
+       "video": false,
+       "length": 449000,
+       "title": "We Major",
+       "first-release-date": "2005-08-26",
+       "id": "6eb8b69a-6150-4b8c-941a-2170e2cc2013",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "artist": {
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "country": "US",
+          "disambiguation": "formerly Kanye West"
+         },
+         "name": "Kanye West",
+         "joinphrase": " feat. "
+        },
+        {
+         "name": "Nas",
+         "artist": {
+          "disambiguation": "US rapper",
+          "sort-name": "Nas",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Nas",
+          "id": "cfbc0924-0035-4d6c-8197-f024653af823",
+          "type": "Person",
+          "country": "US"
+         },
+         "joinphrase": " & "
+        },
+        {
+         "joinphrase": "",
+         "artist": {
+          "country": "US",
+          "id": "acc1b699-84fa-4639-af65-573ea044161a",
+          "name": "Really Doe",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Doe, Really",
+          "type": "Person",
+          "disambiguation": ""
+         },
+         "name": "Really Doe"
+        }
+       ]
+      },
+      "position": 14
+     },
+     {
+      "id": "bf5a8875-4e59-42b5-8807-ebee9bde7325",
+      "title": "Skit #3",
+      "length": 24000,
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "country": "US"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "position": 15,
+      "number": "15",
+      "recording": {
+       "video": false,
+       "length": 24000,
+       "title": "Skit #3",
+       "id": "6a7b25fe-b916-4c45-a36c-d9aebd77a108",
+       "first-release-date": "2005-08-26",
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "country": "US"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": ""
+      }
+     },
+     {
+      "recording": {
+       "id": "a169e398-244c-48f5-b81f-13f8cbe1f7e1",
+       "first-release-date": "2005-08-26",
+       "title": "Hey Mama",
+       "length": 305000,
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "name": "Kanye West",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "country": "US"
+         }
+        }
+       ]
+      },
+      "number": "16",
+      "position": 16,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Kanye West",
+        "artist": {
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "type": "Person",
+         "country": "US",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "length": 305000,
+      "title": "Hey Mama",
+      "id": "1043c34b-4236-4e56-98ef-3f115da4aef8"
+     },
+     {
+      "id": "7c8b63ce-8c38-4255-bf9b-b4e12bf24130",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "type": "Person",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "country": "US",
+         "disambiguation": "formerly Kanye West"
+        },
+        "name": "Kanye West"
+       }
+      ],
+      "length": 198000,
+      "title": "Celebration",
+      "position": 17,
+      "recording": {
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "country": "US"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": "",
+       "video": false,
+       "title": "Celebration",
+       "length": 198000,
+       "id": "d7121779-9df6-4f8a-bd83-51744fe2b8c1",
+       "first-release-date": "2005-08-26"
+      },
+      "number": "17"
+     },
+     {
+      "title": "Skit #4",
+      "length": 79000,
+      "artist-credit": [
+       {
+        "artist": {
+         "type": "Person",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "country": "US",
+         "disambiguation": "formerly Kanye West"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "id": "60983d65-9d81-499a-8174-e07d4eeb45b2",
+      "number": "18",
+      "recording": {
+       "length": 79000,
+       "title": "Skit #4",
+       "video": false,
+       "first-release-date": "2005-08-26",
+       "id": "3c5e6765-9c85-4510-9e4b-75531379f375",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "type": "Person",
+          "country": "US"
+         },
+         "name": "Kanye West"
+        }
+       ],
+       "disambiguation": ""
+      },
+      "position": 18
+     },
+     {
+      "id": "2f55ab47-5277-42d5-ae2a-6bb3b9d680d3",
+      "title": "Gone",
+      "length": 363000,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "type": "Person",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+        },
+        "name": "Kanye West"
+       }
+      ],
+      "position": 19,
+      "number": "19",
+      "recording": {
+       "artist-credit": [
+        {
+         "artist": {
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "country": "US",
+          "disambiguation": "formerly Kanye West"
+         },
+         "name": "Kanye West",
+         "joinphrase": " feat. "
+        },
+        {
+         "name": "Consequence",
+         "artist": {
+          "country": "US",
+          "type": "Person",
+          "id": "c2e49f7a-cd6f-48ca-8596-b03614ea4fe8",
+          "name": "Consequence",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Consequence",
+          "disambiguation": "US rapper"
+         },
+         "joinphrase": " & "
+        },
+        {
+         "name": "Cam’Ron",
+         "artist": {
+          "name": "Cam’ron",
+          "id": "ea6b7199-901d-4c0e-8242-6d7bc2bf62b7",
+          "sort-name": "Cam’ron",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "country": "US",
+          "disambiguation": "US rapper Cameron Giles, fka Killa Cam"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": "",
+       "title": "Gone",
+       "length": 363000,
+       "video": false,
+       "id": "14a9e4fa-1c8a-4339-9477-18a4c7802022",
+       "first-release-date": "2005-08-26"
+      }
+     },
+     {
+      "position": 20,
+      "number": "20",
+      "recording": {
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "name": "Kanye West",
+         "artist": {
+          "country": "US",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "disambiguation": "formerly Kanye West"
+         }
+        }
+       ],
+       "id": "a60613a5-a31a-459f-ad3e-a0bee45891d7",
+       "first-release-date": "2005-08-26",
+       "length": 239000,
+       "title": "Diamonds From Sierra Leone",
+       "video": false
+      },
+      "id": "e3f0f5e4-30f8-4cf9-9fc3-6e6b96bd864b",
+      "title": "Diamonds From Sierra Leone (original version)",
+      "length": 239000,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "country": "US",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person",
+         "disambiguation": "formerly Kanye West"
+        },
+        "name": "Kanye West"
+       }
+      ]
+     },
+     {
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Kanye West",
+        "artist": {
+         "type": "Person",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "country": "US",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "title": "We Can Make It Better",
+      "length": 233000,
+      "id": "bcd0f822-6057-49f0-868d-9bae98654939",
+      "recording": {
+       "id": "560e7dc3-d41b-4e89-a295-e93ef626bb82",
+       "first-release-date": "2005-08-26",
+       "length": 233000,
+       "title": "We Can Make It Better",
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "artist": {
+          "country": "US",
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "formerly Kanye West"
+         },
+         "joinphrase": ""
+        }
+       ]
+      },
+      "number": "21",
+      "position": 21
+     },
+     {
+      "number": "22",
+      "recording": {
+       "id": "32477201-11ce-43d6-8553-3f2834cc1aa2",
+       "first-release-date": "2005-08-26",
+       "video": false,
+       "title": "Back to the Basics",
+       "length": 99000,
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "name": "Kanye West",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "type": "Person",
+          "country": "US"
+         }
+        }
+       ],
+       "disambiguation": ""
+      },
+      "position": 22,
+      "length": 99000,
+      "title": "Back to the Basics",
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "country": "US",
+         "type": "Person",
+         "name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "formerly Kanye West"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "id": "e2ada2c8-521a-495a-819c-7bdc2e06ce47"
+     }
+    ],
+    "title": "",
+    "track-count": 22,
+    "id": "f1fb365b-1e4c-40bf-ad32-c52dd5ad0aed"
+   }
+  ],
+  "text-representation": {
+   "script": "Latn",
+   "language": "eng"
+  },
+  "quality": "normal",
+  "artist-credit": [
+   {
+    "artist": {
+     "country": "US",
+     "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+     "sort-name": "Ye",
+     "name": "Ye",
+     "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+     "type": "Person",
+     "disambiguation": "formerly Kanye West"
+    },
+    "name": "Kanye West",
+    "joinphrase": ""
+   }
+  ],
+  "status": "Official",
+  "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+  "asin": null,
+  "date": "2005-08-26",
+  "title": "Late Registration",
+  "packaging": "Gatefold Cover",
+  "id": "c4a2e331-9b7d-429f-8117-7749e64f75e8",
+  "release-events": [
+   {
+    "area": {
+     "type": null,
+     "iso-3166-1-codes": [
+      "JP"
+     ],
+     "type-id": null,
+     "sort-name": "Japan",
+     "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+     "name": "Japan",
+     "disambiguation": ""
+    },
+    "date": "2005-08-26"
+   }
+  ]
+ }
+}

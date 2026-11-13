@@ -1,0 +1,1279 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/1/popularity/release-group",
+  "body": {
+   "release_group_mbids": [
+    "0e387810-d075-40c6-b758-400c401f10d2",
+    "1e9e8f2b-febc-4c81-b067-77e595b5d5ba",
+    "2922b099-93c6-43cf-ab52-5d3f4c5b5759",
+    "37526a90-7f4f-42e5-a985-138cb5055b10",
+    "480fd72f-73e8-40fa-948b-002e95850a5a",
+    "4dca0a1a-c7a4-453a-8ae1-543cae89c5df",
+    "5b320eb9-821d-4b05-b815-af565607c596",
+    "64c36440-3737-4292-a0d4-972405200bc2",
+    "6bb871f4-08ec-4a70-9fb3-c1c2b481e090",
+    "945fbb85-ee10-44c8-a425-857d574e3e13",
+    "97f81612-5d23-4954-99a3-5d1bd795a271",
+    "a24bbe58-6a26-48fb-b3c5-992565cc456d",
+    "a63d8f11-b8db-4255-80e0-50bdafd67252",
+    "bd8069a9-3c24-4936-97f7-8a36be1129f0",
+    "c2e32b33-946a-4ba1-aa29-d5df249028e7",
+    "c35a4a3f-d584-42fc-ac0f-b9592aedd3b2",
+    "c89e9cff-c0c9-4e34-95e7-185056956caf",
+    "c95a2f0f-29fe-48a2-93a3-5cbefaa8df5a",
+    "de388665-8561-474b-b8f3-7c7569d5ce97",
+    "eb686e9b-654c-43d2-9f26-b61306f93f7f",
+    "ec4235ba-7fbb-4ed6-8e1d-c3ea1a93d9f5",
+    "f16b861e-791c-4e8b-825f-97f77c271b0e",
+    "f395e7ec-4ecf-4403-a241-800b25ef267d",
+    "05d0ff9f-2fba-35f1-92e4-f81872004689",
+    "06dc5a43-7ca4-3e9a-8c78-02ea52d58296",
+    "09e82aa7-c8d0-3140-978c-1ee42fd65014",
+    "0bcac1b9-4de0-430a-817b-84f26484a4fe",
+    "0c95909c-4d34-37c0-910c-911106f7bb90",
+    "0d4df412-5324-4d31-ab59-e3d2b6dae8f1",
+    "0d65364d-a4c8-49e9-a4b5-deb46e008101",
+    "11fa1721-b803-4321-85f7-32364e169a3c",
+    "18296dab-ca5a-357a-b160-2279343bfe12",
+    "18b2ca99-0230-4530-bf04-09fbf255a63f",
+    "1a726d8a-e574-486c-85fe-8dd263af3cb0",
+    "1c1b50ec-828b-3d7c-9b1b-54cb1fe97d55",
+    "21cca1ae-db9c-3915-812a-efddcb7a4f00",
+    "225a89b0-2520-488c-a090-ae4e4debb726",
+    "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+    "28e5844d-8e0c-415a-a661-0c5bd025783e",
+    "2902bfbf-a535-44d1-896e-600f0875138b",
+    "2a879dda-b5cf-4330-9caa-b5aac34af2bc",
+    "2b7d0e71-a5f5-4899-8c03-0dd7e0a564d1",
+    "2da4f1d6-b332-4f6a-a7d1-3942df87e702",
+    "36c3b550-7f91-3735-a3a6-840fb721319e",
+    "387a45c4-bb95-3bda-bd88-737598846690",
+    "3b82f373-1543-4b4f-a400-ca2101659508",
+    "3c65a18c-1591-4bca-93c2-7d93a4489b57",
+    "410228dc-fe53-4691-92db-c7370cb6ab11",
+    "41efe651-b79a-4120-8599-87ca4b72f1fc",
+    "4370d1a3-ab87-460a-8a52-356f8f74d494",
+    "448d46fc-e2d5-4ea6-875a-a643f70493bf",
+    "44b6a7f2-6b2a-4189-a95b-e3791b28bef8",
+    "463193c2-bcee-33da-b8cf-7623289fefb1",
+    "4c4fec13-4eab-45e5-84fa-4254ab89d2c4",
+    "4c5b1f75-3fc7-486f-9848-eb2fe8180f62",
+    "4f763a97-30ab-4082-9382-6767f4f2eb36",
+    "56327267-51fb-472c-919e-d6ca258ebab2",
+    "56d157af-8c97-432f-bc74-27b58cd043f5",
+    "57da26b5-6376-4db2-aa3f-d3d7650f3ad4",
+    "58adbae4-d201-3843-ba9c-fc94542596c0",
+    "592dae87-780a-41da-b387-a5e6c4035a96",
+    "5d4d0f2d-9be7-4922-bc9a-cbd2880b12c2",
+    "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+    "5fb5d12f-9983-4663-a5d2-adf8fa87b092",
+    "6448381d-9d98-4f84-b99d-733b6acde906",
+    "6dffc036-58c5-4bdf-914c-31fdbb55e9fc",
+    "6fbf15bb-fc19-4e99-9826-3b0682521b11",
+    "7233c897-be76-43b0-b5d1-a16850a0e9f4",
+    "73394eaf-5802-3ccb-9a9e-3c95a5052353",
+    "76e6f89d-c2a2-4b42-99d0-076f5727522c",
+    "76f1a065-df3b-4cae-8ce4-29580d49104c",
+    "7f4792fe-b563-4554-849a-95a89be71f84",
+    "80d105a7-c9be-4e96-9dde-8a5fe8567272",
+    "8687263a-d582-434c-a609-360d0e5385f2",
+    "87bb4b1d-f555-4380-b96b-09b2124a1153",
+    "88b89d2b-b0c5-4753-b3fd-faf867bf4125",
+    "89cb94a8-ba33-42ef-a2e3-554a0300022d",
+    "8a01217e-6947-3927-a39b-6691104694f1",
+    "8c18657a-6338-490d-a952-897663596b96",
+    "9742038a-8d4d-4f63-b6c6-1f2e9f00f254",
+    "983e4aaf-c117-4a65-bc57-5b6c206f1f7e",
+    "9f4b38bf-5903-4eab-9009-3fd7584986ff",
+    "a0213101-b01a-4714-a9ff-bbfa4238566a",
+    "a0afd355-d033-4bd0-83a8-ae071ef9e8c7",
+    "a24fe12c-b8a7-4d86-bfe3-3eadae1a405f",
+    "a59c27fa-85b8-4641-94e5-59c2d8f80eb4",
+    "a85f995d-84f5-4a06-903a-c1e2117873a8",
+    "a96597aa-93b4-4e14-9e6e-03892ab24979",
+    "ab58e273-9310-4b5e-b517-1a90bec25453",
+    "abe7865c-84ad-4a28-b9f4-e85e2355423e",
+    "acd73897-c774-4c01-957d-3b35e57789d8",
+    "b0004d4e-3c79-4527-9e71-9113411c1591",
+    "b16951fa-a36b-4af6-9351-75e58014507a",
+    "b26cd80b-44ae-4199-8b77-72d6f957e624",
+    "b4c7a391-44d7-4ba8-93c1-6ee7920dbc53",
+    "b5d77225-74e0-4af2-aebe-c0266f771b82",
+    "b959f415-85bb-410e-858a-67ffac069743",
+    "ba02d882-b77c-348a-a6e4-2bb6fe0ae2fe",
+    "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+    "c61cf2c6-f1fa-37c3-b4a5-5592a3221ede",
+    "c86e4825-0bae-4248-b332-05bff5893ef9",
+    "c8a3e399-0514-42d3-ba8c-8d001ee9f2be",
+    "ca433d63-a566-4cfd-bb19-b898713a6e10",
+    "d44c50ad-61fd-3fce-95fc-27024d7f1d30",
+    "d684142d-4343-4408-b11e-0eca5bbac012",
+    "d81cb777-8224-4258-a3b2-b9e8ee1861e3",
+    "dabbb756-f3e7-429b-8cf6-32efc2cecd10",
+    "dd5d8c4c-9887-4a8c-8a1a-98daebb1b9bf",
+    "dd9639cc-720a-4c91-b8ac-d3ad541c29f2",
+    "e0bcb908-c9ce-3f1a-81cb-404b4b28a428",
+    "e3b8e467-c8ee-438a-a19c-8d0cfec786f6",
+    "ea30b0db-bcb0-4748-bb4d-75dc8f660eb5",
+    "ea984c51-977f-4128-8b9a-7b6e9b8841f7",
+    "ee09c603-5492-4ad5-af6e-32abac4d66ec",
+    "ee26718c-2633-4278-8718-f3a45a95f20e",
+    "f002ca9d-b972-3678-a9cf-92f4b327c194",
+    "f4d6128a-dd9f-4089-bb02-346fce213ddc",
+    "f6622af5-e114-4561-a437-23a71176cbd9",
+    "f6c60bc5-a891-48db-a1f4-bebc07c3f040",
+    "f7798ccf-2943-4058-ac34-f3682a4ec407",
+    "f7ddaaf7-b4d7-4842-82a3-1518afe5949a",
+    "fdf1df79-1936-3779-ab2d-6f440dc2637e",
+    "ffbb2ab4-8b69-4427-a6bc-261696627e0f",
+    "0587f018-39de-4f38-94d5-ed07f1e8ac2e",
+    "05a6b07b-ae61-4c0b-8f35-caa8dbfdafde",
+    "05e38383-1545-420f-a19b-0617d6113ce3",
+    "0ab0315f-dd17-4b71-a163-d04ae2370f9b",
+    "121ae389-961f-4355-9cea-271281d1551f",
+    "1282e548-9d31-4cd8-a7a7-1af7ee3e1f57",
+    "19894e5b-e559-4835-9bf7-a451b8c6c810",
+    "1a7561ec-65d4-4cf6-9de5-27145f2953a2",
+    "2311aa7c-5f02-4f2f-b771-3e09899bf19f",
+    "242d3c11-f39b-4703-a305-310f318ff73d",
+    "272f89cd-a81d-4272-9d12-9894c33c4c09",
+    "31bfac71-6fba-40bd-9699-4d40f3a7a57e",
+    "336f8e15-8e38-3d49-a700-48a8b360281c",
+    "3584f709-ff60-32b1-8e49-0404d36b55c9",
+    "3c2d6ffe-61b9-46e5-b935-3b8df01f900d",
+    "4304c426-faa7-3e3e-ac14-40945a593391",
+    "457ae5f8-a35d-40e4-b67c-e02c7826c257",
+    "4e642f77-65b1-3a40-a626-607503633177",
+    "51438fb1-d569-307b-abff-0c2bb62c9abd",
+    "560848f9-2b73-489a-8ef0-b7b8736f6c88",
+    "5a1ec321-9076-4cf6-8a8c-f602c82b10a2",
+    "5d18569c-980f-3438-bb58-b447e1f1a0bc",
+    "5e0f1f4d-68c1-46c8-b551-eff5736f1af9",
+    "61cbd0b2-d146-3a6a-9ecf-5babd75e3730",
+    "6883a883-3027-4444-b3cd-8d3d3a80bc6c",
+    "704646d5-7bbe-4a0e-b4b8-c64f57ba51de",
+    "762cb6f1-ec7d-4ba4-a304-b2869dce748e",
+    "80b01534-6010-4d95-9740-7a03b822ade9",
+    "80f23ecb-a267-462d-9f25-cdc48470e0ef",
+    "8c7d4ff2-a6c7-40e3-8bd2-530298b3132b",
+    "8f01a292-ba4a-4992-9555-f3a7a4a215f3",
+    "98b5d089-392a-40e4-9faf-ceb4491f5b0f",
+    "9addbf3e-e0f8-4184-afec-ad8e913cc33f",
+    "af790bd8-ce53-4b01-a0de-6a12f9a51c73",
+    "b7911ece-99c3-43fe-ae5e-ecd17e44aaa7",
+    "bba23c27-bdff-4593-9ae4-e9d33d90e29b",
+    "c3099544-7f67-4b24-ad2c-97df6098f769",
+    "c3e942b3-a557-4b1e-8f9a-5b9b4dfd6944",
+    "c96996bf-c616-3343-a68b-e5a892c059e3",
+    "ca1b69dc-51e8-319d-9310-7d41c6608d59",
+    "db47a2fd-0692-42e1-8aa2-2c89504647dc",
+    "87bb4b1d-f555-4380-b96b-09b2124a1153",
+    "592dae87-780a-41da-b387-a5e6c4035a96",
+    "49b0cc47-440e-4aa0-8f86-1115d95d923c",
+    "fad2c9b3-d351-4991-a0b3-bb447d0e89e8",
+    "5456a0b6-8075-49d8-96c0-802e1f64d461",
+    "cbddad4f-63a0-45a7-aea2-bdd6b00185b0",
+    "bda02ab2-cc6b-4e0b-9d2c-34d17fcbfa5d",
+    "c2b7e458-dfcc-45b1-908b-14f3b2686a38",
+    "e0bcb908-c9ce-3f1a-81cb-404b4b28a428",
+    "756fdd59-ff6a-36c0-a083-1eb54433874c",
+    "65c31c13-8938-4e42-b252-76b27df2644d",
+    "ea31c75f-19b0-3f2a-b006-2544226b9bb0",
+    "7c6ac130-332f-3185-81f4-a1a8397defad",
+    "e2a16e72-6686-331a-a51b-e3e60f0dcae3",
+    "be5d31d9-0d20-43fc-bf01-f125f5cd9815",
+    "1e06bb4d-3e20-4d1c-8d0a-0c179df397b5",
+    "93ed7289-295f-3c94-96a2-91ee99b9a56f",
+    "39239e41-55ec-4d11-adc4-e65826fb0dd3",
+    "033457bb-6dda-41d7-a2bf-0245d0076b55",
+    "f9627505-e9f1-4f16-a361-73b4b33c289c",
+    "389cd801-e9d9-3f45-b2ff-a0072b3ba2a8",
+    "ab1c1fd8-f769-4d78-90bc-4677f8ad8c22",
+    "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+    "ea8d6edd-55d6-3518-ba72-40487944f60f",
+    "fb496f7f-a55a-3848-b8a2-2f39df9e26c0",
+    "005f891c-0825-3dd2-8a39-c269378c9270",
+    "9c6d2ef1-d57b-3a09-b0b3-c4138b657c05",
+    "e8338be6-f186-43f2-8e2e-503cbf1ba94d",
+    "d3d5a92b-a2bf-4502-bf18-f162690d9a4b",
+    "1060287c-e241-4005-83b6-55544d3c4bae",
+    "76f88b43-f945-41a5-bf17-c40db7c5702d",
+    "1f961be3-4938-3d1b-a5e1-5048a6693ad0",
+    "5182b172-7f1e-393b-adea-a08cede31470",
+    "1c185155-889f-33a7-bf02-0f510486bb7b",
+    "cf3b0d3c-62c7-36ed-a10d-f4e803eac4e3",
+    "e45d2a9e-8b5f-3e70-b33f-db1bf723682b",
+    "0a20d426-9629-33dc-8f4f-28c2150a83ea",
+    "1cb4da27-ca4b-3780-a262-b06191cb34a5",
+    "d105b9d6-2ee8-3878-958b-d401cf3a3f6d",
+    "0630d1cc-90b6-4857-906a-4a9b54c357a9",
+    "2ee89095-b155-4d64-bcab-6c08de0af514",
+    "772e0f35-fea5-4ef2-8b95-e60f47b51d0d",
+    "a3e92dcd-3d3d-4209-8226-18c921cd0225",
+    "e406db14-ea43-4bd5-b10e-e20ed85e7e83",
+    "6f082474-4446-4544-bb45-7ceb5d7f461e",
+    "b19adf2b-664e-40d5-a0d8-fca1dd6278ea",
+    "5c037dab-1a47-439f-9ad2-5a2da9981209"
+   ]
+  }
+ },
+ "status": 200,
+ "response": [
+  {
+   "release_group_mbid": "0e387810-d075-40c6-b758-400c401f10d2",
+   "total_listen_count": 4294,
+   "total_user_count": 656
+  },
+  {
+   "release_group_mbid": "1e9e8f2b-febc-4c81-b067-77e595b5d5ba",
+   "total_listen_count": 289812,
+   "total_user_count": 9305
+  },
+  {
+   "release_group_mbid": "2922b099-93c6-43cf-ab52-5d3f4c5b5759",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "37526a90-7f4f-42e5-a985-138cb5055b10",
+   "total_listen_count": 643,
+   "total_user_count": 60
+  },
+  {
+   "release_group_mbid": "480fd72f-73e8-40fa-948b-002e95850a5a",
+   "total_listen_count": 3874,
+   "total_user_count": 733
+  },
+  {
+   "release_group_mbid": "4dca0a1a-c7a4-453a-8ae1-543cae89c5df",
+   "total_listen_count": 386319,
+   "total_user_count": 12845
+  },
+  {
+   "release_group_mbid": "5b320eb9-821d-4b05-b815-af565607c596",
+   "total_listen_count": 12299,
+   "total_user_count": 1174
+  },
+  {
+   "release_group_mbid": "64c36440-3737-4292-a0d4-972405200bc2",
+   "total_listen_count": 15308,
+   "total_user_count": 495
+  },
+  {
+   "release_group_mbid": "6bb871f4-08ec-4a70-9fb3-c1c2b481e090",
+   "total_listen_count": 555155,
+   "total_user_count": 9164
+  },
+  {
+   "release_group_mbid": "945fbb85-ee10-44c8-a425-857d574e3e13",
+   "total_listen_count": 66,
+   "total_user_count": 6
+  },
+  {
+   "release_group_mbid": "97f81612-5d23-4954-99a3-5d1bd795a271",
+   "total_listen_count": 95,
+   "total_user_count": 24
+  },
+  {
+   "release_group_mbid": "a24bbe58-6a26-48fb-b3c5-992565cc456d",
+   "total_listen_count": 29701,
+   "total_user_count": 1063
+  },
+  {
+   "release_group_mbid": "a63d8f11-b8db-4255-80e0-50bdafd67252",
+   "total_listen_count": 796,
+   "total_user_count": 62
+  },
+  {
+   "release_group_mbid": "bd8069a9-3c24-4936-97f7-8a36be1129f0",
+   "total_listen_count": 4,
+   "total_user_count": 2
+  },
+  {
+   "release_group_mbid": "c2e32b33-946a-4ba1-aa29-d5df249028e7",
+   "total_listen_count": 13829,
+   "total_user_count": 1966
+  },
+  {
+   "release_group_mbid": "c35a4a3f-d584-42fc-ac0f-b9592aedd3b2",
+   "total_listen_count": 242069,
+   "total_user_count": 6862
+  },
+  {
+   "release_group_mbid": "c89e9cff-c0c9-4e34-95e7-185056956caf",
+   "total_listen_count": 358542,
+   "total_user_count": 8893
+  },
+  {
+   "release_group_mbid": "c95a2f0f-29fe-48a2-93a3-5cbefaa8df5a",
+   "total_listen_count": 53001,
+   "total_user_count": 3596
+  },
+  {
+   "release_group_mbid": "de388665-8561-474b-b8f3-7c7569d5ce97",
+   "total_listen_count": 737,
+   "total_user_count": 94
+  },
+  {
+   "release_group_mbid": "eb686e9b-654c-43d2-9f26-b61306f93f7f",
+   "total_listen_count": 611,
+   "total_user_count": 37
+  },
+  {
+   "release_group_mbid": "ec4235ba-7fbb-4ed6-8e1d-c3ea1a93d9f5",
+   "total_listen_count": 1801,
+   "total_user_count": 74
+  },
+  {
+   "release_group_mbid": "f16b861e-791c-4e8b-825f-97f77c271b0e",
+   "total_listen_count": 8,
+   "total_user_count": 8
+  },
+  {
+   "release_group_mbid": "f395e7ec-4ecf-4403-a241-800b25ef267d",
+   "total_listen_count": 31579,
+   "total_user_count": 1814
+  },
+  {
+   "release_group_mbid": "05d0ff9f-2fba-35f1-92e4-f81872004689",
+   "total_listen_count": 18,
+   "total_user_count": 12
+  },
+  {
+   "release_group_mbid": "06dc5a43-7ca4-3e9a-8c78-02ea52d58296",
+   "total_listen_count": 824,
+   "total_user_count": 150
+  },
+  {
+   "release_group_mbid": "09e82aa7-c8d0-3140-978c-1ee42fd65014",
+   "total_listen_count": 2253,
+   "total_user_count": 512
+  },
+  {
+   "release_group_mbid": "0bcac1b9-4de0-430a-817b-84f26484a4fe",
+   "total_listen_count": 89,
+   "total_user_count": 47
+  },
+  {
+   "release_group_mbid": "0c95909c-4d34-37c0-910c-911106f7bb90",
+   "total_listen_count": 21252,
+   "total_user_count": 3866
+  },
+  {
+   "release_group_mbid": "0d4df412-5324-4d31-ab59-e3d2b6dae8f1",
+   "total_listen_count": 5833,
+   "total_user_count": 953
+  },
+  {
+   "release_group_mbid": "0d65364d-a4c8-49e9-a4b5-deb46e008101",
+   "total_listen_count": 4690,
+   "total_user_count": 493
+  },
+  {
+   "release_group_mbid": "11fa1721-b803-4321-85f7-32364e169a3c",
+   "total_listen_count": 559,
+   "total_user_count": 99
+  },
+  {
+   "release_group_mbid": "18296dab-ca5a-357a-b160-2279343bfe12",
+   "total_listen_count": 2470,
+   "total_user_count": 193
+  },
+  {
+   "release_group_mbid": "18b2ca99-0230-4530-bf04-09fbf255a63f",
+   "total_listen_count": 3060,
+   "total_user_count": 442
+  },
+  {
+   "release_group_mbid": "1a726d8a-e574-486c-85fe-8dd263af3cb0",
+   "total_listen_count": 10031,
+   "total_user_count": 1363
+  },
+  {
+   "release_group_mbid": "1c1b50ec-828b-3d7c-9b1b-54cb1fe97d55",
+   "total_listen_count": 386144,
+   "total_user_count": 19361
+  },
+  {
+   "release_group_mbid": "21cca1ae-db9c-3915-812a-efddcb7a4f00",
+   "total_listen_count": 812,
+   "total_user_count": 193
+  },
+  {
+   "release_group_mbid": "225a89b0-2520-488c-a090-ae4e4debb726",
+   "total_listen_count": 1617,
+   "total_user_count": 300
+  },
+  {
+   "release_group_mbid": "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+   "total_listen_count": 34309,
+   "total_user_count": 1356
+  },
+  {
+   "release_group_mbid": "28e5844d-8e0c-415a-a661-0c5bd025783e",
+   "total_listen_count": 5862,
+   "total_user_count": 1221
+  },
+  {
+   "release_group_mbid": "2902bfbf-a535-44d1-896e-600f0875138b",
+   "total_listen_count": 4593,
+   "total_user_count": 427
+  },
+  {
+   "release_group_mbid": "2a879dda-b5cf-4330-9caa-b5aac34af2bc",
+   "total_listen_count": 6190,
+   "total_user_count": 750
+  },
+  {
+   "release_group_mbid": "2b7d0e71-a5f5-4899-8c03-0dd7e0a564d1",
+   "total_listen_count": 63133,
+   "total_user_count": 6631
+  },
+  {
+   "release_group_mbid": "2da4f1d6-b332-4f6a-a7d1-3942df87e702",
+   "total_listen_count": 75,
+   "total_user_count": 30
+  },
+  {
+   "release_group_mbid": "36c3b550-7f91-3735-a3a6-840fb721319e",
+   "total_listen_count": 1903,
+   "total_user_count": 417
+  },
+  {
+   "release_group_mbid": "387a45c4-bb95-3bda-bd88-737598846690",
+   "total_listen_count": 5,
+   "total_user_count": 4
+  },
+  {
+   "release_group_mbid": "3b82f373-1543-4b4f-a400-ca2101659508",
+   "total_listen_count": 61,
+   "total_user_count": 19
+  },
+  {
+   "release_group_mbid": "3c65a18c-1591-4bca-93c2-7d93a4489b57",
+   "total_listen_count": 4485,
+   "total_user_count": 297
+  },
+  {
+   "release_group_mbid": "410228dc-fe53-4691-92db-c7370cb6ab11",
+   "total_listen_count": 2209,
+   "total_user_count": 750
+  },
+  {
+   "release_group_mbid": "41efe651-b79a-4120-8599-87ca4b72f1fc",
+   "total_listen_count": 69,
+   "total_user_count": 23
+  },
+  {
+   "release_group_mbid": "4370d1a3-ab87-460a-8a52-356f8f74d494",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "448d46fc-e2d5-4ea6-875a-a643f70493bf",
+   "total_listen_count": 7,
+   "total_user_count": 4
+  },
+  {
+   "release_group_mbid": "44b6a7f2-6b2a-4189-a95b-e3791b28bef8",
+   "total_listen_count": 12,
+   "total_user_count": 3
+  },
+  {
+   "release_group_mbid": "463193c2-bcee-33da-b8cf-7623289fefb1",
+   "total_listen_count": 5215,
+   "total_user_count": 759
+  },
+  {
+   "release_group_mbid": "4c4fec13-4eab-45e5-84fa-4254ab89d2c4",
+   "total_listen_count": 1,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "4c5b1f75-3fc7-486f-9848-eb2fe8180f62",
+   "total_listen_count": 353,
+   "total_user_count": 81
+  },
+  {
+   "release_group_mbid": "4f763a97-30ab-4082-9382-6767f4f2eb36",
+   "total_listen_count": 32951,
+   "total_user_count": 4395
+  },
+  {
+   "release_group_mbid": "56327267-51fb-472c-919e-d6ca258ebab2",
+   "total_listen_count": 36170,
+   "total_user_count": 1993
+  },
+  {
+   "release_group_mbid": "56d157af-8c97-432f-bc74-27b58cd043f5",
+   "total_listen_count": 3,
+   "total_user_count": 3
+  },
+  {
+   "release_group_mbid": "57da26b5-6376-4db2-aa3f-d3d7650f3ad4",
+   "total_listen_count": 857,
+   "total_user_count": 234
+  },
+  {
+   "release_group_mbid": "58adbae4-d201-3843-ba9c-fc94542596c0",
+   "total_listen_count": 36,
+   "total_user_count": 15
+  },
+  {
+   "release_group_mbid": "592dae87-780a-41da-b387-a5e6c4035a96",
+   "total_listen_count": 2,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "5d4d0f2d-9be7-4922-bc9a-cbd2880b12c2",
+   "total_listen_count": 459525,
+   "total_user_count": 11204
+  },
+  {
+   "release_group_mbid": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+   "total_listen_count": 847177,
+   "total_user_count": 49157
+  },
+  {
+   "release_group_mbid": "5fb5d12f-9983-4663-a5d2-adf8fa87b092",
+   "total_listen_count": 212,
+   "total_user_count": 37
+  },
+  {
+   "release_group_mbid": "6448381d-9d98-4f84-b99d-733b6acde906",
+   "total_listen_count": 392104,
+   "total_user_count": 12446
+  },
+  {
+   "release_group_mbid": "6dffc036-58c5-4bdf-914c-31fdbb55e9fc",
+   "total_listen_count": 1181,
+   "total_user_count": 134
+  },
+  {
+   "release_group_mbid": "6fbf15bb-fc19-4e99-9826-3b0682521b11",
+   "total_listen_count": 12441,
+   "total_user_count": 1256
+  },
+  {
+   "release_group_mbid": "7233c897-be76-43b0-b5d1-a16850a0e9f4",
+   "total_listen_count": 1087,
+   "total_user_count": 137
+  },
+  {
+   "release_group_mbid": "73394eaf-5802-3ccb-9a9e-3c95a5052353",
+   "total_listen_count": 108,
+   "total_user_count": 56
+  },
+  {
+   "release_group_mbid": "76e6f89d-c2a2-4b42-99d0-076f5727522c",
+   "total_listen_count": 3785,
+   "total_user_count": 429
+  },
+  {
+   "release_group_mbid": "76f1a065-df3b-4cae-8ce4-29580d49104c",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "7f4792fe-b563-4554-849a-95a89be71f84",
+   "total_listen_count": 545445,
+   "total_user_count": 11097
+  },
+  {
+   "release_group_mbid": "80d105a7-c9be-4e96-9dde-8a5fe8567272",
+   "total_listen_count": 381,
+   "total_user_count": 47
+  },
+  {
+   "release_group_mbid": "8687263a-d582-434c-a609-360d0e5385f2",
+   "total_listen_count": 84444,
+   "total_user_count": 6977
+  },
+  {
+   "release_group_mbid": "87bb4b1d-f555-4380-b96b-09b2124a1153",
+   "total_listen_count": 3,
+   "total_user_count": 3
+  },
+  {
+   "release_group_mbid": "88b89d2b-b0c5-4753-b3fd-faf867bf4125",
+   "total_listen_count": 140,
+   "total_user_count": 18
+  },
+  {
+   "release_group_mbid": "89cb94a8-ba33-42ef-a2e3-554a0300022d",
+   "total_listen_count": 30248,
+   "total_user_count": 3264
+  },
+  {
+   "release_group_mbid": "8a01217e-6947-3927-a39b-6691104694f1",
+   "total_listen_count": 583781,
+   "total_user_count": 35391
+  },
+  {
+   "release_group_mbid": "8c18657a-6338-490d-a952-897663596b96",
+   "total_listen_count": 832736,
+   "total_user_count": 16724
+  },
+  {
+   "release_group_mbid": "9742038a-8d4d-4f63-b6c6-1f2e9f00f254",
+   "total_listen_count": 2859,
+   "total_user_count": 264
+  },
+  {
+   "release_group_mbid": "983e4aaf-c117-4a65-bc57-5b6c206f1f7e",
+   "total_listen_count": 5844,
+   "total_user_count": 920
+  },
+  {
+   "release_group_mbid": "9f4b38bf-5903-4eab-9009-3fd7584986ff",
+   "total_listen_count": 800,
+   "total_user_count": 224
+  },
+  {
+   "release_group_mbid": "a0213101-b01a-4714-a9ff-bbfa4238566a",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "a0afd355-d033-4bd0-83a8-ae071ef9e8c7",
+   "total_listen_count": 4300,
+   "total_user_count": 818
+  },
+  {
+   "release_group_mbid": "a24fe12c-b8a7-4d86-bfe3-3eadae1a405f",
+   "total_listen_count": 1245,
+   "total_user_count": 257
+  },
+  {
+   "release_group_mbid": "a59c27fa-85b8-4641-94e5-59c2d8f80eb4",
+   "total_listen_count": 3,
+   "total_user_count": 2
+  },
+  {
+   "release_group_mbid": "a85f995d-84f5-4a06-903a-c1e2117873a8",
+   "total_listen_count": 14770,
+   "total_user_count": 970
+  },
+  {
+   "release_group_mbid": "a96597aa-93b4-4e14-9e6e-03892ab24979",
+   "total_listen_count": 560750,
+   "total_user_count": 30653
+  },
+  {
+   "release_group_mbid": "ab58e273-9310-4b5e-b517-1a90bec25453",
+   "total_listen_count": 244,
+   "total_user_count": 83
+  },
+  {
+   "release_group_mbid": "abe7865c-84ad-4a28-b9f4-e85e2355423e",
+   "total_listen_count": 1561,
+   "total_user_count": 117
+  },
+  {
+   "release_group_mbid": "acd73897-c774-4c01-957d-3b35e57789d8",
+   "total_listen_count": 14767,
+   "total_user_count": 974
+  },
+  {
+   "release_group_mbid": "b0004d4e-3c79-4527-9e71-9113411c1591",
+   "total_listen_count": 759,
+   "total_user_count": 148
+  },
+  {
+   "release_group_mbid": "b16951fa-a36b-4af6-9351-75e58014507a",
+   "total_listen_count": 2839,
+   "total_user_count": 122
+  },
+  {
+   "release_group_mbid": "b26cd80b-44ae-4199-8b77-72d6f957e624",
+   "total_listen_count": 7993,
+   "total_user_count": 834
+  },
+  {
+   "release_group_mbid": "b4c7a391-44d7-4ba8-93c1-6ee7920dbc53",
+   "total_listen_count": 31697,
+   "total_user_count": 3456
+  },
+  {
+   "release_group_mbid": "b5d77225-74e0-4af2-aebe-c0266f771b82",
+   "total_listen_count": 194,
+   "total_user_count": 69
+  },
+  {
+   "release_group_mbid": "b959f415-85bb-410e-858a-67ffac069743",
+   "total_listen_count": 169,
+   "total_user_count": 20
+  },
+  {
+   "release_group_mbid": "ba02d882-b77c-348a-a6e4-2bb6fe0ae2fe",
+   "total_listen_count": 611,
+   "total_user_count": 165
+  },
+  {
+   "release_group_mbid": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+   "total_listen_count": 687143,
+   "total_user_count": 49758
+  },
+  {
+   "release_group_mbid": "c61cf2c6-f1fa-37c3-b4a5-5592a3221ede",
+   "total_listen_count": 13,
+   "total_user_count": 5
+  },
+  {
+   "release_group_mbid": "c86e4825-0bae-4248-b332-05bff5893ef9",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "c8a3e399-0514-42d3-ba8c-8d001ee9f2be",
+   "total_listen_count": 9646,
+   "total_user_count": 2116
+  },
+  {
+   "release_group_mbid": "ca433d63-a566-4cfd-bb19-b898713a6e10",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "d44c50ad-61fd-3fce-95fc-27024d7f1d30",
+   "total_listen_count": 810282,
+   "total_user_count": 42657
+  },
+  {
+   "release_group_mbid": "d684142d-4343-4408-b11e-0eca5bbac012",
+   "total_listen_count": 9720,
+   "total_user_count": 1516
+  },
+  {
+   "release_group_mbid": "d81cb777-8224-4258-a3b2-b9e8ee1861e3",
+   "total_listen_count": 24,
+   "total_user_count": 22
+  },
+  {
+   "release_group_mbid": "dabbb756-f3e7-429b-8cf6-32efc2cecd10",
+   "total_listen_count": 1097,
+   "total_user_count": 218
+  },
+  {
+   "release_group_mbid": "dd5d8c4c-9887-4a8c-8a1a-98daebb1b9bf",
+   "total_listen_count": 300132,
+   "total_user_count": 17117
+  },
+  {
+   "release_group_mbid": "dd9639cc-720a-4c91-b8ac-d3ad541c29f2",
+   "total_listen_count": 1,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "e0bcb908-c9ce-3f1a-81cb-404b4b28a428",
+   "total_listen_count": 270,
+   "total_user_count": 78
+  },
+  {
+   "release_group_mbid": "e3b8e467-c8ee-438a-a19c-8d0cfec786f6",
+   "total_listen_count": 4677,
+   "total_user_count": 499
+  },
+  {
+   "release_group_mbid": "ea30b0db-bcb0-4748-bb4d-75dc8f660eb5",
+   "total_listen_count": 253,
+   "total_user_count": 15
+  },
+  {
+   "release_group_mbid": "ea984c51-977f-4128-8b9a-7b6e9b8841f7",
+   "total_listen_count": 1038,
+   "total_user_count": 148
+  },
+  {
+   "release_group_mbid": "ee09c603-5492-4ad5-af6e-32abac4d66ec",
+   "total_listen_count": 198,
+   "total_user_count": 61
+  },
+  {
+   "release_group_mbid": "ee26718c-2633-4278-8718-f3a45a95f20e",
+   "total_listen_count": 294262,
+   "total_user_count": 18512
+  },
+  {
+   "release_group_mbid": "f002ca9d-b972-3678-a9cf-92f4b327c194",
+   "total_listen_count": 380,
+   "total_user_count": 130
+  },
+  {
+   "release_group_mbid": "f4d6128a-dd9f-4089-bb02-346fce213ddc",
+   "total_listen_count": 1517,
+   "total_user_count": 462
+  },
+  {
+   "release_group_mbid": "f6622af5-e114-4561-a437-23a71176cbd9",
+   "total_listen_count": 809,
+   "total_user_count": 257
+  },
+  {
+   "release_group_mbid": "f6c60bc5-a891-48db-a1f4-bebc07c3f040",
+   "total_listen_count": 10,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "f7798ccf-2943-4058-ac34-f3682a4ec407",
+   "total_listen_count": 22681,
+   "total_user_count": 2889
+  },
+  {
+   "release_group_mbid": "f7ddaaf7-b4d7-4842-82a3-1518afe5949a",
+   "total_listen_count": 1232,
+   "total_user_count": 247
+  },
+  {
+   "release_group_mbid": "fdf1df79-1936-3779-ab2d-6f440dc2637e",
+   "total_listen_count": 1,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "ffbb2ab4-8b69-4427-a6bc-261696627e0f",
+   "total_listen_count": 189,
+   "total_user_count": 45
+  },
+  {
+   "release_group_mbid": "0587f018-39de-4f38-94d5-ed07f1e8ac2e",
+   "total_listen_count": 2353,
+   "total_user_count": 420
+  },
+  {
+   "release_group_mbid": "05a6b07b-ae61-4c0b-8f35-caa8dbfdafde",
+   "total_listen_count": 240,
+   "total_user_count": 51
+  },
+  {
+   "release_group_mbid": "05e38383-1545-420f-a19b-0617d6113ce3",
+   "total_listen_count": 150,
+   "total_user_count": 42
+  },
+  {
+   "release_group_mbid": "0ab0315f-dd17-4b71-a163-d04ae2370f9b",
+   "total_listen_count": 6178,
+   "total_user_count": 1394
+  },
+  {
+   "release_group_mbid": "121ae389-961f-4355-9cea-271281d1551f",
+   "total_listen_count": 140,
+   "total_user_count": 35
+  },
+  {
+   "release_group_mbid": "1282e548-9d31-4cd8-a7a7-1af7ee3e1f57",
+   "total_listen_count": 2,
+   "total_user_count": 2
+  },
+  {
+   "release_group_mbid": "19894e5b-e559-4835-9bf7-a451b8c6c810",
+   "total_listen_count": 74,
+   "total_user_count": 37
+  },
+  {
+   "release_group_mbid": "1a7561ec-65d4-4cf6-9de5-27145f2953a2",
+   "total_listen_count": 6174,
+   "total_user_count": 1293
+  },
+  {
+   "release_group_mbid": "2311aa7c-5f02-4f2f-b771-3e09899bf19f",
+   "total_listen_count": 27205,
+   "total_user_count": 5893
+  },
+  {
+   "release_group_mbid": "242d3c11-f39b-4703-a305-310f318ff73d",
+   "total_listen_count": 2160,
+   "total_user_count": 325
+  },
+  {
+   "release_group_mbid": "272f89cd-a81d-4272-9d12-9894c33c4c09",
+   "total_listen_count": 638,
+   "total_user_count": 152
+  },
+  {
+   "release_group_mbid": "31bfac71-6fba-40bd-9699-4d40f3a7a57e",
+   "total_listen_count": 9857,
+   "total_user_count": 2204
+  },
+  {
+   "release_group_mbid": "336f8e15-8e38-3d49-a700-48a8b360281c",
+   "total_listen_count": 266,
+   "total_user_count": 67
+  },
+  {
+   "release_group_mbid": "3584f709-ff60-32b1-8e49-0404d36b55c9",
+   "total_listen_count": 92,
+   "total_user_count": 23
+  },
+  {
+   "release_group_mbid": "3c2d6ffe-61b9-46e5-b935-3b8df01f900d",
+   "total_listen_count": 40212,
+   "total_user_count": 3302
+  },
+  {
+   "release_group_mbid": "4304c426-faa7-3e3e-ac14-40945a593391",
+   "total_listen_count": 917,
+   "total_user_count": 211
+  },
+  {
+   "release_group_mbid": "457ae5f8-a35d-40e4-b67c-e02c7826c257",
+   "total_listen_count": 14,
+   "total_user_count": 8
+  },
+  {
+   "release_group_mbid": "4e642f77-65b1-3a40-a626-607503633177",
+   "total_listen_count": 116,
+   "total_user_count": 53
+  },
+  {
+   "release_group_mbid": "51438fb1-d569-307b-abff-0c2bb62c9abd",
+   "total_listen_count": 2928,
+   "total_user_count": 964
+  },
+  {
+   "release_group_mbid": "560848f9-2b73-489a-8ef0-b7b8736f6c88",
+   "total_listen_count": 4,
+   "total_user_count": 4
+  },
+  {
+   "release_group_mbid": "5a1ec321-9076-4cf6-8a8c-f602c82b10a2",
+   "total_listen_count": 1450,
+   "total_user_count": 282
+  },
+  {
+   "release_group_mbid": "5d18569c-980f-3438-bb58-b447e1f1a0bc",
+   "total_listen_count": 3162,
+   "total_user_count": 680
+  },
+  {
+   "release_group_mbid": "5e0f1f4d-68c1-46c8-b551-eff5736f1af9",
+   "total_listen_count": 764,
+   "total_user_count": 141
+  },
+  {
+   "release_group_mbid": "61cbd0b2-d146-3a6a-9ecf-5babd75e3730",
+   "total_listen_count": 1233,
+   "total_user_count": 336
+  },
+  {
+   "release_group_mbid": "6883a883-3027-4444-b3cd-8d3d3a80bc6c",
+   "total_listen_count": 893,
+   "total_user_count": 284
+  },
+  {
+   "release_group_mbid": "704646d5-7bbe-4a0e-b4b8-c64f57ba51de",
+   "total_listen_count": 74,
+   "total_user_count": 2
+  },
+  {
+   "release_group_mbid": "762cb6f1-ec7d-4ba4-a304-b2869dce748e",
+   "total_listen_count": 155,
+   "total_user_count": 23
+  },
+  {
+   "release_group_mbid": "80b01534-6010-4d95-9740-7a03b822ade9",
+   "total_listen_count": 300,
+   "total_user_count": 47
+  },
+  {
+   "release_group_mbid": "80f23ecb-a267-462d-9f25-cdc48470e0ef",
+   "total_listen_count": 1090,
+   "total_user_count": 218
+  },
+  {
+   "release_group_mbid": "8c7d4ff2-a6c7-40e3-8bd2-530298b3132b",
+   "total_listen_count": 96,
+   "total_user_count": 45
+  },
+  {
+   "release_group_mbid": "8f01a292-ba4a-4992-9555-f3a7a4a215f3",
+   "total_listen_count": 93,
+   "total_user_count": 8
+  },
+  {
+   "release_group_mbid": "98b5d089-392a-40e4-9faf-ceb4491f5b0f",
+   "total_listen_count": 96,
+   "total_user_count": 15
+  },
+  {
+   "release_group_mbid": "9addbf3e-e0f8-4184-afec-ad8e913cc33f",
+   "total_listen_count": 383,
+   "total_user_count": 96
+  },
+  {
+   "release_group_mbid": "af790bd8-ce53-4b01-a0de-6a12f9a51c73",
+   "total_listen_count": 1323,
+   "total_user_count": 207
+  },
+  {
+   "release_group_mbid": "b7911ece-99c3-43fe-ae5e-ecd17e44aaa7",
+   "total_listen_count": 585,
+   "total_user_count": 133
+  },
+  {
+   "release_group_mbid": "bba23c27-bdff-4593-9ae4-e9d33d90e29b",
+   "total_listen_count": 1907,
+   "total_user_count": 80
+  },
+  {
+   "release_group_mbid": "c3099544-7f67-4b24-ad2c-97df6098f769",
+   "total_listen_count": 6279,
+   "total_user_count": 1214
+  },
+  {
+   "release_group_mbid": "c3e942b3-a557-4b1e-8f9a-5b9b4dfd6944",
+   "total_listen_count": 645,
+   "total_user_count": 56
+  },
+  {
+   "release_group_mbid": "c96996bf-c616-3343-a68b-e5a892c059e3",
+   "total_listen_count": 755,
+   "total_user_count": 314
+  },
+  {
+   "release_group_mbid": "ca1b69dc-51e8-319d-9310-7d41c6608d59",
+   "total_listen_count": 8855,
+   "total_user_count": 1110
+  },
+  {
+   "release_group_mbid": "db47a2fd-0692-42e1-8aa2-2c89504647dc",
+   "total_listen_count": 3012,
+   "total_user_count": 423
+  },
+  {
+   "release_group_mbid": "87bb4b1d-f555-4380-b96b-09b2124a1153",
+   "total_listen_count": 3,
+   "total_user_count": 3
+  },
+  {
+   "release_group_mbid": "592dae87-780a-41da-b387-a5e6c4035a96",
+   "total_listen_count": 2,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "49b0cc47-440e-4aa0-8f86-1115d95d923c",
+   "total_listen_count": 557,
+   "total_user_count": 71
+  },
+  {
+   "release_group_mbid": "fad2c9b3-d351-4991-a0b3-bb447d0e89e8",
+   "total_listen_count": 10,
+   "total_user_count": 7
+  },
+  {
+   "release_group_mbid": "5456a0b6-8075-49d8-96c0-802e1f64d461",
+   "total_listen_count": 8,
+   "total_user_count": 4
+  },
+  {
+   "release_group_mbid": "cbddad4f-63a0-45a7-aea2-bdd6b00185b0",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "bda02ab2-cc6b-4e0b-9d2c-34d17fcbfa5d",
+   "total_listen_count": 10,
+   "total_user_count": 7
+  },
+  {
+   "release_group_mbid": "c2b7e458-dfcc-45b1-908b-14f3b2686a38",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "e0bcb908-c9ce-3f1a-81cb-404b4b28a428",
+   "total_listen_count": 270,
+   "total_user_count": 78
+  },
+  {
+   "release_group_mbid": "756fdd59-ff6a-36c0-a083-1eb54433874c",
+   "total_listen_count": 9,
+   "total_user_count": 2
+  },
+  {
+   "release_group_mbid": "65c31c13-8938-4e42-b252-76b27df2644d",
+   "total_listen_count": 36,
+   "total_user_count": 23
+  },
+  {
+   "release_group_mbid": "ea31c75f-19b0-3f2a-b006-2544226b9bb0",
+   "total_listen_count": 2,
+   "total_user_count": 2
+  },
+  {
+   "release_group_mbid": "7c6ac130-332f-3185-81f4-a1a8397defad",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "e2a16e72-6686-331a-a51b-e3e60f0dcae3",
+   "total_listen_count": 1,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "be5d31d9-0d20-43fc-bf01-f125f5cd9815",
+   "total_listen_count": 516,
+   "total_user_count": 120
+  },
+  {
+   "release_group_mbid": "1e06bb4d-3e20-4d1c-8d0a-0c179df397b5",
+   "total_listen_count": 103569,
+   "total_user_count": 14571
+  },
+  {
+   "release_group_mbid": "93ed7289-295f-3c94-96a2-91ee99b9a56f",
+   "total_listen_count": 17,
+   "total_user_count": 11
+  },
+  {
+   "release_group_mbid": "39239e41-55ec-4d11-adc4-e65826fb0dd3",
+   "total_listen_count": 408,
+   "total_user_count": 100
+  },
+  {
+   "release_group_mbid": "033457bb-6dda-41d7-a2bf-0245d0076b55",
+   "total_listen_count": 1,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "f9627505-e9f1-4f16-a361-73b4b33c289c",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "389cd801-e9d9-3f45-b2ff-a0072b3ba2a8",
+   "total_listen_count": 184,
+   "total_user_count": 80
+  },
+  {
+   "release_group_mbid": "ab1c1fd8-f769-4d78-90bc-4677f8ad8c22",
+   "total_listen_count": 177229,
+   "total_user_count": 10900
+  },
+  {
+   "release_group_mbid": "c7358501-5a46-4434-9b4c-1fa8c7dd8564",
+   "total_listen_count": 16095,
+   "total_user_count": 1348
+  },
+  {
+   "release_group_mbid": "ea8d6edd-55d6-3518-ba72-40487944f60f",
+   "total_listen_count": 15,
+   "total_user_count": 6
+  },
+  {
+   "release_group_mbid": "fb496f7f-a55a-3848-b8a2-2f39df9e26c0",
+   "total_listen_count": 465,
+   "total_user_count": 73
+  },
+  {
+   "release_group_mbid": "005f891c-0825-3dd2-8a39-c269378c9270",
+   "total_listen_count": 3,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "9c6d2ef1-d57b-3a09-b0b3-c4138b657c05",
+   "total_listen_count": 915,
+   "total_user_count": 139
+  },
+  {
+   "release_group_mbid": "e8338be6-f186-43f2-8e2e-503cbf1ba94d",
+   "total_listen_count": 3,
+   "total_user_count": 2
+  },
+  {
+   "release_group_mbid": "d3d5a92b-a2bf-4502-bf18-f162690d9a4b",
+   "total_listen_count": 87,
+   "total_user_count": 21
+  },
+  {
+   "release_group_mbid": "1060287c-e241-4005-83b6-55544d3c4bae",
+   "total_listen_count": null,
+   "total_user_count": null
+  },
+  {
+   "release_group_mbid": "76f88b43-f945-41a5-bf17-c40db7c5702d",
+   "total_listen_count": 30932,
+   "total_user_count": 5867
+  },
+  {
+   "release_group_mbid": "1f961be3-4938-3d1b-a5e1-5048a6693ad0",
+   "total_listen_count": 1,
+   "total_user_count": 1
+  },
+  {
+   "release_group_mbid": "5182b172-7f1e-393b-adea-a08cede31470",
+   "total_listen_count": 15,
+   "total_user_count": 3
+  },
+  {
+   "release_group_mbid": "1c185155-889f-33a7-bf02-0f510486bb7b",
+   "total_listen_count": 213,
+   "total_user_count": 45
+  },
+  {
+   "release_group_mbid": "cf3b0d3c-62c7-36ed-a10d-f4e803eac4e3",
+   "total_listen_count": 7,
+   "total_user_count": 2
+  },
+  {
+   "release_group_mbid": "e45d2a9e-8b5f-3e70-b33f-db1bf723682b",
+   "total_listen_count": 89,
+   "total_user_count": 21
+  },
+  {
+   "release_group_mbid": "0a20d426-9629-33dc-8f4f-28c2150a83ea",
+   "total_listen_count": 168,
+   "total_user_count": 14
+  },
+  {
+   "release_group_mbid": "1cb4da27-ca4b-3780-a262-b06191cb34a5",
+   "total_listen_count": 136,
+   "total_user_count": 60
+  },
+  {
+   "release_group_mbid": "d105b9d6-2ee8-3878-958b-d401cf3a3f6d",
+   "total_listen_count": 49,
+   "total_user_count": 8
+  },
+  {
+   "release_group_mbid": "0630d1cc-90b6-4857-906a-4a9b54c357a9",
+   "total_listen_count": 14,
+   "total_user_count": 3
+  },
+  {
+   "release_group_mbid": "2ee89095-b155-4d64-bcab-6c08de0af514",
+   "total_listen_count": 4,
+   "total_user_count": 3
+  },
+  {
+   "release_group_mbid": "772e0f35-fea5-4ef2-8b95-e60f47b51d0d",
+   "total_listen_count": 2,
+   "total_user_count": 2
+  },
+  {
+   "release_group_mbid": "a3e92dcd-3d3d-4209-8226-18c921cd0225",
+   "total_listen_count": 212,
+   "total_user_count": 11
+  },
+  {
+   "release_group_mbid": "e406db14-ea43-4bd5-b10e-e20ed85e7e83",
+   "total_listen_count": 4512,
+   "total_user_count": 228
+  },
+  {
+   "release_group_mbid": "6f082474-4446-4544-bb45-7ceb5d7f461e",
+   "total_listen_count": 8,
+   "total_user_count": 6
+  },
+  {
+   "release_group_mbid": "b19adf2b-664e-40d5-a0d8-fca1dd6278ea",
+   "total_listen_count": 156,
+   "total_user_count": 28
+  },
+  {
+   "release_group_mbid": "5c037dab-1a47-439f-9ad2-5a2da9981209",
+   "total_listen_count": null,
+   "total_user_count": null
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/recording",
+  "query": {
+   "query": "recording:\"pure colour\" AND artist:\"Steve Lacy\"",
+   "limit": "25",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-12T23:58:52.831Z",
+  "count": 1,
+  "offset": 0,
+  "recordings": [
+   {
+    "id": "5db818b8-9d0c-4c33-9fa1-c7c0a837afde",
+    "score": 100,
+    "artist-credit-id": "0047aac9-6ead-4de1-b81c-7906eaef9712",
+    "title": "pure colour",
+    "length": 187000,
+    "video": null,
+    "artist-credit": [
+     {
+      "joinphrase": " feat. ",
+      "name": "Steve Lacy",
+      "artist": {
+       "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+       "name": "Steve Lacy",
+       "sort-name": "Lacy, Steve",
+       "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+      }
+     },
+     {
+      "name": "Erykah Badu",
+      "artist": {
+       "id": "321531fc-db73-4ffa-a959-61a61a2908c1",
+       "name": "Erykah Badu",
+       "sort-name": "Badu, Erykah"
+      }
+     }
+    ],
+    "first-release-date": "2026-07-17",
+    "releases": [
+     {
+      "id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+      "count": 1,
+      "title": "Oh yeah?",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Steve Lacy",
+        "artist": {
+         "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+         "name": "Steve Lacy",
+         "sort-name": "Lacy, Steve",
+         "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "40a8bbb9-667a-4878-beb7-05b4fdffa92d",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Oh yeah?",
+       "primary-type": "Album"
+      },
+      "date": "2026-07-17",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2026-07-17",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       },
+       {
+        "date": "2026-07-17",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 10,
+      "media": [
+       {
+        "id": "3e7b4778-9620-4756-998b-ee8ba271ac86",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "f3d23d50-c242-4ebd-875b-c93d3750909c",
+          "number": "4",
+          "title": "Pure Colour",
+          "length": 187000
+         }
+        ],
+        "track-count": 10,
+        "track-offset": 3
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "USRC12601061"
+    ]
+   }
+  ]
+ }
+}

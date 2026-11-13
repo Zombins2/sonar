@@ -145,6 +145,25 @@ void main() {
     expect(d.source, 'peer4');
   });
 
+  test('some songs: Soulbeet finds those alone, and beets files them as the album', () async {
+    final tracks = SbAlbumDetail.fromJson(soulbeetFixture('album')['response']! as SbJson).tracks;
+    final songs = [tracks[1], tracks[3]];
+    final d = await downloads.download(legalizeIt(), songs: songs);
+    await until(() => server.sockets.isNotEmpty, 'the live feed to open');
+    expect(server.bodiesFor('/api/download/search/start'), isEmpty, reason: 'no copy of the whole album is looked for');
+    final query = ((server.bodiesFor('/api/auto-download').single! as Map)['req'] as Map)['query'] as Map;
+    expect(query['album'], legalizeIt().request);
+    expect(query['tracks'], [songs[0].raw, songs[1].raw], reason: "Soulbeet's Track, as its album lookup sent it");
+    expect((d.key, d.label, d.phase), ('batch-1', 'Legalize It · 2 songs', AlbumPhase.downloading));
+
+    // beets won't file part of an album unasked (missing songs make it
+    // unsure): it's filed as the album's release.
+    server.push(progress('ImportSkipped', files: 2, batch: 'batch-1', percent: 100, error: 'No close match'));
+    await until(() => server.bodiesFor('/api/downloads/retry-import').isNotEmpty, 'the retry');
+    final retry = server.bodiesFor('/api/downloads/retry-import').single! as Map;
+    expect(retry['choice'], {'MusicBrainz': 'e7d77d74-15e5-49a6-ba72-5b60b911ca2a'});
+  });
+
   test('a skipped import is retried with the release the user picked', () async {
     final d = await started();
     server.push(progress('Completed', percent: 100));

@@ -129,10 +129,16 @@ class SoulbeetClient {
 
   /// Soulbeet searches Soulseek, picks a copy and downloads it into
   /// [folder]. Returns the batch id its progress events carry.
-  Future<String> autoDownload(SbAlbum album, SbFolder folder) async {
+  /// Has Soulbeet find and download [album], or only [songs] of it (Soulbeet
+  /// then searches Soulseek for each song by name).
+  Future<String> autoDownload(SbAlbum album, SbFolder folder, {List<SbTrack> songs = const []}) async {
     final r = await _map('POST', '/api/auto-download', {
       'req': {
-        'query': {'album': album.request, 'tracks': const <Object>[], 'backend': null},
+        'query': {
+          'album': album.request,
+          'tracks': [for (final t in songs) t.raw],
+          'backend': null,
+        },
         'folder_id': folder.id,
         'folder_path': folder.path,
       },

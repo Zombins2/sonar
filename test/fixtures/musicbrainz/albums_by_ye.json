@@ -1,0 +1,2881 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group",
+  "query": {
+   "artist": "164f0d73-1234-4e2c-8743-d77bf2191051",
+   "type": "album|ep",
+   "inc": "artist-credits",
+   "limit": "100",
+   "offset": "0",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "release-group-offset": 0,
+  "release-groups": [
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Boogie, Mick",
+       "disambiguation": "",
+       "id": "bffe9445-fb2c-4616-bf04-92e34a7e4359",
+       "country": "US",
+       "type": "Person",
+       "name": "Mick Boogie"
+      },
+      "name": "Mick Boogie",
+      "joinphrase": " & "
+     },
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "title": "Second Semester: Kanye Essentials 2",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "first-release-date": "2005",
+    "id": "05d0ff9f-2fba-35f1-92e4-f81872004689"
+   },
+   {
+    "first-release-date": "2004-06-12",
+    "id": "06dc5a43-7ca4-3e9a-8c78-02ea52d58296",
+    "secondary-types": [
+     "Live"
+    ],
+    "title": "Live in Amsterdam: Semester Over Seas ’05",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Boogie, Mick",
+       "disambiguation": "",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Mick Boogie",
+       "country": "US",
+       "id": "bffe9445-fb2c-4616-bf04-92e34a7e4359",
+       "type": "Person"
+      },
+      "name": "Mick Boogie",
+      "joinphrase": ", "
+     },
+     {
+      "artist": {
+       "name": "Terry Urban",
+       "type": "Person",
+       "id": "a83f5231-d9b2-43f2-8e48-07aa88a0637f",
+       "country": "US",
+       "disambiguation": "",
+       "sort-name": "Urban, Terry",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": ", ",
+      "name": "Terry Urban"
+     },
+     {
+      "name": "9th Wonder",
+      "joinphrase": " & ",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "9th Wonder",
+       "disambiguation": "",
+       "country": "US",
+       "id": "48513f24-37d5-423f-b9b7-2b712af7f50d",
+       "type": "Person",
+       "name": "9th Wonder"
+      }
+     },
+     {
+      "artist": {
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "disambiguation": "",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "title": "The Graduate",
+    "first-release-date": "2007-10-18",
+    "id": "09e82aa7-c8d0-3140-978c-1ee42fd65014"
+   },
+   {
+    "title": "Good Ass Fantasy",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "id": "0bcac1b9-4de0-430a-817b-84f26484a4fe",
+    "first-release-date": "2025-07-06",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "primary-type": "Album"
+   },
+   {
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "first-release-date": "2006-05-01",
+    "id": "0c95909c-4d34-37c0-910c-911106f7bb90",
+    "title": "Late Orchestration",
+    "secondary-types": [
+     "Live"
+    ]
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "name": "Ye"
+      }
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "primary-type": "Album",
+    "title": "The Graduate (Extra Credit)",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "id": "0d4df412-5324-4d31-ab59-e3d2b6dae8f1",
+    "first-release-date": "2008"
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "name": "Ye",
+      "joinphrase": ""
+     }
+    ],
+    "secondary-type-ids": [
+     "0c60f497-ff81-3818-befd-abfc84a4858b"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "title": "Graduation Reworked",
+    "secondary-types": [
+     "Remix"
+    ],
+    "first-release-date": "2024-04-05",
+    "id": "0d65364d-a4c8-49e9-a4b5-deb46e008101"
+   },
+   {
+    "id": "11fa1721-b803-4321-85f7-32364e169a3c",
+    "first-release-date": "2022-07-21",
+    "title": "Yandhi",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      }
+     }
+    ]
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+      }
+     }
+    ],
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "title": "Sky High: Presented by DJ Benzi and Plain Pat",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "first-release-date": "2008",
+    "id": "18296dab-ca5a-357a-b160-2279343bfe12"
+   },
+   {
+    "primary-type": "Album",
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      },
+      "name": "Kanye West",
+      "joinphrase": " & "
+     },
+     {
+      "name": "Drake",
+      "joinphrase": "",
+      "artist": {
+       "name": "Drake",
+       "country": "CA",
+       "id": "9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+       "type": "Person",
+       "sort-name": "Drake",
+       "disambiguation": "Canadian rapper",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2021",
+    "id": "18b2ca99-0230-4530-bf04-09fbf255a63f",
+    "secondary-types": [
+     "Live"
+    ],
+    "title": "Free Larry Hoover Benefit Concert"
+   },
+   {
+    "first-release-date": "2024-10-27",
+    "id": "1a726d8a-e574-486c-85fe-8dd263af3cb0",
+    "title": "YESUKE",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "name": "Ye",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      }
+     }
+    ]
+   },
+   {
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "first-release-date": "2008-11-21",
+    "id": "1c1b50ec-828b-3d7c-9b1b-54cb1fe97d55",
+    "title": "808s & Heartbreak",
+    "secondary-types": []
+   },
+   {
+    "title": "Freshmen Adjustment, Volume 3",
+    "secondary-types": [
+     "Compilation",
+     "Mixtape/Street"
+    ],
+    "id": "21cca1ae-db9c-3915-812a-efddcb7a4f00",
+    "first-release-date": "2007",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      }
+     }
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album"
+   },
+   {
+    "id": "225a89b0-2520-488c-a090-ae4e4debb726",
+    "first-release-date": "2007-12",
+    "secondary-types": [],
+    "title": "Graduation “Bonus Tracks, Remixes, Unreleased” EP",
+    "primary-type": "EP",
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf"
+   },
+   {
+    "first-release-date": "2022-02-23",
+    "id": "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+    "title": "Donda 2",
+    "secondary-types": [
+     "Demo"
+    ],
+    "secondary-type-ids": [
+     "81598169-0d6c-3bce-b4be-866fa658eda3"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ]
+   },
+   {
+    "id": "28e5844d-8e0c-415a-a661-0c5bd025783e",
+    "first-release-date": "2015-09-25",
+    "title": "808s & Heartbreak: Live at Hollywood Bowl",
+    "secondary-types": [
+     "Live"
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Yeezus II",
+    "secondary-types": [],
+    "first-release-date": "2014-06-18",
+    "id": "2902bfbf-a535-44d1-896e-600f0875138b",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album"
+   },
+   {
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "id": "2a879dda-b5cf-4330-9caa-b5aac34af2bc",
+    "first-release-date": "2022-06-05",
+    "title": "Freshman Year",
+    "secondary-types": []
+   },
+   {
+    "secondary-types": [],
+    "title": "So Help Me God",
+    "id": "2b7d0e71-a5f5-4899-8c03-0dd7e0a564d1",
+    "first-release-date": "2015",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": ""
+   },
+   {
+    "id": "2da4f1d6-b332-4f6a-a7d1-3942df87e702",
+    "first-release-date": "2023-10-01",
+    "secondary-types": [],
+    "title": "Cruel Winter",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      },
+      "name": "Ye",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type": "Album",
+    "title": "Freshmen Adjustment, Volume 2",
+    "secondary-types": [
+     "Compilation",
+     "Mixtape/Street"
+    ],
+    "first-release-date": "2006-04-17",
+    "id": "36c3b550-7f91-3735-a3a6-840fb721319e"
+   },
+   {
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "EP",
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      }
+     }
+    ],
+    "first-release-date": "2004",
+    "id": "387a45c4-bb95-3bda-bd88-737598846690",
+    "title": "Unreleased Joints, Volume 4",
+    "secondary-types": []
+   },
+   {
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "primary-type": "EP",
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "secondary-types": [],
+    "title": "Unreleased Joints Volume 6",
+    "first-release-date": "2004",
+    "id": "3b82f373-1543-4b4f-a400-ca2101659508"
+   },
+   {
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "3c65a18c-1591-4bca-93c2-7d93a4489b57",
+    "first-release-date": "2022-03-14",
+    "secondary-types": [],
+    "title": "Yedits Presents: Jesus Is King"
+   },
+   {
+    "primary-type": "Album",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "410228dc-fe53-4691-92db-c7370cb6ab11",
+    "first-release-date": "2023-07-16",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "title": "Yeezification"
+   },
+   {
+    "id": "41efe651-b79a-4120-8599-87ca4b72f1fc",
+    "first-release-date": "2009-10-20",
+    "title": "Glow in the Dark",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "EP",
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ]
+   },
+   {
+    "first-release-date": "",
+    "id": "4370d1a3-ab87-460a-8a52-356f8f74d494",
+    "title": "Soul Children",
+    "secondary-types": [],
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Ye",
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ]
+   },
+   {
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Ye",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+     "Compilation"
+    ],
+    "title": "Jesus is King III",
+    "id": "448d46fc-e2d5-4ea6-875a-a643f70493bf",
+    "first-release-date": "2026-03-12"
+   },
+   {
+    "secondary-types": [
+     "Compilation"
+    ],
+    "title": "Dear Donda",
+    "id": "44b6a7f2-6b2a-4189-a95b-e3791b28bef8",
+    "first-release-date": "2021-05-09",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person"
+      }
+     }
+    ],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "primary-type": "EP",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "first-release-date": "2007-05-25",
+    "id": "463193c2-bcee-33da-b8cf-7623289fefb1",
+    "title": "Can’t Tell Me Nothing: The Official Mixtape",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ]
+   },
+   {
+    "id": "4c4fec13-4eab-45e5-84fa-4254ab89d2c4",
+    "first-release-date": "2004",
+    "title": "Unreleased Joints Volume 5",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "EP",
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ]
+   },
+   {
+    "secondary-types": [
+     "Live"
+    ],
+    "title": "Sunday Service at the Mountain",
+    "first-release-date": "2019-04-21",
+    "id": "4c5b1f75-3fc7-486f-9848-eb2fe8180f62",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "disambiguation": ""
+   },
+   {
+    "first-release-date": "2011-04-17",
+    "id": "4f763a97-30ab-4082-9382-6767f4f2eb36",
+    "title": "Live at Coachella 2011",
+    "secondary-types": [
+     "Live"
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Ye",
+      "artist": {
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ]
+   },
+   {
+    "first-release-date": "2025-03-24",
+    "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+    "secondary-types": [],
+    "title": "BULLY",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Ye",
+      "artist": {
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "first-release-date": "2021-10-26",
+    "id": "56d157af-8c97-432f-bc74-27b58cd043f5",
+    "title": "Life of the Party",
+    "secondary-types": [],
+    "disambiguation": "Stem Player exclusive EP",
+    "secondary-type-ids": [],
+    "primary-type": "EP",
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ]
+   },
+   {
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "57da26b5-6376-4db2-aa3f-d3d7650f3ad4",
+    "first-release-date": "2002",
+    "secondary-types": [],
+    "title": "Akademiks (Jeanius Level Musik)"
+   },
+   {
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2005-03-21",
+    "id": "58adbae4-d201-3843-ba9c-fc94542596c0",
+    "secondary-types": [
+     "Compilation",
+     "Mixtape/Street"
+    ],
+    "title": "Freshmen Adjustment"
+   },
+   {
+    "secondary-types": [],
+    "title": "Kanye West, E. Vax",
+    "id": "592dae87-780a-41da-b387-a5e6c4035a96",
+    "first-release-date": "",
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "joinphrase": "",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": ""
+   },
+   {
+    "id": "5d4d0f2d-9be7-4922-bc9a-cbd2880b12c2",
+    "first-release-date": "2013-06-18",
+    "secondary-types": [],
+    "title": "Yeezus",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "title": "My Beautiful Dark Twisted Fantasy",
+    "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+    "first-release-date": "2010-11-19"
+   },
+   {
+    "title": "WAR",
+    "secondary-types": [],
+    "first-release-date": "2025-12-31",
+    "id": "5fb5d12f-9983-4663-a5d2-adf8fa87b092",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "joinphrase": " & ",
+      "artist": {
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     },
+     {
+      "artist": {
+       "name": "James Blake",
+       "type": "Person",
+       "id": "8dc08b1f-e393-4f85-a5dd-300f7693a8b8",
+       "country": "GB",
+       "disambiguation": "English singer and producer",
+       "sort-name": "Blake, James",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": "",
+      "name": "James Blake"
+     }
+    ],
+    "disambiguation": "WAR (chropic)",
+    "secondary-type-ids": [],
+    "primary-type": "Album"
+   },
+   {
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2018-06-01",
+    "id": "6448381d-9d98-4f84-b99d-733b6acde906",
+    "secondary-types": [],
+    "title": "ye"
+   },
+   {
+    "title": "YE-VANGELION",
+    "secondary-types": [],
+    "id": "6dffc036-58c5-4bdf-914c-31fdbb55e9fc",
+    "first-release-date": "2025-04-02",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album"
+   },
+   {
+    "id": "6fbf15bb-fc19-4e99-9826-3b0682521b11",
+    "first-release-date": "2022",
+    "title": "WAR",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye"
+      },
+      "name": "Kanye West",
+      "joinphrase": " & "
+     },
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "English singer and producer",
+       "sort-name": "Blake, James",
+       "type": "Person",
+       "country": "GB",
+       "id": "8dc08b1f-e393-4f85-a5dd-300f7693a8b8",
+       "name": "James Blake"
+      },
+      "joinphrase": "",
+      "name": "James Blake"
+     }
+    ]
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "title": "Spirits Over the Horizon",
+    "secondary-types": [],
+    "id": "7233c897-be76-43b0-b5d1-a16850a0e9f4",
+    "first-release-date": "2021"
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "title": "The High School Graduate",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "first-release-date": "2004",
+    "id": "73394eaf-5802-3ccb-9a9e-3c95a5052353"
+   },
+   {
+    "secondary-types": [
+     "Compilation"
+    ],
+    "title": "Wyoming Sessions",
+    "id": "76e6f89d-c2a2-4b42-99d0-076f5727522c",
+    "first-release-date": "2019-07-27",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ]
+   },
+   {
+    "id": "76f1a065-df3b-4cae-8ce4-29580d49104c",
+    "first-release-date": "",
+    "title": "Yandhi Black Friday",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "name": "Ye",
+      "joinphrase": ""
+     }
+    ]
+   },
+   {
+    "title": "Donda",
+    "secondary-types": [],
+    "first-release-date": "2021-08-29",
+    "id": "7f4792fe-b563-4554-849a-95a89be71f84",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album"
+   },
+   {
+    "first-release-date": "",
+    "id": "80d105a7-c9be-4e96-9dde-8a5fe8567272",
+    "title": "Untitled 2011 Solo Album",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ]
+   },
+   {
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "first-release-date": "2019-07-22",
+    "id": "8687263a-d582-434c-a609-360d0e5385f2",
+    "title": "Yandhi",
+    "secondary-types": []
+   },
+   {
+    "first-release-date": "2010",
+    "id": "87bb4b1d-f555-4380-b96b-09b2124a1153",
+    "title": "Kanye West-Restaurants",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Ye"
+     }
+    ]
+   },
+   {
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "¥$",
+       "disambiguation": "Ye & Ty Dolla $ign",
+       "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+       "country": "US",
+       "id": "58daf317-be5f-439f-a04d-0d6727f1a3b2",
+       "type": "Group",
+       "name": "¥$"
+      },
+      "name": "¥$",
+      "joinphrase": ", "
+     },
+     {
+      "joinphrase": " & ",
+      "name": "Ye",
+      "artist": {
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     },
+     {
+      "joinphrase": "",
+      "name": "Ty Dolla $ign",
+      "artist": {
+       "sort-name": "Ty Dolla Sign",
+       "disambiguation": "",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ty Dolla $ign",
+       "country": "US",
+       "id": "7bd66c18-cb33-49aa-9279-140acedbdb49",
+       "type": "Person"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "title": "VULTURES",
+    "first-release-date": "2026-08-28",
+    "id": "88b89d2b-b0c5-4753-b3fd-faf867bf4125"
+   },
+   {
+    "first-release-date": "2009",
+    "id": "89cb94a8-ba33-42ef-a2e3-554a0300022d",
+    "secondary-types": [],
+    "title": "Good Ass Job",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      }
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "title": "The College Dropout",
+    "secondary-types": [],
+    "id": "8a01217e-6947-3927-a39b-6691104694f1",
+    "first-release-date": "2004-02-09"
+   },
+   {
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "first-release-date": "2016-02-14",
+    "id": "8c18657a-6338-490d-a952-897663596b96",
+    "title": "The Life of Pablo",
+    "secondary-types": []
+   },
+   {
+    "id": "9742038a-8d4d-4f63-b6c6-1f2e9f00f254",
+    "first-release-date": "2008-07-23",
+    "secondary-types": [],
+    "title": "Good Ass Job",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person"
+      },
+      "name": "Ye",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "title": "Omari",
+    "secondary-types": [],
+    "id": "983e4aaf-c117-4a65-bc57-5b6c206f1f7e",
+    "first-release-date": "2018-06-01",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "joinphrase": "",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      }
+     }
+    ],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album"
+   },
+   {
+    "id": "9f4b38bf-5903-4eab-9009-3fd7584986ff",
+    "first-release-date": "2024-12-02",
+    "title": "Donda 2: As It Burns",
+    "secondary-types": [],
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person"
+      },
+      "joinphrase": "",
+      "name": "Ye"
+     }
+    ]
+   },
+   {
+    "secondary-types": [],
+    "title": "Je PRESENTS: YEEZUS 2",
+    "id": "a0213101-b01a-4714-a9ff-bbfa4238566a",
+    "first-release-date": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      },
+      "name": "Je",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": ""
+   },
+   {
+    "first-release-date": "2008-09-12",
+    "id": "a0afd355-d033-4bd0-83a8-ae071ef9e8c7",
+    "title": "Kanye's Universe",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": " & ",
+      "name": "DJ 31 Degreez",
+      "artist": {
+       "sort-name": "31 Degreez, DJ",
+       "disambiguation": "",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "f4cab1bc-7bf8-46f6-8f72-652f68215487",
+       "type": "Person",
+       "name": "DJ 31 Degreez"
+      }
+     },
+     {
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ]
+   },
+   {
+    "secondary-types": [
+     "Live"
+    ],
+    "title": "DONDA: Live from Atlanta 2021.08.05",
+    "first-release-date": "2021-08-06",
+    "id": "a24fe12c-b8a7-4d86-bfe3-3eadae1a405f",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ]
+   },
+   {
+    "first-release-date": "",
+    "id": "a59c27fa-85b8-4641-94e5-59c2d8f80eb4",
+    "title": "Your Prayers Mattered",
+    "secondary-types": [],
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ]
+   },
+   {
+    "title": "END OF ME",
+    "secondary-types": [
+     "Compilation",
+     "Mixtape/Street"
+    ],
+    "first-release-date": "2025-09-19",
+    "id": "a85f995d-84f5-4a06-903a-c1e2117873a8",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Ye",
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      }
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type": "Album"
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "US rapper",
+       "sort-name": "Jay-Z",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JAŸ-Z",
+       "type": "Person",
+       "id": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+       "country": "US"
+      },
+      "joinphrase": " & ",
+      "name": "Jay‐Z"
+     },
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "title": "Watch the Throne",
+    "secondary-types": [],
+    "id": "a96597aa-93b4-4e14-9e6e-03892ab24979",
+    "first-release-date": "2011-08-08"
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": " And ",
+      "name": "J.Period",
+      "artist": {
+       "country": "US",
+       "id": "bba897d7-1d33-4ac4-8440-0785cd0d2342",
+       "type": "Person",
+       "name": "J.Period",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "J.Period",
+       "disambiguation": ""
+      }
+     },
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "primary-type": "Album",
+    "title": "G.O.O.D. Music (remixed and unreleased)",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "first-release-date": "2013",
+    "id": "ab58e273-9310-4b5e-b517-1a90bec25453"
+   },
+   {
+    "secondary-types": [],
+    "title": "God's Country",
+    "id": "abe7865c-84ad-4a28-b9f4-e85e2355423e",
+    "first-release-date": "2021-11-16",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": ""
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "title": "¥",
+    "secondary-types": [],
+    "first-release-date": "2023",
+    "id": "acd73897-c774-4c01-957d-3b35e57789d8"
+   },
+   {
+    "secondary-types": [
+     "Live"
+    ],
+    "title": "Yeezy Season 3: Live At Madison Square Garden",
+    "first-release-date": "2016-02-11",
+    "id": "b0004d4e-3c79-4527-9e71-9113411c1591",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Ye"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ]
+   },
+   {
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "title": "With Child",
+    "first-release-date": "2023-09-24",
+    "id": "b16951fa-a36b-4af6-9351-75e58014507a"
+   },
+   {
+    "first-release-date": "2016",
+    "id": "b26cd80b-44ae-4199-8b77-72d6f957e624",
+    "secondary-types": [],
+    "title": "TurboGrafx 16",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "id": "b4c7a391-44d7-4ba8-93c1-6ee7920dbc53",
+    "first-release-date": "2023-09-26",
+    "title": "Thank God for Drugs",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ]
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "title": "Gap Year",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "first-release-date": "2020-05-31",
+    "id": "b5d77225-74e0-4af2-aebe-c0266f771b82"
+   },
+   {
+    "title": "Gallery Freestyles",
+    "secondary-types": [],
+    "id": "b959f415-85bb-410e-858a-67ffac069743",
+    "first-release-date": "2023-09-02",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      }
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album"
+   },
+   {
+    "first-release-date": "2006-01",
+    "id": "ba02d882-b77c-348a-a6e4-2bb6fe0ae2fe",
+    "secondary-types": [
+     "Compilation",
+     "Mixtape/Street"
+    ],
+    "title": "Touch the Sky",
+    "primary-type": "Album",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Sparks, Clinton",
+       "disambiguation": "",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Clinton Sparks",
+       "country": "US",
+       "id": "151852d3-ef53-432b-8817-6c3227cbde60",
+       "type": "Person"
+      },
+      "joinphrase": " + ",
+      "name": "Clinton Sparks"
+     },
+     {
+      "artist": {
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "first-release-date": "2005-03",
+    "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+    "secondary-types": [],
+    "title": "Late Registration",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "name": "Ye"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "primary-type": "EP",
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "id": "c61cf2c6-f1fa-37c3-b4a5-5592a3221ede",
+    "first-release-date": "2008-11-21",
+    "title": "Love Lockdown",
+    "secondary-types": [
+     "Compilation"
+    ]
+   },
+   {
+    "id": "c86e4825-0bae-4248-b332-05bff5893ef9",
+    "first-release-date": "2026-09-27",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "title": "Emo8s & Punkbreak",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "secondary-types": [],
+    "title": "Love Everyone",
+    "first-release-date": "2019-11",
+    "id": "c8a3e399-0514-42d3-ba8c-8d001ee9f2be",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": []
+   },
+   {
+    "title": "Kanye & Friends",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "id": "ca433d63-a566-4cfd-bb19-b898713a6e10",
+    "first-release-date": "2009",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Ye"
+     }
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album"
+   },
+   {
+    "secondary-types": [],
+    "title": "Graduation",
+    "id": "d44c50ad-61fd-3fce-95fc-27024d7f1d30",
+    "first-release-date": "2007-09-05",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": []
+   },
+   {
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "first-release-date": "2010-01-05",
+    "id": "d684142d-4343-4408-b11e-0eca5bbac012",
+    "title": "VH1 Storytellers",
+    "secondary-types": [
+     "Live"
+    ]
+   },
+   {
+    "primary-type": "EP",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      }
+     }
+    ],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "first-release-date": "2004",
+    "id": "d81cb777-8224-4258-a3b2-b9e8ee1861e3",
+    "secondary-types": [],
+    "title": "Unreleased Joints, Volume 1"
+   },
+   {
+    "id": "dabbb756-f3e7-429b-8cf6-32efc2cecd10",
+    "first-release-date": "2026-07-02",
+    "title": "BULLY",
+    "secondary-types": [],
+    "disambiguation": "Bully (chropic)",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Ye"
+     }
+    ]
+   },
+   {
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "name": "Ye"
+      },
+      "joinphrase": "",
+      "name": "Ye"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "dd5d8c4c-9887-4a8c-8a1a-98daebb1b9bf",
+    "first-release-date": "2026-01-30",
+    "secondary-types": [],
+    "title": "YE LIVE IN MEXICO"
+   },
+   {
+    "id": "dd9639cc-720a-4c91-b8ac-d3ad541c29f2",
+    "first-release-date": "2009-07-28",
+    "title": "Live from Chicago",
+    "secondary-types": [
+     "Live",
+     "Mixtape/Street"
+    ],
+    "secondary-type-ids": [
+     "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ]
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye"
+      }
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type": "Album",
+    "title": "The Best of Kanye West",
+    "secondary-types": [
+     "Compilation",
+     "Mixtape/Street"
+    ],
+    "id": "e0bcb908-c9ce-3f1a-81cb-404b4b28a428",
+    "first-release-date": "2005"
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "name": "Ye"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "title": "Donda with Child",
+    "secondary-types": [],
+    "first-release-date": "2023-09-24",
+    "id": "e3b8e467-c8ee-438a-a19c-8d0cfec786f6"
+   },
+   {
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "0c60f497-ff81-3818-befd-abfc84a4858b"
+    ],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "first-release-date": "2019-11-07",
+    "id": "ea30b0db-bcb0-4748-bb4d-75dc8f660eb5",
+    "title": "Yandhi is King",
+    "secondary-types": [
+     "Remix"
+    ]
+   },
+   {
+    "secondary-types": [],
+    "title": "Jesus is King II",
+    "first-release-date": "2023-09-26",
+    "id": "ea984c51-977f-4128-8b9a-7b6e9b8841f7",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": ""
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      },
+      "name": "Kanye West",
+      "joinphrase": ""
+     }
+    ],
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "title": "OUR BEAUTIFUL AMAZING REALITY",
+    "secondary-types": [],
+    "id": "ee09c603-5492-4ad5-af6e-32abac4d66ec",
+    "first-release-date": "2020-07-01"
+   },
+   {
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person"
+      }
+     }
+    ],
+    "first-release-date": "2019-10-25",
+    "id": "ee26718c-2633-4278-8718-f3a45a95f20e",
+    "title": "Jesus Is King",
+    "secondary-types": []
+   },
+   {
+    "primary-type": "Album",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2003",
+    "id": "f002ca9d-b972-3678-a9cf-92f4b327c194",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "title": "Chi Town Classic, Volume 2"
+   },
+   {
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person"
+      },
+      "name": "Kanye West",
+      "joinphrase": " & "
+     },
+     {
+      "artist": {
+       "name": "Malik Yusef",
+       "country": "US",
+       "id": "64b15912-5f96-45cb-9514-3943d1b0f220",
+       "type": "Person",
+       "sort-name": "Yusef, Malik",
+       "disambiguation": "",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": "",
+      "name": "Malik Yusef"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "secondary-types": [],
+    "title": "G.O.O.D. Morning, G.O.O.D. Night",
+    "id": "f4d6128a-dd9f-4089-bb02-346fce213ddc",
+    "first-release-date": "2009-06-07"
+   },
+   {
+    "title": "Devil in a New Dress",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "first-release-date": "2012-03-29",
+    "id": "f6622af5-e114-4561-a437-23a71176cbd9",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Kanye West",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "name": "Ye",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US"
+      }
+     }
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album"
+   },
+   {
+    "primary-type": "Album",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "name": "Ye"
+      },
+      "name": "Kanye Omari West",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "f6c60bc5-a891-48db-a1f4-bebc07c3f040",
+    "first-release-date": "2014-12-24",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "title": "Kanye Omari West"
+   },
+   {
+    "secondary-types": [],
+    "title": "Donda’s Boy",
+    "first-release-date": "2019-11",
+    "id": "f7798ccf-2943-4058-ac34-f3682a4ec407",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "name": "Ye",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "disambiguation": ""
+   },
+   {
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+       "name": "Ye",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "id": "f7ddaaf7-b4d7-4842-82a3-1518afe5949a",
+    "first-release-date": "2008-05-12",
+    "title": "Good Life",
+    "secondary-types": []
+   },
+   {
+    "first-release-date": "2005-03-22",
+    "id": "fdf1df79-1936-3779-ab2d-6f440dc2637e",
+    "title": "The College Dropout Video Anthology",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "formerly Kanye West",
+       "sort-name": "Ye",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Ye",
+       "type": "Person",
+       "country": "US",
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+      },
+      "joinphrase": "",
+      "name": "Kanye West"
+     }
+    ]
+   },
+   {
+    "first-release-date": "2026-08-28",
+    "id": "ffbb2ab4-8b69-4427-a6bc-261696627e0f",
+    "secondary-types": [],
+    "title": "Donda",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "country": "US",
+       "type": "Person",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   }
+  ],
+  "release-group-count": 141
+ }
+}

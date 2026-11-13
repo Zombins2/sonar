@@ -1,0 +1,56 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group/d44c50ad-61fd-3fce-95fc-27024d7f1d30",
+  "query": {
+   "inc": "releases",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "primary-type": "Album",
+  "releases": [
+   {
+    "disambiguation": "",
+    "date": "2007-09-05",
+    "release-events": [
+     {
+      "date": "2007-09-05",
+      "area": {
+       "sort-name": "Japan",
+       "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+       "disambiguation": "",
+       "type-id": null,
+       "type": null,
+       "name": "Japan",
+       "iso-3166-1-codes": [
+        "JP"
+       ]
+      }
+     }
+    ],
+    "barcode": "4988005486547",
+    "packaging-id": null,
+    "text-representation": {
+     "language": "eng",
+     "script": "Latn"
+    },
+    "country": "JP",
+    "packaging": null,
+    "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+    "title": "Graduation",
+    "status": "Official",
+    "id": "06a81817-093d-40f0-aef2-90673fa550ae",
+    "quality": "normal"
+   }
+  ],
+  "id": "d44c50ad-61fd-3fce-95fc-27024d7f1d30",
+  "disambiguation": "",
+  "title": "Graduation",
+  "secondary-types": [],
+  "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+  "first-release-date": "2007-09-05",
+  "secondary-type-ids": []
+ }
+}

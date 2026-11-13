@@ -29,13 +29,18 @@ enum AlbumPhase {
 
 /// One album on its way into the library.
 class AlbumDownload {
-  AlbumDownload._(this.key, {this.album, String? label, this.releaseId}) : _label = label, started = DateTime.now();
+  AlbumDownload._(this.key, {this.album, String? label, this.releaseId, this.songs = const []})
+    : _label = label,
+      started = DateTime.now();
 
   /// An album in a given state, for screenshots and widget tests.
   @visibleForTesting
-  AlbumDownload.debug(this.key, {this.album, String? label, this.releaseId, DateTime? started})
+  AlbumDownload.debug(this.key, {this.album, String? label, this.releaseId, DateTime? started, this.songs = const []})
     : _label = label,
       started = started ?? DateTime.now();
+
+  /// The songs asked for, when only some of the album were.
+  final List<SbTrack> songs;
 
   /// Soulbeet's batch id once known, else a local id.
   String key;
@@ -80,6 +85,9 @@ class AlbumDownload {
   bool get importFailed => phase == AlbumPhase.failed && keptFile != null;
 
   String get title => album?.title ?? _label ?? 'Album';
+
+  /// "BULLY · 2 songs" for some of an album, else the album's title.
+  String get label => songs.isEmpty ? title : '$title · ${songs.length == 1 ? '1 song' : '${songs.length} songs'}';
   String? get artist => album?.artist;
 
   int get totalBytes => files.values.fold(0, (s, f) => s + f.size);
@@ -171,6 +179,12 @@ class SoulbeetDownloads extends ChangeNotifier {
   /// The download for an album the user picked in search, if any.
   AlbumDownload? forAlbum(String albumId) => _albums.values.where((a) => a.album?.id == albumId).lastOrNull;
 
+  /// The download for [album] in any of its pressings (an artist's album is
+  /// found without one, and downloaded as the one opened), if any.
+  AlbumDownload? forFound(SbAlbum album) => _albums.values
+      .where((a) => a.album?.id == album.id || (album.groupId != null && a.album?.groupId == album.groupId))
+      .lastOrNull;
+
   @override
   void dispose() {
     _disposed = true;
@@ -189,10 +203,19 @@ class SoulbeetDownloads extends ChangeNotifier {
   /// Downloads [album]: the best lossless copy with every track if there is
   /// one ([pickSource]), else whatever Soulbeet picks. [chosen] skips the
   /// choosing (the user picked a copy themselves).
-  Future<AlbumDownload> download(SbAlbum album, {int? trackCount, SbSource? chosen}) async {
+  ///
+  /// With [songs], only those: Soulbeet finds each by name. beets won't file
+  /// part of an album on its own (missing songs make any match unsure), so
+  /// it's filed as [album] when it asks ([releaseId]).
+  Future<AlbumDownload> download(
+    SbAlbum album, {
+    int? trackCount,
+    SbSource? chosen,
+    List<SbTrack> songs = const [],
+  }) async {
     final existing = forAlbum(album.id);
     if (existing != null && existing.active) return existing;
-    final d = AlbumDownload._('local-${_localIds++}', album: album, releaseId: album.mbid);
+    final d = AlbumDownload._('local-${_localIds++}', album: album, releaseId: album.mbid, songs: songs);
     _albums[d.key] = d;
     _changed();
     unawaited(_listen());
@@ -202,6 +225,13 @@ class SoulbeetDownloads extends ChangeNotifier {
       final folder = _folder ??= (await client.folders()).firstOrNull ?? await client.createFolder();
       var source = chosen;
       var asked = album;
+      if (songs.isNotEmpty) {
+        final batch = await client.autoDownload(album, folder, songs: songs);
+        _rekey(d, batch);
+        d.phase = AlbumPhase.downloading;
+        _changed();
+        return d;
+      }
       if (source == null) {
         final tracks = trackCount ?? (await client.album(album.id)).tracks.length;
         final best = await _bestSource(album, tracks);

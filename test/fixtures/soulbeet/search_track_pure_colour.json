@@ -1,0 +1,32 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/metadata/search/track",
+    "body": {
+      "input": {
+        "artist": "Steve Lacy",
+        "query": "pure colour",
+        "provider": "musicbrainz"
+      }
+    }
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": {
+    "provider": "musicbrainz",
+    "results": [
+      {
+        "kind": "Track",
+        "id": "5db818b8-9d0c-4c33-9fa1-c7c0a837afde",
+        "title": "pure colour",
+        "artist": "Steve Lacy, Erykah Badu",
+        "album_id": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+        "album_title": "Oh yeah?",
+        "release_date": "2026-07-17",
+        "duration": "03:07",
+        "mbid": "5db818b8-9d0c-4c33-9fa1-c7c0a837afde",
+        "release_mbid": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8"
+      }
+    ]
+  }
+}

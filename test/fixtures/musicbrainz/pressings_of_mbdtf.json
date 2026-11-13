@@ -1,0 +1,56 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group/5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+  "query": {
+   "inc": "releases",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "secondary-types": [],
+  "disambiguation": "",
+  "first-release-date": "2010-11-19",
+  "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+  "primary-type": "Album",
+  "secondary-type-ids": [],
+  "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+  "title": "My Beautiful Dark Twisted Fantasy",
+  "releases": [
+   {
+    "id": "cd474271-bd7a-4d53-ba9e-e9d5bd7958cb",
+    "date": "2010-11-19",
+    "quality": "normal",
+    "title": "My Beautiful Dark Twisted Fantasy",
+    "release-events": [
+     {
+      "area": {
+       "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+       "type-id": null,
+       "type": null,
+       "iso-3166-1-codes": [
+        "XE"
+       ],
+       "disambiguation": "",
+       "name": "Europe",
+       "sort-name": "Europe"
+      },
+      "date": "2010-11-19"
+     }
+    ],
+    "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+    "text-representation": {
+     "script": "Latn",
+     "language": "eng"
+    },
+    "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+    "packaging": "Gatefold Cover",
+    "barcode": "602527523736",
+    "disambiguation": "deluxe edition with DVD",
+    "country": "XE",
+    "status": "Official"
+   }
+  ]
+ }
+}

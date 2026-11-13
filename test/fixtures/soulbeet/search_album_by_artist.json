@@ -1,0 +1,92 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/metadata/search/album",
+    "body": {
+      "input": {
+        "artist": "JPEGMAFIA",
+        "query": "*",
+        "provider": "musicbrainz"
+      }
+    }
+  },
+  "status": 200,
+  "contentType": "application/json",
+  "response": {
+    "provider": "musicbrainz",
+    "results": [
+      {
+        "kind": "Album",
+        "id": "4f8ddd74-85bb-4b7b-adb1-d8b296a8d681",
+        "title": "Veteran",
+        "artist": "JPEGMAFIA",
+        "release_date": null,
+        "mbid": "4f8ddd74-85bb-4b7b-adb1-d8b296a8d681"
+      },
+      {
+        "kind": "Album",
+        "id": "c01b2054-cd44-47f8-999a-347afd4085de",
+        "title": "NOT ON VETERAN!",
+        "artist": "JPEGMAFIA",
+        "release_date": null,
+        "mbid": "c01b2054-cd44-47f8-999a-347afd4085de"
+      },
+      {
+        "kind": "Album",
+        "id": "5e6455a2-d87f-42d1-af6e-8ad8a74d28a7",
+        "title": "OFFLINE",
+        "artist": "JPEGMAFIA",
+        "release_date": null,
+        "mbid": "5e6455a2-d87f-42d1-af6e-8ad8a74d28a7"
+      },
+      {
+        "kind": "Album",
+        "id": "40b7f897-b05e-4504-b9f0-85283174bee9",
+        "title": "I LAY DOWN MY LIFE FOR YOU",
+        "artist": "JPEGMAFIA",
+        "release_date": null,
+        "mbid": "40b7f897-b05e-4504-b9f0-85283174bee9"
+      },
+      {
+        "kind": "Album",
+        "id": "c8d9c463-aff9-4ac3-af90-2890e8807741",
+        "title": "EP!",
+        "artist": "JPEGMAFIA",
+        "release_date": null,
+        "mbid": "c8d9c463-aff9-4ac3-af90-2890e8807741"
+      },
+      {
+        "kind": "Album",
+        "id": "b1f68bcb-a6a6-4a79-8146-8ce0a76d8739",
+        "title": "Black Ben Carson",
+        "artist": "JPEGMAFIA",
+        "release_date": null,
+        "mbid": "b1f68bcb-a6a6-4a79-8146-8ce0a76d8739"
+      },
+      {
+        "kind": "Album",
+        "id": "6e6bc39d-c2d7-4fef-a324-876e7b5b29da",
+        "title": "LP!",
+        "artist": "JPEGMAFIA",
+        "release_date": null,
+        "mbid": "6e6bc39d-c2d7-4fef-a324-876e7b5b29da"
+      },
+      {
+        "kind": "Album",
+        "id": "ec9d8106-22b0-46bc-a7aa-cffc18b8f73c",
+        "title": "Communist Slow Jams",
+        "artist": "JPEGMAFIA",
+        "release_date": null,
+        "mbid": "ec9d8106-22b0-46bc-a7aa-cffc18b8f73c"
+      },
+      {
+        "kind": "Album",
+        "id": "dcbfa6be-242c-4aed-8a56-aa10d92502c3",
+        "title": "THE ROCKWOOD EP",
+        "artist": "JPEGMAFIA",
+        "release_date": null,
+        "mbid": "dcbfa6be-242c-4aed-8a56-aa10d92502c3"
+      }
+    ]
+  }
+}

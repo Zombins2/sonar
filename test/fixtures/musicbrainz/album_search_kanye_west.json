@@ -1,0 +1,669 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group",
+  "query": {
+   "query": "releasegroup:\"kanye west\" AND (primarytype:album OR primarytype:ep)",
+   "limit": "25",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-12T23:58:44.966Z",
+  "count": 21,
+  "offset": 0,
+  "release-groups": [
+   {
+    "id": "87bb4b1d-f555-4380-b96b-09b2124a1153",
+    "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+    "score": 100,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+    "count": 1,
+    "title": "Kanye West-Restaurants",
+    "first-release-date": "2010",
+    "primary-type": "Album",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "7b3e10da-7f48-4c28-b0c6-f476c9be0b86",
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "title": "Kanye West-Restaurants",
+      "status": "Bootleg"
+     }
+    ]
+   },
+   {
+    "id": "592dae87-780a-41da-b387-a5e6c4035a96",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 89,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+    "count": 1,
+    "title": "Kanye West, E. Vax",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "eb4568f3-df61-4bbf-8778-61809ab621e6",
+      "status-id": "55005350-bc3f-441a-b0c7-27c565eae341",
+      "title": "Soul Children",
+      "status": "Cancelled"
+     }
+    ]
+   },
+   {
+    "id": "49b0cc47-440e-4aa0-8f86-1115d95d923c",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 80,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "5728a11e-83f2-399f-ba0e-e01ef2d22802",
+    "count": 1,
+    "title": "Lullaby Renditions of Kanye West",
+    "first-release-date": "2010-05-18",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Rockabye Baby!",
+      "artist": {
+       "id": "5a045b09-af06-4348-9ce6-d51b6a370770",
+       "name": "Rockabye Baby!",
+       "sort-name": "Rockabye Baby!"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "dea08732-1379-47af-93e3-48f38bd48f17",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Lullaby Renditions of Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "fad2c9b3-d351-4991-a0b3-bb447d0e89e8",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 80,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "e7286024-62b7-397a-a8ca-3582ac70388f",
+    "count": 1,
+    "title": "Piano Tribute to Kanye West",
+    "first-release-date": "2014-05-27",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "The Piano Tribute Players",
+      "artist": {
+       "id": "a645c08f-613f-4ec0-bc8e-dd497fa29e7f",
+       "name": "The Piano Tribute Players",
+       "sort-name": "Piano Tribute Players, The"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "c5dbe2a1-553d-491f-b61b-c4a49acdb53f",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Piano Tribute to Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "5456a0b6-8075-49d8-96c0-802e1f64d461",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 80,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "4ec2ff7a-12ab-34ba-ab86-1ba6ef3621f8",
+    "count": 1,
+    "title": "8-Bit Versions of Kanye West",
+    "first-release-date": "2017-09-29",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "8-Bit Misfits",
+      "artist": {
+       "id": "e0438aeb-9793-404c-8618-eb751faf1c24",
+       "name": "8-Bit Misfits",
+       "sort-name": "8-Bit Misfits"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "72ac7b25-1e4f-4325-b341-8ede6198f83b",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "8-Bit Versions of Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "cbddad4f-63a0-45a7-aea2-bdd6b00185b0",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 80,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "3922c3f0-ace9-381d-9fc8-3cb4f9bc528f",
+    "count": 1,
+    "title": "Kanye West Turbo Grafx 16",
+    "first-release-date": "2016-03-12",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Squarecom広場SOFTWARE",
+      "artist": {
+       "id": "02131aa0-cbfd-4a8b-9fb9-c1ca7bae334e",
+       "name": "Squarecom広場SOFTWARE",
+       "sort-name": "Squarecom広場SOFTWARE"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "2b554963-094d-4c3a-8c51-4d5ab7e3cd63",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Kanye West Turbo Grafx 16",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "bda02ab2-cc6b-4e0b-9d2c-34d17fcbfa5d",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 80,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "a11e34d4-caba-3ee7-a609-bc4ee09c4d02",
+    "count": 1,
+    "title": "Lullaby Versions of Kanye West",
+    "first-release-date": "2021-12-17",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Twinkle Twinkle Little Rock Star",
+      "artist": {
+       "id": "5cc9cce8-5d13-44de-8492-87ec0e5f8749",
+       "name": "Twinkle Twinkle Little Rock Star",
+       "sort-name": "Twinkle Twinkle Little Rock Star"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "af51b312-668b-486b-ae0c-3a69362f121a",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Lullaby Versions of Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "c2b7e458-dfcc-45b1-908b-14f3b2686a38",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 80,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "3ce56971-a509-41e7-83e5-ba5c93aef6f8",
+    "count": 1,
+    "title": "kanye west stole my spaceship",
+    "first-release-date": "2016-04-25",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "huxley",
+      "artist": {
+       "id": "9da776ef-f4b5-45df-9a40-3cde52881c16",
+       "name": "huxley",
+       "sort-name": "huxley",
+       "disambiguation": "Lo-fi hip-hop producer"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "6f19ebcd-deea-43b7-b606-eaf3c9b8b516",
+      "title": "kanye west stole my spaceship"
+     }
+    ]
+   },
+   {
+    "id": "e0bcb908-c9ce-3f1a-81cb-404b4b28a428",
+    "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+    "score": 80,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "063d6a42-790a-3909-9fe9-4288bcbfa4d4",
+    "count": 1,
+    "title": "The Best of Kanye West",
+    "first-release-date": "2005",
+    "primary-type": "Album",
+    "secondary-types": [
+     "Compilation",
+     "Mixtape/Street"
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "2d9b59bc-d51d-4688-b3e6-2d78afaa6bfe",
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "title": "The Best of Kanye West",
+      "status": "Bootleg"
+     }
+    ]
+   },
+   {
+    "id": "756fdd59-ff6a-36c0-a083-1eb54433874c",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 73,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "2b7af1df-2e9c-339f-bb92-be406c3e0f19",
+    "count": 1,
+    "title": "Smooth Sax Tribute to Kanye West",
+    "first-release-date": "2006-04-25",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Kanye West Tribute Band",
+      "artist": {
+       "id": "0eb17834-1d29-47ef-a422-9dc68d73c5e4",
+       "name": "Kanye West Tribute Band",
+       "sort-name": "West, Kanye, Tribute Band"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "ff27760a-5782-418d-9137-dbea135c6150",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Smooth Sax Tribute to Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "65c31c13-8938-4e42-b252-76b27df2644d",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 73,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "b6613e27-ebb2-3727-ba4b-8d6c22aa88a0",
+    "count": 1,
+    "title": "Smooth Jazz Tribute to Kanye West",
+    "first-release-date": "2010-10-12",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "The Smooth Jazz All Stars",
+      "artist": {
+       "id": "0fee7b3a-13c5-46a4-9de8-5715439dcf6a",
+       "name": "The Smooth Jazz All Stars",
+       "sort-name": "Smooth Jazz All Stars, The",
+       "disambiguation": "Smooth Jazz Tribute series performers"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "487f0ede-1ee9-427b-b2cf-ded8f08b1cce",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Smooth Jazz Tribute to Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "ea31c75f-19b0-3f2a-b006-2544226b9bb0",
+    "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+    "score": 73,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+    "count": 1,
+    "title": "Kanye West: The Samples, Volume 2",
+    "primary-type": "Album",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+     {
+      "name": "Various Artists",
+      "artist": {
+       "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+       "name": "Various Artists",
+       "sort-name": "Various Artists",
+       "disambiguation": "add compilations to this artist"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "c237a84a-7dd8-4c54-8d94-3435ecef7f05",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Kanye West: The Samples, Volume 2",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "7c6ac130-332f-3185-81f4-a1a8397defad",
+    "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+    "score": 73,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+    "count": 1,
+    "title": "Kanye West: The Samples, Volume 3",
+    "primary-type": "Album",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+     {
+      "name": "Various Artists",
+      "artist": {
+       "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+       "name": "Various Artists",
+       "sort-name": "Various Artists",
+       "disambiguation": "add compilations to this artist"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "b968f7da-2cb3-4244-b876-58abed38bb96",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Kanye West: The Samples, Volume 3",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "e2a16e72-6686-331a-a51b-e3e60f0dcae3",
+    "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+    "score": 73,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+    "count": 1,
+    "title": "Kanye West: The Samples, Volume 1",
+    "primary-type": "Album",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+     {
+      "name": "Various Artists",
+      "artist": {
+       "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+       "name": "Various Artists",
+       "sort-name": "Various Artists",
+       "disambiguation": "add compilations to this artist"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "899f8a8e-d580-4988-8cef-dc3fd7826a0c",
+      "title": "Kanye West: The Samples, Volume 1"
+     }
+    ]
+   },
+   {
+    "id": "be5d31d9-0d20-43fc-bf01-f125f5cd9815",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 67,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "44a68101-cdbf-3562-ae0f-04b069859c02",
+    "count": 2,
+    "title": "The String Quartet Tribute to Kanye West",
+    "first-release-date": "2008-04-20",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Vitamin String Quartet",
+      "artist": {
+       "id": "56cfe6aa-b464-43d2-bec7-8ec52f313e7d",
+       "name": "Vitamin String Quartet",
+       "sort-name": "Vitamin String Quartet"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "231acb7e-040d-4c01-adaa-d362a44271a8",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "The String Quartet Tribute to Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "1e06bb4d-3e20-4d1c-8d0a-0c179df397b5",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 67,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+    "count": 8,
+    "title": "Kanye West Presents Good Music: Cruel Summer",
+    "first-release-date": "2012-09-17",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Various Artists",
+      "artist": {
+       "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+       "name": "Various Artists",
+       "sort-name": "Various Artists",
+       "disambiguation": "add compilations to this artist"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "81d11e6e-67fb-4ea7-982c-1126fbcfce23",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Cruel Summer",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "93ed7289-295f-3c94-96a2-91ee99b9a56f",
+    "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+    "score": 67,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+    "count": 1,
+    "title": "Gold Digging: As Sampled by Kanye West",
+    "first-release-date": "2006",
+    "primary-type": "Album",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+     {
+      "name": "Various Artists",
+      "artist": {
+       "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+       "name": "Various Artists",
+       "sort-name": "Various Artists",
+       "disambiguation": "add compilations to this artist"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "b172c038-140b-4287-a3ca-62efceab420e",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Gold Digging: As Sampled by Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "39239e41-55ec-4d11-adc4-e65826fb0dd3",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 58,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "44a68101-cdbf-3562-ae0f-04b069859c02",
+    "count": 2,
+    "title": "Vitamin String Quartet Performs the Music of Kanye West",
+    "first-release-date": "2017-04-22",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Vitamin String Quartet",
+      "artist": {
+       "id": "56cfe6aa-b464-43d2-bec7-8ec52f313e7d",
+       "name": "Vitamin String Quartet",
+       "sort-name": "Vitamin String Quartet"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "10de0385-53cc-436a-ad0a-d9b7faa47613",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Vitamin String Quartet Performs the Music of Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "033457bb-6dda-41d7-a2bf-0245d0076b55",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 58,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "2251e4b0-e5df-3fe6-9276-93af99905858",
+    "count": 1,
+    "title": "Throwback Trax: Old School Instrumental Tribute to Kanye West",
+    "first-release-date": "2008",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Mixmaster Throwback",
+      "artist": {
+       "id": "048acbe9-da00-460b-a9bc-bc2db6212ab4",
+       "name": "Mixmaster Throwback",
+       "sort-name": "Mixmaster Throwback"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "8d803cd0-b9e0-4522-8a39-0a61d4065250",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Throwback Trax: Old School Instrumental Tribute to Kanye West",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "f9627505-e9f1-4f16-a361-73b4b33c289c",
+    "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "score": 56,
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit-id": "23c249e1-9d61-3310-a6a0-edca13f7be8d",
+    "count": 1,
+    "title": "when i get down i listen to kanye west in my room",
+    "first-release-date": "2018-06-01",
+    "primary-type": "EP",
+    "artist-credit": [
+     {
+      "name": "luna in the clouds",
+      "artist": {
+       "id": "76bd7e97-c6fe-4046-90ca-69b26aa6b830",
+       "name": "luna in the clouds",
+       "sort-name": "luna in the clouds"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "fcf2304b-ac3c-4287-b1fa-051c92e3cc29",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "when i get down i listen to kanye west in my room",
+      "status": "Official"
+     }
+    ]
+   },
+   {
+    "id": "389cd801-e9d9-3f45-b2ff-a0072b3ba2a8",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 55,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+    "count": 1,
+    "title": "The Kanye West Tribute: Indie Translations of the College Dropout",
+    "first-release-date": "2005-08-23",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Various Artists",
+      "artist": {
+       "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+       "name": "Various Artists",
+       "sort-name": "Various Artists",
+       "disambiguation": "add compilations to this artist"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "39e2f9c9-56df-4ff6-a79e-92902a408db0",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "The Kanye West Tribute: Indie Translations of the College Dropout",
+      "status": "Official"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,689 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group",
+  "query": {
+   "artist": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+   "type": "album|ep",
+   "inc": "artist-credits",
+   "limit": "100",
+   "offset": "0",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "release-group-count": 23,
+  "release-groups": [
+   {
+    "primary-type": "EP",
+    "id": "0e387810-d075-40c6-b758-400c401f10d2",
+    "disambiguation": "",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+     "Compilation"
+    ],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "first-release-date": "2022-02-23",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "sort-name": "JPEGMAFIA",
+       "country": "US",
+       "disambiguation": "",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JPEGMAFIA"
+      },
+      "joinphrase": "",
+      "name": "JPEGMAFIA"
+     }
+    ],
+    "title": "freestyles"
+   },
+   {
+    "secondary-type-ids": [],
+    "primary-type": "Album",
+    "id": "1e9e8f2b-febc-4c81-b067-77e595b5d5ba",
+    "disambiguation": "",
+    "secondary-types": [],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2024-08-01",
+    "title": "I LAY DOWN MY LIFE FOR YOU",
+    "artist-credit": [
+     {
+      "name": "JPEGMAFIA",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "name": "JPEGMAFIA",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "JPEGMAFIA",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "disambiguation": "",
+       "country": "US"
+      }
+     }
+    ]
+   },
+   {
+    "secondary-types": [],
+    "primary-type": "EP",
+    "id": "2922b099-93c6-43cf-ab52-5d3f4c5b5759",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "first-release-date": "2017-02-14",
+    "title": "The Wolf Returns EP",
+    "artist-credit": [
+     {
+      "joinphrase": " FT. ",
+      "name": "Bounge",
+      "artist": {
+       "name": "Bounge",
+       "id": "e3faa351-0573-4eb1-a996-204de5d71afd",
+       "disambiguation": "",
+       "country": null,
+       "sort-name": "Bounge",
+       "type-id": null,
+       "type": null
+      }
+     },
+     {
+      "artist": {
+       "sort-name": "JPEGMAFIA",
+       "disambiguation": "",
+       "country": "US",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JPEGMAFIA",
+       "type": "Person"
+      },
+      "joinphrase": "",
+      "name": "JPEGMAFIA as \"The Wolf\""
+     }
+    ],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf"
+   },
+   {
+    "first-release-date": "2018",
+    "title": "Darkskin Manson EP",
+    "artist-credit": [
+     {
+      "name": "JPEGMAFIA",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "disambiguation": "",
+       "country": "US",
+       "sort-name": "JPEGMAFIA",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JPEGMAFIA"
+      }
+     }
+    ],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "secondary-types": [],
+    "primary-type": "EP",
+    "disambiguation": "",
+    "id": "37526a90-7f4f-42e5-a985-138cb5055b10",
+    "secondary-type-ids": []
+   },
+   {
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "id": "480fd72f-73e8-40fa-948b-002e95850a5a",
+    "disambiguation": "",
+    "primary-type": "EP",
+    "title": "EP!",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "disambiguation": "",
+       "sort-name": "JPEGMAFIA",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "name": "JPEGMAFIA"
+      },
+      "joinphrase": "",
+      "name": "JPEGMAFIA"
+     }
+    ],
+    "first-release-date": "2020-02-17",
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf"
+   },
+   {
+    "first-release-date": "2018-01-19",
+    "title": "Veteran",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "JPEGMAFIA",
+      "artist": {
+       "type": "Person",
+       "sort-name": "JPEGMAFIA",
+       "country": "US",
+       "disambiguation": "",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JPEGMAFIA"
+      }
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-types": [],
+    "primary-type": "Album",
+    "disambiguation": "",
+    "id": "4dca0a1a-c7a4-453a-8ae1-543cae89c5df",
+    "secondary-type-ids": []
+   },
+   {
+    "secondary-types": [],
+    "id": "5b320eb9-821d-4b05-b815-af565607c596",
+    "disambiguation": "",
+    "primary-type": "EP",
+    "secondary-type-ids": [],
+    "artist-credit": [
+     {
+      "joinphrase": " × ",
+      "name": "JPEGMAFIA",
+      "artist": {
+       "name": "JPEGMAFIA",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "JPEGMAFIA",
+       "disambiguation": "",
+       "country": "US",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type": "Person"
+      }
+     },
+     {
+      "name": "Freaky",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "country": "US",
+       "disambiguation": "US rapper",
+       "id": "2371f42f-6646-4f19-ad73-70da1a5a6d2d",
+       "sort-name": "Freaky",
+       "name": "Freaky"
+      }
+     }
+    ],
+    "title": "The 2nd Amendment",
+    "first-release-date": "2016-06-18",
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf"
+   },
+   {
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "primary-type": "Album",
+    "id": "64c36440-3737-4292-a0d4-972405200bc2",
+    "disambiguation": "",
+    "first-release-date": "2015-04-06",
+    "artist-credit": [
+     {
+      "name": "JPEGMAFIA",
+      "joinphrase": "",
+      "artist": {
+       "name": "JPEGMAFIA",
+       "country": "US",
+       "sort-name": "JPEGMAFIA",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "disambiguation": "",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person"
+      }
+     }
+    ],
+    "title": "Communist Slow Jams",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "disambiguation": "",
+    "id": "6bb871f4-08ec-4a70-9fb3-c1c2b481e090",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "SCARING THE HOES",
+    "artist-credit": [
+     {
+      "joinphrase": " & ",
+      "name": "JPEGMAFIA",
+      "artist": {
+       "type": "Person",
+       "name": "JPEGMAFIA",
+       "disambiguation": "",
+       "country": "US",
+       "sort-name": "JPEGMAFIA",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     },
+     {
+      "joinphrase": "",
+      "name": "Danny Brown",
+      "artist": {
+       "name": "Danny Brown",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "960afc67-9c21-46dd-9c7f-ff2b509e3150",
+       "sort-name": "Brown, Danny",
+       "country": "US",
+       "disambiguation": "US rapper",
+       "type": "Person"
+      }
+     }
+    ],
+    "first-release-date": "2023-03-24"
+   },
+   {
+    "id": "945fbb85-ee10-44c8-a425-857d574e3e13",
+    "disambiguation": "",
+    "primary-type": "EP",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+     "Compilation"
+    ],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "JPEGMAFIA",
+      "artist": {
+       "type": "Person",
+       "name": "JPEGMAFIA",
+       "sort-name": "JPEGMAFIA",
+       "disambiguation": "",
+       "country": "US",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+     }
+    ],
+    "title": "NOT ON VETERAN!",
+    "first-release-date": "2017-07-22"
+   },
+   {
+    "primary-type": "EP",
+    "id": "97f81612-5d23-4954-99a3-5d1bd795a271",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "first-release-date": "2023-07-11",
+    "title": "SCARING THE HOES: DLC PACK",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "JPEGMAFIA",
+       "disambiguation": "",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "sort-name": "JPEGMAFIA",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person"
+      },
+      "joinphrase": " & ",
+      "name": "JPEGMAFIA"
+     },
+     {
+      "name": "Danny Brown",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "id": "960afc67-9c21-46dd-9c7f-ff2b509e3150",
+       "sort-name": "Brown, Danny",
+       "disambiguation": "US rapper",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "Danny Brown"
+      }
+     }
+    ]
+   },
+   {
+    "artist-credit": [
+     {
+      "name": "JPEGMAFIA",
+      "joinphrase": "",
+      "artist": {
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "",
+       "sort-name": "JPEGMAFIA",
+       "country": "US",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "name": "JPEGMAFIA"
+      }
+     }
+    ],
+    "title": "EXPERIMENTAL RAP",
+    "first-release-date": "2026-05-21",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-types": [],
+    "id": "a24bbe58-6a26-48fb-b3c5-992565cc456d",
+    "disambiguation": "",
+    "primary-type": "Album",
+    "secondary-type-ids": []
+   },
+   {
+    "secondary-type-ids": [
+     "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "id": "a63d8f11-b8db-4255-80e0-50bdafd67252",
+    "disambiguation": "",
+    "primary-type": "Album",
+    "secondary-types": [
+     "Mixtape/Street"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+     {
+      "joinphrase": "",
+      "name": "JPEGMAFIA",
+      "artist": {
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "disambiguation": "",
+       "country": "US",
+       "sort-name": "JPEGMAFIA",
+       "name": "JPEGMAFIA"
+      }
+     }
+    ],
+    "title": "Darkskin Manson",
+    "first-release-date": "2015-05-15"
+   },
+   {
+    "id": "bd8069a9-3c24-4936-97f7-8a36be1129f0",
+    "disambiguation": "",
+    "primary-type": "EP",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "JPEGMAFIA",
+       "disambiguation": "",
+       "sort-name": "JPEGMAFIA",
+       "country": "US",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "type": "Person"
+      },
+      "joinphrase": "",
+      "name": "JPEGMAFIA"
+     }
+    ],
+    "title": "THE ROCKWOOD EP",
+    "first-release-date": "2015"
+   },
+   {
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "first-release-date": "2025-05-02",
+    "title": "We Live in a Society",
+    "artist-credit": [
+     {
+      "name": "Flume",
+      "joinphrase": " & ",
+      "artist": {
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "id": "35fd8d42-b4a6-4414-9827-8766bd0daa3c",
+       "sort-name": "Flume",
+       "country": "AU",
+       "disambiguation": "Australian DJ and producer",
+       "name": "Flume",
+       "type": "Person"
+      }
+     },
+     {
+      "name": "JPEGMAFIA",
+      "joinphrase": "",
+      "artist": {
+       "name": "JPEGMAFIA",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "",
+       "sort-name": "JPEGMAFIA",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "country": "US",
+       "type": "Person"
+      }
+     }
+    ],
+    "primary-type": "EP",
+    "id": "c2e32b33-946a-4ba1-aa29-d5df249028e7",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": []
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2019-09-13",
+    "title": "All My Heroes Are Cornballs",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "disambiguation": "",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "country": "US",
+       "sort-name": "JPEGMAFIA",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JPEGMAFIA"
+      },
+      "name": "JPEGMAFIA",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type": "Album",
+    "disambiguation": "",
+    "id": "c35a4a3f-d584-42fc-ac0f-b9592aedd3b2",
+    "secondary-type-ids": [],
+    "secondary-types": []
+   },
+   {
+    "secondary-types": [],
+    "primary-type": "Album",
+    "id": "c89e9cff-c0c9-4e34-95e7-185056956caf",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "first-release-date": "2021-10-22",
+    "title": "LP!",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "sort-name": "JPEGMAFIA",
+       "disambiguation": "",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "country": "US",
+       "name": "JPEGMAFIA"
+      },
+      "joinphrase": "",
+      "name": "JPEGMAFIA"
+     }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "secondary-types": [],
+    "disambiguation": "",
+    "id": "c95a2f0f-29fe-48a2-93a3-5cbefaa8df5a",
+    "primary-type": "Album",
+    "secondary-type-ids": [],
+    "title": "Black Ben Carson",
+    "artist-credit": [
+     {
+      "artist": {
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "disambiguation": "",
+       "sort-name": "JPEGMAFIA",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JPEGMAFIA",
+       "type": "Person"
+      },
+      "name": "JPEGMAFIA",
+      "joinphrase": ""
+     }
+    ],
+    "first-release-date": "2016-02-15",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   {
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "primary-type": "Album",
+    "disambiguation": "",
+    "id": "de388665-8561-474b-b8f3-7c7569d5ce97",
+    "secondary-types": [
+     "Compilation"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2021-07-21",
+    "title": "UNRELEASED",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "",
+       "sort-name": "JPEGMAFIA",
+       "country": "US",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JPEGMAFIA",
+       "type": "Person"
+      },
+      "joinphrase": "",
+      "name": "JPEGMAFIA"
+     }
+    ]
+   },
+   {
+    "primary-type": "Album",
+    "disambiguation": "",
+    "id": "eb686e9b-654c-43d2-9f26-b61306f93f7f",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+     "Compilation"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2026-01-31",
+    "title": "Beware of Veteran +",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "JPEGMAFIA",
+       "disambiguation": "",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "country": "US",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "name": "JPEGMAFIA",
+       "type": "Person"
+      },
+      "name": "JPEGMAFIA",
+      "joinphrase": ""
+     }
+    ]
+   },
+   {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2019-09-26",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "name": "JPEGMAFIA",
+       "sort-name": "JPEGMAFIA",
+       "disambiguation": "",
+       "country": "US",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": "",
+      "name": "JPEGMAFIA"
+     }
+    ],
+    "title": "ALLCAPSNOSPACES",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "primary-type": "Album",
+    "id": "ec4235ba-7fbb-4ed6-8e1d-c3ea1a93d9f5",
+    "disambiguation": "",
+    "secondary-types": [
+     "Compilation"
+    ]
+   },
+   {
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "first-release-date": "2022-02-24",
+    "title": "OFFLINE",
+    "artist-credit": [
+     {
+      "artist": {
+       "type": "Person",
+       "name": "JPEGMAFIA",
+       "disambiguation": "",
+       "country": "US",
+       "sort-name": "JPEGMAFIA",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "name": "JPEGMAFIA",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type": "EP",
+    "id": "f16b861e-791c-4e8b-825f-97f77c271b0e",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": []
+   },
+   {
+    "disambiguation": "",
+    "id": "f395e7ec-4ecf-4403-a241-800b25ef267d",
+    "primary-type": "EP",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "artist-credit": [
+     {
+      "name": "JPEGMAFIA",
+      "joinphrase": "",
+      "artist": {
+       "name": "JPEGMAFIA",
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": "",
+       "id": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+       "sort-name": "JPEGMAFIA",
+       "country": "US",
+       "type": "Person"
+      }
+     }
+    ],
+    "title": "EP2!",
+    "first-release-date": "2021-02-12"
+   }
+  ],
+  "release-group-offset": 0
+ }
+}

@@ -1,0 +1,1111 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release/cd474271-bd7a-4d53-ba9e-e9d5bd7958cb",
+  "query": {
+   "inc": "recordings+artist-credits",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "id": "cd474271-bd7a-4d53-ba9e-e9d5bd7958cb",
+  "date": "2010-11-19",
+  "cover-art-archive": {
+   "back": false,
+   "count": 1,
+   "artwork": true,
+   "front": true,
+   "darkened": false
+  },
+  "title": "My Beautiful Dark Twisted Fantasy",
+  "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+  "release-events": [
+   {
+    "date": "2010-11-19",
+    "area": {
+     "disambiguation": "",
+     "type": null,
+     "sort-name": "Europe",
+     "name": "Europe",
+     "type-id": null,
+     "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+     "iso-3166-1-codes": [
+      "XE"
+     ]
+    }
+   }
+  ],
+  "media": [
+   {
+    "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+    "id": "97a407bf-bb82-3b1a-bc4c-c3b01fdd6471",
+    "title": "",
+    "tracks": [
+     {
+      "length": 280786,
+      "number": "1",
+      "position": 1,
+      "recording": {
+       "disambiguation": "explicit",
+       "length": 280786,
+       "id": "885ccb38-4057-4d1a-8fb0-52804f79d653",
+       "video": false,
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "joinphrase": "",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+         }
+        }
+       ],
+       "title": "Dark Fantasy",
+       "first-release-date": "2010-11-19"
+      },
+      "artist-credit": [
+       {
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "type": "Person"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "id": "a4b82044-22bf-46db-81b6-cfe977395c38",
+      "title": "Dark Fantasy"
+     },
+     {
+      "id": "52a17088-9690-4703-8910-35480aa0a8d0",
+      "recording": {
+       "title": "Gorgeous",
+       "first-release-date": "2010-11-19",
+       "artist-credit": [
+        {
+         "artist": {
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "type": "Person",
+          "disambiguation": "formerly Kanye West"
+         },
+         "joinphrase": " feat. ",
+         "name": "Kanye West"
+        },
+        {
+         "artist": {
+          "sort-name": "Kid Cudi",
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460",
+          "name": "Kid Cudi",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         },
+         "joinphrase": " & ",
+         "name": "Kid Cudi"
+        },
+        {
+         "name": "Raekwon",
+         "joinphrase": "",
+         "artist": {
+          "type": "Person",
+          "disambiguation": "US rapper, Wu‐Tang Clan",
+          "sort-name": "Raekwon",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Raekwon",
+          "country": "US",
+          "id": "4e954b02-fae2-4bd7-9547-e055a6ac0527"
+         }
+        }
+       ],
+       "id": "b3c6aa0a-6960-4db6-bf27-ed50de88309c",
+       "video": false,
+       "length": 357653,
+       "disambiguation": "explicit"
+      },
+      "artist-credit": [
+       {
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "type": "Person"
+        },
+        "name": "Kanye West",
+        "joinphrase": " feat. "
+       },
+       {
+        "joinphrase": " & ",
+        "name": "KiD CuDi",
+        "artist": {
+         "name": "Kid Cudi",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460",
+         "country": "US",
+         "type": "Person",
+         "disambiguation": "",
+         "sort-name": "Kid Cudi"
+        }
+       },
+       {
+        "artist": {
+         "type": "Person",
+         "disambiguation": "US rapper, Wu‐Tang Clan",
+         "sort-name": "Raekwon",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Raekwon",
+         "id": "4e954b02-fae2-4bd7-9547-e055a6ac0527",
+         "country": "US"
+        },
+        "name": "Raekwon",
+        "joinphrase": ""
+       }
+      ],
+      "title": "Gorgeous",
+      "position": 2,
+      "number": "2",
+      "length": 357653
+     },
+     {
+      "number": "3",
+      "position": 3,
+      "length": 292093,
+      "title": "Power",
+      "id": "66026ca7-d034-4a52-9934-ffa420168c1c",
+      "artist-credit": [
+       {
+        "artist": {
+         "name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye"
+        },
+        "joinphrase": "",
+        "name": "Kanye West"
+       }
+      ],
+      "recording": {
+       "video": false,
+       "id": "f42e84ef-f23e-4b8c-b3a1-8f407be68ea5",
+       "artist-credit": [
+        {
+         "artist": {
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "type": "Person"
+         },
+         "name": "Kanye West",
+         "joinphrase": ""
+        }
+       ],
+       "first-release-date": "2010-07-01",
+       "title": "Power",
+       "disambiguation": "explicit",
+       "length": 292093
+      }
+     },
+     {
+      "length": 62253,
+      "number": "4",
+      "position": 4,
+      "title": "All of the Lights (interlude)",
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "joinphrase": "",
+        "artist": {
+         "name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "sort-name": "Ye"
+        }
+       }
+      ],
+      "recording": {
+       "id": "48299852-b44c-46a3-b635-1a34f2fe61e5",
+       "video": false,
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "name": "Kanye West",
+         "artist": {
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "type": "Person"
+         }
+        }
+       ],
+       "title": "All of the Lights (interlude)",
+       "first-release-date": "2010-11-19",
+       "disambiguation": "explicit",
+       "length": 62253
+      },
+      "id": "5b831e22-cbf6-4369-be12-8a77367388b6"
+     },
+     {
+      "length": 299786,
+      "position": 5,
+      "number": "5",
+      "recording": {
+       "length": 299786,
+       "disambiguation": "explicit",
+       "first-release-date": "2010-11-19",
+       "title": "All of the Lights",
+       "artist-credit": [
+        {
+         "artist": {
+          "type": "Person",
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+         },
+         "name": "Kanye West",
+         "joinphrase": ""
+        }
+       ],
+       "video": false,
+       "id": "a4c4457b-577e-4fac-b820-713bb91dbb6c"
+      },
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "joinphrase": "",
+        "artist": {
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye"
+        }
+       }
+      ],
+      "id": "01226d64-31c4-4f09-8ac1-699bcd810a88",
+      "title": "All of the Lights"
+     },
+     {
+      "title": "Monster",
+      "id": "9229b3bf-1623-48f1-9fc3-9c88d91dfcf8",
+      "recording": {
+       "disambiguation": "explicit",
+       "length": 378893,
+       "first-release-date": "2010-08-27",
+       "title": "Monster",
+       "video": false,
+       "id": "2beff74d-69fe-4e53-9a47-26f29b64c6d4",
+       "artist-credit": [
+        {
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "sort-name": "Ye",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+         },
+         "joinphrase": " feat. ",
+         "name": "Kanye West"
+        },
+        {
+         "name": "Jay‐Z",
+         "joinphrase": ", ",
+         "artist": {
+          "type": "Person",
+          "disambiguation": "US rapper",
+          "sort-name": "Jay-Z",
+          "name": "JAŸ-Z",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "country": "US"
+         }
+        },
+        {
+         "name": "Rick Ross",
+         "joinphrase": ", ",
+         "artist": {
+          "sort-name": "Ross, Rick",
+          "type": "Person",
+          "disambiguation": "US rapper",
+          "id": "13bcb2bb-db37-4397-baf5-e0f085be2d64",
+          "country": "US",
+          "name": "Rick Ross",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         }
+        },
+        {
+         "artist": {
+          "type": "Person",
+          "disambiguation": "",
+          "sort-name": "Minaj, Nicki",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Nicki Minaj",
+          "id": "1036b808-f58c-4a3e-b461-a2c4492ecf1b",
+          "country": "US"
+         },
+         "joinphrase": " & ",
+         "name": "Nicki Minaj"
+        },
+        {
+         "joinphrase": "",
+         "name": "Bon Iver",
+         "artist": {
+          "country": "US",
+          "id": "437a0e49-c6ae-42f6-a6c1-84f25ed366bc",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "name": "Bon Iver",
+          "sort-name": "Bon Iver",
+          "disambiguation": "US indie folk band",
+          "type": "Group"
+         }
+        }
+       ]
+      },
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "joinphrase": " feat. ",
+        "artist": {
+         "type": "Person",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+        }
+       },
+       {
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "JAŸ-Z",
+         "country": "US",
+         "id": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+         "disambiguation": "US rapper",
+         "type": "Person",
+         "sort-name": "Jay-Z"
+        },
+        "joinphrase": ", ",
+        "name": "Jay‐Z"
+       },
+       {
+        "artist": {
+         "sort-name": "Ross, Rick",
+         "type": "Person",
+         "disambiguation": "US rapper",
+         "id": "13bcb2bb-db37-4397-baf5-e0f085be2d64",
+         "country": "US",
+         "name": "Rick Ross",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ", ",
+        "name": "Rick Ross"
+       },
+       {
+        "name": "Nicki Minaj",
+        "joinphrase": " & ",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Nicki Minaj",
+         "country": "US",
+         "id": "1036b808-f58c-4a3e-b461-a2c4492ecf1b",
+         "type": "Person",
+         "disambiguation": "",
+         "sort-name": "Minaj, Nicki"
+        }
+       },
+       {
+        "name": "Bon Iver",
+        "joinphrase": "",
+        "artist": {
+         "name": "Bon Iver",
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+         "country": "US",
+         "id": "437a0e49-c6ae-42f6-a6c1-84f25ed366bc",
+         "disambiguation": "US indie folk band",
+         "type": "Group",
+         "sort-name": "Bon Iver"
+        }
+       }
+      ],
+      "position": 6,
+      "number": "6",
+      "length": 378893
+     },
+     {
+      "id": "31a18815-2bf7-4403-a439-174aa4a9cf24",
+      "artist-credit": [
+       {
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "type": "Person"
+        },
+        "joinphrase": " feat. ",
+        "name": "Kanye West"
+       },
+       {
+        "name": "Jay‐Z",
+        "joinphrase": ", ",
+        "artist": {
+         "id": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+         "country": "US",
+         "name": "JAŸ-Z",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Jay-Z",
+         "disambiguation": "US rapper",
+         "type": "Person"
+        }
+       },
+       {
+        "name": "Pusha T",
+        "joinphrase": ", ",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Pusha T",
+         "country": "US",
+         "id": "14ecd19f-7121-4192-8549-e5056241a42f",
+         "disambiguation": "US rapper Terrence Thornton, member of Clipse",
+         "type": "Person",
+         "sort-name": "Pusha T"
+        }
+       },
+       {
+        "artist": {
+         "id": "6a9e461c-e3c5-4794-a203-98a15daea2df",
+         "country": "US",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Cyhi",
+         "sort-name": "Cyhi",
+         "type": "Person",
+         "disambiguation": "Cyhi the Prynce"
+        },
+        "joinphrase": ", ",
+        "name": "Prynce Cy Hi"
+       },
+       {
+        "name": "Swizz Beatz",
+        "joinphrase": " & ",
+        "artist": {
+         "sort-name": "Swizz Beatz",
+         "disambiguation": "US hip hop producer",
+         "type": "Person",
+         "country": "US",
+         "id": "698ff525-ff51-4206-8f08-60a7458aab24",
+         "name": "Swizz Beatz",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+       },
+       {
+        "name": "The RZA",
+        "joinphrase": "",
+        "artist": {
+         "country": "US",
+         "id": "29c28ac3-27c5-4822-8eb6-0af89a3a7240",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "RZA",
+         "sort-name": "RZA",
+         "disambiguation": "American rapper and actor",
+         "type": "Person"
+        }
+       }
+      ],
+      "recording": {
+       "video": false,
+       "id": "36e2b944-e497-4b83-9bbb-0723fcb197f8",
+       "artist-credit": [
+        {
+         "artist": {
+          "type": "Person",
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+         },
+         "joinphrase": " feat. ",
+         "name": "Kanye West"
+        },
+        {
+         "joinphrase": ", ",
+         "name": "Jay‐Z",
+         "artist": {
+          "country": "US",
+          "id": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "name": "JAŸ-Z",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Jay-Z",
+          "disambiguation": "US rapper",
+          "type": "Person"
+         }
+        },
+        {
+         "artist": {
+          "disambiguation": "US rapper Terrence Thornton, member of Clipse",
+          "type": "Person",
+          "sort-name": "Pusha T",
+          "name": "Pusha T",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "14ecd19f-7121-4192-8549-e5056241a42f"
+         },
+         "name": "Pusha T",
+         "joinphrase": ", "
+        },
+        {
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Cyhi",
+          "id": "6a9e461c-e3c5-4794-a203-98a15daea2df",
+          "country": "US",
+          "disambiguation": "Cyhi the Prynce",
+          "type": "Person",
+          "sort-name": "Cyhi"
+         },
+         "joinphrase": ", ",
+         "name": "CyHi da Prynce"
+        },
+        {
+         "artist": {
+          "country": "US",
+          "id": "698ff525-ff51-4206-8f08-60a7458aab24",
+          "name": "Swizz Beatz",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Swizz Beatz",
+          "disambiguation": "US hip hop producer",
+          "type": "Person"
+         },
+         "joinphrase": " & ",
+         "name": "Swizz Beatz"
+        },
+        {
+         "joinphrase": "",
+         "name": "The RZA",
+         "artist": {
+          "id": "29c28ac3-27c5-4822-8eb6-0af89a3a7240",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "RZA",
+          "sort-name": "RZA",
+          "type": "Person",
+          "disambiguation": "American rapper and actor"
+         }
+        }
+       ],
+       "first-release-date": "2010-09-24",
+       "title": "So Appalled",
+       "disambiguation": "explicit",
+       "length": 398173
+      },
+      "title": "So Appalled",
+      "number": "7",
+      "position": 7,
+      "length": 398173
+     },
+     {
+      "position": 8,
+      "number": "8",
+      "length": 352466,
+      "title": "Devil in a New Dress",
+      "id": "13784c97-90b0-4ce9-9385-4d63119b3801",
+      "recording": {
+       "video": false,
+       "id": "c8da6e46-d517-4930-87d8-5be5ab9ca3c9",
+       "artist-credit": [
+        {
+         "artist": {
+          "sort-name": "Ye",
+          "type": "Person",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         },
+         "name": "Kanye West",
+         "joinphrase": " feat. "
+        },
+        {
+         "artist": {
+          "sort-name": "Ross, Rick",
+          "type": "Person",
+          "disambiguation": "US rapper",
+          "id": "13bcb2bb-db37-4397-baf5-e0f085be2d64",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Rick Ross"
+         },
+         "name": "Rick Ross",
+         "joinphrase": ""
+        }
+       ],
+       "first-release-date": "2010-11-19",
+       "title": "Devil in a New Dress",
+       "disambiguation": "explicit",
+       "length": 352466
+      },
+      "artist-credit": [
+       {
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+        },
+        "joinphrase": " feat. ",
+        "name": "Kanye West"
+       },
+       {
+        "joinphrase": "",
+        "name": "Rick Ross",
+        "artist": {
+         "disambiguation": "US rapper",
+         "type": "Person",
+         "sort-name": "Ross, Rick",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Rick Ross",
+         "id": "13bcb2bb-db37-4397-baf5-e0f085be2d64",
+         "country": "US"
+        }
+       }
+      ]
+     },
+     {
+      "length": 548200,
+      "number": "9",
+      "position": 9,
+      "recording": {
+       "first-release-date": "2010-11-19",
+       "title": "Runaway",
+       "video": false,
+       "id": "a24f67ff-a81e-4a95-817d-c0b4e5af3e6b",
+       "artist-credit": [
+        {
+         "artist": {
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "type": "Person",
+          "disambiguation": "formerly Kanye West"
+         },
+         "joinphrase": " feat. ",
+         "name": "Kanye West"
+        },
+        {
+         "artist": {
+          "sort-name": "Pusha T",
+          "disambiguation": "US rapper Terrence Thornton, member of Clipse",
+          "type": "Person",
+          "country": "US",
+          "id": "14ecd19f-7121-4192-8549-e5056241a42f",
+          "name": "Pusha T",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         },
+         "joinphrase": "",
+         "name": "Pusha T"
+        }
+       ],
+       "disambiguation": "explicit",
+       "length": 548200
+      },
+      "artist-credit": [
+       {
+        "artist": {
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye"
+        },
+        "joinphrase": " feat. ",
+        "name": "Kanye West"
+       },
+       {
+        "artist": {
+         "type": "Person",
+         "disambiguation": "US rapper Terrence Thornton, member of Clipse",
+         "sort-name": "Pusha T",
+         "name": "Pusha T",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "14ecd19f-7121-4192-8549-e5056241a42f",
+         "country": "US"
+        },
+        "name": "Pusha T",
+        "joinphrase": ""
+       }
+      ],
+      "id": "f64b7714-47b3-4ad4-93c7-f109bc85ba33",
+      "title": "Runaway"
+     },
+     {
+      "id": "5a3c6b78-ed27-4ec7-b9c8-b358abb4ba0f",
+      "artist-credit": [
+       {
+        "artist": {
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "type": "Person"
+        },
+        "name": "Kanye West",
+        "joinphrase": ""
+       }
+      ],
+      "recording": {
+       "first-release-date": "2010-11-19",
+       "title": "Hell of a Life",
+       "video": false,
+       "id": "e848d5fd-4590-468a-89af-45e88262c8e3",
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "joinphrase": "",
+         "artist": {
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "sort-name": "Ye"
+         }
+        }
+       ],
+       "disambiguation": "explicit",
+       "length": 327786
+      },
+      "title": "Hell of a Life",
+      "number": "10",
+      "position": 10,
+      "length": 327786
+     },
+     {
+      "length": 469866,
+      "number": "11",
+      "position": 11,
+      "title": "Blame Game",
+      "artist-credit": [
+       {
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "type": "Person",
+         "disambiguation": "formerly Kanye West"
+        },
+        "name": "Kanye West",
+        "joinphrase": " feat. "
+       },
+       {
+        "name": "John Legend",
+        "joinphrase": "",
+        "artist": {
+         "type": "Person",
+         "disambiguation": "",
+         "sort-name": "Legend, John",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "John Legend",
+         "id": "75a72702-a5ef-4513-bca5-c5b944903546",
+         "country": "US"
+        }
+       }
+      ],
+      "recording": {
+       "first-release-date": "2010-11-19",
+       "title": "Blame Game",
+       "video": false,
+       "id": "8089efd2-b32a-4b43-963f-7743e888793a",
+       "artist-credit": [
+        {
+         "artist": {
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "type": "Person"
+         },
+         "joinphrase": " feat. ",
+         "name": "Kanye West"
+        },
+        {
+         "joinphrase": "",
+         "name": "John Legend",
+         "artist": {
+          "sort-name": "Legend, John",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "75a72702-a5ef-4513-bca5-c5b944903546",
+          "name": "John Legend",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         }
+        }
+       ],
+       "disambiguation": "explicit",
+       "length": 469866
+      },
+      "id": "a03d30e5-bb24-4f77-bc42-73711f3fbfb8"
+     },
+     {
+      "length": 256586,
+      "number": "12",
+      "position": 12,
+      "title": "Lost in the World",
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "joinphrase": " feat. ",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "sort-name": "Ye"
+        }
+       },
+       {
+        "artist": {
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+         "name": "Bon Iver",
+         "country": "US",
+         "id": "437a0e49-c6ae-42f6-a6c1-84f25ed366bc",
+         "disambiguation": "US indie folk band",
+         "type": "Group",
+         "sort-name": "Bon Iver"
+        },
+        "joinphrase": "",
+        "name": "Bon Iver"
+       }
+      ],
+      "recording": {
+       "title": "Lost in the World",
+       "first-release-date": "2010-11-19",
+       "id": "a7bade00-f8be-47ae-a0ab-3ce42931213a",
+       "video": false,
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "joinphrase": " feat. ",
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "sort-name": "Ye"
+         }
+        },
+        {
+         "name": "Bon Iver",
+         "joinphrase": "",
+         "artist": {
+          "id": "437a0e49-c6ae-42f6-a6c1-84f25ed366bc",
+          "country": "US",
+          "name": "Bon Iver",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "sort-name": "Bon Iver",
+          "disambiguation": "US indie folk band",
+          "type": "Group"
+         }
+        }
+       ],
+       "disambiguation": "explicit",
+       "length": 256586
+      },
+      "id": "c555fba1-0fe2-486c-97fb-60f9f7523d59"
+     },
+     {
+      "title": "Who Will Survive in America",
+      "id": "edcdb1b4-6c07-439d-adff-7bbf303944e6",
+      "recording": {
+       "title": "Who Will Survive in America",
+       "first-release-date": "2010-11-19",
+       "artist-credit": [
+        {
+         "name": "Kanye West",
+         "joinphrase": "",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "type": "Person",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "country": "US",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+         }
+        }
+       ],
+       "id": "db232387-83c8-4578-8a1d-b7759520ed5a",
+       "video": false,
+       "length": 98200,
+       "disambiguation": "explicit"
+      },
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "joinphrase": "",
+        "artist": {
+         "sort-name": "Ye",
+         "type": "Person",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+       }
+      ],
+      "number": "13",
+      "position": 13,
+      "length": 98200
+     }
+    ],
+    "format": "CD",
+    "position": 1,
+    "track-offset": 0,
+    "track-count": 13
+   },
+   {
+    "format": "DVD",
+    "tracks": [
+     {
+      "recording": {
+       "disambiguation": "",
+       "length": 2067000,
+       "id": "2619bbe9-e40d-4e96-8b5b-a3d9bbe5d7a1",
+       "video": true,
+       "artist-credit": [
+        {
+         "artist": {
+          "sort-name": "Ye",
+          "type": "Person",
+          "disambiguation": "formerly Kanye West",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "country": "US",
+          "name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         },
+         "name": "Kanye West",
+         "joinphrase": ""
+        }
+       ],
+       "title": "Runway (film) (album version, edited)",
+       "first-release-date": "2010-11-19"
+      },
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "joinphrase": "",
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "type": "Person",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "country": "US"
+        }
+       }
+      ],
+      "id": "bf290dcf-eb69-488b-852f-67caf414bce8",
+      "title": "Runaway",
+      "length": 2067000,
+      "number": "1",
+      "position": 1
+     }
+    ],
+    "track-count": 1,
+    "track-offset": 0,
+    "position": 2,
+    "title": "",
+    "id": "c673405c-c19f-3180-8297-36a64138f54e",
+    "format-id": "2875c583-4580-3a90-b723-ba1b39921e23"
+   }
+  ],
+  "quality": "normal",
+  "disambiguation": "deluxe edition with DVD",
+  "status": "Official",
+  "artist-credit": [
+   {
+    "artist": {
+     "country": "US",
+     "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+     "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+     "name": "Ye",
+     "sort-name": "Ye",
+     "type": "Person",
+     "disambiguation": "formerly Kanye West"
+    },
+    "joinphrase": "",
+    "name": "Kanye West"
+   }
+  ],
+  "barcode": "602527523736",
+  "country": "XE",
+  "asin": null,
+  "packaging": "Gatefold Cover",
+  "text-representation": {
+   "language": "eng",
+   "script": "Latn"
+  },
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+ }
+}

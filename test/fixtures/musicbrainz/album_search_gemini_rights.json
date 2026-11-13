@@ -1,0 +1,49 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release-group",
+  "query": {
+   "query": "releasegroup:\"Gemini Rights\" AND (primarytype:album OR primarytype:ep) AND artist:\"Steve Lacy\"",
+   "limit": "25",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-12T23:58:47.506Z",
+  "count": 1,
+  "offset": 0,
+  "release-groups": [
+   {
+    "id": "ab1c1fd8-f769-4d78-90bc-4677f8ad8c22",
+    "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "score": 100,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+    "count": 3,
+    "title": "Gemini Rights",
+    "first-release-date": "2022-07-14",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "name": "Steve Lacy",
+      "artist": {
+       "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+       "name": "Steve Lacy",
+       "sort-name": "Lacy, Steve",
+       "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+      }
+     }
+    ],
+    "releases": [
+     {
+      "id": "6d50b672-4f8e-4b7a-917b-1ded22808632",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "Gemini Rights",
+      "status": "Official"
+     }
+    ]
+   }
+  ]
+ }
+}
