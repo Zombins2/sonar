@@ -19,14 +19,6 @@ jobs:
           channel: stable
           cache: true
       - run: flutter pub get
-      # The screen tests render with Roboto and the Material icons from
-      # Flutter's own download folder, which a cached SDK may lack.
-      - name: Material fonts
-        run: |
-          fonts="$(dirname "$(which flutter)")/cache/artifacts/material_fonts"
-          ls "$fonts" || true
-          flutter precache --universal
-          ls "$fonts/roboto-thin.ttf"
       - run: flutter analyze
       - run: flutter test
       - name: Sonar Connect relay tests

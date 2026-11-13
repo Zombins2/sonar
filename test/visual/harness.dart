@@ -43,14 +43,20 @@ class _NoLrclib extends LrclibClient {
 }
 
 Future<void> _loadFonts() async {
-  final root = Platform.environment['FLUTTER_ROOT'] ?? (throw StateError('Run through flutter test (FLUTTER_ROOT is unset)'));
+  final root =
+      Platform.environment['FLUTTER_ROOT'] ?? (throw StateError('Run through flutter test (FLUTTER_ROOT is unset)'));
   final dir = '$root/bin/cache/artifacts/material_fonts';
+  // Named Roboto-Thin.ttf on Linux and roboto-thin.ttf on Windows: matched
+  // ignoring case, as Linux won't.
+  final files = {for (final f in Directory(dir).listSync().whereType<File>()) f.uri.pathSegments.last.toLowerCase(): f};
+  ByteData font(String name) =>
+      ByteData.sublistView((files[name] ?? (throw StateError('No $name in $dir'))).readAsBytesSync());
   // Also under the test engine's fallback family, which a phone replaces with
   // its system font (Roboto) for styles that name no family.
   for (final family in ['Roboto', 'FlutterTest']) {
     final roboto = FontLoader(family);
     for (final w in ['thin', 'light', 'regular', 'medium', 'bold', 'black']) {
-      roboto.addFont(Future.value(ByteData.sublistView(File('$dir/roboto-$w.ttf').readAsBytesSync())));
+      roboto.addFont(Future.value(font('roboto-$w.ttf')));
     }
     await roboto.load();
   }
@@ -59,8 +65,7 @@ Future<void> _loadFonts() async {
     figtree.addFont(Future.value(ByteData.sublistView(f.readAsBytesSync())));
   }
   await figtree.load();
-  final icons = FontLoader('MaterialIcons')
-    ..addFont(Future.value(ByteData.sublistView(File('$dir/materialicons-regular.otf').readAsBytesSync())));
+  final icons = FontLoader('MaterialIcons')..addFont(Future.value(font('materialicons-regular.otf')));
   await icons.load();
 }
 
