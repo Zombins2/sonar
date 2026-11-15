@@ -1,0 +1,316 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search/album",
+  "query": {
+   "q": "kirk franklin",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 92618872,
+    "title": "LONG LIVE LOVE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/07876d98103762bdb3caff075ff852de/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 10,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 7960492,
+    "title": "The Essential Kirk Franklin",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 28,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1420286,
+    "title": "The Nu Nation Project",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/64d7251c96d12cb4f529bbf246c20fd8/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 17,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 476260655,
+    "title": "Father's Day",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/81ac7ba2800d977f7f967432c29b5dbf/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 10,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 453902385,
+    "title": "The Rebirth Of Kirk Franklin (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6eebf45510a5dcdc9af450ea81225ce5/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 17,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 450777195,
+    "title": "Kingdom Book One",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a16320caab16c28743b5ff5617c66b74/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 11,
+    "record_type": "album",
+    "artist": {
+     "id": 70542502,
+     "name": "Maverick City Music",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/69e2e525e114a8128ea5e148b2e823f9/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1059360692,
+    "title": "Thank You For Everything (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/755b82e7fa13d5d0dcc8625d6a6b4a89/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1128520241,
+    "title": "I Am What I Am",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5fe158cfee002ea68dd734127252fada/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 14,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1076583772,
+    "title": "Apple Music Nashville Sessions",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/3afd01261be4282f8a169ea0d0b00759/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 4,
+    "record_type": "ep",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1134272121,
+    "title": "I Am What I Am (Expanded Version)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5fe158cfee002ea68dd734127252fada/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 16,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 450786655,
+    "title": "Kingdom Book One (Deluxe)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/91ff7c1d4052a13d9092b0bbb3734455/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 22,
+    "record_type": "album",
+    "artist": {
+     "id": 70542502,
+     "name": "Maverick City Music",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/69e2e525e114a8128ea5e148b2e823f9/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 936838,
+    "title": "Hello Fear",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/16fd5f7d8e57a8ad46d16e140f294205/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 15,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 82417222,
+    "title": "Love Theory",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4b1ee6382ac0ce16cf9db600da7686df/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1207298,
+    "title": "Hero",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/cad915397b6a7e237fd775f36aa9dda5/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 20,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 13948386,
+    "title": "Losing My Religion",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/d8a7d74e873dc5c6046982bdbf55ae6e/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 14,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 265202732,
+    "title": "Fall in Love at Christmas",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab35ad2d012cbab6aaf40a8e19e6ecd6/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 3,
+    "record_type": "single",
+    "artist": {
+     "id": 65,
+     "name": "Mariah Carey",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/818c27b3e5a6179d4cd2f053df9abaf1/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1081522932,
+    "title": "This Time",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5fe158cfee002ea68dd734127252fada/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 864135,
+    "title": "I Smile",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/350eee6651f36a51bfb9d7b94b9c402a/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 144015462,
+    "title": "TOGETHER",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/10d2faeb4a259a6d413958bdbc6b4511/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 1412045,
+     "name": "for KING & COUNTRY",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/c12ff4caa5879bd048d775d5db8cd763/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 760673861,
+    "title": "Do It Again",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/21306f6e495f1094e7083d7f93e6b077/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1422092,
+    "title": "A Season Of Remixes",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/f6e15bd997bca19f348085c5f529a3c9/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 6,
+    "record_type": "ep",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 497276,
+    "title": "The Fight Of My Life",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b53234d17235d3014f8ffc2bfa306bc1/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 16,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 11674642,
+    "title": "Losing My Religion",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2f4ab8d48ff3fc89528a6456eb67a8ec/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 13,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1421308,
+    "title": "Kirk Franklin and the Family",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4b024343ce615123c69b5f9e82adbf86/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 10,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 11046346,
+    "title": "Wanna Be Happy?",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/360b645a30dc13965d4312ce4cb79d40/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 103
+ }
+}

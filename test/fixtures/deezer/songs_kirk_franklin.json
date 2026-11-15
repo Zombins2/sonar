@@ -1,0 +1,491 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search",
+  "query": {
+   "q": "kirk franklin",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1520328992,
+    "title": "Fall in Love at Christmas",
+    "title_short": "Fall in Love at Christmas",
+    "title_version": "",
+    "isrc": "USA5W2100311",
+    "duration": 308,
+    "rank": 530079,
+    "artist": {
+     "id": 65,
+     "name": "Mariah Carey",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/818c27b3e5a6179d4cd2f053df9abaf1/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 265202732,
+     "title": "Fall in Love at Christmas",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab35ad2d012cbab6aaf40a8e19e6ecd6/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 607724832,
+    "title": "Love Theory",
+    "title_short": "Love Theory",
+    "title_version": "",
+    "isrc": "USA5W1800322",
+    "duration": 251,
+    "rank": 564609,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 82417222,
+     "title": "Love Theory",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4b1ee6382ac0ce16cf9db600da7686df/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 10244916,
+    "title": "I Smile",
+    "title_short": "I Smile",
+    "title_version": "",
+    "isrc": "USGCR1000010",
+    "duration": 307,
+    "rank": 528867,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 936838,
+     "title": "Hello Fear",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/16fd5f7d8e57a8ad46d16e140f294205/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 10244924,
+    "title": "A God Like You",
+    "title_short": "A God Like You",
+    "title_version": "",
+    "isrc": "USGCR1100015",
+    "duration": 378,
+    "rank": 455393,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 936838,
+     "title": "Hello Fear",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/16fd5f7d8e57a8ad46d16e140f294205/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 939840832,
+    "title": "TOGETHER",
+    "title_short": "TOGETHER",
+    "title_version": "",
+    "isrc": "USM1C2000000",
+    "duration": 206,
+    "rank": 466068,
+    "artist": {
+     "id": 1412045,
+     "name": "for KING & COUNTRY",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/c12ff4caa5879bd048d775d5db8cd763/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 144015462,
+     "title": "TOGETHER",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/10d2faeb4a259a6d413958bdbc6b4511/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2319421235,
+    "title": "My Life Is In Your Hands (feat.Chandler Moore)",
+    "title_short": "My Life Is In Your Hands (feat.Chandler Moore)",
+    "title_version": "",
+    "isrc": "USA5W2200175",
+    "duration": 421,
+    "rank": 421560,
+    "artist": {
+     "id": 70542502,
+     "name": "Maverick City Music",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/69e2e525e114a8128ea5e148b2e823f9/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 450777195,
+     "title": "Kingdom Book One",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a16320caab16c28743b5ff5617c66b74/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2319421195,
+    "title": "Bless Me",
+    "title_short": "Bless Me",
+    "title_version": "",
+    "isrc": "USA5W2200158",
+    "duration": 272,
+    "rank": 435801,
+    "artist": {
+     "id": 70542502,
+     "name": "Maverick City Music",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/69e2e525e114a8128ea5e148b2e823f9/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 450777195,
+     "title": "Kingdom Book One",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a16320caab16c28743b5ff5617c66b74/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4293653142,
+    "title": "This Time",
+    "title_short": "This Time",
+    "title_version": "",
+    "isrc": "USUG12609349",
+    "duration": 170,
+    "rank": 440592,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1081522932,
+     "title": "This Time",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5fe158cfee002ea68dd734127252fada/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4366041701,
+    "title": "Hope In You",
+    "title_short": "Hope In You",
+    "title_version": "",
+    "isrc": "USUG12609350",
+    "duration": 207,
+    "rank": 440259,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1128520241,
+     "title": "I Am What I Am",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5fe158cfee002ea68dd734127252fada/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2329624835,
+    "title": "Brighter Day (Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "title_short": "Brighter Day",
+    "title_version": "(Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "isrc": "USGCR0600338",
+    "duration": 340,
+    "rank": 412336,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 453902385,
+     "title": "The Rebirth Of Kirk Franklin (Live)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6eebf45510a5dcdc9af450ea81225ce5/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 105978944,
+    "title": "Wanna Be Happy?",
+    "title_short": "Wanna Be Happy?",
+    "title_version": "",
+    "isrc": "USRC11501469",
+    "duration": 268,
+    "rank": 431752,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 11046346,
+     "title": "Wanna Be Happy?",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/360b645a30dc13965d4312ce4cb79d40/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 79846332,
+    "title": "Hosanna (Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "title_short": "Hosanna",
+    "title_version": "(Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "isrc": "USGCR0200002",
+    "duration": 307,
+    "rank": 432872,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 7960492,
+     "title": "The Essential Kirk Franklin",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 79846334,
+    "title": "Stomp (Remix)",
+    "title_short": "Stomp (Remix)",
+    "title_version": "",
+    "isrc": "USIR19701347",
+    "duration": 303,
+    "rank": 356366,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 7960492,
+     "title": "The Essential Kirk Franklin",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 79846336,
+    "title": "Looking for You",
+    "title_short": "Looking for You",
+    "title_version": "",
+    "isrc": "USGCR0500080",
+    "duration": 248,
+    "rank": 398919,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 7960492,
+     "title": "The Essential Kirk Franklin",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 79846324,
+    "title": "Imagine Me",
+    "title_short": "Imagine Me",
+    "title_version": "",
+    "isrc": "USGCR0500094",
+    "duration": 319,
+    "rank": 427937,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 7960492,
+     "title": "The Essential Kirk Franklin",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 9437118,
+    "title": "I Smile",
+    "title_short": "I Smile",
+    "title_version": "",
+    "isrc": "USGCR1000010",
+    "duration": 307,
+    "rank": 406033,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 864135,
+     "title": "I Smile",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/350eee6651f36a51bfb9d7b94b9c402a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2319421175,
+    "title": "Kingdom(feat. Chandler Moore, Naomi Raine)",
+    "title_short": "Kingdom(feat. Chandler Moore, Naomi Raine)",
+    "title_version": "",
+    "isrc": "USA5W2200157",
+    "duration": 565,
+    "rank": 385169,
+    "artist": {
+     "id": 70542502,
+     "name": "Maverick City Music",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/69e2e525e114a8128ea5e148b2e823f9/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 450777195,
+     "title": "Kingdom Book One",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a16320caab16c28743b5ff5617c66b74/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 79846308,
+    "title": "He Reigns / Awesome God (Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "title_short": "He Reigns / Awesome God",
+    "title_version": "(Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "isrc": "USGCR0200009",
+    "duration": 267,
+    "rank": 385180,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 7960492,
+     "title": "The Essential Kirk Franklin",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4366041751,
+    "title": "Someday (Live)",
+    "title_short": "Someday",
+    "title_version": "(Live)",
+    "isrc": "USUG12609355",
+    "duration": 395,
+    "rank": 341559,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1128520241,
+     "title": "I Am What I Am",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5fe158cfee002ea68dd734127252fada/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2329624845,
+    "title": "My Life, My Love, My All (Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "title_short": "My Life, My Love, My All",
+    "title_version": "(Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "isrc": "USGCR0200007",
+    "duration": 382,
+    "rank": 383875,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 453902385,
+     "title": "The Rebirth Of Kirk Franklin (Live)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6eebf45510a5dcdc9af450ea81225ce5/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2319421215,
+    "title": "Talkin Bout (Love) (feat. Lizzie Morgan, Chandler Moore)",
+    "title_short": "Talkin Bout (Love) (feat. Lizzie Morgan, Chandler Moore)",
+    "title_version": "",
+    "isrc": "USA5W2200179",
+    "duration": 363,
+    "rank": 310097,
+    "artist": {
+     "id": 70542502,
+     "name": "Maverick City Music",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/69e2e525e114a8128ea5e148b2e823f9/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 450777195,
+     "title": "Kingdom Book One",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a16320caab16c28743b5ff5617c66b74/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 660412852,
+    "title": "F.A.V.O.R",
+    "title_short": "F.A.V.O.R",
+    "title_version": "",
+    "isrc": "USA5W1900020",
+    "duration": 271,
+    "rank": 319941,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 92618872,
+     "title": "LONG LIVE LOVE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/07876d98103762bdb3caff075ff852de/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 660412882,
+    "title": "Just for Me",
+    "title_short": "Just for Me",
+    "title_version": "",
+    "isrc": "USA5W1900022",
+    "duration": 275,
+    "rank": 317250,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 92618872,
+     "title": "LONG LIVE LOVE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/07876d98103762bdb3caff075ff852de/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 933415,
+    "title": "September (Album Version)",
+    "title_short": "September",
+    "title_version": "(Album Version)",
+    "isrc": "USC4R0614214",
+    "duration": 236,
+    "rank": 354589,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 104967,
+     "title": "Interpretations: Celebrating The Music Of Earth, Wind & Fire",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1526031ddc38122dd97004ee2c2ccb0a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 109701612,
+    "title": "123 Victory",
+    "title_short": "123 Victory",
+    "title_version": "",
+    "isrc": "USRC11502525",
+    "duration": 239,
+    "rank": 323084,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 11428626,
+     "title": "123 Victory",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2f4ab8d48ff3fc89528a6456eb67a8ec/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 229
+ }
+}

@@ -358,6 +358,54 @@ void main() {
     await h.close();
   });
 
+  testWidgets('Deezer\'s results offer MusicBrainz for what isn\'t there, and a new search goes back to Deezer', (
+    tester,
+  ) async {
+    final onMusicBrainz = <String>[];
+    final h = await pumpSonar(
+      tester,
+      extra: (_) => [
+        ...overrides(downloads: _seeded(legalize, exodus.first)),
+        soulbeetSearchProvider.overrideWith(
+          (_, raw) => Stream.value(
+            GetMusicResults(
+              query: raw,
+              albums: [SbAlbum.deezer(id: '1', title: 'On Deezer', artist: 'A')],
+              done: true,
+              source: GetMusicSource.deezer,
+            ),
+          ),
+        ),
+        musicBrainzSearchProvider.overrideWith((_, raw) {
+          onMusicBrainz.add(raw);
+          return Stream.value(GetMusicResults(query: raw, albums: results, done: true));
+        }),
+      ],
+    );
+    h.router.go('/search');
+    await h.settle(4);
+    h.router.push('/search/get-music');
+    await h.settle(4);
+    final field = find.byType(TextField);
+    await tester.enterText(field, 'rare record');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await h.settle();
+    expect(find.text('On Deezer', skipOffstage: false), findsWidgets);
+    final button = find.text('Search MusicBrainz', skipOffstage: false);
+    await tester.scrollUntilVisible(button, 200, scrollable: find.byType(Scrollable).last);
+    await tester.tap(button);
+    await h.settle();
+    expect(onMusicBrainz, ['rare record']);
+    expect(find.text('On Deezer', skipOffstage: false), findsNothing);
+    expect(find.text('Search MusicBrainz', skipOffstage: false), findsNothing, reason: 'already on MusicBrainz');
+    await tester.enterText(field, 'another');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await h.settle();
+    expect(find.text('On Deezer', skipOffstage: false), findsWidgets, reason: 'a new search is on Deezer again');
+    expect(onMusicBrainz, ['rare record']);
+    await h.close();
+  });
+
   testWidgets("an artist's album finds its pressing before it can download", (tester) async {
     final h = await open(tester, 'kanye west');
     await tester.tap(find.text('Yeezus'));

@@ -4,6 +4,7 @@ import 'dart:async';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:sonar/data/deezer/deezer_client.dart';
 import 'package:sonar/data/musicbrainz/musicbrainz_client.dart';
 import 'package:sonar/data/soulbeet/get_music_search.dart';
 import 'package:sonar/data/soulbeet/soulbeet_client.dart';
@@ -101,9 +102,16 @@ void main() {
       expect(identical(await mb.pressingOf(pressed), pressed), isTrue);
     });
 
-    test('an artist named in the search ("Artist - Album") is not looked up', () async {
-      await search('Steve Lacy - Gemini Rights');
-      expect(server.searches.map((s) => s.$1), isNot(contains('artist')));
+    test('an artist named in the search ("Artist - Album") is found by any name they go by', () async {
+      final r = await search('Kanye - Bully');
+      expect(server.searches.where((s) => s.$1 == 'artist').map((s) => s.$2), contains('Kanye'));
+      expect(
+        server.searches,
+        contains(('release-group', 'releasegroup:"Bully" AND (primarytype:album OR primarytype:ep) AND (arid:$_ye)')),
+        reason: 'by his id: BULLY is credited to Ye, so a search for albums credited to "Kanye" finds none',
+      );
+      expect((r.topResult! as SbAlbum).title, 'BULLY');
+      expect(r.topResult! as SbAlbum, isA<SbAlbum>().having((a) => a.artist, 'artist', 'Ye'));
     });
 
     test('albums listed by name are not listed again under the artist', () async {
@@ -372,6 +380,65 @@ void main() {
       expect(found.map((a) => a.groupId), ['album', 'ep']);
     });
 
+    group('an artist typed by another of their names', () {
+      const bully = '56327267-51fb-472c-919e-d6ca258ebab2';
+      const lacys = ['ca9766a0-1c30-43e6-a213-bac1334efc4a', 'b29020d6-5dbf-4c99-b16f-c009f8a712ff'];
+
+      test('"kanye bully": Ye\'s BULLY, found by his id, before anything free text finds', () async {
+        final r = await search('kanye bully');
+        final top = r.topResult;
+        expect(top, isA<SbAlbum>());
+        top as SbAlbum;
+        expect((top.groupId, top.title, top.artist, r.listenersOf(top)), (bully, 'BULLY', 'Ye', 1993));
+        expect(r.songs.map((s) => s.title.toLowerCase()), everyElement(startsWith('bully')));
+        expect(r.songs.map((s) => s.artist), contains('Kanye West'), reason: 'by his id, under any credited name');
+        expect(
+          server.searches.map((s) => s.$2),
+          containsAllInOrder([
+            'recording:"bully" AND (arid:$_ye)',
+            'releasegroup:"bully" AND (primarytype:album OR primarytype:ep) AND (arid:$_ye)',
+          ]),
+        );
+        expect(
+          server.requests.where((r) => (r.asked as Map?)?['dismax'] != null),
+          isEmpty,
+          reason: 'found by the artist: no free-text search needed',
+        );
+      });
+
+      test('the artist MusicBrainz finds likeliest wins: Ye at the start, not the band Bully at the end', () async {
+        final cut = await mb.findArtistIn('kanye bully');
+        expect(cut!.artists.map((a) => (a.id, a.matchedAs)), [(_ye, 'Kanye')]);
+        expect(cut.title, 'bully');
+      });
+
+      test('by the longest of their names that fits: "kanye west", not "kanye"', () async {
+        final cut = await mb.findArtistIn('kanye west bully');
+        expect((cut!.artists.single.matchedAs, cut.title), ('Kanye West', 'bully'));
+      });
+
+      test('two artists with the name are both searched (two Steve Lacys)', () async {
+        final cut = await mb.findArtistIn('bad habit steve lacy');
+        expect(cut!.artists.map((a) => a.id), lacys);
+        expect(cut.title, 'bad habit');
+        final songs = await mb.searchSongs(cut.title, artistIds: [for (final a in cut.artists) a.id]);
+        expect(server.searches.last.$2, 'recording:"bad habit" AND (arid:${lacys[0]} OR arid:${lacys[1]})');
+        expect(songs.map((s) => s.title.toLowerCase()), everyElement(startsWith('bad habit')));
+      });
+
+      test('no artist fits: nothing, and the search falls back to free text', () async {
+        expect(await mb.findArtistIn('sky is the limit rebelution'), isNull, reason: 'no artist search recorded');
+        expect(await mb.findArtistIn('rebelution'), isNull, reason: 'one word is no artist and a title');
+        final r = await search('sky is the limit rebelution');
+        expect((r.topResult! as SbTrack).id, skyIsTheLimit);
+      });
+
+      test('the whole search an artist\'s name: their albums and popular songs, no free-text search', () async {
+        await search('kanye west');
+        expect(server.requests.where((r) => (r.asked as Map?)?['dismax'] != null), isEmpty);
+      });
+    });
+
     test('one word is searched as typed, not loosely too', () async {
       await search('rebelution');
       expect(server.searches.where((s) => s.$2 == 'rebelution' && s.$1 != 'artist'), isEmpty);
@@ -400,13 +467,11 @@ void main() {
         'release-group',
         'release-group',
         'recording',
-        'recording',
-        'release-group',
       ]);
       expect(
-        server.searches.skip(4).map((s) => s.$2),
-        ['kanye west', 'recording:"kanye west"', 'kanye west'],
-        reason: 'songs as typed (free text) first, then by name, then albums as typed',
+        server.searches.last.$2,
+        'recording:"kanye west"',
+        reason: 'then songs by the name; the whole search is his name, so nothing free text',
       );
     });
 
@@ -449,11 +514,36 @@ void main() {
       final r = await search('Steve Lacy - Gemini Rights');
       expect(r.albums.single.title, 'Gemini Rights');
 
-      server.queued['/ws/2/release-group'] = List.filled(4, (503, {'error': 'busy'}), growable: true);
+      server.queued['/ws/2/release-group'] = List.filled(MusicBrainzClient.busyTries, (
+        503,
+        {'error': 'busy'},
+      ), growable: true);
       await expectLater(
         searchGetMusic(mb, 'Nobody - Nothing Kept'),
         emitsError(isA<MusicBrainzException>().having((e) => e.message, 'message', contains('busy'))),
       );
+    });
+
+    test('busy, asks again as soon as MusicBrainz says to, never sooner than the spacing', () async {
+      final patient = MusicBrainzClient(
+        musicBrainz: server.base,
+        listenBrainz: server.base,
+        spacing: const Duration(milliseconds: 200),
+        busyWait: const Duration(seconds: 3),
+      );
+      addTearDown(patient.close);
+      server.retryAfter = '0';
+      server.queued['/ws/2/release-group'] = [
+        (503, {'error': 'busy'}),
+        (503, {'error': 'busy'}),
+      ];
+      final clock = Stopwatch()..start();
+      expect(await patient.searchAlbums('Gemini Rights', artist: 'Steve Lacy'), isNotEmpty);
+      expect(clock.elapsed, lessThan(const Duration(seconds: 2)), reason: 'Retry-After 0, not 3 s and 6 s');
+      final tries = [for (final r in server.requests) r.at];
+      for (var i = 1; i < tries.length; i++) {
+        expect(tries[i].difference(tries[i - 1]), greaterThanOrEqualTo(const Duration(milliseconds: 190)));
+      }
     });
 
     test('the album search failing fails the search; a later part failing is left out', () async {
@@ -716,6 +806,8 @@ void main() {
           soulbeetClientProvider.overrideWithValue(
             SoulbeetClient(base: Uri.parse('http://127.0.0.1:9'), username: 'u', password: 'p'),
           ),
+          // Deezer not answering: MusicBrainz searched instead.
+          deezerClientProvider.overrideWithValue(DeezerClient(base: 'http://127.0.0.1:9')),
           musicBrainzClientProvider.overrideWithValue(mb),
         ],
       );

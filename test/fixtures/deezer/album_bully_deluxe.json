@@ -1,0 +1,24 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/album/1010171471",
+  "query": {}
+ },
+ "status": 200,
+ "response": {
+  "id": 1010171471,
+  "title": "BULLY - DELUXE",
+  "upc": "712132042055",
+  "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg",
+  "nb_tracks": 20,
+  "duration": 2808,
+  "fans": 4309,
+  "release_date": "2026-06-19",
+  "record_type": "album",
+  "artist": {
+   "id": 230,
+   "name": "Kanye West",
+   "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+  }
+ }
+}

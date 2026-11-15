@@ -1,0 +1,1059 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/release/5fe938fb-e0a9-48ad-96f7-e950d8635aeb",
+  "query": {
+   "inc": "recordings+artist-credits",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "barcode": "656465138828",
+  "status": "Official",
+  "cover-art-archive": {
+   "darkened": false,
+   "front": true,
+   "count": 1,
+   "back": false,
+   "artwork": true
+  },
+  "country": "XW",
+  "disambiguation": "",
+  "quality": "normal",
+  "title": "BULLY",
+  "id": "5fe938fb-e0a9-48ad-96f7-e950d8635aeb",
+  "date": "2026-03-28",
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "packaging": "None",
+  "media": [
+   {
+    "format": "Digital Media",
+    "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+    "track-count": 18,
+    "title": "",
+    "position": 1,
+    "tracks": [
+     {
+      "length": 126000,
+      "number": "1",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "sort-name": "Ye",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+        },
+        "name": "Ye"
+       }
+      ],
+      "title": "KING",
+      "position": 1,
+      "recording": {
+       "length": 126000,
+       "title": "KING",
+       "first-release-date": "2026-03-28",
+       "id": "3bf77073-f767-413c-8fb4-cfa04e4c746c",
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person"
+         },
+         "name": "Ye",
+         "joinphrase": ""
+        }
+       ]
+      },
+      "id": "98c036a1-4298-43f1-a70d-719836ab9148"
+     },
+     {
+      "id": "fa35df57-421f-4fd3-b4b9-8af141990b6f",
+      "recording": {
+       "title": "THIS A MUST",
+       "length": 86000,
+       "video": false,
+       "artist-credit": [
+        {
+         "name": "Ye",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": "",
+       "first-release-date": "2026-03-28",
+       "id": "b697e162-d4f7-4bbb-99b2-1f13b4dc5c08"
+      },
+      "position": 2,
+      "title": "THIS A MUST",
+      "number": "2",
+      "artist-credit": [
+       {
+        "artist": {
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US"
+        },
+        "name": "Ye",
+        "joinphrase": ""
+       }
+      ],
+      "length": 86000
+     },
+     {
+      "title": "FATHER",
+      "position": 3,
+      "id": "de3ab84d-1fde-436b-9c28-a1ee9c44fdc5",
+      "recording": {
+       "id": "f65f39ad-a6d1-4f7d-bfec-143d814758ff",
+       "first-release-date": "2026-03-28",
+       "disambiguation": "explicit",
+       "artist-credit": [
+        {
+         "artist": {
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye",
+          "sort-name": "Ye"
+         },
+         "name": "Ye",
+         "joinphrase": " feat. "
+        },
+        {
+         "name": "Travis Scott",
+         "artist": {
+          "name": "Travis Scott",
+          "disambiguation": "US rapper",
+          "country": "US",
+          "sort-name": "Scott, Travis",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "video": false,
+       "length": 169000,
+       "title": "FATHER"
+      },
+      "length": 169000,
+      "number": "3",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person",
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "sort-name": "Ye"
+        },
+        "joinphrase": " feat. "
+       },
+       {
+        "name": "Travis Scott",
+        "artist": {
+         "name": "Travis Scott",
+         "country": "US",
+         "disambiguation": "US rapper",
+         "sort-name": "Scott, Travis",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6"
+        },
+        "joinphrase": ""
+       }
+      ]
+     },
+     {
+      "length": 229000,
+      "artist-credit": [
+       {
+        "joinphrase": " feat. ",
+        "name": "Ye",
+        "artist": {
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person"
+        }
+       },
+       {
+        "joinphrase": "",
+        "name": "Andre Troutman",
+        "artist": {
+         "country": "US",
+         "disambiguation": "",
+         "name": "Andre Troutman",
+         "sort-name": "Troutman, Andre",
+         "id": "97485b35-2187-4a17-ac38-f1a05fc1b5b9",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person"
+        }
+       }
+      ],
+      "number": "4",
+      "position": 4,
+      "title": "ALL THE LOVE",
+      "recording": {
+       "disambiguation": "explicit",
+       "artist-credit": [
+        {
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye"
+         },
+         "name": "Ye",
+         "joinphrase": " feat. "
+        },
+        {
+         "artist": {
+          "id": "97485b35-2187-4a17-ac38-f1a05fc1b5b9",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "sort-name": "Troutman, Andre",
+          "disambiguation": "",
+          "country": "US",
+          "name": "Andre Troutman"
+         },
+         "name": "Andre Troutman",
+         "joinphrase": ""
+        }
+       ],
+       "video": false,
+       "id": "cf75cd49-ad0f-44a1-af83-0eaf5487bfc0",
+       "first-release-date": "2026-03-28",
+       "title": "ALL THE LOVE",
+       "length": 229000
+      },
+      "id": "77493348-b97e-440c-9a20-f96cedbf0b39"
+     },
+     {
+      "number": "5",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "name": "Ye"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "length": 108000,
+      "recording": {
+       "id": "fb9d45ae-add6-44bb-9f6a-4096aef3fce3",
+       "first-release-date": "2026-03-28",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "name": "Ye",
+         "artist": {
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "video": false,
+       "length": 108000,
+       "title": "PUNCH DRUNK"
+      },
+      "id": "0740fddd-2ca4-45eb-84b9-d77e4af2e3f7",
+      "position": 5,
+      "title": "PUNCH DRUNK"
+     },
+     {
+      "id": "9dbc6f9d-164e-4c8f-8bb2-17cba7f9b747",
+      "recording": {
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "name": "Ye",
+         "artist": {
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "name": "Ye",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "sort-name": "Ye"
+         }
+        }
+       ],
+       "first-release-date": "2026-03-28",
+       "id": "33bf9dd5-7910-4f63-bcf6-ca8c304c67fc",
+       "title": "WHATEVER WORKS",
+       "length": 119000
+      },
+      "title": "WHATEVER WORKS",
+      "position": 6,
+      "number": "6",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US"
+        },
+        "name": "Ye"
+       }
+      ],
+      "length": 119000
+     },
+     {
+      "length": 154000,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Ye",
+        "artist": {
+         "sort-name": "Ye",
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+       }
+      ],
+      "number": "7",
+      "title": "MAMA’S FAVORITE",
+      "position": 7,
+      "recording": {
+       "id": "a9bb0612-2a82-4e41-84d1-b4fb26a9cbd1",
+       "first-release-date": "2026-03-28",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": " feat. ",
+         "name": "Ye",
+         "artist": {
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye"
+         }
+        },
+        {
+         "name": "Nine Vicious",
+         "artist": {
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "ec63abed-419c-45c8-a189-fb8e1b44f926",
+          "name": "Nine Vicious",
+          "country": "US",
+          "disambiguation": "",
+          "sort-name": "Nine Vicious"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "video": false,
+       "length": 154000,
+       "title": "MAMA’S FAVORITE"
+      },
+      "id": "4c6ba363-1d23-439e-b290-6c5b4810da78"
+     },
+     {
+      "title": "SISTERS AND BROTHERS",
+      "position": 8,
+      "recording": {
+       "length": 166000,
+       "title": "SISTERS AND BROTHERS",
+       "id": "0869d3a7-f049-4d18-b2b1-f8056b83da54",
+       "first-release-date": "2026-03-28",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "name": "Ye",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "video": false
+      },
+      "id": "1b004636-f9ae-4734-a70d-731d303730e8",
+      "length": 166000,
+      "number": "8",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "name": "Ye"
+        },
+        "name": "Ye"
+       }
+      ]
+     },
+     {
+      "artist-credit": [
+       {
+        "artist": {
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person"
+        },
+        "name": "Ye",
+        "joinphrase": " feat. "
+       },
+       {
+        "joinphrase": "",
+        "artist": {
+         "sort-name": "Green, CeeLo",
+         "name": "CeeLo Green",
+         "disambiguation": "",
+         "country": "US",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "2c69465c-0f76-45ce-90a2-1ed0fdacc997"
+        },
+        "name": "CeeLo Green"
+       }
+      ],
+      "number": "9",
+      "length": 147000,
+      "id": "b86dc5c8-d9b3-4658-9d49-762c3bc72072",
+      "recording": {
+       "length": 147000,
+       "title": "BULLY",
+       "id": "5d79abc8-b48e-4460-9c7c-2bed7f7f2838",
+       "first-release-date": "2026-03-28",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "artist": {
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "sort-name": "Ye",
+          "name": "Ye",
+          "country": "US",
+          "disambiguation": "formerly Kanye West"
+         },
+         "name": "Ye",
+         "joinphrase": " feat. "
+        },
+        {
+         "artist": {
+          "sort-name": "Green, CeeLo",
+          "name": "CeeLo Green",
+          "disambiguation": "",
+          "country": "US",
+          "type": "Person",
+          "id": "2c69465c-0f76-45ce-90a2-1ed0fdacc997",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+         },
+         "name": "CeeLo Green",
+         "joinphrase": ""
+        }
+       ],
+       "video": false
+      },
+      "position": 9,
+      "title": "BULLY"
+     },
+     {
+      "recording": {
+       "length": 111000,
+       "title": "HIGHS AND LOWS",
+       "id": "c55dbe1a-1858-4828-8ad6-ee61067211ae",
+       "first-release-date": "2026-03-27",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "sort-name": "Ye"
+         },
+         "name": "Ye"
+        }
+       ],
+       "video": false
+      },
+      "id": "ba9ed147-987f-4788-869c-8257cb218701",
+      "title": "HIGHS AND LOWS",
+      "position": 10,
+      "number": "10",
+      "artist-credit": [
+       {
+        "artist": {
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "sort-name": "Ye",
+         "name": "Ye",
+         "country": "US",
+         "disambiguation": "formerly Kanye West"
+        },
+        "name": "Ye",
+        "joinphrase": ""
+       }
+      ],
+      "length": 111000
+     },
+     {
+      "length": 127000,
+      "number": "11",
+      "artist-credit": [
+       {
+        "artist": {
+         "sort-name": "Ye",
+         "name": "Ye",
+         "disambiguation": "formerly Kanye West",
+         "country": "US",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051"
+        },
+        "name": "Ye",
+        "joinphrase": ""
+       }
+      ],
+      "position": 11,
+      "title": "I CAN’T WAIT",
+      "id": "ec1b334d-0166-4959-9e50-180c407f0736",
+      "recording": {
+       "video": false,
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "sort-name": "Ye"
+         },
+         "name": "Ye"
+        }
+       ],
+       "disambiguation": "explicit",
+       "first-release-date": "2026-03-28",
+       "id": "b48bf2c5-3357-4d76-8ef0-f029486f04ee",
+       "title": "I CAN’T WAIT",
+       "length": 127000
+      }
+     },
+     {
+      "number": "12",
+      "artist-credit": [
+       {
+        "artist": {
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person"
+        },
+        "name": "Ye",
+        "joinphrase": " feat. "
+       },
+       {
+        "joinphrase": "",
+        "artist": {
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "97485b35-2187-4a17-ac38-f1a05fc1b5b9",
+         "sort-name": "Troutman, Andre",
+         "name": "Andre Troutman",
+         "disambiguation": "",
+         "country": "US"
+        },
+        "name": "Andre Troutman"
+       }
+      ],
+      "length": 130000,
+      "id": "a031cd5f-2f08-4fe8-8a68-6f33816c3eed",
+      "recording": {
+       "length": 130000,
+       "title": "WHITE LINES",
+       "id": "1617b8eb-5d34-42d0-af82-22f7b9f39750",
+       "first-release-date": "2026-03-28",
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": " feat. ",
+         "artist": {
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye"
+         },
+         "name": "Ye"
+        },
+        {
+         "joinphrase": "",
+         "name": "Andre Troutman",
+         "artist": {
+          "name": "Andre Troutman",
+          "disambiguation": "",
+          "country": "US",
+          "sort-name": "Troutman, Andre",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "97485b35-2187-4a17-ac38-f1a05fc1b5b9"
+         }
+        }
+       ],
+       "video": false
+      },
+      "position": 12,
+      "title": "WHITE LINES"
+     },
+     {
+      "length": 91000,
+      "artist-credit": [
+       {
+        "joinphrase": " feat. ",
+        "name": "Ye",
+        "artist": {
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye"
+        }
+       },
+       {
+        "name": "Don Toliver",
+        "artist": {
+         "id": "a0723a3c-4135-438e-85c5-012712144ede",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person",
+         "country": "US",
+         "disambiguation": "",
+         "name": "Don Toliver",
+         "sort-name": "Don Toliver"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "number": "13",
+      "title": "CIRCLES",
+      "position": 13,
+      "recording": {
+       "length": 91000,
+       "title": "CIRCLES",
+       "first-release-date": "2026-03-28",
+       "id": "676e48b2-e57f-4e6d-b98c-63f72b4a2c5c",
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": " feat. ",
+         "name": "Ye",
+         "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye"
+         }
+        },
+        {
+         "artist": {
+          "country": "US",
+          "disambiguation": "",
+          "name": "Don Toliver",
+          "sort-name": "Don Toliver",
+          "id": "a0723a3c-4135-438e-85c5-012712144ede",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person"
+         },
+         "name": "Don Toliver",
+         "joinphrase": ""
+        }
+       ]
+      },
+      "id": "3394e449-6706-4958-a8a5-0929e3b6c875"
+     },
+     {
+      "position": 14,
+      "title": "PREACHER MAN",
+      "recording": {
+       "length": 181000,
+       "title": "PREACHER MAN",
+       "id": "92c61cd4-2131-4817-ac72-dab886bade7c",
+       "first-release-date": "2026-03-27",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye",
+          "sort-name": "Ye",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type": "Person"
+         },
+         "name": "Ye"
+        }
+       ],
+       "disambiguation": "",
+       "video": false
+      },
+      "id": "6d710242-993f-4252-8785-e85ac2cddde1",
+      "length": 181000,
+      "number": "14",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Ye",
+        "artist": {
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person"
+        }
+       }
+      ]
+     },
+     {
+      "id": "f587b11f-2dcd-4c8c-916b-339cbe3a86ca",
+      "recording": {
+       "title": "BEAUTY AND THE BEAST",
+       "length": 105000,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "name": "Ye",
+         "artist": {
+          "type": "Person",
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Ye",
+          "name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US"
+         },
+         "joinphrase": ""
+        }
+       ],
+       "video": false,
+       "id": "1173647e-544e-4021-b263-462a9b7fe0c2",
+       "first-release-date": "2025-06-20"
+      },
+      "title": "BEAUTY AND THE BEAST",
+      "position": 15,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Ye",
+        "artist": {
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type": "Person"
+        }
+       }
+      ],
+      "number": "15",
+      "length": 105000
+     },
+     {
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person",
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "sort-name": "Ye"
+        },
+        "name": "Ye"
+       }
+      ],
+      "number": "16",
+      "length": 122000,
+      "id": "f90869f5-daf6-4bcb-a65a-0179774ae490",
+      "recording": {
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "joinphrase": "",
+         "artist": {
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye",
+          "sort-name": "Ye"
+         },
+         "name": "Ye"
+        }
+       ],
+       "first-release-date": "2026-03-27",
+       "id": "d1285371-9f14-401a-9270-37a6419766b7",
+       "title": "DAMN",
+       "length": 122000
+      },
+      "title": "DAMN",
+      "position": 16
+     },
+     {
+      "length": 186000,
+      "number": "17",
+      "artist-credit": [
+       {
+        "joinphrase": " feat. ",
+        "name": "Ye",
+        "artist": {
+         "type": "Person",
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Ye",
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "sort-name": "Ye"
+        }
+       },
+       {
+        "joinphrase": "",
+        "name": "Peso Pluma",
+        "artist": {
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "75e4f8ef-34c3-44fd-8467-88a7d9599f77",
+         "name": "Peso Pluma",
+         "country": "MX",
+         "disambiguation": "Mexican corridos tumbados singer",
+         "sort-name": "Peso Pluma"
+        }
+       }
+      ],
+      "position": 17,
+      "title": "LAST BREATH",
+      "id": "e6437a25-7102-43bb-a159-d0e97d21af45",
+      "recording": {
+       "video": false,
+       "artist-credit": [
+        {
+         "name": "Ye",
+         "artist": {
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "sort-name": "Ye",
+          "disambiguation": "formerly Kanye West",
+          "country": "US",
+          "name": "Ye"
+         },
+         "joinphrase": " feat. "
+        },
+        {
+         "artist": {
+          "type": "Person",
+          "id": "75e4f8ef-34c3-44fd-8467-88a7d9599f77",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Peso Pluma",
+          "name": "Peso Pluma",
+          "country": "MX",
+          "disambiguation": "Mexican corridos tumbados singer"
+         },
+         "name": "Peso Pluma",
+         "joinphrase": ""
+        }
+       ],
+       "disambiguation": "explicit",
+       "first-release-date": "2026-03-28",
+       "id": "2d9c1153-19f8-4398-8808-0cb3583abe20",
+       "title": "LAST BREATH",
+       "length": 186000
+      }
+     },
+     {
+      "length": 181000,
+      "artist-credit": [
+       {
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "type": "Person",
+         "country": "US",
+         "disambiguation": "formerly Kanye West",
+         "name": "Ye",
+         "sort-name": "Ye"
+        },
+        "name": "Ye",
+        "joinphrase": ""
+       }
+      ],
+      "number": "18",
+      "position": 18,
+      "title": "THIS ONE HERE",
+      "id": "d8b6bd7d-b5a4-4ad7-8fb8-57645df332b3",
+      "recording": {
+       "first-release-date": "2026-03-28",
+       "id": "293d06d7-e040-4158-b424-673120128054",
+       "video": false,
+       "disambiguation": "",
+       "artist-credit": [
+        {
+         "artist": {
+          "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "sort-name": "Ye",
+          "country": "US",
+          "disambiguation": "formerly Kanye West",
+          "name": "Ye"
+         },
+         "name": "Ye",
+         "joinphrase": ""
+        }
+       ],
+       "length": 181000,
+       "title": "THIS ONE HERE"
+      }
+     }
+    ],
+    "track-offset": 0,
+    "id": "0b974fc5-4c1b-4be1-9b4b-b0b989116444"
+   }
+  ],
+  "release-events": [
+   {
+    "area": {
+     "sort-name": "[Worldwide]",
+     "name": "[Worldwide]",
+     "disambiguation": "",
+     "type": null,
+     "iso-3166-1-codes": [
+      "XW"
+     ],
+     "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+     "type-id": null
+    },
+    "date": "2026-03-28"
+   }
+  ],
+  "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+  "asin": null,
+  "text-representation": {
+   "language": "eng",
+   "script": "Latn"
+  },
+  "artist-credit": [
+   {
+    "artist": {
+     "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+     "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+     "type": "Person",
+     "sort-name": "Ye",
+     "disambiguation": "formerly Kanye West",
+     "country": "US",
+     "name": "Ye"
+    },
+    "name": "Ye",
+    "joinphrase": ""
+   }
+  ]
+ }
+}

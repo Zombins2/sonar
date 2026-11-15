@@ -144,7 +144,10 @@ class SubsonicClient {
         if (hit != null) return hit;
       }
       if (unreachable) {
-        throw const SubsonicException(SubsonicErrorKind.unreachable, 'Server unreachable. Check your network, or your VPN if you use one (e.g. Tailscale).');
+        throw const SubsonicException(
+          SubsonicErrorKind.unreachable,
+          'Server unreachable. Check your network, or your VPN if you use one (e.g. Tailscale).',
+        );
       }
       final status = e.response?.statusCode;
       if (status == 401 || status == 403) {
@@ -352,7 +355,10 @@ class SubsonicClient {
     } on DioException catch (e) {
       if (_isNetworkError(e)) {
         onReachability?.call(false);
-        throw const SubsonicException(SubsonicErrorKind.unreachable, 'Server unreachable. Check your network, or your VPN if you use one (e.g. Tailscale).');
+        throw const SubsonicException(
+          SubsonicErrorKind.unreachable,
+          'Server unreachable. Check your network, or your VPN if you use one (e.g. Tailscale).',
+        );
       }
       throw const SubsonicException(SubsonicErrorKind.server, 'Request failed.');
     }

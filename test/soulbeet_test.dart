@@ -406,8 +406,7 @@ void main() {
   });
 
   test('searchArtists: the artist, then shorter starts that still name someone', () {
-    List<String> names(String artist) =>
-        SbAlbum.fromJson({'id': 'x', 'title': 'T', 'artist': artist}).searchArtists;
+    List<String> names(String artist) => SbAlbum.fromJson({'id': 'x', 'title': 'T', 'artist': artist}).searchArtists;
     expect(names('Kanye West'), ['Kanye West', 'Kanye']);
     expect(names('Bob Marley & The Wailers'), ['Bob Marley & The Wailers', 'Bob Marley', 'Bob']);
     expect(names('The Beatles'), ['The Beatles'], reason: '"The" alone would match anything');

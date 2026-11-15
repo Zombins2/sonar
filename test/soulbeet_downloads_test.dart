@@ -406,4 +406,17 @@ void main() {
     expect(d.error, contains('Permission denied'));
     expect(server.bodiesFor('/api/downloads/queue'), isEmpty);
   });
+
+  test('a download shows on the result it started from: its pressing, the album, or Deezer\'s copy', () {
+    final list = SoulbeetDownloads(
+      client: SoulbeetClient(base: Uri.parse('http://127.0.0.1:9'), username: 'u', password: 'p'),
+    );
+    addTearDown(list.dispose);
+    final pressed = SbAlbum.found(pressing: 'p1', groupId: 'g1', title: 'BULLY', artist: 'Ye', deezerId: '949');
+    list.debugAdd(AlbumDownload.debug('k', album: pressed, releaseId: 'p1'));
+    expect(list.forFound(SbAlbum.deezer(id: '949', title: 'BULLY', artist: 'Kanye West'))?.key, 'k');
+    expect(list.forFound(SbAlbum.found(groupId: 'g1', title: 'BULLY', artist: 'Ye'))?.key, 'k');
+    expect(list.forFound(SbAlbum.deezer(id: '1010', title: 'BULLY - DELUXE', artist: 'Kanye West')), isNull);
+    expect(list.forFound(SbAlbum.found(pressing: 'p2', groupId: 'g2', title: 'X', artist: 'Y')), isNull);
+  });
 }

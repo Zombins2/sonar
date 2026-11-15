@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/deezer/deezer_client.dart';
 import '../data/musicbrainz/musicbrainz_client.dart';
 import '../data/soulbeet/get_music_search.dart';
 import '../data/soulbeet/library_match.dart';
@@ -72,21 +73,39 @@ final libraryAlbumForProvider = FutureProvider.autoDispose.family<Album?, ({Stri
   (ref, a) => _inLibrary(ref, a.title, a.artist),
 );
 
-/// One MusicBrainz client for the app, so its one-request-a-second pacing
-/// covers every search.
-final musicBrainzClientProvider = Provider<MusicBrainzClient>((ref) {
-  final client = MusicBrainzClient();
+/// Where Get music searches first (see [findMusic]).
+final deezerClientProvider = Provider<DeezerClient>((ref) {
+  final client = DeezerClient();
   ref.onDispose(client.close);
   return client;
 });
 
-/// What MusicBrainz has for a Get music search (see [searchGetMusic]),
-/// filling in part by part.
+/// One MusicBrainz client for the app, so its one-request-a-second pacing
+/// covers every search.
+final musicBrainzClientProvider = Provider<MusicBrainzClient>((ref) {
+  final client = MusicBrainzClient(deezer: ref.watch(deezerClientProvider));
+  ref.onDispose(client.close);
+  return client;
+});
+
+/// What Deezer, else MusicBrainz, has for a Get music search (see
+/// [findMusic]), filling in part by part.
 final soulbeetSearchProvider = StreamProvider.autoDispose.family<GetMusicResults, String>((ref, raw) {
   if (ref.watch(soulbeetClientProvider) == null || raw.trim().isEmpty) {
     return Stream.value(const GetMusicResults(done: true));
   }
   // Typed on, or left: what this search still has waiting drops out of line.
+  final cancel = MbCancel();
+  ref.onDispose(cancel.cancel);
+  return findMusic(ref.watch(deezerClientProvider), ref.watch(musicBrainzClientProvider), raw, cancel: cancel);
+});
+
+/// What MusicBrainz alone has for a search (see [searchGetMusic]), when
+/// what Deezer found isn't it.
+final musicBrainzSearchProvider = StreamProvider.autoDispose.family<GetMusicResults, String>((ref, raw) {
+  if (ref.watch(soulbeetClientProvider) == null || raw.trim().isEmpty) {
+    return Stream.value(const GetMusicResults(done: true));
+  }
   final cancel = MbCancel();
   ref.onDispose(cancel.cancel);
   return searchGetMusic(ref.watch(musicBrainzClientProvider), raw, cancel: cancel);

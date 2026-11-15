@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:dio/dio.dart';
 
+import '../deezer/deezer_client.dart';
 import '../soulbeet/soulbeet_models.dart';
 
 /// MusicBrainz didn't answer, or kept saying it was busy.
@@ -71,6 +72,7 @@ class MusicBrainzClient {
     this.spacing = const Duration(milliseconds: 1100),
     this.busyWait = const Duration(seconds: 2),
     this.keep = 200,
+    this.deezer,
   }) : _dio =
            dio ??
            Dio(
@@ -90,11 +92,15 @@ class MusicBrainzClient {
   /// MusicBrainz allows one request a second from each address.
   final Duration spacing;
 
-  /// How long to wait before asking again after "busy" (503), times the try.
+  /// How long to wait before asking again after "busy" (503) that doesn't
+  /// say how long, times the try.
   final Duration busyWait;
 
   /// How many MusicBrainz replies to keep.
   final int keep;
+
+  /// Where albums found on Deezer get their barcodes ([pressingOf]).
+  final DeezerClient? deezer;
 
   final Dio _dio;
   final _waiting = <_Request>[];
@@ -111,22 +117,34 @@ class MusicBrainzClient {
   void close() => _dio.close(force: true);
 
   static const _albumish = '(primarytype:album OR primarytype:ep)';
+  static const _orSingle = '(primarytype:album OR primarytype:ep OR primarytype:single)';
 
-  /// Albums and EPs called [title] (by [artist]).
+  /// Albums and EPs called [title] (by [artist], or by any of [artistIds]),
+  /// and singles too with [singles].
   Future<List<SbAlbum>> searchAlbums(
     String title, {
     String? artist,
+    List<String> artistIds = const [],
+    bool singles = false,
     MbTurn turn = MbTurn.now,
     MbCancel? cancel,
   }) async => _albums(
     await _search(
       'release-group',
-      ['releasegroup:${_phrase(title)}', _albumish, if (artist != null) 'artist:${_phrase(artist)}'].join(' AND '),
+      ['releasegroup:${_phrase(title)}', singles ? _orSingle : _albumish, ?_by(artist, artistIds)].join(' AND '),
       25,
       turn,
       cancel,
     ),
   );
+
+  /// Kept to [artistIds] (by MusicBrainz id: whatever name they're credited
+  /// under, "BULLY" by Ye for "kanye"), else to the credited name [artist].
+  static String? _by(String? artist, List<String> artistIds) => artistIds.isNotEmpty
+      ? '(${artistIds.map((id) => 'arid:$id').join(' OR ')})'
+      : artist == null
+      ? null
+      : 'artist:${_phrase(artist)}';
 
   /// Albums and EPs whose artist and title were both typed in [words], in
   /// either order ("rebelution peace of mind").
@@ -201,8 +219,10 @@ class MusicBrainzClient {
   }
 
   /// [album] as the pressing Soulbeet would pick (its first official one),
-  /// for an album found without one.
+  /// for an album found without one. One found on Deezer is the pressing
+  /// with its barcode ([_fromDeezer]).
   Future<SbAlbum> pressingOf(SbAlbum album, {MbTurn turn = MbTurn.now, MbCancel? cancel}) async {
+    if (album.needsPressing && album.deezerId != null) return _fromDeezer(album, turn, cancel);
     final group = album.groupId;
     if (!album.needsPressing || group == null) return album;
     final reply = await _get('release-group/$group', {'inc': 'releases'}, turn, cancel);
@@ -217,6 +237,79 @@ class MusicBrainzClient {
       artist: album.artist,
       releaseDate: album.releaseDate,
       kinds: album.kinds,
+    );
+  }
+
+  /// An album found on Deezer as the same pressing on MusicBrainz: the one
+  /// with its barcode (an official one first), the surest match. Failing
+  /// that (MusicBrainz doesn't have the barcode), the album (or single, for
+  /// a single) of its name by whoever goes by its artist's name, else by the
+  /// name as credited, its name as Deezer has it, then without what's in
+  /// brackets or after a dash ("BULLY - DELUXE" is "BULLY").
+  Future<SbAlbum> _fromDeezer(SbAlbum album, MbTurn turn, MbCancel? cancel) async {
+    final dz = deezer;
+    if (dz == null) throw const MusicBrainzException('Couldn\'t look this album up on MusicBrainz.');
+    final DeezerAlbumInfo info;
+    try {
+      info = await dz.album(album.deezerId!);
+    } on DeezerException catch (e) {
+      throw MusicBrainzException(e.message);
+    }
+    final upc = info.upc;
+    if (upc != null) {
+      // Deezer's 12-digit UPCs are often 13-digit EANs on MusicBrainz, and back.
+      final codes = {upc, if (upc.length == 12) '0$upc', if (upc.length == 13 && upc.startsWith('0')) upc.substring(1)};
+      final reply = await _search('release', codes.map((c) => 'barcode:$c').join(' OR '), 10, turn, cancel);
+      final releases = _list(reply['releases']);
+      final r = releases.where((r) => r['status'] == 'Official').firstOrNull ?? releases.firstOrNull;
+      final id = r?['id'], title = r?['title'];
+      final group = r?['release-group'] is Map ? (r!['release-group']! as Map).cast<String, Object?>() : null;
+      if (id is String && title is String && group?['id'] is String) {
+        final credit = _credit(r!['artist-credit']);
+        return SbAlbum.found(
+          pressing: id,
+          groupId: group!['id']! as String,
+          title: title,
+          artist: credit.isEmpty ? album.artist : credit,
+          releaseDate: (r['date'] as String?) ?? info.releaseDate,
+          kinds: _kinds(group),
+          deezerId: album.deezerId,
+          cover: album.cover,
+        );
+      }
+    }
+    final artist = info.artist.isEmpty ? album.artist : info.artist;
+    final ids = [for (final a in await findArtists(artist, turn: turn, cancel: cancel)) a.id];
+    final bare = info.title
+        .replaceAll(RegExp(r'\s*(\([^)]*\)|\[[^\]]*\])'), '')
+        .replaceAll(RegExp(r'\s+[-–—]\s+.*$'), '')
+        .trim();
+    for (final title in {info.title, if (bare.isNotEmpty) bare}) {
+      for (final byIds in [if (ids.isNotEmpty) true, false]) {
+        final found = await searchAlbums(
+          title,
+          artist: byIds ? null : artist,
+          artistIds: byIds ? ids : const [],
+          singles: info.isSingle,
+          turn: turn,
+          cancel: cancel,
+        );
+        final f = found.firstOrNull;
+        if (f == null) continue;
+        return SbAlbum.found(
+          pressing: f.mbid,
+          groupId: f.groupId!,
+          title: f.title,
+          artist: f.artist,
+          releaseDate: f.releaseDate,
+          kinds: f.kinds,
+          deezerId: album.deezerId,
+          cover: album.cover,
+        );
+      }
+    }
+    throw const MusicBrainzException(
+      'MusicBrainz doesn\'t have this album, so it can\'t be filed. Try "Search MusicBrainz" for another copy.',
     );
   }
 
@@ -259,16 +352,25 @@ class MusicBrainzClient {
         artist: credit.isEmpty ? pressed.artist : credit,
         releaseDate: date ?? pressed.releaseDate,
         kinds: pressed.kinds,
+        deezerId: pressed.deezerId,
+        cover: pressed.cover,
       ),
       tracks,
     );
   }
 
-  /// Songs called [title] (by [artist]), each on the album it's best found on.
-  Future<List<SbTrack>> searchSongs(String title, {String? artist, MbTurn turn = MbTurn.now, MbCancel? cancel}) async {
+  /// Songs called [title] (by [artist], or by any of [artistIds]), each on
+  /// the album it's best found on.
+  Future<List<SbTrack>> searchSongs(
+    String title, {
+    String? artist,
+    List<String> artistIds = const [],
+    MbTurn turn = MbTurn.now,
+    MbCancel? cancel,
+  }) async {
     final reply = await _search(
       'recording',
-      ['recording:${_phrase(title)}', if (artist != null) 'artist:${_phrase(artist)}'].join(' AND '),
+      ['recording:${_phrase(title)}', ?_by(artist, artistIds)].join(' AND '),
       25,
       turn,
       cancel,
@@ -295,6 +397,52 @@ class MusicBrainzClient {
       if (found.length == 2) break;
     }
     return found;
+  }
+
+  /// The artist named at the start or the end of [words], by any name they
+  /// go by, ignoring case, spaces and punctuation, and the rest of [words]:
+  /// "kanye bully" is Ye and "bully", "sky is the limit rebelution" is
+  /// Rebelution and "sky is the limit". The artist MusicBrainz finds likeliest
+  /// for all of [words] wins, by the longest of their names that fits; others
+  /// that fit as well are kept too (two Steve Lacys), at most two. Null when
+  /// none fits. Asks what [findArtists] asks, so after it this costs nothing.
+  Future<({List<MbArtist> artists, String title})?> findArtistIn(
+    String words, {
+    MbTurn turn = MbTurn.now,
+    MbCancel? cancel,
+  }) async {
+    final parts = words.trim().split(RegExp(r'\s+'));
+    final reply = await _search('artist', _escape(words), 5, turn, cancel);
+    final artists = [
+      for (final a in _list(reply['artists']))
+        if (a['id'] is String && a['name'] is String)
+          (
+            id: a['id']! as String,
+            name: a['name']! as String,
+            names: [a['name']! as String, ..._list(a['aliases']).map((x) => x['name']).whereType<String>()],
+          ),
+    ];
+    // Every way to cut [words] in two, the artist's part longest first.
+    final cuts = [
+      for (var k = parts.length - 1; k >= 1; k--) ...[
+        (parts.take(k).join(' '), parts.skip(k).join(' ')),
+        (parts.skip(parts.length - k).join(' '), parts.take(parts.length - k).join(' ')),
+      ],
+    ];
+    MbArtist? fits(({String id, String name, List<String> names}) a, String named) {
+      final want = _plain(named);
+      final as = a.names.where((n) => _plain(n) == want).firstOrNull;
+      return as == null ? null : MbArtist(a.id, a.name, matchedAs: as == a.name ? null : as);
+    }
+
+    for (final a in artists) {
+      for (final (named, title) in cuts) {
+        if (_plain(title).isEmpty || fits(a, named) == null) continue;
+        final all = [for (final b in artists) ?fits(b, named)];
+        return (artists: all.take(2).toList(), title: title);
+      }
+    }
+    return null;
   }
 
   /// How many people have listened to each album (by [SbAlbum.groupId]) and
@@ -393,10 +541,16 @@ class MusicBrainzClient {
     return true;
   });
 
-  /// Sends [r], asking again (each time after the pause) when busy.
+  /// How many times a request is sent while MusicBrainz says it's busy.
+  static const busyTries = 6;
+
+  /// Sends [r], asking again when busy: after as long as MusicBrainz says
+  /// (its Retry-After), else after [busyWait] times the try; never sooner
+  /// than [spacing]. MusicBrainz sheds load site-wide when busy, a third of
+  /// all requests at times, each saying to ask again at once (2026-11-15).
   Future<Map<String, Object?>> _fetch(_Request r) async {
     for (var attempt = 1; ; attempt++) {
-      _last = DateTime.now();
+      final sentAt = _last = DateTime.now();
       sent++;
       try {
         final res = await _dio.get<Object>(
@@ -408,8 +562,11 @@ class MusicBrainzClient {
         throw const MusicBrainzException('MusicBrainz sent something unexpected. Try again.');
       } on DioException catch (e) {
         final busy = e.response?.statusCode == 503 || e.response?.statusCode == 429;
-        if (busy && attempt < 4) {
-          await Future<void>.delayed(busyWait * attempt);
+        if (busy && attempt < busyTries) {
+          final said = int.tryParse(e.response?.headers.value('retry-after')?.trim() ?? '');
+          final pause = said != null ? Duration(seconds: said) : busyWait * attempt;
+          final spaced = sentAt.add(spacing).difference(DateTime.now());
+          await Future<void>.delayed(pause > spaced ? pause : spaced);
           continue;
         }
         throw MusicBrainzException(

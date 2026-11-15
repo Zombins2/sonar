@@ -1,0 +1,100 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search/album",
+  "query": {
+   "q": "kayne bully",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 949407771,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 18,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1010171471,
+    "title": "BULLY - DELUXE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 20,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 907177312,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 3,
+    "record_type": "single",
+    "artist": {
+     "id": 4099199,
+     "name": "Ye",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 907179762,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 2,
+    "record_type": "single",
+    "artist": {
+     "id": 4099199,
+     "name": "Ye",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 510686881,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5f9a92250f1dbcb3e4595783ed11c38d/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 12,
+    "record_type": "album",
+    "artist": {
+     "id": 10623039,
+     "name": "Duwap Kaine",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/45d861c1179152f546165a180437aa3f/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 92534802,
+    "title": "Red Bull Music Sessions",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/db8ddcfcda20f990b19a812bd0042121/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 3,
+    "record_type": "single",
+    "artist": {
+     "id": 13586537,
+     "name": "Seven Kayne",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b05c1f9ad76c0adfd045873af0eadb21/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 852864862,
+    "title": "Bully (Kanye West freestyle)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/0b792f53ba1696d3c0c75d89e3513fd9/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 11126174,
+     "name": "ChefGod",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/5e1b159f2ccc8845a803632717b8a72d/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 7
+ }
+}

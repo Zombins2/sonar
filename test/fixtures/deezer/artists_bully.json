@@ -1,0 +1,46 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search/artist",
+  "query": {
+   "q": "bully",
+   "limit": "5"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1493927,
+    "name": "Bully & Sasha",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/e0bf78acbeb915be125feb7e0d24c51f/250x250-000000-80-0-0.jpg",
+    "nb_fan": 11
+   },
+   {
+    "id": 175459657,
+    "name": "Bully",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/975af286b0381ce3141b044ae0e88257/250x250-000000-80-0-0.jpg",
+    "nb_fan": 59
+   },
+   {
+    "id": 172629767,
+    "name": "Bully",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/99adc2b08176f040d7d6282f757d915f/250x250-000000-80-0-0.jpg",
+    "nb_fan": 3
+   },
+   {
+    "id": 90837,
+    "name": "Bully",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg",
+    "nb_fan": 4017
+   },
+   {
+    "id": 11020536,
+    "name": "Bulin 47",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/9a672b41216f2bbdcfbff000234f906c/250x250-000000-80-0-0.jpg",
+    "nb_fan": 19956
+   }
+  ],
+  "total": 100
+ }
+}

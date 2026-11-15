@@ -1,19 +1,26 @@
 import 'dart:async';
 import 'dart:math' as math;
 
+import '../deezer/deezer_client.dart';
 import '../musicbrainz/musicbrainz_client.dart';
 import 'soulbeet_models.dart';
 
 /// The search is an artist's name: their card, at the top.
 class TopArtist {
-  const TopArtist(this.name, this.cover);
+  const TopArtist(this.name, this.cover, {this.picture});
 
   /// "Ye (Kanye West)": as MusicBrainz names them, and as searched.
   final String name;
 
   /// Their most listened album, for its cover.
   final SbAlbum? cover;
+
+  /// Their photo, when Deezer found them.
+  final Uri? picture;
 }
+
+/// Where a search's results came from.
+enum GetMusicSource { deezer, musicBrainz }
 
 /// What a Get music search found, part by part. A search fills in as each
 /// part comes back, and is [done] once they all have.
@@ -33,6 +40,8 @@ class GetMusicResults {
     this.respelled,
     this.listeners = const {},
     this.done = false,
+    this.source = GetMusicSource.musicBrainz,
+    this.artistPicture,
   });
 
   /// What was searched for: the album or song name, without "Artist - ".
@@ -58,6 +67,13 @@ class GetMusicResults {
   final Map<String, int> listeners;
 
   final bool done;
+
+  /// Deezer, else MusicBrainz ([findMusic]). Deezer's lists come in its own
+  /// order, most played and best matched first, with no [listeners].
+  final GetMusicSource source;
+
+  /// [artist]'s photo, when Deezer found them.
+  final Uri? artistPicture;
 
   bool get isEmpty => albums.isEmpty && songs.isEmpty && byArtist.isEmpty;
 
@@ -101,20 +117,23 @@ class GetMusicResults {
   }
 
   /// The one result most likely wanted, as a music app puts it first: the
-  /// most listened of the albums and songs with exactly the name searched,
-  /// and the artist with that name ([TopArtist], weighed by their most
-  /// listened album); else the most listened of all. Null when nothing was
-  /// found.
+  /// most listened of the albums and songs with exactly the name searched
+  /// (alone, or with their artist's: "kirk franklin love theory"; what's in
+  /// brackets aside: "BULLY (feat. CeeLo Green)"), and the artist with that
+  /// name ([TopArtist], weighed by their most listened album); else the most
+  /// listened of all. Null when nothing was found.
   Object? get topResult {
     final want = _plain(query);
     final named = [
       for (final x in <Object>[...albums, ...songs])
-        if (_plain(x is SbAlbum ? x.title : (x as SbTrack).title) == want) x,
+        if (_isNamed(x, want)) x,
     ];
     final best = named.isEmpty ? null : _most(named);
     if (artist != null && byArtist.isNotEmpty) {
       final cover = _most(byArtist);
-      if (best == null || listenersOf(cover) >= listenersOf(best)) return TopArtist(artist!, cover);
+      if (best == null || listenersOf(cover) >= listenersOf(best)) {
+        return TopArtist(artist!, cover, picture: artistPicture);
+      }
     }
     if (best != null) return best;
     final all = <Object>[...albums, ...songs];
@@ -124,6 +143,12 @@ class GetMusicResults {
   T _most<T extends Object>(List<T> found) => found.reduce((a, b) => listenersOf(b) > listenersOf(a) ? b : a);
 
   static String _plain(String s) => s.toLowerCase().replaceAll(RegExp(r'[^\p{L}\p{N}]', unicode: true), '');
+
+  static bool _isNamed(Object x, String want) {
+    final (title, by) = x is SbAlbum ? (x.title, x.artist) : ((x as SbTrack).title, x.artist);
+    final t = _plain(title.replaceAll(RegExp(r'\([^)]*\)|\[[^\]]*\]'), '')), a = _plain(by);
+    return t.isNotEmpty && (t == want || '$a$t' == want || '$t$a' == want);
+  }
 
   GetMusicResults _with({
     List<SbAlbum>? albums,
@@ -141,6 +166,8 @@ class GetMusicResults {
     respelled: respelled,
     listeners: listeners ?? this.listeners,
     done: done ?? this.done,
+    source: source,
+    artistPicture: artistPicture,
   );
 
   /// Adds listener counts, and puts every list in their order.
@@ -159,6 +186,104 @@ class GetMusicResults {
   }
 }
 
+/// Searches Deezer for [raw] ([searchDeezer]), else MusicBrainz
+/// ([searchGetMusic]) when Deezer finds nothing or doesn't answer: Deezer
+/// forgives typos and other names ("kayne bully"), and answers in well under
+/// a second; MusicBrainz has music no shop sells.
+Stream<GetMusicResults> findMusic(DeezerClient deezer, MusicBrainzClient mb, String raw, {MbCancel? cancel}) async* {
+  final c = cancel ?? MbCancel();
+  var found = false;
+  try {
+    await for (final r in searchDeezer(deezer, raw, mb: mb, cancel: c)) {
+      if (r.isEmpty) continue;
+      found = true;
+      yield r;
+    }
+  } on Object {
+    if (found) rethrow;
+  }
+  if (found || c.cancelled) return;
+  yield* searchGetMusic(mb, raw, cancel: c);
+}
+
+/// Searches Deezer for [raw] ("Album", "Song", "Artist", "Artist - Album",
+/// or any of them run together: "kirk franklin love theory"), in Deezer's
+/// order, most played and best matched first:
+///
+/// - the albums and songs Deezer finds;
+/// - when the search is an artist's name, or the start of it ("kanye" is
+///   Kanye West), and the best songs found are theirs, all their albums, most
+///   followed first, and their most played songs.
+///
+/// Once done, the likeliest albums are looked up on MusicBrainz ahead of
+/// time ([mb], when nothing else waits there), so opening one is quicker.
+/// Fails when Deezer doesn't answer.
+Stream<GetMusicResults> searchDeezer(DeezerClient dz, String raw, {MusicBrainzClient? mb, MbCancel? cancel}) async* {
+  final (query, typedArtist) = splitArtistQuery(raw);
+  const source = GetMusicSource.deezer;
+  if (query.isEmpty) {
+    yield const GetMusicResults(done: true, source: source);
+    return;
+  }
+  final words = typedArtist == null ? query : '$typedArtist $query';
+  final artistsAsked = typedArtist == null ? _orNone(dz.searchArtists(words)) : Future.value(const <DeezerArtist>[]);
+  final List<SbTrack> songs;
+  final List<SbAlbum> albums;
+  try {
+    (songs, albums) = await (dz.searchSongs(words), dz.searchAlbums(words)).wait;
+  } on ParallelWaitError<(List<SbTrack>?, List<SbAlbum>?), (AsyncError?, AsyncError?)> catch (e) {
+    throw e.errors.$1?.error ?? e.errors.$2!.error;
+  }
+  if (cancel?.cancelled ?? false) return;
+  var r = GetMusicResults(query: query, albums: albums, songs: songs, source: source);
+  final artist = deezerArtistFor(words, await artistsAsked, songs);
+  if (artist != null) {
+    final (byArtist, top) = await (_orNone(dz.albumsBy(artist)), _orNone(dz.topSongs(artist))).wait;
+    if (cancel?.cancelled ?? false) return;
+    final want = GetMusicResults._plain(query);
+    final named = [
+      for (final a in albums)
+        if (GetMusicResults._plain(a.title) == want) a,
+    ];
+    r = GetMusicResults(
+      query: query,
+      albums: named,
+      byArtist: _notIn(_merge(byArtist, albums), named),
+      songs: _merge(top, songs),
+      artist: byArtist.isEmpty ? null : artist.name,
+      artistPicture: artist.picture,
+      source: source,
+    );
+  }
+  r = r._with(done: true);
+  yield r;
+  if (mb == null) return;
+  final top = r.topResult;
+  final likely = <SbAlbum>{
+    if (top is SbAlbum) top,
+    if (top is SbTrack && top.onAlbum != null) top.onAlbum!,
+    ...r.allAlbums.take(2),
+  };
+  for (final a in likely) {
+    unawaited(mb.songsOf(a, turn: MbTurn.spare, cancel: cancel).then((_) {}, onError: (_) {}));
+  }
+}
+
+/// The artist [words] name, or start the name of ("kanye" is Kanye West), the
+/// most followed of those: when one of the best songs found ([songs]) is
+/// theirs. Else null: "bully" is a band, but those searching it want Ye's
+/// "BULLY".
+DeezerArtist? deezerArtistFor(String words, List<DeezerArtist> artists, List<SbTrack> songs) {
+  final want = GetMusicResults._plain(words);
+  if (want.isEmpty) return null;
+  final fits = [
+    for (final a in artists)
+      if (GetMusicResults._plain(a.name) case final n when n == want || (want.length >= 3 && n.startsWith(want))) a,
+  ]..sort((a, b) => b.fans.compareTo(a.fans));
+  final theirs = {for (final s in songs.take(3)) GetMusicResults._plain(s.artist)};
+  return fits.where((a) => theirs.contains(GetMusicResults._plain(a.name))).firstOrNull;
+}
+
 /// Searches MusicBrainz for [raw] ("Album", "Song", "Artist", or "Artist -
 /// Album") and ranks what it finds by listeners on ListenBrainz:
 ///
@@ -170,8 +295,10 @@ class GetMusicResults {
 ///   all their albums listed, and their popular songs: the most listened on
 ///   their most listened albums;
 /// - "X - Y" is read both ways round, artist first or song first;
-/// - several words are also searched as a song or album and its artist run
+/// - several words are also searched as a song or album and its artist
 ///   together, in either order ("sky is the limit rebelution");
+/// - an artist is found by any name they go by ("kanye bully" and "Kanye -
+///   Bully" are Ye's "BULLY");
 /// - words spelled differently in US and UK English are searched both ways
 ///   ("pure color" also finds "pure colour").
 ///
@@ -204,19 +331,23 @@ Stream<GetMusicResults> searchGetMusic(MusicBrainzClient mb, String raw, {MbCanc
   final loose = artist == null && query.contains(RegExp(r'\s'));
   // The songs, and more ways of reading what was typed, each merged in as
   // it lands, in the order asked: several words as a song (or album) and
-  // its artist run together ("sky is the limit rebelution"), first, as the
-  // likeliest way a song is typed; the song by name; "Song - Artist" as
-  // well as "Artist - Song"; the other spelling. (Asked "soon": an artist's
-  // albums and popular songs, asked "now" once they're known, go first.)
+  // its artist together ("kanye bully", "sky is the limit rebelution"),
+  // first, as the likeliest way a song is typed; the song by name; "Song -
+  // Artist" as well as "Artist - Song", by the artist's name as credited and
+  // by whoever goes by it; the other spelling. (Mostly asked "soon": an
+  // artist's albums and popular songs, asked "now" once they're known, go
+  // first.)
   final more = <(Future<List<SbTrack>>?, Future<List<SbAlbum>>?)>[
-    if (loose) (_orNone(mb.searchSongsLoosely(query, turn: soon, cancel: c)), null),
+    if (loose) _pair(_withArtistTyped(mb, query, artistsAsked, c)),
     (_orNone(mb.searchSongs(query, artist: artist, turn: soon, cancel: c)), null),
-    if (loose) (null, _orNone(mb.searchAlbumsLoosely(query, turn: soon, cancel: c))),
-    if (artist != null)
+    if (artist != null) ...[
+      _pair(_byArtistNamed(mb, artist, query, MbTurn.now, c)),
       (
         _orNone(mb.searchSongs(artist, artist: query, turn: soon, cancel: c)),
         _orNone(mb.searchAlbums(artist, artist: query, turn: soon, cancel: c)),
       ),
+      _pair(_byArtistNamed(mb, query, artist, soon, c)),
+    ],
     if (other != null)
       (
         _orNone(mb.searchSongs(other, artist: artist, turn: soon, cancel: c)),
@@ -329,6 +460,44 @@ List<SbTrack> pickPopular(List<SbTrack> songs, Map<String, int> listened) {
     for (final s in ranked)
       if (titles.add(s.title.toLowerCase().replaceAll(RegExp(r'[^\p{L}\p{N}]', unicode: true), ''))) s,
   ].take(popularSongs).toList();
+}
+
+typedef _Found = (List<SbTrack>, List<SbAlbum>);
+
+(Future<List<SbTrack>>, Future<List<SbAlbum>>) _pair(Future<_Found> found) =>
+    (found.then((f) => f.$1, onError: (_) => <SbTrack>[]), found.then((f) => f.$2, onError: (_) => <SbAlbum>[]));
+
+/// Several words as a song or album and its artist, before or after it:
+/// searched by that artist, whatever name they were typed by ("kanye bully"
+/// is Ye's "BULLY"); else, or if that finds nothing, searched as free text
+/// for songs and albums whose artist and title were both typed. Nothing when
+/// the words are an artist's whole name ([named]): their albums and popular
+/// songs say it better.
+Future<_Found> _withArtistTyped(MusicBrainzClient mb, String words, Future<List<MbArtist>> named, MbCancel c) async {
+  if ((await named).isNotEmpty) return (const <SbTrack>[], const <SbAlbum>[]);
+  final cut = await mb.findArtistIn(words, cancel: c).then((v) => v, onError: (_) => null);
+  if (cut != null) {
+    final ids = [for (final a in cut.artists) a.id];
+    final songs = _orNone(mb.searchSongs(cut.title, artistIds: ids, cancel: c));
+    final albums = _orNone(mb.searchAlbums(cut.title, artistIds: ids, cancel: c));
+    final found = (await songs, await albums);
+    if (found.$1.isNotEmpty || found.$2.isNotEmpty) return found;
+  }
+  if (c.cancelled) return (const <SbTrack>[], const <SbAlbum>[]);
+  final songs = _orNone(mb.searchSongsLoosely(words, cancel: c));
+  final albums = _orNone(mb.searchAlbumsLoosely(words, cancel: c));
+  return (await songs, await albums);
+}
+
+/// [title] by whoever goes by [artist] ("Kanye - Bully" is Ye's "BULLY",
+/// credited to Ye, not Kanye); nothing when no artist goes by it.
+Future<_Found> _byArtistNamed(MusicBrainzClient mb, String artist, String title, MbTurn turn, MbCancel c) async {
+  final artists = await _orNone(mb.findArtists(artist, turn: turn, cancel: c));
+  if (artists.isEmpty) return (const <SbTrack>[], const <SbAlbum>[]);
+  final ids = [for (final a in artists) a.id];
+  final songs = _orNone(mb.searchSongs(title, artistIds: ids, turn: turn, cancel: c));
+  final albums = _orNone(mb.searchAlbums(title, artistIds: ids, turn: turn, cancel: c));
+  return (await songs, await albums);
 }
 
 /// An artist's albums less those already listed by name (one album, any pressing).

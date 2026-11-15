@@ -1,0 +1,491 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search",
+  "query": {
+   "q": "bully",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 17135199,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "USAT21104118",
+    "duration": 242,
+    "rank": 454532,
+    "artist": {
+     "id": 6691,
+     "name": "Shinedown",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/0bf2bd52f6f2ee130a85892b2c8a91ae/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1603045,
+     "title": "Amaryllis",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1afaaec12dfc26169d3a318cbc9718f4/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961531,
+    "title": "BULLY (feat. CeeLo Green)",
+    "title_short": "BULLY (feat. CeeLo Green)",
+    "title_version": "",
+    "isrc": "QZQAY2629213",
+    "duration": 147,
+    "rank": 398660,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892771,
+    "title": "BULLY (feat. CeeLo Green)",
+    "title_short": "BULLY (feat. CeeLo Green)",
+    "title_version": "",
+    "isrc": "QZQAY2629213",
+    "duration": 147,
+    "rank": 418608,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3125242121,
+    "title": "Docket (feat. Bully)",
+    "title_short": "Docket (feat. Bully)",
+    "title_version": "",
+    "isrc": "USBQU2400044",
+    "duration": 210,
+    "rank": 351558,
+    "artist": {
+     "id": 170172097,
+     "name": "Blondshell",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bcbd1ade1c1fa392834ea90e3525c601/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 679199931,
+     "title": "Docket (feat. Bully)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/7f33e11848a32108a3e62f1aa1c00be9/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3912995661,
+    "title": "BULLY !",
+    "title_short": "BULLY !",
+    "title_version": "",
+    "isrc": "FXR752512308",
+    "duration": 133,
+    "rank": 351817,
+    "artist": {
+     "id": 107012412,
+     "name": "Randy",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/67700acecbcde06c03135e123c2ff5c3/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 944133781,
+     "title": "DA BING BROS MIXTAPE VOL.0 : À LA POURSUITE DU BING BRO !",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/fcfae4758a56f2b2381dc95cd4b2eac1/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3023755661,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "TCAEG1923402",
+    "duration": 199,
+    "rank": 350262,
+    "artist": {
+     "id": 66197242,
+     "name": "Jay.f.k beats",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/d7c0efd0f438a2814f341e712ba2a87f/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 650136971,
+     "title": "Bully",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1c3fb8a0da1fe9c96e89679fcb74776d/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3895517391,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "USSM12503933",
+    "duration": 253,
+    "rank": 323636,
+    "artist": {
+     "id": 2216,
+     "name": "Lamb Of God",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/061f81e80e8e59f7144873f5391ea5da/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 937875661,
+     "title": "Into Oblivion",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/442707165bccd70a1be87d82f8f779ef/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2139033137,
+    "title": "Lose You",
+    "title_short": "Lose You",
+    "title_version": "",
+    "isrc": "USSUB2256508",
+    "duration": 175,
+    "rank": 296619,
+    "artist": {
+     "id": 90837,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 404616027,
+     "title": "Lose You",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/97320009f0dbdbc535f03c92152d3c7b/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 673782202,
+    "title": "Gully",
+    "title_short": "Gully",
+    "title_version": "",
+    "isrc": "QMAAK1905189",
+    "duration": 210,
+    "rank": 288367,
+    "artist": {
+     "id": 5265741,
+     "name": "Rootz N Creation",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/3e70051eef6c417f7df5ed061f1250f7/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 95448452,
+     "title": "Rootz n Creation, Vol. II",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/0613099776744749a3cbf5d025ea6ae2/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2154012557,
+    "title": "Days Move Slow",
+    "title_short": "Days Move Slow",
+    "title_version": "",
+    "isrc": "USSUB2256502",
+    "duration": 160,
+    "rank": 267173,
+    "artist": {
+     "id": 90837,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 408649437,
+     "title": "Lucky For You",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/203c38a85d370d863de3c1419976544d/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 597580492,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "USQY51769644",
+    "duration": 225,
+    "rank": 301739,
+    "artist": {
+     "id": 1059974,
+     "name": "Black Pistol Fire",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b572425cc8160b89a5267215c3a57659/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 80560742,
+     "title": "Deadbeat Graffiti",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/32fc1ec0459451a8162a1fd57611d842/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 15594001,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "USJI10900548",
+    "duration": 217,
+    "rank": 309845,
+    "artist": {
+     "id": 2978,
+     "name": "Three Days Grace",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2ffbb6971279cc57ba1c029178ac6ed3/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1441167,
+     "title": "Life Starts Now",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/02871f3abf49c429c1084f3b5989c3ab/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4199842842,
+    "title": "BULLY",
+    "title_short": "BULLY",
+    "title_version": "",
+    "isrc": "USLZJ2568515",
+    "duration": 140,
+    "rank": 262153,
+    "artist": {
+     "id": 5848184,
+     "name": "Carlyn",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/6cdab00ffda160e92bd901d6b2de457b/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1045452272,
+     "title": "MAYBE DEATH, MAYBE BREAKFAST",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/523f5d472ca9598bec3e70dcd4e6ff2d/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3487228131,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "USUG12504839",
+    "duration": 193,
+    "rank": 246972,
+    "artist": {
+     "id": 15888,
+     "name": "Jonas Brothers",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/7a8fb7b9433605f55cbb18e6bb3e90f8/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 797599391,
+     "title": "Greetings From Your Hometown",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8b59d50818fdd10e92386638b90f684c/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2465798595,
+    "title": "myśli pułapki",
+    "title_short": "myśli pułapki",
+    "title_version": "",
+    "isrc": "PLUM72300405",
+    "duration": 147,
+    "rank": 246002,
+    "artist": {
+     "id": 2533351,
+     "name": "Rusina",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/e681b805c67775fd84fc925cc0d74a83/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 491099575,
+     "title": "ostatnie dni przeklętych dni",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5c0ec3ec24cb95413c928e801e7b4b82/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3105136201,
+    "title": "BULLY",
+    "title_short": "BULLY",
+    "title_version": "",
+    "isrc": "QZZ7L2480665",
+    "duration": 109,
+    "rank": 263805,
+    "artist": {
+     "id": 177898717,
+     "name": "GOTNOTIME",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/084ebf15bf647a8a750413f7a02576cd/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 673566101,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/f862c8a4e274976b6e4c8accdfa5dfbf/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2465126985,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "QZHN92091044",
+    "duration": 99,
+    "rank": 122413,
+    "artist": {
+     "id": 14756573,
+     "name": "Kamaara",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/1bdeeadb1abe01939726117b83dd3b04/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 490961015,
+     "title": "TrenchBoy||",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5f65f78ca0aa18b124aa8028bd1a1315/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2114905967,
+    "title": "Gully",
+    "title_short": "Gully",
+    "title_version": "",
+    "isrc": "QZSR42199423",
+    "duration": 133,
+    "rank": 204284,
+    "artist": {
+     "id": 56683052,
+     "name": "Sujon Ahmed",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/f6f0663c043ea4809e498b8dab9f5abb/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 398319077,
+     "title": "Sonor City",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/90acb318978926149605331fc00a0fcd/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2154012547,
+    "title": "All I Do",
+    "title_short": "All I Do",
+    "title_version": "",
+    "isrc": "USSUB2256501",
+    "duration": 221,
+    "rank": 232650,
+    "artist": {
+     "id": 90837,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 408649437,
+     "title": "Lucky For You",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/203c38a85d370d863de3c1419976544d/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3537501021,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "QZZ8A2547609",
+    "duration": 274,
+    "rank": 212331,
+    "artist": {
+     "id": 129051842,
+     "name": "M4rkim",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/add0ff044ae6e2106f65c5205cd53fc2/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 814884351,
+     "title": "Bully",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/3e9db4644ec02be40ac94eef691f42cb/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2059178947,
+    "title": "50 Bro's (Remix)",
+    "title_short": "50 Bro's (Remix)",
+    "title_version": "",
+    "isrc": "NL3FW2100032",
+    "duration": 219,
+    "rank": 235162,
+    "artist": {
+     "id": 175459657,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/975af286b0381ce3141b044ae0e88257/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 384558167,
+     "title": "50 Bro's (Remix)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6b7555ccec5c9bb6ddc65729ea8368e/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3588953191,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "DEYI22500005",
+    "duration": 148,
+    "rank": 109996,
+    "artist": {
+     "id": 1568449,
+     "name": "Megaloh",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/60ae100bca7d7b5d5a10939eac4c42ba/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 833316561,
+     "title": "Schwarzer Lotus",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2d287a54a65154448c59f9266771ef98/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4005929621,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "QZHN82096414",
+    "duration": 169,
+    "rank": 188794,
+    "artist": {
+     "id": 9706886,
+     "name": "TeZATalks",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/63d0e86c420e358581c5bc5e657ed6b3/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 977228031,
+     "title": "Bully",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/34d6234750f19c066d30e8ff14c3ffdc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 737237392,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "QZFZ71961384",
+    "duration": 260,
+    "rank": 163373,
+    "artist": {
+     "id": 12023050,
+     "name": "Megan McDuffee",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/4891b0b31c09e9de7373b0df323d37a1/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 108298922,
+     "title": "River City Girls (Original Video Game Soundtrack)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4891b0b31c09e9de7373b0df323d37a1/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1899951807,
+    "title": "Bully",
+    "title_short": "Bully",
+    "title_version": "",
+    "isrc": "GBKPL2167719",
+    "duration": 245,
+    "rank": 176225,
+    "artist": {
+     "id": 71576,
+     "name": "The Bloody Beetroots",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/3711fff2f136a9404c44309e53a59501/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 353493197,
+     "title": "Rims Racing (Official Soundtrack)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ae00ad423ffbee67b0427100dfb40484/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 298
+ }
+}

@@ -1,0 +1,339 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/artist",
+  "query": {
+   "query": "kanye bully",
+   "limit": "5",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-15T13:59:10.985Z",
+  "count": 166,
+  "offset": 0,
+  "artists": [
+   {
+    "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+    "type": "Person",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "score": 100,
+    "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+    "name": "Ye",
+    "sort-name": "Ye",
+    "gender": "male",
+    "country": "US",
+    "area": {
+     "id": "489ce91b-6658-3307-9877-795b68554c98",
+     "type": "Country",
+     "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+     "name": "United States",
+     "sort-name": "United States",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "begin-area": {
+     "id": "26e0e534-19ea-4645-bfb3-1aa4e83a4046",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Atlanta",
+     "sort-name": "Atlanta",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "disambiguation": "formerly Kanye West",
+    "ipis": [
+     "00335677734",
+     "00451108296"
+    ],
+    "isnis": [
+     "0000000116557565"
+    ],
+    "life-span": {
+     "begin": "1977-06-08",
+     "ended": null
+    },
+    "aliases": [
+     {
+      "sort-name": "West, Kanye",
+      "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+      "name": "Kanye West",
+      "locale": "en",
+      "type": "Artist name",
+      "primary": null,
+      "begin-date": null,
+      "end-date": "2024"
+     },
+     {
+      "sort-name": "Ye",
+      "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+      "name": "Ye",
+      "locale": "en",
+      "type": "Artist name",
+      "primary": true,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "KanYeWest",
+      "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+      "name": "KanYeWest",
+      "locale": null,
+      "type": "Search hint",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "Donda",
+      "name": "Donda",
+      "locale": null,
+      "type": null,
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "Kanye",
+      "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+      "name": "Kanye",
+      "locale": null,
+      "type": "Artist name",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "K. West",
+      "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+      "name": "K. West",
+      "locale": null,
+      "type": "Search hint",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "Kayne West",
+      "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+      "name": "Kayne West",
+      "locale": null,
+      "type": "Search hint",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "Ye",
+      "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+      "name": "Ye",
+      "locale": null,
+      "type": "Legal name",
+      "primary": null,
+      "begin-date": "2021-10-18",
+      "end-date": null
+     },
+     {
+      "sort-name": "Yeezy",
+      "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+      "name": "Yeezy",
+      "locale": null,
+      "type": "Artist name",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "West, Kanye",
+      "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+      "name": "Kanye West",
+      "locale": "zh",
+      "type": "Artist name",
+      "primary": true,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "West, Kanye Omari",
+      "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+      "name": "Kanye Omari West",
+      "locale": "en",
+      "type": "Legal name",
+      "primary": null,
+      "begin-date": "1977-06-08",
+      "end-date": "2021-10-18"
+     },
+     {
+      "sort-name": "カニエ・ウェスト",
+      "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+      "name": "カニエ・ウェスト",
+      "locale": "ja",
+      "type": "Artist name",
+      "primary": true,
+      "begin-date": null,
+      "end-date": null
+     }
+    ]
+   },
+   {
+    "id": "6d5c33ee-5357-4eee-8420-e50aec54982b",
+    "type": "Group",
+    "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+    "score": 98,
+    "name": "Bully",
+    "sort-name": "Bully",
+    "area": {
+     "id": "e68879f9-bd95-41ff-96ba-c082ff37cc74",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Nashville",
+     "sort-name": "Nashville",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "begin-area": {
+     "id": "e68879f9-bd95-41ff-96ba-c082ff37cc74",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Nashville",
+     "sort-name": "Nashville",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "disambiguation": "Alicia Bognanno grunge rock solo project",
+    "life-span": {
+     "begin": "2013",
+     "ended": null
+    }
+   },
+   {
+    "id": "3fb0d894-8bf6-453e-b0a9-87543136d2b5",
+    "type": "Group",
+    "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+    "score": 91,
+    "name": "Bully",
+    "sort-name": "Bully",
+    "area": {
+     "id": "30827df9-9d0a-4b0b-9a6c-78986d557d57",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Hillsboro",
+     "sort-name": "Hillsboro",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "begin-area": {
+     "id": "2b748d6e-bc1c-4434-9f7b-ecd6332bc557",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Portland",
+     "sort-name": "Portland",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "disambiguation": "US hard rock power trio",
+    "life-span": {
+     "begin": "2004-11",
+     "ended": true
+    }
+   },
+   {
+    "id": "6562d176-30ac-470e-a730-3fac33fd26e1",
+    "type": "Person",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "score": 90,
+    "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+    "name": "Bully",
+    "sort-name": "Bully",
+    "gender": "male",
+    "disambiguation": "US rapper Donnelle Little, member of D-Block and 354",
+    "isnis": [
+     "000000045632061X"
+    ],
+    "life-span": {
+     "ended": null
+    }
+   },
+   {
+    "id": "67c449de-e21e-4615-8076-6b2e51cf71f8",
+    "type": "Person",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "score": 90,
+    "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+    "name": "Bully Buhlan",
+    "sort-name": "Buhlan, Bully",
+    "gender": "male",
+    "country": "DE",
+    "area": {
+     "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+     "type": "Country",
+     "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+     "name": "Germany",
+     "sort-name": "Germany",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "begin-area": {
+     "id": "c9ac1239-e832-41bc-9930-e252a1fd1105",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Berlin",
+     "sort-name": "Berlin",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "end-area": {
+     "id": "c9ac1239-e832-41bc-9930-e252a1fd1105",
+     "type": "City",
+     "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+     "name": "Berlin",
+     "sort-name": "Berlin",
+     "life-span": {
+      "ended": null
+     }
+    },
+    "ipis": [
+     "00004540722"
+    ],
+    "isnis": [
+     "0000000046042194"
+    ],
+    "life-span": {
+     "begin": "1924-02-03",
+     "end": "1982-11-07",
+     "ended": true
+    },
+    "aliases": [
+     {
+      "sort-name": "Bully Bulan",
+      "name": "Bully Bulan",
+      "locale": null,
+      "type": null,
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     },
+     {
+      "sort-name": "Buhlan, Hans-Joachim",
+      "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+      "name": "Hans-Joachim Buhlan",
+      "locale": null,
+      "type": "Legal name",
+      "primary": null,
+      "begin-date": null,
+      "end-date": null
+     }
+    ]
+   }
+  ]
+ }
+}

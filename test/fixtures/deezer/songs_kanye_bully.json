@@ -1,0 +1,491 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search",
+  "query": {
+   "q": "kanye bully",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 4100961531,
+    "title": "BULLY (feat. CeeLo Green)",
+    "title_short": "BULLY (feat. CeeLo Green)",
+    "title_version": "",
+    "isrc": "QZQAY2629213",
+    "duration": 147,
+    "rank": 398660,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892771,
+    "title": "BULLY (feat. CeeLo Green)",
+    "title_short": "BULLY (feat. CeeLo Green)",
+    "title_version": "",
+    "isrc": "QZQAY2629213",
+    "duration": 147,
+    "rank": 418608,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961451,
+    "title": "KING",
+    "title_short": "KING",
+    "title_version": "",
+    "isrc": "QZQAY2608133",
+    "duration": 126,
+    "rank": 457889,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892731,
+    "title": "PUNCH DRUNK",
+    "title_short": "PUNCH DRUNK",
+    "title_version": "",
+    "isrc": "QZQAY2608036",
+    "duration": 108,
+    "rank": 432399,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892691,
+    "title": "KING",
+    "title_short": "KING",
+    "title_version": "",
+    "isrc": "QZQAY2608133",
+    "duration": 126,
+    "rank": 420157,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892821,
+    "title": "PREACHER MAN",
+    "title_short": "PREACHER MAN",
+    "title_version": "",
+    "isrc": "QT4K52533433",
+    "duration": 181,
+    "rank": 396642,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961491,
+    "title": "PUNCH DRUNK",
+    "title_short": "PUNCH DRUNK",
+    "title_version": "",
+    "isrc": "QZQAY2608036",
+    "duration": 108,
+    "rank": 421378,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892841,
+    "title": "DAMN",
+    "title_short": "DAMN",
+    "title_version": "",
+    "isrc": "QT4K52533435",
+    "duration": 123,
+    "rank": 360510,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892741,
+    "title": "WHATEVER WORKS",
+    "title_short": "WHATEVER WORKS",
+    "title_version": "",
+    "isrc": "QZQAY2678768",
+    "duration": 117,
+    "rank": 416434,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961461,
+    "title": "THIS A MUST",
+    "title_short": "THIS A MUST",
+    "title_version": "",
+    "isrc": "QZTL92630284",
+    "duration": 86,
+    "rank": 431548,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961501,
+    "title": "WHATEVER WORKS",
+    "title_short": "WHATEVER WORKS",
+    "title_version": "",
+    "isrc": "QZQAY2678768",
+    "duration": 117,
+    "rank": 398575,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892811,
+    "title": "CIRCLES",
+    "title_short": "CIRCLES",
+    "title_version": "",
+    "isrc": "QZQAY2611415",
+    "duration": 91,
+    "rank": 347796,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961571,
+    "title": "CIRCLES",
+    "title_short": "CIRCLES",
+    "title_version": "",
+    "isrc": "QZQAY2611415",
+    "duration": 91,
+    "rank": 346372,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892861,
+    "title": "THIS ONE HERE",
+    "title_short": "THIS ONE HERE",
+    "title_version": "",
+    "isrc": "QZQAY2640737",
+    "duration": 180,
+    "rank": 391760,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892791,
+    "title": "I CAN’T WAIT",
+    "title_short": "I CAN’T WAIT",
+    "title_version": "",
+    "isrc": "QZQAY2662999",
+    "duration": 127,
+    "rank": 420222,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961601,
+    "title": "DAMN",
+    "title_short": "DAMN",
+    "title_version": "",
+    "isrc": "QT4K52533435",
+    "duration": 123,
+    "rank": 360845,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892701,
+    "title": "THIS A MUST",
+    "title_short": "THIS A MUST",
+    "title_version": "",
+    "isrc": "QZTL92630284",
+    "duration": 86,
+    "rank": 400756,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961541,
+    "title": "HIGHS AND LOWS",
+    "title_short": "HIGHS AND LOWS",
+    "title_version": "",
+    "isrc": "QZQAY2672205",
+    "duration": 111,
+    "rank": 448608,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961591,
+    "title": "BEAUTY AND THE BEAST",
+    "title_short": "BEAUTY AND THE BEAST",
+    "title_version": "",
+    "isrc": "QT4K52533434",
+    "duration": 107,
+    "rank": 340520,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961621,
+    "title": "THIS ONE HERE",
+    "title_short": "THIS ONE HERE",
+    "title_version": "",
+    "isrc": "QZQAY2640737",
+    "duration": 180,
+    "rank": 383779,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961481,
+    "title": "ALL THE LOVE (feat. Andre Troutman)",
+    "title_short": "ALL THE LOVE (feat. Andre Troutman)",
+    "title_version": "",
+    "isrc": "QZS7J2646936",
+    "duration": 229,
+    "rank": 532798,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892831,
+    "title": "BEAUTY AND THE BEAST",
+    "title_short": "BEAUTY AND THE BEAST",
+    "title_version": "",
+    "isrc": "QT4K52533434",
+    "duration": 107,
+    "rank": 403580,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 3926892851,
+    "title": "LAST BREATH (feat. Peso Pluma)",
+    "title_short": "LAST BREATH (feat. Peso Pluma)",
+    "title_version": "",
+    "isrc": "QZQAY2696018",
+    "duration": 186,
+    "rank": 416933,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 949407771,
+     "title": "BULLY",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961631,
+    "title": "OK (feat. Don Toliver)",
+    "title_short": "OK (feat. Don Toliver)",
+    "title_version": "",
+    "isrc": "QZTLA2642851",
+    "duration": 158,
+    "rank": 665736,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4100961611,
+    "title": "LAST BREATH (feat. Peso Pluma)",
+    "title_short": "LAST BREATH (feat. Peso Pluma)",
+    "title_version": "",
+    "isrc": "QZTLA2695112",
+    "duration": 177,
+    "rank": 340514,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 1010171471,
+     "title": "BULLY - DELUXE",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 178
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search/artist",
+  "query": {
+   "q": "kanye",
+   "limit": "5"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 5175553,
+    "name": "Kanye",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/3c3577ebb5364e574d8276204ea0d1f5/250x250-000000-80-0-0.jpg",
+    "nb_fan": 129
+   },
+   {
+    "id": 230,
+    "name": "Kanye West",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg",
+    "nb_fan": 4564632
+   },
+   {
+    "id": 183852,
+    "name": "Kany Garcia",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/1c0b5b253a18b3eb45e635dc9f8eb550/250x250-000000-80-0-0.jpg",
+    "nb_fan": 373372
+   },
+   {
+    "id": 13855729,
+    "name": "K.A.N.Y.E.",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "nb_fan": 20
+   },
+   {
+    "id": 14238363,
+    "name": "Vinicius Kanye",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/ca3c23e7edbaf8c1d1462f5deb25ffd9/250x250-000000-80-0-0.jpg",
+    "nb_fan": 32
+   }
+  ],
+  "total": 100
+ }
+}

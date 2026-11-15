@@ -1,0 +1,185 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/295/top",
+  "query": {
+   "limit": "10"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 4293653142,
+    "title": "This Time",
+    "title_short": "This Time",
+    "title_version": "",
+    "duration": 170,
+    "rank": 440592,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin"
+    },
+    "album": {
+     "id": 1081522932,
+     "title": "This Time",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5fe158cfee002ea68dd734127252fada/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 939840832,
+    "title": "TOGETHER",
+    "title_short": "TOGETHER",
+    "title_version": "",
+    "duration": 206,
+    "rank": 466068,
+    "artist": {
+     "id": 1412045,
+     "name": "for KING & COUNTRY"
+    },
+    "album": {
+     "id": 144015462,
+     "title": "TOGETHER",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/10d2faeb4a259a6d413958bdbc6b4511/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 10244916,
+    "title": "I Smile",
+    "title_short": "I Smile",
+    "title_version": "",
+    "duration": 307,
+    "rank": 528867,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin"
+    },
+    "album": {
+     "id": 936838,
+     "title": "Hello Fear",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/16fd5f7d8e57a8ad46d16e140f294205/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 79846334,
+    "title": "Stomp (Remix)",
+    "title_short": "Stomp (Remix)",
+    "title_version": "",
+    "duration": 303,
+    "rank": 356366,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin"
+    },
+    "album": {
+     "id": 7960492,
+     "title": "The Essential Kirk Franklin",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 607724832,
+    "title": "Love Theory",
+    "title_short": "Love Theory",
+    "title_version": "",
+    "duration": 251,
+    "rank": 564609,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin"
+    },
+    "album": {
+     "id": 82417222,
+     "title": "Love Theory",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4b1ee6382ac0ce16cf9db600da7686df/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 79846336,
+    "title": "Looking for You",
+    "title_short": "Looking for You",
+    "title_version": "",
+    "duration": 248,
+    "rank": 398919,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin"
+    },
+    "album": {
+     "id": 7960492,
+     "title": "The Essential Kirk Franklin",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2319421195,
+    "title": "Bless Me",
+    "title_short": "Bless Me",
+    "title_version": "",
+    "duration": 272,
+    "rank": 435801,
+    "artist": {
+     "id": 70542502,
+     "name": "Maverick City Music"
+    },
+    "album": {
+     "id": 450777195,
+     "title": "Kingdom Book One",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a16320caab16c28743b5ff5617c66b74/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4366041701,
+    "title": "Hope In You",
+    "title_short": "Hope In You",
+    "title_version": "",
+    "duration": 207,
+    "rank": 440259,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin"
+    },
+    "album": {
+     "id": 1128520241,
+     "title": "I Am What I Am",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5fe158cfee002ea68dd734127252fada/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4236813222,
+    "title": "Thank You For Everything (Live)",
+    "title_short": "Thank You For Everything",
+    "title_version": "(Live)",
+    "duration": 397,
+    "rank": 281342,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin"
+    },
+    "album": {
+     "id": 1059360692,
+     "title": "Thank You For Everything (Live)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/755b82e7fa13d5d0dcc8625d6a6b4a89/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 79846318,
+    "title": "Why We Sing (Live)",
+    "title_short": "Why We Sing",
+    "title_version": "(Live)",
+    "duration": 354,
+    "rank": 279930,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin"
+    },
+    "album": {
+     "id": 7960492,
+     "title": "The Essential Kirk Franklin",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 100
+ }
+}

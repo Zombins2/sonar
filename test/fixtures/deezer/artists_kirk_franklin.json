@@ -1,0 +1,46 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search/artist",
+  "query": {
+   "q": "kirk franklin",
+   "limit": "5"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 295,
+    "name": "Kirk Franklin",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg",
+    "nb_fan": 287419
+   },
+   {
+    "id": 145890,
+    "name": "Kirk Franklin & The Family",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/88f1c58cf0f3eacdfb5d8f031a3024c1/250x250-000000-80-0-0.jpg",
+    "nb_fan": 2706
+   },
+   {
+    "id": 411564792,
+    "name": "Kirk Franklin",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "nb_fan": 0
+   },
+   {
+    "id": 225571815,
+    "name": "Kirk Franklin & Le'Andria Johnson",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "nb_fan": 8
+   },
+   {
+    "id": 106020252,
+    "name": "Kirk Franklin & Wyclef Jean",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "nb_fan": 31
+   }
+  ],
+  "total": 31
+ }
+}

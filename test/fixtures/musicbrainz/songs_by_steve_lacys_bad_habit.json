@@ -1,0 +1,1601 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/recording",
+  "query": {
+   "query": "recording:\"bad habit\" AND (arid:ca9766a0-1c30-43e6-a213-bac1334efc4a OR arid:b29020d6-5dbf-4c99-b16f-c009f8a712ff)",
+   "limit": "25",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-15T14:12:57.033Z",
+  "count": 6,
+  "offset": 0,
+  "recordings": [
+   {
+    "id": "2a2451ae-bd7d-4308-963e-936e7bc6985c",
+    "score": 100,
+    "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+    "title": "Bad Habit",
+    "length": 148000,
+    "disambiguation": "live, 2024‐06‐19: Kia Forum, Inglewood, CA, USA",
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Steve Lacy",
+      "artist": {
+       "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+       "name": "Steve Lacy",
+       "sort-name": "Lacy, Steve",
+       "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+      }
+     }
+    ],
+    "first-release-date": "2024-06-19",
+    "releases": [
+     {
+      "id": "98cad7f4-545a-4b50-81d2-d24e93ce09ef",
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "artist-credit-id": "2c9554a3-3ee3-37cb-8ac3-2c9bdc4ef7d2",
+      "count": 1,
+      "title": "The Pop Out: Ken & Friends",
+      "status": "Bootleg",
+      "artist-credit": [
+       {
+        "name": "Kendrick Lamar",
+        "artist": {
+         "id": "381086ea-f511-4aba-bdf9-71c753dc5077",
+         "name": "Kendrick Lamar",
+         "sort-name": "Lamar, Kendrick"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "ae919489-dc7f-46f7-a520-279357230b09",
+       "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "The Pop Out: Ken & Friends",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Live"
+       ],
+       "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+       ]
+      },
+      "date": "2024-06-19",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2024-06-19",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 70,
+      "media": [
+       {
+        "id": "837b7f6f-9f40-329a-960a-1dd05a3f4a9b",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "6443dff9-4706-45f0-adf1-d81d084d1931",
+          "number": "33",
+          "title": "Bad Habit",
+          "length": 148000
+         }
+        ],
+        "track-count": 70,
+        "track-offset": 32
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "be62d1e4-c803-40a7-b806-62af232f9972",
+    "score": 100,
+    "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+    "title": "Bad Habit",
+    "length": 231746,
+    "disambiguation": "clean",
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Steve Lacy",
+      "artist": {
+       "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+       "name": "Steve Lacy",
+       "sort-name": "Lacy, Steve",
+       "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+      }
+     }
+    ],
+    "first-release-date": "2022-07-14",
+    "releases": [
+     {
+      "id": "b30d2436-8597-4d98-a9f3-e630ec495dd0",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 4,
+      "title": "Now That’s What I Call a Summer Party",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "055d8fec-8807-463f-8c07-affa5f2c89e1",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Now That’s What I Call a Summer Party",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2024-06-28",
+      "country": "GB",
+      "release-events": [
+       {
+        "date": "2024-06-28",
+        "area": {
+         "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+         "name": "United Kingdom",
+         "sort-name": "United Kingdom",
+         "iso-3166-1-codes": [
+          "GB"
+         ]
+        }
+       }
+      ],
+      "track-count": 80,
+      "media": [
+       {
+        "id": "ac4c2377-999f-38b0-90c6-72cf181c260c",
+        "position": 2,
+        "format": "CD",
+        "track": [
+         {
+          "id": "6d981c6e-01f0-46cb-8c57-d256f617776a",
+          "number": "20",
+          "title": "Bad Habit",
+          "length": 231746
+         }
+        ],
+        "track-count": 20,
+        "track-offset": 19
+       }
+      ]
+     },
+     {
+      "id": "b1d8651b-d48f-4630-9af5-c1ee7b53809b",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 4,
+      "title": "NOW That’s What I Call a Summer Party",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "055d8fec-8807-463f-8c07-affa5f2c89e1",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Now That’s What I Call a Summer Party",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2024-06-28",
+      "country": "IE",
+      "release-events": [
+       {
+        "date": "2024-06-28",
+        "area": {
+         "id": "390b05d4-11ec-3bce-a343-703a366b34a5",
+         "name": "Ireland",
+         "sort-name": "Ireland",
+         "iso-3166-1-codes": [
+          "IE"
+         ]
+        }
+       },
+       {
+        "date": "2024-06-28",
+        "area": {
+         "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+         "name": "United Kingdom",
+         "sort-name": "United Kingdom",
+         "iso-3166-1-codes": [
+          "GB"
+         ]
+        }
+       }
+      ],
+      "track-count": 80,
+      "media": [
+       {
+        "id": "73668d08-99c7-3508-8eb4-4d03db39e61f",
+        "position": 2,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "bead1803-ee58-4676-860f-ea82eb905ae1",
+          "number": "20",
+          "title": "Bad Habit",
+          "length": 231000
+         }
+        ],
+        "track-count": 20,
+        "track-offset": 19
+       }
+      ]
+     },
+     {
+      "id": "b6782fa5-d657-4116-96fd-d0175277b7bf",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+      "count": 1,
+      "title": "Gemini Rights",
+      "status": "Official",
+      "disambiguation": "clean",
+      "artist-credit": [
+       {
+        "name": "Steve Lacy",
+        "artist": {
+         "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+         "name": "Steve Lacy",
+         "sort-name": "Lacy, Steve",
+         "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "ab1c1fd8-f769-4d78-90bc-4677f8ad8c22",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Gemini Rights",
+       "primary-type": "Album"
+      },
+      "date": "2022-07-14",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2022-07-14",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 10,
+      "media": [
+       {
+        "id": "78fb2671-2246-3d3e-aa38-de77b502236c",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "35854768-2d4b-45c8-8c4e-9275aa8b6d09",
+          "number": "5",
+          "title": "Bad Habit",
+          "length": 232120
+         }
+        ],
+        "track-count": 10,
+        "track-offset": 4
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "USRC12202615"
+    ]
+   },
+   {
+    "id": "1abdf128-2f80-457c-8da0-e554e8e3b534",
+    "score": 100,
+    "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+    "title": "Bad Habit",
+    "length": 232114,
+    "disambiguation": "explicit",
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Steve Lacy",
+      "artist": {
+       "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+       "name": "Steve Lacy",
+       "sort-name": "Lacy, Steve",
+       "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+      }
+     }
+    ],
+    "first-release-date": "2022-06-29",
+    "releases": [
+     {
+      "id": "5f14c831-d932-456f-96ec-eeebff0246fc",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "Viral TikTok Hits 2022 | 2023",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "6132bb18-d40d-4f48-9470-d2f978a66f61",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Viral TikTok Hits 2022 | 2023",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "track-count": 74,
+      "media": [
+       {
+        "id": "849d4fc7-079a-4b4b-ac10-369bda86ccd8",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "c45e19c4-64f8-42c5-ae05-e7014ab859d7",
+          "number": "24",
+          "title": "Bad Habit",
+          "length": 232114
+         }
+        ],
+        "track-count": 74,
+        "track-offset": 23
+       }
+      ]
+     },
+     {
+      "id": "63b3a979-02dd-4ef0-9b92-2d1f05641472",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "TikTok Viral Hits 2022 | 2023",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "31310fad-c9c7-4900-8f14-c729a4408ae6",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "TikTok Viral Hits 2022 | 2023",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "track-count": 74,
+      "media": [
+       {
+        "id": "a941435a-df36-4f21-aa2b-3ebc0773ad2d",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "d102f22e-3bd7-4818-bddd-29daa7ba17cb",
+          "number": "19",
+          "title": "Bad Habit",
+          "length": 232426
+         }
+        ],
+        "track-count": 74,
+        "track-offset": 18
+       }
+      ]
+     },
+     {
+      "id": "3df80136-70fe-4ada-bbff-259620680f4a",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "Summer Smash Hits 2024",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "51e2e0cf-4a17-470a-af09-53d5f282b4cb",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Summer Smash Hits 2024",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "track-count": 100,
+      "media": [
+       {
+        "id": "c112b112-af8b-474a-af1d-a0d1186fac35",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "9286d593-3f46-43f0-8e44-d3509dcf3c1e",
+          "number": "34",
+          "title": "Bad Habit",
+          "length": 232114
+         }
+        ],
+        "track-count": 100,
+        "track-offset": 33
+       }
+      ]
+     },
+     {
+      "id": "47a4155d-6b23-4a99-9dab-5b229f8596a3",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 2,
+      "title": "So Fresh: The Hits Of Summer 2023 + The Best Of 2022",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "89009b2e-648b-4826-825f-8ed640abc67b",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "So Fresh: The Hits Of Summer 2023 + The Best Of 2022",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2022-12-02",
+      "country": "AU",
+      "release-events": [
+       {
+        "date": "2022-12-02",
+        "area": {
+         "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+         "name": "Australia",
+         "sort-name": "Australia",
+         "iso-3166-1-codes": [
+          "AU"
+         ]
+        }
+       }
+      ],
+      "track-count": 34,
+      "media": [
+       {
+        "id": "ace37a47-00e6-4122-a500-49e4b65d778b",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "e47d0484-985d-48c5-b3f6-0ba6449444ad",
+          "number": "2",
+          "title": "Bad Habit"
+         }
+        ],
+        "track-count": 19,
+        "track-offset": 1
+       }
+      ]
+     },
+     {
+      "id": "6a549f50-ac0c-4bcd-aa7a-9a9dbbdcad0c",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "Internacionais 2025 - As melhores",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "292e039b-01cb-42af-b6ce-2e7180379033",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Internacionais 2025 - As melhores",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "track-count": 45,
+      "media": [
+       {
+        "id": "dc17a23e-2276-315b-b98d-111e9f2c295d",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "311eb2b6-b7b0-4efb-a75d-30658bbcfe37",
+          "number": "33",
+          "title": "Bad Habit",
+          "length": 232114
+         }
+        ],
+        "track-count": 45,
+        "track-offset": 32
+       }
+      ]
+     },
+     {
+      "id": "b3d8943d-c05f-4284-9915-62b70b51e847",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+      "count": 1,
+      "title": "Bad Habit",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Steve Lacy",
+        "artist": {
+         "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+         "name": "Steve Lacy",
+         "sort-name": "Lacy, Steve",
+         "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "7ddb3fc0-8503-4f68-8dc6-86ae0cf73f34",
+       "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "title": "Bad Habit",
+       "primary-type": "Single"
+      },
+      "date": "2022-06-29",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2022-06-29",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 1,
+      "media": [
+       {
+        "id": "76538ba9-8f14-3f15-9055-b90bc77bc7be",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "46ac4a22-8e27-4dd3-9e77-da1572c29182",
+          "number": "1",
+          "title": "Bad Habit",
+          "length": 232114
+         }
+        ],
+        "track-count": 1,
+        "track-offset": 0
+       }
+      ]
+     },
+     {
+      "id": "a4c6681c-3ec6-44c4-b1f0-59635cdbacee",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+      "count": 1,
+      "title": "Bad Habit (sped up)",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Steve Lacy",
+        "artist": {
+         "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+         "name": "Steve Lacy",
+         "sort-name": "Lacy, Steve",
+         "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "36074e60-4b3c-474f-b485-c324a8744ee2",
+       "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "title": "Bad Habit (sped up)",
+       "primary-type": "Single",
+       "secondary-types": [
+        "Remix"
+       ],
+       "secondary-type-ids": [
+        "0c60f497-ff81-3818-befd-abfc84a4858b"
+       ]
+      },
+      "track-count": 2,
+      "media": [
+       {
+        "id": "1fa6545b-670a-33c7-8742-83e17c64875f",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "e0ec2342-47ba-47ef-b368-bf407568c799",
+          "number": "2",
+          "title": "Bad Habit",
+          "length": 232114
+         }
+        ],
+        "track-count": 2,
+        "track-offset": 1
+       }
+      ]
+     },
+     {
+      "id": "5f412e33-7da8-4cb8-8256-f96622cdba5a",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "NOW That’s What I Call Music! Vol. 84",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "c08490f1-fa82-407e-8731-4a2e17840a6a",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "NOW That's What I Call Music 84",
+       "disambiguation": "USA",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2022-10-28",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2022-10-28",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 20,
+      "media": [
+       {
+        "id": "d3bb4092-c3b7-30f3-ab96-2a2bc97d11dd",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "bcead0a9-d288-4d67-aeb1-8b9703d2247c",
+          "number": "5",
+          "title": "Bad Habit",
+          "length": 230720
+         }
+        ],
+        "track-count": 20,
+        "track-offset": 4
+       }
+      ]
+     },
+     {
+      "id": "f91be663-5bb4-4a2f-8634-570be44073b4",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "Now That’s What I Call Music! 113",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "3d8e8fca-ce51-431a-ad73-edb5e1feec25",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Now That’s What I Call Music! 113",
+       "disambiguation": "UK",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2022-11-18",
+      "country": "IE",
+      "release-events": [
+       {
+        "date": "2022-11-18",
+        "area": {
+         "id": "390b05d4-11ec-3bce-a343-703a366b34a5",
+         "name": "Ireland",
+         "sort-name": "Ireland",
+         "iso-3166-1-codes": [
+          "IE"
+         ]
+        }
+       },
+       {
+        "date": "2022-11-18",
+        "area": {
+         "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+         "name": "United Kingdom",
+         "sort-name": "United Kingdom",
+         "iso-3166-1-codes": [
+          "GB"
+         ]
+        }
+       }
+      ],
+      "track-count": 48,
+      "media": [
+       {
+        "id": "44e8bce7-4b4f-3e42-8a66-a426f7bcd186",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "9f8c2cb6-bf76-4b51-8752-8d40a61432e8",
+          "number": "13",
+          "title": "Bad Habit",
+          "length": 231720
+         }
+        ],
+        "track-count": 48,
+        "track-offset": 12
+       }
+      ]
+     },
+     {
+      "id": "47d21250-2126-4f2f-91d7-9f5998f405d1",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 2,
+      "title": "Now That’s What I Call Music! 113",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "3d8e8fca-ce51-431a-ad73-edb5e1feec25",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Now That’s What I Call Music! 113",
+       "disambiguation": "UK",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2022-11-18",
+      "country": "GB",
+      "release-events": [
+       {
+        "date": "2022-11-18",
+        "area": {
+         "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+         "name": "United Kingdom",
+         "sort-name": "United Kingdom",
+         "iso-3166-1-codes": [
+          "GB"
+         ]
+        }
+       }
+      ],
+      "track-count": 48,
+      "media": [
+       {
+        "id": "47df4c34-136e-3d33-aa0f-25dae71687d7",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "eadaa02f-320f-43b0-8350-244b2852b3ff",
+          "number": "13",
+          "title": "Bad Habit",
+          "length": 231720
+         }
+        ],
+        "track-count": 23,
+        "track-offset": 12
+       }
+      ]
+     },
+     {
+      "id": "09a2fdce-e613-408d-8e66-fd280e55a8bc",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "NOW That's What I Call Music 84",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "c08490f1-fa82-407e-8731-4a2e17840a6a",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "NOW That's What I Call Music 84",
+       "disambiguation": "USA",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2022-10-28",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2022-10-28",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 20,
+      "media": [
+       {
+        "id": "4c919d2e-22db-3ff8-8220-d004f028438a",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "8603e691-31db-444a-a14a-3965726e1932",
+          "number": "5",
+          "title": "Bad Habit",
+          "length": 230720
+         }
+        ],
+        "track-count": 20,
+        "track-offset": 4
+       }
+      ]
+     },
+     {
+      "id": "2e2ba91c-8874-4f9e-9ce3-46b7082f5433",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 2,
+      "title": "The Dome Vol. 103",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "4394d713-f847-4996-ad0c-53f3444f18e8",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "The Dome, Vol. 103",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2022-11-25",
+      "country": "AT",
+      "release-events": [
+       {
+        "date": "2022-11-25",
+        "area": {
+         "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+         "name": "Austria",
+         "sort-name": "Austria",
+         "iso-3166-1-codes": [
+          "AT"
+         ]
+        }
+       },
+       {
+        "date": "2022-11-25",
+        "area": {
+         "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+         "name": "Germany",
+         "sort-name": "Germany",
+         "iso-3166-1-codes": [
+          "DE"
+         ]
+        }
+       },
+       {
+        "date": "2022-11-25",
+        "area": {
+         "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+         "name": "Switzerland",
+         "sort-name": "Switzerland",
+         "iso-3166-1-codes": [
+          "CH"
+         ]
+        }
+       }
+      ],
+      "track-count": 50,
+      "media": [
+       {
+        "id": "2d4df55e-59fb-3703-b675-b062b45a203e",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "9b89b2b5-2029-4b5f-ad2e-ae650b3cd1ec",
+          "number": "22",
+          "title": "Bad Habit",
+          "length": 232000
+         }
+        ],
+        "track-count": 25,
+        "track-offset": 21
+       }
+      ]
+     },
+     {
+      "id": "127a1e14-dd97-4f0d-8d74-2e8cb6238106",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+      "count": 1,
+      "title": "Gemini Rights",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Steve Lacy",
+        "artist": {
+         "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+         "name": "Steve Lacy",
+         "sort-name": "Lacy, Steve",
+         "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "ab1c1fd8-f769-4d78-90bc-4677f8ad8c22",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Gemini Rights",
+       "primary-type": "Album"
+      },
+      "date": "2022-11-04",
+      "country": "XE",
+      "release-events": [
+       {
+        "date": "2022-11-04",
+        "area": {
+         "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+         "name": "Europe",
+         "sort-name": "Europe",
+         "iso-3166-1-codes": [
+          "XE"
+         ]
+        }
+       }
+      ],
+      "track-count": 10,
+      "media": [
+       {
+        "id": "8975b54e-8676-393f-b56f-a3736f91b305",
+        "position": 1,
+        "format": "12\" Vinyl",
+        "track": [
+         {
+          "id": "c8709393-4013-42c2-bd19-2790c8aa7a76",
+          "number": "A5",
+          "title": "Bad Habit"
+         }
+        ],
+        "track-count": 10,
+        "track-offset": 4
+       }
+      ]
+     },
+     {
+      "id": "d85c715d-0214-4c90-be41-504e88e76da6",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 2,
+      "title": "Bravo Hits 119",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "81b90da8-5f08-4a8a-a083-f666764b1431",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Bravo Hits 119",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2022-09-30",
+      "country": "AT",
+      "release-events": [
+       {
+        "date": "2022-09-30",
+        "area": {
+         "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+         "name": "Austria",
+         "sort-name": "Austria",
+         "iso-3166-1-codes": [
+          "AT"
+         ]
+        }
+       },
+       {
+        "date": "2022-09-30",
+        "area": {
+         "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+         "name": "Germany",
+         "sort-name": "Germany",
+         "iso-3166-1-codes": [
+          "DE"
+         ]
+        }
+       },
+       {
+        "date": "2022-09-30",
+        "area": {
+         "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+         "name": "Switzerland",
+         "sort-name": "Switzerland",
+         "iso-3166-1-codes": [
+          "CH"
+         ]
+        }
+       }
+      ],
+      "track-count": 48,
+      "media": [
+       {
+        "id": "30b161b3-bdc2-383a-aea1-cf1efd78e002",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "fde17f7d-bc8c-45af-9ba6-e7176234559b",
+          "number": "17",
+          "title": "Bad Habit",
+          "length": 234013
+         }
+        ],
+        "track-count": 24,
+        "track-offset": 16
+       }
+      ]
+     },
+     {
+      "id": "6d50b672-4f8e-4b7a-917b-1ded22808632",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+      "count": 1,
+      "title": "Gemini Rights",
+      "status": "Official",
+      "disambiguation": "explicit",
+      "artist-credit": [
+       {
+        "name": "Steve Lacy",
+        "artist": {
+         "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+         "name": "Steve Lacy",
+         "sort-name": "Lacy, Steve",
+         "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "ab1c1fd8-f769-4d78-90bc-4677f8ad8c22",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Gemini Rights",
+       "primary-type": "Album"
+      },
+      "date": "2022-07-15",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2022-07-15",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 10,
+      "media": [
+       {
+        "id": "9f364be1-c4fb-338e-a8e1-3010889d20c4",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "beb8f357-f3a3-4762-982b-3e81c1fce9bc",
+          "number": "5",
+          "title": "Bad Habit",
+          "length": 232000
+         }
+        ],
+        "track-count": 10,
+        "track-offset": 4
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "USRC12202615",
+     "USRC12201440"
+    ]
+   },
+   {
+    "id": "ae949c7c-7712-4c89-aa46-f38cea189909",
+    "score": 93,
+    "artist-credit-id": "caa225cf-5f30-39d8-a318-3edec50a024d",
+    "title": "Bad Habit",
+    "length": 149000,
+    "disambiguation": "part of “DJ Khaled: 2022 MegaMix” DJ‐mix",
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Steve Lacy",
+      "artist": {
+       "id": "ca9766a0-1c30-43e6-a213-bac1334efc4a",
+       "name": "Steve Lacy",
+       "sort-name": "Lacy, Steve",
+       "disambiguation": "jazz saxophonist and composer 1934–2004"
+      }
+     }
+    ],
+    "first-release-date": "2022-11-30",
+    "releases": [
+     {
+      "id": "03587e23-f7cf-4257-bd5f-963c3e312e1c",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "faebed27-3524-3918-bae8-8fe7525c8354",
+      "count": 1,
+      "title": "2022 MegaMix",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "DJ Khaled",
+        "artist": {
+         "id": "081a2d60-9791-4e05-a075-f1890355eeee",
+         "name": "DJ Khaled",
+         "sort-name": "Khaled, DJ",
+         "disambiguation": "American hip hop DJ & producer"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "638eb61c-4e19-4e2e-8992-752cbe4c7472",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "2022 MegaMix",
+       "primary-type": "Album",
+       "secondary-types": [
+        "DJ-mix"
+       ],
+       "secondary-type-ids": [
+        "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+       ]
+      },
+      "date": "2022-11-30",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2022-11-30",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 25,
+      "media": [
+       {
+        "id": "cce0b88a-4da3-34f6-be28-3791c92ff990",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "93367eb9-6970-42b6-b8c1-f5a381691f63",
+          "number": "8",
+          "title": "Bad Habit",
+          "length": 149000
+         }
+        ],
+        "track-count": 25,
+        "track-offset": 7
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "US23A1978918"
+    ]
+   },
+   {
+    "id": "3b5205e0-0961-4f32-a63b-9eccd490f1c4",
+    "score": 87,
+    "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+    "title": "Bad Habit (radio edit)",
+    "length": 168000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Steve Lacy",
+      "artist": {
+       "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+       "name": "Steve Lacy",
+       "sort-name": "Lacy, Steve",
+       "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+      }
+     }
+    ],
+    "first-release-date": "2022",
+    "releases": [
+     {
+      "id": "8970645b-a92d-4046-a869-35a9311c1add",
+      "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+      "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+      "count": 1,
+      "title": "Promo Only: Mainstream Radio, September 2022",
+      "status": "Promotion",
+      "artist-credit": [
+       {
+        "name": "Various Artists",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "ed476b49-0e2b-4653-86ae-318c73d56a2b",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Promo Only: Mainstream Radio, September 2022",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "date": "2022",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2022",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 21,
+      "media": [
+       {
+        "id": "57086b12-72f8-38dc-90e8-5a808f6bc022",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "35effd94-835b-41d3-ac1e-05bf8a65fe17",
+          "number": "10",
+          "title": "Bad Habit (radio edit)",
+          "length": 168000
+         }
+        ],
+        "track-count": 21,
+        "track-offset": 9
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "07f5d22f-63ee-4727-bbae-a0af59caae88",
+    "score": 87,
+    "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+    "title": "Bad Habit (sped up)",
+    "length": 191335,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Steve Lacy",
+      "artist": {
+       "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+       "name": "Steve Lacy",
+       "sort-name": "Lacy, Steve",
+       "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+      }
+     }
+    ],
+    "first-release-date": "2022-07-14",
+    "releases": [
+     {
+      "id": "393109cf-5ef7-4781-844c-ea3bbb0a08bd",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "96614813-5063-4601-9f5e-4ce8e1bab807",
+      "count": 1,
+      "title": "Hot Summer Party Mix",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Summer Hits",
+        "artist": {
+         "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+         "name": "Various Artists",
+         "sort-name": "Various Artists",
+         "disambiguation": "add compilations to this artist"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "10b89412-f61a-4dac-80b7-c46f2f9f6848",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "Hot Summer Party Mix",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+       ]
+      },
+      "track-count": 60,
+      "media": [
+       {
+        "id": "b45a2ebc-5284-4330-a527-8c5a08c4d7d4",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "71f36636-c589-418e-a319-ef892d8d2591",
+          "number": "51",
+          "title": "Bad Habit - Sped Up",
+          "length": 191335
+         }
+        ],
+        "track-count": 60,
+        "track-offset": 50
+       }
+      ]
+     },
+     {
+      "id": "a4c6681c-3ec6-44c4-b1f0-59635cdbacee",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "cb3061e6-65de-3e10-a7c4-69eae531492e",
+      "count": 1,
+      "title": "Bad Habit (sped up)",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Steve Lacy",
+        "artist": {
+         "id": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+         "name": "Steve Lacy",
+         "sort-name": "Lacy, Steve",
+         "disambiguation": "guitarist and back‐up vocalist with The Internet; born 1998"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "36074e60-4b3c-474f-b485-c324a8744ee2",
+       "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+       "title": "Bad Habit (sped up)",
+       "primary-type": "Single",
+       "secondary-types": [
+        "Remix"
+       ],
+       "secondary-type-ids": [
+        "0c60f497-ff81-3818-befd-abfc84a4858b"
+       ]
+      },
+      "track-count": 2,
+      "media": [
+       {
+        "id": "1fa6545b-670a-33c7-8742-83e17c64875f",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "73466240-b8c7-41a5-a532-ba92749d420e",
+          "number": "1",
+          "title": "Bad Habit (sped up)",
+          "length": 191335
+         }
+        ],
+        "track-count": 2,
+        "track-offset": 0
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "USRC12203611"
+    ]
+   }
+  ]
+ }
+}

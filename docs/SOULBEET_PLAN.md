@@ -2,7 +2,8 @@
 
 Search for albums you don't have, download them, and watch them arrive, from
 Sonar on the phone and the PC. Sonar talks to the Soulbeet server that already
-runs beside Navidrome (search on MusicBrainz, download over Soulseek through
+runs beside Navidrome (search on Deezer, else MusicBrainz, and file by the
+MusicBrainz release; download over Soulseek through
 the Proton VPN, tag and file with beets). Nothing about Soulseek or the VPN
 moves into the app.
 

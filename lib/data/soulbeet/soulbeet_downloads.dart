@@ -78,9 +78,8 @@ class AlbumDownload {
 
   /// A file of an import that failed after every file arrived; Soulbeet kept
   /// them, so trying again needs only the import, not the download.
-  SbProgress? get keptFile => files.values
-      .where((f) => f.state.kind == SbStateKind.failed && f.retryable && f.localPath != null)
-      .firstOrNull;
+  SbProgress? get keptFile =>
+      files.values.where((f) => f.state.kind == SbStateKind.failed && f.retryable && f.localPath != null).firstOrNull;
 
   bool get importFailed => phase == AlbumPhase.failed && keptFile != null;
 
@@ -180,9 +179,15 @@ class SoulbeetDownloads extends ChangeNotifier {
   AlbumDownload? forAlbum(String albumId) => _albums.values.where((a) => a.album?.id == albumId).lastOrNull;
 
   /// The download for [album] in any of its pressings (an artist's album is
-  /// found without one, and downloaded as the one opened), if any.
+  /// found without one, and downloaded as the one opened; one found on
+  /// Deezer is downloaded as its MusicBrainz pressing), if any.
   AlbumDownload? forFound(SbAlbum album) => _albums.values
-      .where((a) => a.album?.id == album.id || (album.groupId != null && a.album?.groupId == album.groupId))
+      .where(
+        (a) =>
+            a.album?.id == album.id ||
+            (album.groupId != null && a.album?.groupId == album.groupId) ||
+            (album.deezerId != null && a.album?.deezerId == album.deezerId),
+      )
       .lastOrNull;
 
   @override

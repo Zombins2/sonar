@@ -1,0 +1,1061 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/ws/2/recording",
+  "query": {
+   "query": "recording:\"bully\" AND (arid:164f0d73-1234-4e2c-8743-d77bf2191051)",
+   "limit": "25",
+   "fmt": "json"
+  }
+ },
+ "status": 200,
+ "response": {
+  "created": "2026-11-15T14:12:50.714Z",
+  "count": 8,
+  "offset": 0,
+  "recordings": [
+   {
+    "id": "17b2f5cd-1cd5-406d-ad58-6706cf1133b0",
+    "score": 100,
+    "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+    "title": "BULLY",
+    "length": 2711000,
+    "disambiguation": "V1, slightly altered",
+    "video": true,
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "first-release-date": "2025-03-24",
+    "releases": [
+     {
+      "id": "c59fae72-f604-4953-981e-3b0f42a122b0",
+      "status-id": "6a3772de-4605-4132-993d-aa315cd19b4b",
+      "artist-credit-id": "063d6a42-790a-3909-9fe9-4288bcbfa4d4",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Withdrawn",
+      "disambiguation": "V1, altered",
+      "artist-credit": [
+       {
+        "name": "Kanye West",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "track-count": 1,
+      "media": [
+       {
+        "id": "27199692-c931-3ed5-a7c0-371bf5f93df1",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "536bd57d-51fd-4867-8e33-72d528b5835e",
+          "number": "1",
+          "title": "BULLY",
+          "length": 2711000
+         }
+        ],
+        "track-count": 1,
+        "track-offset": 0
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "QZVEM2548908"
+    ]
+   },
+   {
+    "id": "44911eef-084f-4df0-bda9-34b178a33d4c",
+    "score": 100,
+    "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+    "title": "BULLY",
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ]
+   },
+   {
+    "id": "4497a586-0cce-4174-ae5d-8cfb45506916",
+    "score": 100,
+    "artist-credit-id": "41cc14e6-13dc-494a-af17-301c32e5e97c",
+    "title": "BULLY",
+    "length": 147629,
+    "disambiguation": "deluxe mix",
+    "video": null,
+    "artist-credit": [
+     {
+      "joinphrase": " & ",
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     },
+     {
+      "name": "CeeLo Green",
+      "artist": {
+       "id": "2c69465c-0f76-45ce-90a2-1ed0fdacc997",
+       "name": "CeeLo Green",
+       "sort-name": "Green, CeeLo"
+      }
+     }
+    ],
+    "first-release-date": "2026-06-19",
+    "releases": [
+     {
+      "id": "dd61c9ee-45bc-464c-ab3b-8fab8a05a5c9",
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Bootleg",
+      "disambiguation": "BULLY (chropic)",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "dabbb756-f3e7-429b-8cf6-32efc2cecd10",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "disambiguation": "Bully (chropic)",
+       "primary-type": "Album"
+      },
+      "date": "2026-07-02",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2026-07-02",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 19,
+      "media": [
+       {
+        "id": "2fd6b41e-29c1-4e25-bbd9-4b3a0b2dbaf6",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "545e1f0c-a607-44d6-b378-3801e81a9dce",
+          "number": "13",
+          "title": "BULLY"
+         }
+        ],
+        "track-count": 19,
+        "track-offset": 12
+       }
+      ]
+     },
+     {
+      "id": "e398f34d-7f63-4b23-80d6-2d14942ea1b1",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Official",
+      "disambiguation": "deluxe",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-06-19",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2026-06-19",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 20,
+      "media": [
+       {
+        "id": "5647c6f8-1e40-41a8-84cc-d8a9a6197434",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "d9c26420-6c2b-464f-a5b4-28ab71f5b9ae",
+          "number": "9",
+          "title": "BULLY",
+          "length": 147629
+         }
+        ],
+        "track-count": 20,
+        "track-offset": 8
+       }
+      ]
+     },
+     {
+      "id": "8bf89110-6231-4829-bfbc-ec47676cc5b6",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Official",
+      "disambiguation": "deluxe",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-06-19",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2026-06-19",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 32,
+      "media": [
+       {
+        "id": "053e8abb-6aed-4891-8cd4-29d3a12b6104",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "5ce3c510-0a06-482c-8fdb-889f681ab6bc",
+          "number": "9",
+          "title": "BULLY",
+          "length": 147629
+         }
+        ],
+        "track-count": 32,
+        "track-offset": 8
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "QZQAY2629213"
+    ]
+   },
+   {
+    "id": "5d79abc8-b48e-4460-9c7c-2bed7f7f2838",
+    "score": 100,
+    "artist-credit-id": "abc64eef-35f4-4bbd-8642-e600689781d1",
+    "title": "BULLY",
+    "length": 147000,
+    "video": null,
+    "artist-credit": [
+     {
+      "joinphrase": " feat. ",
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     },
+     {
+      "name": "CeeLo Green",
+      "artist": {
+       "id": "2c69465c-0f76-45ce-90a2-1ed0fdacc997",
+       "name": "CeeLo Green",
+       "sort-name": "Green, CeeLo"
+      }
+     }
+    ],
+    "first-release-date": "2026-03-28",
+    "releases": [
+     {
+      "id": "57d3915f-504f-4a14-8877-ae873d125257",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-03-28",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2026-03-28",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 18,
+      "media": [
+       {
+        "id": "1a00d964-3996-4797-96ce-c299260920df",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "012ccaac-dc5c-4f4e-a32f-0d12ec232ad9",
+          "number": "9",
+          "title": "BULLY",
+          "length": 147000
+         }
+        ],
+        "track-count": 18,
+        "track-offset": 8
+       }
+      ]
+     },
+     {
+      "id": "bd8f50bf-9ddd-41ad-8499-4e04c36ea655",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Official",
+      "disambiguation": "updated",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-04-02",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2026-04-02",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 18,
+      "media": [
+       {
+        "id": "d6cc2451-52fc-45cb-9f9a-7d8301495e47",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "3615d283-3e74-4def-883a-2fcee1d05ac1",
+          "number": "9",
+          "title": "BULLY",
+          "length": 147000
+         }
+        ],
+        "track-count": 18,
+        "track-offset": 8
+       }
+      ]
+     },
+     {
+      "id": "5fe938fb-e0a9-48ad-96f7-e950d8635aeb",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-03-28",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2026-03-28",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 18,
+      "media": [
+       {
+        "id": "0b974fc5-4c1b-4be1-9b4b-b0b989116444",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "b86dc5c8-d9b3-4658-9d49-762c3bc72072",
+          "number": "9",
+          "title": "BULLY",
+          "length": 147000
+         }
+        ],
+        "track-count": 18,
+        "track-offset": 8
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "QZQAY2629213"
+    ]
+   },
+   {
+    "id": "83a4ed77-35a2-4040-9d41-94b9604f8049",
+    "score": 100,
+    "artist-credit-id": "063d6a42-790a-3909-9fe9-4288bcbfa4d4",
+    "title": "Bully",
+    "length": 253000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Kanye West",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "first-release-date": "2025-09-19",
+    "releases": [
+     {
+      "id": "5dd0e750-f144-4ce4-936b-cc8d5e1e7474",
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "END OF ME",
+      "status": "Bootleg",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "a85f995d-84f5-4a06-903a-c1e2117873a8",
+       "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "END OF ME",
+       "primary-type": "Album",
+       "secondary-types": [
+        "Compilation",
+        "Mixtape/Street"
+       ],
+       "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+        "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+       ]
+      },
+      "date": "2025-09-19",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2025-09-19",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 15,
+      "media": [
+       {
+        "id": "65b0897d-4b87-44e3-acc5-c7b944097a2d",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "864151a1-8cbc-4a78-bf7e-a4a58da04768",
+          "number": "2",
+          "title": "Bully",
+          "length": 253000
+         }
+        ],
+        "track-count": 15,
+        "track-offset": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "e09f1654-edaf-4793-99b5-6813bcc63840",
+    "score": 100,
+    "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+    "title": "BULLY",
+    "length": 137000,
+    "video": null,
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "first-release-date": "2026-03-24",
+    "releases": [
+     {
+      "id": "fbfb6df0-553c-4f87-8f87-7dc6852721b1",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Official",
+      "disambiguation": "early release",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-03-27",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2026-03-27",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 13,
+      "media": [
+       {
+        "id": "d38333b0-a8a8-4a1e-9b66-fc66f1988df9",
+        "position": 1,
+        "format": "CD",
+        "track": [
+         {
+          "id": "09bdaf88-0078-4bd9-a4c6-c6de8b161e8c",
+          "number": "6",
+          "title": "BULLY",
+          "length": 138000
+         }
+        ],
+        "track-count": 13,
+        "track-offset": 5
+       }
+      ]
+     },
+     {
+      "id": "2f72129c-3b92-4622-a3ff-8f2f2665852f",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-03-28",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2026-03-28",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 13,
+      "media": [
+       {
+        "id": "068a8c87-6025-4dbd-9f8f-f7e9905451d1",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "171bb97e-d135-4ec9-bf9f-2819171c29d3",
+          "number": "6",
+          "title": "BULLY",
+          "length": 137000
+         }
+        ],
+        "track-count": 13,
+        "track-offset": 5
+       }
+      ]
+     },
+     {
+      "id": "5c73c2cf-0ad4-4663-9599-ca14cd23c3d8",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "Bully",
+      "status": "Official",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-03-24",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2026-03-24",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 13,
+      "media": [
+       {
+        "id": "fa7265c7-0d4d-4fe8-92b8-b5a1ece4dc8e",
+        "position": 1,
+        "format": "12\" Vinyl",
+        "track": [
+         {
+          "id": "d6507cea-f4aa-4bdc-a09a-a161a698c6a2",
+          "number": "6",
+          "title": "BULLY"
+         }
+        ],
+        "track-count": 13,
+        "track-offset": 5
+       }
+      ]
+     },
+     {
+      "id": "7b9bd0ed-cab0-46fc-8bcf-2e614e35d27d",
+      "status-id": "55005350-bc3f-441a-b0c7-27c565eae341",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Cancelled",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-03-27",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2026-03-27",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 13,
+      "media": [
+       {
+        "id": "6b07a552-93ce-4858-b4db-a0393d926d3c",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "d889a73e-4f8a-43bf-94f6-62d4aa0d8cf2",
+          "number": "6",
+          "title": "BULLY"
+         }
+        ],
+        "track-count": 13,
+        "track-offset": 5
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "QT4K52544910"
+    ]
+   },
+   {
+    "id": "bb3aa131-7417-47a9-ac20-c52879d8ce03",
+    "score": 100,
+    "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+    "title": "BULLY",
+    "length": 2711801,
+    "disambiguation": "V1",
+    "video": true,
+    "artist-credit": [
+     {
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     }
+    ],
+    "first-release-date": "2026-03-28",
+    "releases": [
+     {
+      "id": "4971987a-f905-4045-948e-d67a14637fc6",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Official",
+      "disambiguation": "V1",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-03-28",
+      "country": "US",
+      "release-events": [
+       {
+        "date": "2026-03-28",
+        "area": {
+         "id": "489ce91b-6658-3307-9877-795b68554c98",
+         "name": "United States",
+         "sort-name": "United States",
+         "iso-3166-1-codes": [
+          "US"
+         ]
+        }
+       }
+      ],
+      "track-count": 1,
+      "media": [
+       {
+        "id": "fe1c6c8c-4ce4-31da-82db-39fd085770f1",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "2fb503ec-5dd2-461c-ad08-9cafc7bde44b",
+          "number": "1",
+          "title": "BULLY",
+          "length": 2711801
+         }
+        ],
+        "track-count": 1,
+        "track-offset": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "825859b9-5071-4aeb-b05f-fd28a5b137ab",
+    "score": 84,
+    "artist-credit-id": "41cc14e6-13dc-494a-af17-301c32e5e97c",
+    "title": "BULLY (SoFi visualizer)",
+    "length": 148000,
+    "video": true,
+    "artist-credit": [
+     {
+      "joinphrase": " & ",
+      "name": "Ye",
+      "artist": {
+       "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+       "name": "Ye",
+       "sort-name": "Ye",
+       "disambiguation": "formerly Kanye West"
+      }
+     },
+     {
+      "name": "CeeLo Green",
+      "artist": {
+       "id": "2c69465c-0f76-45ce-90a2-1ed0fdacc997",
+       "name": "CeeLo Green",
+       "sort-name": "Green, CeeLo"
+      }
+     }
+    ],
+    "first-release-date": "2026-06-19",
+    "releases": [
+     {
+      "id": "8bf89110-6231-4829-bfbc-ec47676cc5b6",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "e7fa04a3-f3b5-4eaa-bf85-95a185c307b9",
+      "count": 1,
+      "title": "BULLY",
+      "status": "Official",
+      "disambiguation": "deluxe",
+      "artist-credit": [
+       {
+        "name": "Ye",
+        "artist": {
+         "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+         "name": "Ye",
+         "sort-name": "Ye",
+         "disambiguation": "formerly Kanye West"
+        }
+       }
+      ],
+      "release-group": {
+       "id": "56327267-51fb-472c-919e-d6ca258ebab2",
+       "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+       "title": "BULLY",
+       "primary-type": "Album"
+      },
+      "date": "2026-06-19",
+      "country": "XW",
+      "release-events": [
+       {
+        "date": "2026-06-19",
+        "area": {
+         "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+         "name": "[Worldwide]",
+         "sort-name": "[Worldwide]",
+         "iso-3166-1-codes": [
+          "XW"
+         ]
+        }
+       }
+      ],
+      "track-count": 32,
+      "media": [
+       {
+        "id": "053e8abb-6aed-4891-8cd4-29d3a12b6104",
+        "position": 1,
+        "format": "Digital Media",
+        "track": [
+         {
+          "id": "a59f9b15-0323-4a92-be82-4ee855297b7d",
+          "number": "28",
+          "title": "BULLY (SoFi visualizer)",
+          "length": 148000
+         }
+        ],
+        "track-count": 32,
+        "track-offset": 27
+       }
+      ]
+     }
+    ],
+    "isrcs": [
+     "QZTLA2627510"
+    ]
+   }
+  ]
+ }
+}

@@ -145,6 +145,8 @@ lib/
   data/db/         drift database: response cache and saved state
   data/auth/       logins in secure storage
   data/soulbeet/   Get music: Soulbeet client, source picking, download flow
+  data/deezer/     Get music: searching Deezer's catalogue
+  data/musicbrainz/  Get music: MusicBrainz search, and what's picked as a release
   audio/           player (just_audio + audio_service), Android Auto menus
   connect/         Sonar Connect client
   state/           Riverpod providers
@@ -163,6 +165,11 @@ After changing `lib/data/db/database.dart`, regenerate the database code with
 - **Login:** Sonar sends `t = md5(password + salt)` with a fresh salt on every
   request, as the Subsonic API asks. The password is never put in a URL and
   is stored in the system's secure storage.
+- **Get music searches** send only the words you type: to Deezer's public
+  search (no account or key), else to MusicBrainz. What you open is looked up
+  on MusicBrainz by its barcode, as beets files music by MusicBrainz. If what
+  you want isn't in Deezer's results, **Search MusicBrainz** below them
+  searches there alone, for rare and older music no shop sells.
 - **Navidrome on Windows (Docker Desktop):** keep Navidrome's cache on a Docker
   volume (`ND_CACHEFOLDER=/cache` on a named volume), not a Windows folder.
   On a Windows bind mount, cached files can't be read back, which breaks

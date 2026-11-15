@@ -1,0 +1,24 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/album/949407771",
+  "query": {}
+ },
+ "status": 200,
+ "response": {
+  "id": 949407771,
+  "title": "BULLY",
+  "upc": "656465138828",
+  "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+  "nb_tracks": 18,
+  "duration": 2537,
+  "fans": 15763,
+  "release_date": "2026-03-28",
+  "record_type": "album",
+  "artist": {
+   "id": 230,
+   "name": "Kanye West",
+   "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+  }
+ }
+}

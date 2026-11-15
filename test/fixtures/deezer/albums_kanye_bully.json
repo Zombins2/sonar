@@ -1,0 +1,184 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search/album",
+  "query": {
+   "q": "kanye bully",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 949407771,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 18,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1010171471,
+    "title": "BULLY - DELUXE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 20,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 907177312,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 3,
+    "record_type": "single",
+    "artist": {
+     "id": 4099199,
+     "name": "Ye",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 907179762,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 2,
+    "record_type": "single",
+    "artist": {
+     "id": 4099199,
+     "name": "Ye",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 663674381,
+    "title": "Bully / Painter",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b8250907569000b5e17f3cfa399b6edf/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 227947285,
+     "name": "Kanyai",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/4894ee5bdf5f0f22e7de2346456b087e/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1107641352,
+    "title": "BELLY BUTTON",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/efed63052a3b7630e7fc8f3aa1554a00/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 200880577,
+     "name": "JanZee Official",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/0f3f857f9ce70bff163ffbde72e8403b/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 852864862,
+    "title": "Bully (Kanye West freestyle)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/0b792f53ba1696d3c0c75d89e3513fd9/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 11126174,
+     "name": "ChefGod",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/5e1b159f2ccc8845a803632717b8a72d/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1013621581,
+    "title": "Broadcast",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2ba63e32fbd281e77caa4dbf45e64ea7/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 398600941,
+     "name": "B.L.V.D. Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1031674022,
+    "title": "In My Mind",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ad9d1181e94e83ccecbbe9803d896f13/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 398600941,
+     "name": "B.L.V.D. Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1051817912,
+    "title": "An Offer You Can’t Refuse",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6775254af965b9da0cad94fe1e154128/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 398600941,
+     "name": "B.L.V.D. Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1012591861,
+    "title": "Not the same",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a6e9e2ae8da5ac0cbe756977188df801/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 398600941,
+     "name": "B.L.V.D. Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1029126532,
+    "title": "Deadly Talk",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/c320b20d4da93d4e7f97d7792cd9a273/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 398600941,
+     "name": "B.L.V.D. Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1029065542,
+    "title": "BULLY DELUXE (FULL ALBUM)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/3f457564cb353cbac41d2d148e13f4ca/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 337332181,
+     "name": "Kanye Glazers",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b0b827e4bc350e4c41f3528b09001792/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 92534802,
+    "title": "Red Bull Music Sessions",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/db8ddcfcda20f990b19a812bd0042121/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 3,
+    "record_type": "single",
+    "artist": {
+     "id": 13586537,
+     "name": "Seven Kayne",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b05c1f9ad76c0adfd045873af0eadb21/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 14
+ }
+}

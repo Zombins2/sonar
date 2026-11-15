@@ -1,0 +1,316 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search/album",
+  "query": {
+   "q": "kanye",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 86994002,
+    "title": "Graduation",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8c6578a2099561992fb7544e6826f767/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 14,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 707965,
+    "title": "My Beautiful Dark Twisted Fantasy",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/742aba8510ba803bea51d304cf2ca786/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 13,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 6694046,
+    "title": "Yeezus",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5a56530f7906bd9786fa47bd0be421b3/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 10,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 68440261,
+    "title": "The College Dropout",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/069a5dba671436da9301aad36fc9a983/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 21,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 126525,
+    "title": "Late Registration",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/7cbfc94084895e59b5a313a98ab1bd9a/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 21,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 261749392,
+    "title": "Donda",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/330da8bf0a57b47c2078db2d3761dc5e/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 27,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 13357219,
+    "title": "The Life Of Pablo",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e055ecc8d01680cda0460017087728be/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 20,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 77941202,
+    "title": "ye",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/71d34b7f041d43ea821a9afaeab73666/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 7,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 13833162,
+    "title": "808s & Heartbreak",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2877c6bf4fad750c54dd212fb50a366b/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 12,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1010171471,
+    "title": "BULLY - DELUXE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 20,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 8178210,
+    "title": "Kanye",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/212ad40f9b80cd3fe98e7317add67eab/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 4104927,
+     "name": "The Chainsmokers",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/461231bf0a032d7b8b315e05d1b4bbd7/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 116355212,
+    "title": "JESUS IS KING",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/57e636dd1b26e8edce941a8450c10477/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 11,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 322038187,
+    "title": "True Love",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/dc64fd5bee2049429ac5a383ab2e6e00/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 286730352,
+    "title": "Kanye",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1080cde1f7ddfacc939757d8ee8539bb/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 2,
+    "record_type": "single",
+    "artist": {
+     "id": 148051202,
+     "name": "JohnnyTheGreatOne",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/1080cde1f7ddfacc939757d8ee8539bb/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 105315002,
+    "title": "Kanye",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/f8d355fe0b5449362b8ed210f4553360/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 5539887,
+     "name": "Octopizzo",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/c365b4e30d1c62d1864129fedc08be8c/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 949407771,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 18,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 72551142,
+    "title": "I Love It",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/24d6fb5732c5203ca991f4415e732fc3/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 957561731,
+    "title": "Parou por Quê?",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/d4440b2a7bbe2b955bb52a5d58d5c66b/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 5175553,
+     "name": "Kanye",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/3c3577ebb5364e574d8276204ea0d1f5/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 957561421,
+    "title": "Potencial Oculto",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/fe7584c4c1247b3f4e30efd9f0b8869d/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 5175553,
+     "name": "Kanye",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/3c3577ebb5364e574d8276204ea0d1f5/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 477673195,
+    "title": "Watch The Throne (Deluxe)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5ff776f44edc5f7fbef5fa2169006f29/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 16,
+    "record_type": "album",
+    "artist": {
+     "id": 1309,
+     "name": "JAŸ-Z",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/a59aabd18e84d732ce3b9f6f5c4e5f50/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 864448772,
+    "title": "KANYE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4825a12f0e5e01ababd6634532adbbdf/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 128625132,
+     "name": "Fk Nomercy",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/92a98db14a98777c438d9d338efe3ce1/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 892698472,
+    "title": "Eu Não Paro Eu Não Cedo",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/619c2938caa915bc9cb3b17034fb8467/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 5175553,
+     "name": "Kanye",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/3c3577ebb5364e574d8276204ea0d1f5/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 8851691,
+    "title": "Kanye (Remixes Part 1)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a052abd8a3ba03da9638aa0a1b4705b1/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 3,
+    "record_type": "single",
+    "artist": {
+     "id": 4104927,
+     "name": "The Chainsmokers",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/461231bf0a032d7b8b315e05d1b4bbd7/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 9804854,
+    "title": "All Day",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/988af878a0d6735d2e20ebd3cdd94611/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 222542532,
+    "title": "Kanye",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b50628d6c26b040b131b19eb0b99c302/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 12467898,
+     "name": "LPEE",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/42dea94140184156ec3fa4e392d244df/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 99
+ }
+}

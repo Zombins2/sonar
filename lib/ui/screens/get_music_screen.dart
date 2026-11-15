@@ -17,8 +17,8 @@ import '../widgets/common.dart';
 import '../widgets/cover_art.dart';
 import 'settings_screen.dart' show formatBytes;
 
-/// Get music: find an album on MusicBrainz and have Soulbeet download it into
-/// the library (docs/SOULBEET_PLAN.md).
+/// Get music: find an album (on Deezer, else MusicBrainz) and have Soulbeet
+/// download it into the library (docs/SOULBEET_PLAN.md).
 class GetMusicScreen extends ConsumerStatefulWidget {
   const GetMusicScreen({super.key, this.initialQuery});
   final String? initialQuery;
@@ -33,6 +33,9 @@ class _GetMusicScreenState extends ConsumerState<GetMusicScreen> {
 
   /// "songs" and "albums" when showing everything, filler too.
   final _seeAll = <String>{};
+
+  /// What Deezer found wasn't it: this search on MusicBrainz alone.
+  var _onMusicBrainz = false;
 
   /// Searches once typing pauses, as a music app does.
   Timer? _typing;
@@ -53,6 +56,7 @@ class _GetMusicScreenState extends ConsumerState<GetMusicScreen> {
     setState(() {
       _query = v.trim();
       _seeAll.clear();
+      _onMusicBrainz = false;
     });
   }
 
@@ -125,25 +129,34 @@ class _GetMusicScreenState extends ConsumerState<GetMusicScreen> {
         icon: Icons.album_rounded,
         title: 'Find music to add',
         message:
-            'Search for an artist, an album or a song on MusicBrainz. Sonar downloads the best FLAC copy it can '
-            'find and files it in your library.',
+            'Search for an artist, an album or a song. Sonar downloads the best FLAC copy it can find and files '
+            'it in your library.',
       );
     }
-    final results = ref.watch(soulbeetSearchProvider(_query));
+    final provider = _onMusicBrainz ? musicBrainzSearchProvider(_query) : soulbeetSearchProvider(_query);
+    final results = ref.watch(provider);
     return results.when(
       skipLoadingOnReload: true,
       loading: () => const SkeletonRows(art: true),
-      error: (e, _) => ErrorState(error: e, onRetry: () => ref.invalidate(soulbeetSearchProvider(_query))),
+      error: (e, _) => ErrorState(error: e, onRetry: () => ref.invalidate(provider)),
       data: (r) {
         if (r.isEmpty && !r.done) return const SkeletonRows(art: true);
         if (r.isEmpty) {
           return EmptyState(
             icon: Icons.search_off_rounded,
-            title: 'Nothing on MusicBrainz for "$_query"',
+            title: 'Nothing found for "$_query"',
             message: 'Check the spelling, or try Artist - Album.',
           );
         }
-        return _ResultsPage(results: r, seeAll: _seeAll, onSeeAll: (part) => setState(() => _seeAll.add(part)));
+        return _ResultsPage(
+          results: r,
+          seeAll: _seeAll,
+          onSeeAll: (part) => setState(() => _seeAll.add(part)),
+          onMusicBrainz: () => setState(() {
+            _onMusicBrainz = true;
+            _seeAll.clear();
+          }),
+        );
       },
     );
   }
@@ -152,10 +165,13 @@ class _GetMusicScreenState extends ConsumerState<GetMusicScreen> {
 /// Results as a music app lays them out: the top result, a few songs, a row
 /// of albums, the filler behind "See all".
 class _ResultsPage extends StatelessWidget {
-  const _ResultsPage({required this.results, required this.seeAll, required this.onSeeAll});
+  const _ResultsPage({required this.results, required this.seeAll, required this.onSeeAll, this.onMusicBrainz});
   final GetMusicResults results;
   final Set<String> seeAll;
   final void Function(String part) onSeeAll;
+
+  /// Searches MusicBrainz alone, for music Deezer doesn't sell.
+  final VoidCallback? onMusicBrainz;
 
   /// Songs shown before "See all".
   static const fewSongs = 4;
@@ -240,6 +256,25 @@ class _ResultsPage extends StatelessWidget {
             padding: EdgeInsets.all(SonarSpacing.gutter),
             child: Center(child: SizedBox.square(dimension: 20, child: CircularProgressIndicator(strokeWidth: 2))),
           ),
+        if (r.done && r.source == GetMusicSource.deezer && onMusicBrainz != null)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(SonarSpacing.gutter, 16, SonarSpacing.gutter, 8),
+            child: Column(
+              children: [
+                Text(
+                  'Found on Deezer. Not here? Rare and older music is often only on MusicBrainz.',
+                  textAlign: TextAlign.center,
+                  style: secondary,
+                ),
+                const SizedBox(height: 4),
+                TextButton.icon(
+                  onPressed: onMusicBrainz,
+                  icon: const Icon(Icons.travel_explore_rounded),
+                  label: const Text('Search MusicBrainz'),
+                ),
+              ],
+            ),
+          ),
       ],
     );
   }
@@ -275,7 +310,13 @@ class _TopResultCard extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           child: Row(
             children: [
-              MbCover(mbid: cover?.mbid, groupId: cover?.groupId, size: 92, radius: top is TopArtist ? 46 : 8),
+              MbCover(
+                mbid: cover?.mbid,
+                groupId: cover?.groupId,
+                url: top is TopArtist ? (top as TopArtist).picture ?? cover?.cover : cover?.cover,
+                size: 92,
+                radius: top is TopArtist ? 46 : 8,
+              ),
               const SizedBox(width: 16),
               Expanded(
                 child: Column(
@@ -329,7 +370,7 @@ class _AlbumCard extends ConsumerWidget {
           children: [
             Stack(
               children: [
-                MbCover(mbid: album.mbid, groupId: album.groupId, size: size, radius: 8),
+                MbCover(mbid: album.mbid, groupId: album.groupId, url: album.cover, size: size, radius: 8),
                 if (d != null || owned != null)
                   Positioned(
                     right: 6,
@@ -365,7 +406,7 @@ class GetSongTile extends StatelessWidget {
     final album = song.onAlbum!;
     return ListTile(
       contentPadding: const EdgeInsets.symmetric(horizontal: SonarSpacing.gutter, vertical: 2),
-      leading: MbCover(mbid: album.mbid),
+      leading: MbCover(mbid: album.mbid, url: album.cover),
       title: Text(song.title, maxLines: 1, overflow: TextOverflow.ellipsis),
       subtitle: Text('${song.artist} · on ${album.title}', maxLines: 1, overflow: TextOverflow.ellipsis),
       trailing: const Icon(Icons.chevron_right_rounded),
@@ -374,12 +415,14 @@ class GetSongTile extends StatelessWidget {
   }
 }
 
-/// A MusicBrainz album's cover (Cover Art Archive), or a placeholder: the
-/// album's own ([groupId]) when known, else its pressing's ([mbid]).
+/// An album's cover: Deezer's ([url]) when it was found there, else the
+/// Cover Art Archive's, the album's own ([groupId]) when known, else its
+/// pressing's ([mbid]); or a placeholder.
 class MbCover extends ConsumerWidget {
-  const MbCover({super.key, required this.mbid, this.groupId, this.size = 56, this.radius = 6});
+  const MbCover({super.key, required this.mbid, this.groupId, this.url, this.size = 56, this.radius = 6});
   final String? mbid;
   final String? groupId;
+  final Uri? url;
   final double size;
   final double radius;
 
@@ -393,7 +436,16 @@ class MbCover extends ConsumerWidget {
     );
     final (kind, id) = groupId != null ? ('release-group', groupId) : ('release', mbid);
     Widget image;
-    if (id == null) {
+    if (url != null && override == null) {
+      image = CachedNetworkImage(
+        imageUrl: '$url',
+        cacheManager: coverCacheManager,
+        fit: BoxFit.cover,
+        fadeInDuration: SonarMotion.fast,
+        placeholder: (_, _) => placeholder,
+        errorWidget: (_, _, _) => placeholder,
+      );
+    } else if (id == null) {
       image = placeholder;
     } else if (override != null) {
       image = Image(
@@ -430,7 +482,7 @@ class GetAlbumTile extends ConsumerWidget {
     final subtitle = [album.artist, ?album.year].join(' · ');
     return ListTile(
       contentPadding: const EdgeInsets.symmetric(horizontal: SonarSpacing.gutter, vertical: 2),
-      leading: MbCover(mbid: album.mbid, groupId: album.groupId),
+      leading: MbCover(mbid: album.mbid, groupId: album.groupId, url: album.cover),
       title: Text(album.title, maxLines: 1, overflow: TextOverflow.ellipsis),
       subtitle: Text(subtitle, maxLines: 1, overflow: TextOverflow.ellipsis),
       trailing: owned != null && d == null
@@ -709,7 +761,7 @@ class _AlbumSheetState extends ConsumerState<_AlbumSheet> {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              MbCover(mbid: album.mbid, groupId: found.groupId, size: 112, radius: 8),
+              MbCover(mbid: album.mbid, groupId: found.groupId, url: found.cover, size: 112, radius: 8),
               const SizedBox(width: 16),
               Expanded(
                 child: Column(

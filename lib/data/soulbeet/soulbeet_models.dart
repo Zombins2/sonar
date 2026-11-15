@@ -23,6 +23,7 @@ T _need<T>(SbJson j, String key) {
 }
 
 String? _str(Object? v) => v is String && v.isNotEmpty ? v : null;
+Uri? _uri(Object? v) => _str(v) == null ? null : Uri.tryParse(v! as String);
 int _int(Object? v) => v is num ? v.toInt() : 0;
 double _double(Object? v) => v is num ? v.toDouble() : 0;
 
@@ -38,6 +39,8 @@ class SbAlbum {
     this.mbid,
     this.groupId,
     this.kinds = const [],
+    this.deezerId,
+    this.cover,
   });
 
   factory SbAlbum.fromJson(SbJson j) => SbAlbum._(
@@ -47,6 +50,35 @@ class SbAlbum {
     artist: _str(j['artist']) ?? '',
     releaseDate: _str(j['release_date']),
     mbid: _str(j['mbid']),
+    deezerId: _str(j[_deezerKey]),
+    cover: _uri(j[_coverKey]),
+  );
+
+  /// An album found on Deezer: it [needsPressing], looked up on MusicBrainz
+  /// by its barcode, before its songs load or it downloads.
+  factory SbAlbum.deezer({
+    required String id,
+    required String title,
+    required String artist,
+    String? releaseDate,
+    List<String> kinds = const [],
+    Uri? cover,
+  }) => SbAlbum._(
+    Map.unmodifiable({
+      'id': 'dz:$id',
+      'title': title,
+      'artist': artist,
+      'release_date': releaseDate,
+      _deezerKey: id,
+      if (cover != null) _coverKey: '$cover',
+    }),
+    id: 'dz:$id',
+    title: title,
+    artist: artist,
+    releaseDate: _str(releaseDate),
+    kinds: List.unmodifiable(kinds),
+    deezerId: id,
+    cover: cover,
   );
 
   /// An album Sonar found on MusicBrainz itself, shaped as Soulbeet's own
@@ -60,6 +92,8 @@ class SbAlbum {
     required String artist,
     String? releaseDate,
     List<String> kinds = const [],
+    String? deezerId,
+    Uri? cover,
   }) => SbAlbum._(
     Map.unmodifiable({
       'id': pressing ?? groupId,
@@ -67,6 +101,8 @@ class SbAlbum {
       'artist': artist,
       'release_date': releaseDate,
       'mbid': pressing,
+      _deezerKey: ?deezerId,
+      if (cover != null) _coverKey: '$cover',
     }),
     id: pressing ?? groupId,
     title: title,
@@ -75,10 +111,16 @@ class SbAlbum {
     mbid: pressing,
     groupId: groupId,
     kinds: List.unmodifiable(kinds),
+    deezerId: deezerId,
+    cover: cover,
   );
 
-  /// Found without a pressing: [id] is the release group's for now.
-  bool get needsPressing => mbid == null && groupId != null;
+  /// Found without a pressing: [id] is the release group's, or Deezer's,
+  /// for now.
+  bool get needsPressing => mbid == null && (groupId != null || deezerId != null);
+
+  /// Sonar's own notes in [raw], never sent to Soulbeet.
+  static const _deezerKey = 'sonar_deezer_id', _coverKey = 'sonar_cover';
 
   final SbJson raw;
   final String id;
@@ -97,10 +139,17 @@ class SbAlbum {
   /// "Compilation", "Live", "Remix", "Mixtape/Street"... Empty for a studio one.
   final List<String> kinds;
 
-  /// The album as Soulbeet's own page sends it back (no `kind`).
+  /// The album on Deezer, when found there: kept once it's found on
+  /// MusicBrainz, so a download shows on the result it started from.
+  final String? deezerId;
+
+  /// The cover Deezer has for it; else it's the Cover Art Archive's.
+  final Uri? cover;
+
+  /// The album as Soulbeet's own page sends it back (no `kind`, nor Sonar's notes).
   SbJson get request => {
     for (final e in raw.entries)
-      if (e.key != 'kind') e.key: e.value,
+      if (e.key != 'kind' && e.key != _deezerKey && e.key != _coverKey) e.key: e.value,
   };
 
   String? get year => releaseDate != null && releaseDate!.length >= 4 ? releaseDate!.substring(0, 4) : null;
@@ -171,11 +220,38 @@ class SbTrack {
   final String? albumId;
   final Duration? duration;
 
+  /// A song found on Deezer, on the Deezer album it's best found on.
+  factory SbTrack.deezer({
+    required String id,
+    required String title,
+    required String artist,
+    String? albumId,
+    String? albumTitle,
+    int seconds = 0,
+    Uri? cover,
+  }) => SbTrack.fromJson({
+    'id': 'dz:$id',
+    'title': title,
+    'artist': artist,
+    'album_id': albumId == null ? null : 'dz:$albumId',
+    'album_title': albumTitle,
+    if (seconds > 0) 'duration': seconds,
+    SbAlbum._deezerKey: ?albumId,
+    if (cover != null) SbAlbum._coverKey: '$cover',
+  });
+
   /// The album this song is on, as far as a search knows it. Its artist is
   /// the song's (with any featured names); the album sheet swaps in the
   /// album's own details once they load.
   SbAlbum? get onAlbum => albumId == null || album == null
       ? null
+      : raw[SbAlbum._deezerKey] is String
+      ? SbAlbum.deezer(
+          id: raw[SbAlbum._deezerKey]! as String,
+          title: album!,
+          artist: artist,
+          cover: _uri(raw[SbAlbum._coverKey]),
+        )
       : SbAlbum.fromJson({
           'id': albumId,
           'title': album,

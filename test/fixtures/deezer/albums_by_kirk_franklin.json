@@ -1,0 +1,295 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/295/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 92618872,
+    "title": "LONG LIVE LOVE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/07876d98103762bdb3caff075ff852de/250x250-000000-80-0-0.jpg",
+    "fans": 14415,
+    "release_date": "2019-05-31",
+    "record_type": "album"
+   },
+   {
+    "id": 13948386,
+    "title": "Losing My Religion",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/d8a7d74e873dc5c6046982bdbf55ae6e/250x250-000000-80-0-0.jpg",
+    "fans": 17269,
+    "release_date": "2016-09-02",
+    "record_type": "album"
+   },
+   {
+    "id": 11674642,
+    "title": "Losing My Religion",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2f4ab8d48ff3fc89528a6456eb67a8ec/250x250-000000-80-0-0.jpg",
+    "fans": 11644,
+    "release_date": "2015-11-13",
+    "record_type": "album"
+   },
+   {
+    "id": 8304190,
+    "title": "Setlist: The Very Best Of Kirk Franklin Live",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/f8971aad4c80faec70db1a9815e7c9d5/250x250-000000-80-0-0.jpg",
+    "fans": 1310,
+    "release_date": "2011-12-27",
+    "record_type": "album"
+   },
+   {
+    "id": 936838,
+    "title": "Hello Fear",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/16fd5f7d8e57a8ad46d16e140f294205/250x250-000000-80-0-0.jpg",
+    "fans": 26263,
+    "release_date": "2011-03-18",
+    "record_type": "album"
+   },
+   {
+    "id": 7960492,
+    "title": "The Essential Kirk Franklin",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab396325cdf9a42c42a3c757b0587e71/250x250-000000-80-0-0.jpg",
+    "fans": 20257,
+    "release_date": "2011-01-24",
+    "record_type": "album"
+   },
+   {
+    "id": 497276,
+    "title": "The Fight Of My Life",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b53234d17235d3014f8ffc2bfa306bc1/250x250-000000-80-0-0.jpg",
+    "fans": 6658,
+    "release_date": "2007-12-17",
+    "record_type": "album"
+   },
+   {
+    "id": 72441,
+    "title": "Kirk Franklin Presents: Songs For The Storm, Volume 1",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/984f873eb1d215b5cbad2c1371043eb9/250x250-000000-80-0-0.jpg",
+    "fans": 7083,
+    "release_date": "2006-11-07",
+    "record_type": "album"
+   },
+   {
+    "id": 8257278,
+    "title": "Kirk Franklin Presents Songs For The Storm, Volume 1",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/984f873eb1d215b5cbad2c1371043eb9/250x250-000000-80-0-0.jpg",
+    "fans": 588,
+    "release_date": "2006-11-07",
+    "record_type": "album"
+   },
+   {
+    "id": 1207298,
+    "title": "Hero",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/cad915397b6a7e237fd775f36aa9dda5/250x250-000000-80-0-0.jpg",
+    "fans": 6436,
+    "release_date": "2005-10-01",
+    "record_type": "album"
+   },
+   {
+    "id": 453902385,
+    "title": "The Rebirth Of Kirk Franklin (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6eebf45510a5dcdc9af450ea81225ce5/250x250-000000-80-0-0.jpg",
+    "fans": 1765,
+    "release_date": "2002-02-19",
+    "record_type": "album"
+   },
+   {
+    "id": 1420286,
+    "title": "The Nu Nation Project",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/64d7251c96d12cb4f529bbf246c20fd8/250x250-000000-80-0-0.jpg",
+    "fans": 10596,
+    "release_date": "1998-10-22",
+    "record_type": "album"
+   },
+   {
+    "id": 122647272,
+    "title": "God's Property from Kirk Franklin's Nu Nation",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6977504e587e7ebcd16039ebb6ba0696/250x250-000000-80-0-0.jpg",
+    "fans": 742,
+    "release_date": "2010-03-22",
+    "record_type": "album"
+   },
+   {
+    "id": 1421308,
+    "title": "Kirk Franklin and the Family",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4b024343ce615123c69b5f9e82adbf86/250x250-000000-80-0-0.jpg",
+    "fans": 5572,
+    "release_date": "2001-11-01",
+    "record_type": "album"
+   },
+   {
+    "id": 1422092,
+    "title": "A Season Of Remixes",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/f6e15bd997bca19f348085c5f529a3c9/250x250-000000-80-0-0.jpg",
+    "fans": 1718,
+    "release_date": "2003-10-14",
+    "record_type": "ep"
+   },
+   {
+    "id": 886607772,
+    "title": "Thank God (feat. Young Dro)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1967af31a3b153531de60cf0c149d7ea/250x250-000000-80-0-0.jpg",
+    "fans": 44,
+    "release_date": "2024-08-16",
+    "record_type": "single"
+   },
+   {
+    "id": 275264372,
+    "title": "Fall in Love at Christmas (Remixes)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ee093d46d5fe56d1095f6de7e028cb4e/250x250-000000-80-0-0.jpg",
+    "fans": 791,
+    "release_date": "2021-12-03",
+    "record_type": "single"
+   },
+   {
+    "id": 265202732,
+    "title": "Fall in Love at Christmas",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ab35ad2d012cbab6aaf40a8e19e6ecd6/250x250-000000-80-0-0.jpg",
+    "fans": 1471,
+    "release_date": "2021-11-05",
+    "record_type": "single"
+   },
+   {
+    "id": 261683062,
+    "title": "Amén (with Kirk Franklin)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e60a60e274c5b64b3bdd7eecc74f51e7/250x250-000000-80-0-0.jpg",
+    "fans": 469,
+    "release_date": "2021-09-30",
+    "record_type": "single"
+   },
+   {
+    "id": 256917512,
+    "title": "Lean on Me (Worldwide Mix) (feat. The Compassion Youth Choir)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/af0a08241cb7ac5a05bd53f6606b7115/250x250-000000-80-0-0.jpg",
+    "fans": 120,
+    "release_date": "2021-09-24",
+    "record_type": "single"
+   },
+   {
+    "id": 230155202,
+    "title": "We Win (Space Jam: A New Legacy)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/db6e9e380ff30a2c6432761d35b10a88/250x250-000000-80-0-0.jpg",
+    "fans": 1150,
+    "release_date": "2021-05-21",
+    "record_type": "single"
+   },
+   {
+    "id": 171152612,
+    "title": "Love Theory (Remix)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6a60c7a50fb39a36c61b940cf74f4785/250x250-000000-80-0-0.jpg",
+    "fans": 585,
+    "release_date": "2020-09-10",
+    "record_type": "single"
+   },
+   {
+    "id": 144015462,
+    "title": "TOGETHER",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/10d2faeb4a259a6d413958bdbc6b4511/250x250-000000-80-0-0.jpg",
+    "fans": 1965,
+    "release_date": "2020-05-01",
+    "record_type": "single"
+   },
+   {
+    "id": 129287272,
+    "title": "Millionaire (Good Like That)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/f26b96c3d5c99acf7d60de94077a26ab/250x250-000000-80-0-0.jpg",
+    "fans": 715,
+    "release_date": "2020-02-14",
+    "record_type": "single"
+   },
+   {
+    "id": 115242692,
+    "title": "Past & Present Vol. 2",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/3b3ff009a9abc2fe28f9e6d1c89b5800/250x250-000000-80-0-0.jpg",
+    "fans": 606,
+    "release_date": "2019-11-08",
+    "record_type": "single"
+   },
+   {
+    "id": 115242962,
+    "title": "Past & Present Vol. 1",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/0e3678b7e5e9a1c7274d2046b59ff245/250x250-000000-80-0-0.jpg",
+    "fans": 491,
+    "release_date": "2019-10-25",
+    "record_type": "single"
+   },
+   {
+    "id": 92705542,
+    "title": "OK",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/07876d98103762bdb3caff075ff852de/250x250-000000-80-0-0.jpg",
+    "fans": 949,
+    "release_date": "2019-05-17",
+    "record_type": "single"
+   },
+   {
+    "id": 92640452,
+    "title": "Just for Me",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/07876d98103762bdb3caff075ff852de/250x250-000000-80-0-0.jpg",
+    "fans": 951,
+    "release_date": "2019-04-19",
+    "record_type": "single"
+   },
+   {
+    "id": 82417222,
+    "title": "Love Theory",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4b1ee6382ac0ce16cf9db600da7686df/250x250-000000-80-0-0.jpg",
+    "fans": 4620,
+    "release_date": "2019-01-25",
+    "record_type": "single"
+   },
+   {
+    "id": 13948134,
+    "title": "123 Victory (feat. Pharrell Williams) (Remix)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e53e30ad9a904ff8dc56b717fa70025c/250x250-000000-80-0-0.jpg",
+    "fans": 1503,
+    "release_date": "2016-09-02",
+    "record_type": "single"
+   },
+   {
+    "id": 11539286,
+    "title": "Road Trip",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2f4ab8d48ff3fc89528a6456eb67a8ec/250x250-000000-80-0-0.jpg",
+    "fans": 1232,
+    "release_date": "2015-10-30",
+    "record_type": "single"
+   },
+   {
+    "id": 11428626,
+    "title": "123 Victory",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2f4ab8d48ff3fc89528a6456eb67a8ec/250x250-000000-80-0-0.jpg",
+    "fans": 1734,
+    "release_date": "2015-10-16",
+    "record_type": "single"
+   },
+   {
+    "id": 11046346,
+    "title": "Wanna Be Happy?",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/360b645a30dc13965d4312ce4cb79d40/250x250-000000-80-0-0.jpg",
+    "fans": 3561,
+    "release_date": "2015-08-28",
+    "record_type": "single"
+   },
+   {
+    "id": 864135,
+    "title": "I Smile",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/350eee6651f36a51bfb9d7b94b9c402a/250x250-000000-80-0-0.jpg",
+    "fans": 4732,
+    "release_date": "2011-02-11",
+    "record_type": "single"
+   },
+   {
+    "id": 1451402,
+    "title": "Looking for You",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/c6092700d5c96a5ebafc6b0a41c908f9/250x250-000000-80-0-0.jpg",
+    "fans": 294,
+    "release_date": "2005-08-09",
+    "record_type": "single"
+   }
+  ],
+  "total": 35
+ }
+}

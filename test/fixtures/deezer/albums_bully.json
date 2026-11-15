@@ -1,0 +1,316 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search/album",
+  "query": {
+   "q": "bully",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 949407771,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 18,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 907177312,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 3,
+    "record_type": "single",
+    "artist": {
+     "id": 4099199,
+     "name": "Ye",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 408649437,
+    "title": "Lucky For You",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/203c38a85d370d863de3c1419976544d/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 10,
+    "record_type": "album",
+    "artist": {
+     "id": 90837,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 907179762,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 2,
+    "record_type": "single",
+    "artist": {
+     "id": 4099199,
+     "name": "Ye",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 185278262,
+    "title": "SUGAREGG",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ff1547791b3440a060a53d80ee4cf714/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 12,
+    "record_type": "album",
+    "artist": {
+     "id": 90837,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 185270012,
+    "title": "Losing",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6198ae414198e522671523dd74506c54/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 12,
+    "record_type": "album",
+    "artist": {
+     "id": 90837,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 10615398,
+    "title": "Feels Like",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/fbcdc6784541bdedf6ec671f1a22a51f/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 11,
+    "record_type": "album",
+    "artist": {
+     "id": 90837,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 650136971,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1c3fb8a0da1fe9c96e89679fcb74776d/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 66197242,
+     "name": "Jay.f.k beats",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/d7c0efd0f438a2814f341e712ba2a87f/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 8861555,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/31d55e33beba80d15fc7dcd79b4fd8f3/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 5,
+    "record_type": "ep",
+    "artist": {
+     "id": 90837,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1010171471,
+    "title": "BULLY - DELUXE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 20,
+    "record_type": "album",
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 686669151,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6b27f600a54a678c2a2d28729f8b50e6/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 11970929,
+     "name": "Lil 6",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/f7124a41634e7670c1c63180c4d45875/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 679199931,
+    "title": "Docket (feat. Bully)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/7f33e11848a32108a3e62f1aa1c00be9/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 170172097,
+     "name": "Blondshell",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bcbd1ade1c1fa392834ea90e3525c601/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 493899361,
+    "title": "Bully (Original Soundtrack)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a1c6ade88443f25814fc5af1d12911d9/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 26,
+    "record_type": "album",
+    "artist": {
+     "id": 10257,
+     "name": "Shawn Lee",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b543c64f506d5fe632bb883e99460c80/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 478675155,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/20cc569d4c25292c56e94dedfee7b1c8/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 5,
+    "record_type": "ep",
+    "artist": {
+     "id": 1106555,
+     "name": "Uneek",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/8aaa76396b3b272290a9d02b9f647ee7/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 101315292,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/0882250c457d4f028efc0dbd3e23f3b8/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 11,
+    "record_type": "album",
+    "artist": {
+     "id": 345652281,
+     "name": "Hook",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/205919d3397aa8e076a2516240622d3a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 222277722,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/3ecaa2555fd0155358ef3e2b5d0e3a9d/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 10172688,
+     "name": "Gawne",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/23c87d050bf6d9578474ad59b3a6bc9a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 524604882,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/555a146d7f08c907dfc38ccbb9207260/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 8,
+    "record_type": "album",
+    "artist": {
+     "id": 65007622,
+     "name": "French Police",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b568549b611e9c2d109819689e1f3efc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 404616027,
+    "title": "Lose You",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/97320009f0dbdbc535f03c92152d3c7b/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 90837,
+     "name": "Bully",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/49fe9cb7b4c10db491e32b11841e27d6/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 60431372,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/f2cbdcb7e206498f3d481fff1ee08ced/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 12,
+    "record_type": "album",
+    "artist": {
+     "id": 161395,
+     "name": "High Tension",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/3080ee2ccf86de3b206a2435a8e3b480/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 370468337,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2123f1e8028f0d8628909b3f556600a5/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 102090812,
+     "name": "Apollontheone",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/1dc313fa499f8c641938c7a27415e242/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 84819722,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bce875f4d1acd192c3cfb16e62a823a4/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 4,
+    "record_type": "ep",
+    "artist": {
+     "id": 11870749,
+     "name": "Ruby Haunt",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/4bf5a32dd40004d14f03a9e5cc4eb954/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1023240791,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2621278e94924553b4f0b9ef73fad4d2/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 147693272,
+     "name": "BabyDrill",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/9e1e9f818ff57d5f88a4b9081ac52a0f/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 673566101,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/f862c8a4e274976b6e4c8accdfa5dfbf/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 177898717,
+     "name": "GOTNOTIME",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/084ebf15bf647a8a750413f7a02576cd/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 11324740,
+    "title": "Bully",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/adef09b0ff4bfadc629ff0ceb139a322/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 7,
+    "record_type": "album",
+    "artist": {
+     "id": 118071,
+     "name": "HYPER",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/60220c79468a44c2ca7ee93a9a504a8c/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1017014311,
+    "title": "Bully (feat. Kapitani)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a0e4e70c1696045e975dcbfae64b2318/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 149116902,
+     "name": "Sewersydaa",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/ae00051ce156cab11b239ed450885695/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 121
+ }
+}

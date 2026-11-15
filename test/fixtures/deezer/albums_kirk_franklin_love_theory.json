@@ -1,0 +1,136 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search/album",
+  "query": {
+   "q": "kirk franklin love theory",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 82417222,
+    "title": "Love Theory",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4b1ee6382ac0ce16cf9db600da7686df/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 171152612,
+    "title": "Love Theory (Remix)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6a60c7a50fb39a36c61b940cf74f4785/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 92618872,
+    "title": "LONG LIVE LOVE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/07876d98103762bdb3caff075ff852de/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 10,
+    "record_type": "album",
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 761463941,
+    "title": "Love Theory",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/162945d46624081d1cfab805ea492380/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 1282039,
+     "name": "The Lancasters",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b87e9b83777e76faf64e1cc83626b408/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 783940031,
+    "title": "Love Theory",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/adc7e7ca334c8f04c68ebfcf1558db00/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 4617603,
+     "name": "Judy Jay",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/adc7e7ca334c8f04c68ebfcf1558db00/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1060673782,
+    "title": "Love Theory",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/dc6177db992dcc4381c9680b9575794f/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 115854162,
+     "name": "Songfield",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bc614fcb94d770db10749cd9de668505/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1045578302,
+    "title": "Love Theory _ Piano",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/c21dfbd46afc1747e26bebabef0b8ca9/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 70638932,
+     "name": "Eliezer Soares",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/e816fa69f3bac213c98d90ee01eb89cf/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 405846117,
+    "title": "Love Theory",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/aa79290fac9e553d0e3b96029855a3d3/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 132609932,
+     "name": "Lucas Bosson Official",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/056d54333e71b4afc74206c191a7169a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 243830822,
+    "title": "Love Theory",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e8f4068e79d1b5c8383f860e616d7bf2/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 130389732,
+     "name": "Siri'us the Choir",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/e8f4068e79d1b5c8383f860e616d7bf2/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1110506462,
+    "title": "Love Theory Latin Beat",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/19f6f7a1a61d583f390cf2af045e5c1e/250x250-000000-80-0-0.jpg",
+    "nb_tracks": 1,
+    "record_type": "single",
+    "artist": {
+     "id": 4856058,
+     "name": "Colin Lee",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/4a025f5154b54de72dad15113d533e58/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 10
+ }
+}

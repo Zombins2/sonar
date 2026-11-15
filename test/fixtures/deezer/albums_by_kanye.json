@@ -1,0 +1,599 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/230/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1010171471,
+    "title": "BULLY - DELUXE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bee7027021b52bb1b7487eee1cd82244/250x250-000000-80-0-0.jpg",
+    "fans": 4309,
+    "release_date": "2026-06-19",
+    "record_type": "album"
+   },
+   {
+    "id": 949407771,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "fans": 15763,
+    "release_date": "2026-03-28",
+    "record_type": "album"
+   },
+   {
+    "id": 627336881,
+    "title": "VULTURES 2",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a097891c9605bba6078e8b31a668da6d/250x250-000000-80-0-0.jpg",
+    "fans": 2824,
+    "release_date": "2024-08-03",
+    "record_type": "album"
+   },
+   {
+    "id": 624563281,
+    "title": "VULTURES 1",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/cf8eacd91f5484666db893aa01c55f6b/250x250-000000-80-0-0.jpg",
+    "fans": 8300,
+    "release_date": "2024-02-09",
+    "record_type": "album"
+   },
+   {
+    "id": 977096211,
+    "title": "DONDA 2",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/362cc0c598362da9f3083b01228a0032/250x250-000000-80-0-0.jpg",
+    "fans": 1212,
+    "release_date": "2025-06-06",
+    "record_type": "album"
+   },
+   {
+    "id": 261749392,
+    "title": "Donda",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/330da8bf0a57b47c2078db2d3761dc5e/250x250-000000-80-0-0.jpg",
+    "fans": 66224,
+    "release_date": "2021-09-28",
+    "record_type": "album"
+   },
+   {
+    "id": 272700102,
+    "title": "Donda (Deluxe)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/330da8bf0a57b47c2078db2d3761dc5e/250x250-000000-80-0-0.jpg",
+    "fans": 30548,
+    "release_date": "2021-11-15",
+    "record_type": "album"
+   },
+   {
+    "id": 116355212,
+    "title": "JESUS IS KING",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/57e636dd1b26e8edce941a8450c10477/250x250-000000-80-0-0.jpg",
+    "fans": 149392,
+    "release_date": "2019-10-25",
+    "record_type": "album"
+   },
+   {
+    "id": 65434762,
+    "title": "KIDS SEE GHOSTS",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/778fafd1b7e65b0b769be21ddd3f3e5a/250x250-000000-80-0-0.jpg",
+    "fans": 97059,
+    "release_date": "2018-06-08",
+    "record_type": "album"
+   },
+   {
+    "id": 77941202,
+    "title": "ye",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/71d34b7f041d43ea821a9afaeab73666/250x250-000000-80-0-0.jpg",
+    "fans": 74004,
+    "release_date": "2018-11-06",
+    "record_type": "album"
+   },
+   {
+    "id": 12786196,
+    "title": "The Life Of Pablo",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bb07ba5f19e94a91b67104dc232966a4/250x250-000000-80-0-0.jpg",
+    "fans": 6956,
+    "release_date": "2016-04-01",
+    "record_type": "album"
+   },
+   {
+    "id": 13357219,
+    "title": "The Life Of Pablo",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e055ecc8d01680cda0460017087728be/250x250-000000-80-0-0.jpg",
+    "fans": 208198,
+    "release_date": "2016-06-15",
+    "record_type": "album"
+   },
+   {
+    "id": 6694046,
+    "title": "Yeezus",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5a56530f7906bd9786fa47bd0be421b3/250x250-000000-80-0-0.jpg",
+    "fans": 225502,
+    "release_date": "2013-06-18",
+    "record_type": "album"
+   },
+   {
+    "id": 477673195,
+    "title": "Watch The Throne (Deluxe)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5ff776f44edc5f7fbef5fa2169006f29/250x250-000000-80-0-0.jpg",
+    "fans": 10932,
+    "release_date": "2023-08-25",
+    "record_type": "album"
+   },
+   {
+    "id": 6431434,
+    "title": "Watch The Throne (Deluxe)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b0604c988a2d55f36e33b970e5a32851/250x250-000000-80-0-0.jpg",
+    "fans": 16754,
+    "release_date": "2011-08-12",
+    "record_type": "album"
+   },
+   {
+    "id": 707965,
+    "title": "My Beautiful Dark Twisted Fantasy",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/742aba8510ba803bea51d304cf2ca786/250x250-000000-80-0-0.jpg",
+    "fans": 247725,
+    "release_date": "2010-11-22",
+    "record_type": "album"
+   },
+   {
+    "id": 13833162,
+    "title": "808s & Heartbreak",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2877c6bf4fad750c54dd212fb50a366b/250x250-000000-80-0-0.jpg",
+    "fans": 80718,
+    "release_date": "2016-08-19",
+    "record_type": "album"
+   },
+   {
+    "id": 86994002,
+    "title": "Graduation",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8c6578a2099561992fb7544e6826f767/250x250-000000-80-0-0.jpg",
+    "fans": 84240,
+    "release_date": "2007-09-15",
+    "record_type": "album"
+   },
+   {
+    "id": 126525,
+    "title": "Late Registration",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/7cbfc94084895e59b5a313a98ab1bd9a/250x250-000000-80-0-0.jpg",
+    "fans": 108108,
+    "release_date": "2005-08-12",
+    "record_type": "album"
+   },
+   {
+    "id": 68440261,
+    "title": "The College Dropout",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/069a5dba671436da9301aad36fc9a983/250x250-000000-80-0-0.jpg",
+    "fans": 69115,
+    "release_date": "2004-02-10",
+    "record_type": "album"
+   },
+   {
+    "id": 627328831,
+    "title": "CARNIVAL PACK (feat. Rich The Kid, Playboi Carti)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b759cebfd021c2b82e5a642781bd97ad/250x250-000000-80-0-0.jpg",
+    "fans": 218,
+    "release_date": "2024-02-08",
+    "record_type": "ep"
+   },
+   {
+    "id": 1000680621,
+    "title": "GEMINI SEASON",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a1ec03de230229a9ac51c2f5a72b2b23/250x250-000000-80-0-0.jpg",
+    "fans": 358,
+    "release_date": "2026-06-08",
+    "record_type": "single"
+   },
+   {
+    "id": 907179762,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "fans": 86,
+    "release_date": "2025-07-04",
+    "record_type": "single"
+   },
+   {
+    "id": 907177312,
+    "title": "BULLY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e6c8292811aac14c1c4d25d768b863ee/250x250-000000-80-0-0.jpg",
+    "fans": 141,
+    "release_date": "2025-06-20",
+    "record_type": "single"
+   },
+   {
+    "id": 624172811,
+    "title": "SLIDE",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/058a48f2674108867cc392d5bdc97fe9/250x250-000000-80-0-0.jpg",
+    "fans": 577,
+    "release_date": "2024-08-03",
+    "record_type": "single"
+   },
+   {
+    "id": 887714722,
+    "title": "No Apologies",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6d651d8f91f923df790ae3ecc2730ed1/250x250-000000-80-0-0.jpg",
+    "fans": 119,
+    "release_date": "2024-07-12",
+    "record_type": "single"
+   },
+   {
+    "id": 592940562,
+    "title": "No Face",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2af2889a68fb56535d936b330d293035/250x250-000000-80-0-0.jpg",
+    "fans": 437,
+    "release_date": "2024-05-31",
+    "record_type": "single"
+   },
+   {
+    "id": 550902332,
+    "title": "Where They At (Slowed Down)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1b0a5e5dfdf0fb56f10d3c83b118f4bf/250x250-000000-80-0-0.jpg",
+    "fans": 58,
+    "release_date": "2024-02-08",
+    "record_type": "single"
+   },
+   {
+    "id": 631225451,
+    "title": "CARNIVAL - HOOLIGANS VERSION",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b759cebfd021c2b82e5a642781bd97ad/250x250-000000-80-0-0.jpg",
+    "fans": 42,
+    "release_date": "2024-02-08",
+    "record_type": "single"
+   },
+   {
+    "id": 631225471,
+    "title": "CARNIVAL (INSTRUMENTAL)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/cb324f43110f1c35640371130cbbc4de/250x250-000000-80-0-0.jpg",
+    "fans": 29,
+    "release_date": "2024-02-08",
+    "record_type": "single"
+   },
+   {
+    "id": 631238441,
+    "title": "CARNIVAL (feat. Rich The Kid, Playboi Carti)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b759cebfd021c2b82e5a642781bd97ad/250x250-000000-80-0-0.jpg",
+    "fans": 156,
+    "release_date": "2024-02-08",
+    "record_type": "single"
+   },
+   {
+    "id": 631214791,
+    "title": "TALKING",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/0028a20c8be066c1ee9e21f965661dde/250x250-000000-80-0-0.jpg",
+    "fans": 197,
+    "release_date": "2024-02-07",
+    "record_type": "single"
+   },
+   {
+    "id": 662186851,
+    "title": "VULTURES PACK",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/01497573a36ff1f2b43056726da94206/250x250-000000-80-0-0.jpg",
+    "fans": 190,
+    "release_date": "2024-02-06",
+    "record_type": "single"
+   },
+   {
+    "id": 631214721,
+    "title": "VULTURES",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bd72f880486c3055599f58e5885359f7/250x250-000000-80-0-0.jpg",
+    "fans": 253,
+    "release_date": "2023-11-22",
+    "record_type": "single"
+   },
+   {
+    "id": 631214751,
+    "title": "VULTURES",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2c21c17199e02eb030bdd0bffb40b1ec/250x250-000000-80-0-0.jpg",
+    "fans": 38,
+    "release_date": "2023-11-21",
+    "record_type": "single"
+   },
+   {
+    "id": 631214771,
+    "title": "VULTURES",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/bd72f880486c3055599f58e5885359f7/250x250-000000-80-0-0.jpg",
+    "fans": 76,
+    "release_date": "2023-11-18",
+    "record_type": "single"
+   },
+   {
+    "id": 548905852,
+    "title": "Stand United",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1b0a5e5dfdf0fb56f10d3c83b118f4bf/250x250-000000-80-0-0.jpg",
+    "fans": 89,
+    "release_date": "2023-11-17",
+    "record_type": "single"
+   },
+   {
+    "id": 548950632,
+    "title": "Where They At",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1b0a5e5dfdf0fb56f10d3c83b118f4bf/250x250-000000-80-0-0.jpg",
+    "fans": 60,
+    "release_date": "2023-11-17",
+    "record_type": "single"
+   },
+   {
+    "id": 322038187,
+    "title": "True Love",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/dc64fd5bee2049429ac5a383ab2e6e00/250x250-000000-80-0-0.jpg",
+    "fans": 11316,
+    "release_date": "2022-05-27",
+    "record_type": "single"
+   },
+   {
+    "id": 294824962,
+    "title": "City of Gods",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/c7bfa3858d68a6ec34b6a7050285c00d/250x250-000000-80-0-0.jpg",
+    "fans": 7600,
+    "release_date": "2022-02-11",
+    "record_type": "single"
+   },
+   {
+    "id": 287901192,
+    "title": "Eazy",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/decdd54653ef890d52f573e4a8adc711/250x250-000000-80-0-0.jpg",
+    "fans": 5477,
+    "release_date": "2022-01-16",
+    "record_type": "single"
+   },
+   {
+    "id": 334831987,
+    "title": "Eazy",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/59675108c38f1311251ea58b6520b199/250x250-000000-80-0-0.jpg",
+    "fans": 1035,
+    "release_date": "2022-07-13",
+    "record_type": "single"
+   },
+   {
+    "id": 261029912,
+    "title": "Hurricane",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/330da8bf0a57b47c2078db2d3761dc5e/250x250-000000-80-0-0.jpg",
+    "fans": 3749,
+    "release_date": "2021-09-24",
+    "record_type": "single"
+   },
+   {
+    "id": 272700472,
+    "title": "Life Of The Party",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/330da8bf0a57b47c2078db2d3761dc5e/250x250-000000-80-0-0.jpg",
+    "fans": 1663,
+    "release_date": "2021-11-15",
+    "record_type": "single"
+   },
+   {
+    "id": 157755872,
+    "title": "Wash Us In The Blood",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/d3b002a96b09fb618b9d4fa81fe4d28b/250x250-000000-80-0-0.jpg",
+    "fans": 16230,
+    "release_date": "2020-06-30",
+    "record_type": "single"
+   },
+   {
+    "id": 74445832,
+    "title": "I Love It (Freaky Girl Edit)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/24d6fb5732c5203ca991f4415e732fc3/250x250-000000-80-0-0.jpg",
+    "fans": 2587,
+    "release_date": "2018-09-30",
+    "record_type": "single"
+   },
+   {
+    "id": 72551132,
+    "title": "I Love It",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/24d6fb5732c5203ca991f4415e732fc3/250x250-000000-80-0-0.jpg",
+    "fans": 12812,
+    "release_date": "2018-09-07",
+    "record_type": "single"
+   },
+   {
+    "id": 72551142,
+    "title": "I Love It",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/24d6fb5732c5203ca991f4415e732fc3/250x250-000000-80-0-0.jpg",
+    "fans": 72248,
+    "release_date": "2018-09-07",
+    "record_type": "single"
+   },
+   {
+    "id": 71758382,
+    "title": "XTCY",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/d6afc183e56fdb8a99af611ca1ee3797/250x250-000000-80-0-0.jpg",
+    "fans": 4599,
+    "release_date": "2018-08-30",
+    "record_type": "single"
+   },
+   {
+    "id": 62593852,
+    "title": "Lift Yourself",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/160521ac50007d3349e0dfede7ac88d4/250x250-000000-80-0-0.jpg",
+    "fans": 8357,
+    "release_date": "2018-04-29",
+    "record_type": "single"
+   },
+   {
+    "id": 62479282,
+    "title": "Ye vs. the People (starring TI as the People)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6ffdb81ccc87c75741a537366d14ea8e/250x250-000000-80-0-0.jpg",
+    "fans": 3040,
+    "release_date": "2018-04-28",
+    "record_type": "single"
+   },
+   {
+    "id": 13336781,
+    "title": "Champions",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/9c5deee90276300083dc87d93e048ee7/250x250-000000-80-0-0.jpg",
+    "fans": 24270,
+    "release_date": "2016-06-13",
+    "record_type": "single"
+   },
+   {
+    "id": 10008928,
+    "title": "All Day",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2bc5f326856279b95b52d679c1a44699/250x250-000000-80-0-0.jpg",
+    "fans": 2466,
+    "release_date": "2015-04-01",
+    "record_type": "single"
+   },
+   {
+    "id": 9804854,
+    "title": "All Day",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/988af878a0d6735d2e20ebd3cdd94611/250x250-000000-80-0-0.jpg",
+    "fans": 15767,
+    "release_date": "2015-03-02",
+    "record_type": "single"
+   },
+   {
+    "id": 9760426,
+    "title": "FourFiveSeconds",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ebe39c7db49fedcc2c0e8b28daf6bf31/250x250-000000-80-0-0.jpg",
+    "fans": 74016,
+    "release_date": "2015-01-24",
+    "record_type": "single"
+   },
+   {
+    "id": 9443702,
+    "title": "Only One",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b849705f601429e0f116a0008eaa5e21/250x250-000000-80-0-0.jpg",
+    "fans": 14298,
+    "release_date": "2015-01-08",
+    "record_type": "single"
+   },
+   {
+    "id": 1682605,
+    "title": "Mercy",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/be5842f0ebd1693c7bb5ffead7ddd534/250x250-000000-80-0-0.jpg",
+    "fans": 25264,
+    "release_date": "2012-04-06",
+    "record_type": "single"
+   },
+   {
+    "id": 1851971,
+    "title": "Cold",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/86bab3738425b3abaeb326417c7d2f6c/250x250-000000-80-0-0.jpg",
+    "fans": 3691,
+    "release_date": "2012-04-17",
+    "record_type": "single"
+   },
+   {
+    "id": 4996911,
+    "title": "New God Flow",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/3823e5314c980fd1e374642212be15ff/250x250-000000-80-0-0.jpg",
+    "fans": 2409,
+    "release_date": "2012-07-20",
+    "record_type": "single"
+   },
+   {
+    "id": 745747,
+    "title": "Christmas In Harlem",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/aa8993bc375f0c9aaab4a8786de8ae23/250x250-000000-80-0-0.jpg",
+    "fans": 822,
+    "release_date": "2010-12-17",
+    "record_type": "single"
+   },
+   {
+    "id": 400170,
+    "title": "Forever",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e1e3e58f8f395010769d435ae3f14bb4/250x250-000000-80-0-0.jpg",
+    "fans": 34782,
+    "release_date": "2009-09-15",
+    "record_type": "single"
+   },
+   {
+    "id": 320895747,
+    "title": "Stronger (Remixes)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/465cbf9e7ccc13eaa19aa15dd3302bfa/250x250-000000-80-0-0.jpg",
+    "fans": 82,
+    "release_date": "2008-02-12",
+    "record_type": "single"
+   },
+   {
+    "id": 231269,
+    "title": "Impossible",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/46f72a5dd5faba37de2291b99590e768/250x250-000000-80-0-0.jpg",
+    "fans": 1184,
+    "release_date": "2006-05-05",
+    "record_type": "single"
+   },
+   {
+    "id": 224911,
+    "title": "Diamonds From Sierra Leone Remix",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/7e5f41f654a1b00055c9158a6e144852/250x250-000000-80-0-0.jpg",
+    "fans": 1515,
+    "release_date": "2005-07-05",
+    "record_type": "single"
+   },
+   {
+    "id": 321138187,
+    "title": "Diamonds From Sierra Leone Remix",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/78cfa856a1bc50d2f51964a9a25ef5d6/250x250-000000-80-0-0.jpg",
+    "fans": 74,
+    "release_date": "2005-07-19",
+    "record_type": "single"
+   },
+   {
+    "id": 326965,
+    "title": "Hold On (Remix / Extended Version)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a993cc33ff669a7027d9ad44016e07cf/250x250-000000-80-0-0.jpg",
+    "fans": 153,
+    "release_date": "2004-06-15",
+    "record_type": "single"
+   },
+   {
+    "id": 326937,
+    "title": "Hold On",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/02cbd8e265c0649901a2b1be5d72f9b3/250x250-000000-80-0-0.jpg",
+    "fans": 98,
+    "release_date": "2004-03-29",
+    "record_type": "single"
+   },
+   {
+    "id": 311803,
+    "title": "Selfish",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5a166ece0629b69cc991f3bafc6e1b5b/250x250-000000-80-0-0.jpg",
+    "fans": 1730,
+    "release_date": "2004-03-16",
+    "record_type": "single"
+   },
+   {
+    "id": 680290,
+    "title": "All Falls Down (Live From The House of Blues)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6622ea801dd26194f88e7927228b6717/250x250-000000-80-0-0.jpg",
+    "fans": 122,
+    "release_date": "2004-05-11",
+    "record_type": "single"
+   },
+   {
+    "id": 320894257,
+    "title": "We Don't Care (Live Version)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6fb92adf0a35f22270155d00ad2aa301/250x250-000000-80-0-0.jpg",
+    "fans": 60,
+    "release_date": "2004-08-31",
+    "record_type": "single"
+   },
+   {
+    "id": 321135357,
+    "title": "Jesus Walks (Live Version)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b76c44d542a205045bf81ef2526d28e1/250x250-000000-80-0-0.jpg",
+    "fans": 83,
+    "release_date": "2004-08-31",
+    "record_type": "single"
+   },
+   {
+    "id": 321135387,
+    "title": "Spaceships (Live Version)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6fb92adf0a35f22270155d00ad2aa301/250x250-000000-80-0-0.jpg",
+    "fans": 57,
+    "release_date": "2004-08-31",
+    "record_type": "single"
+   },
+   {
+    "id": 321136487,
+    "title": "The New Workout Plan (Live Version)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6fb92adf0a35f22270155d00ad2aa301/250x250-000000-80-0-0.jpg",
+    "fans": 53,
+    "release_date": "2004-08-31",
+    "record_type": "single"
+   }
+  ],
+  "total": 73
+ }
+}

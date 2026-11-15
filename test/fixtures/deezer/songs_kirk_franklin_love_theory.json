@@ -1,0 +1,73 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search",
+  "query": {
+   "q": "kirk franklin love theory",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 607724832,
+    "title": "Love Theory",
+    "title_short": "Love Theory",
+    "title_version": "",
+    "isrc": "USA5W1800322",
+    "duration": 251,
+    "rank": 564609,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 82417222,
+     "title": "Love Theory",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4b1ee6382ac0ce16cf9db600da7686df/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1069986752,
+    "title": "Love Theory (Remix)",
+    "title_short": "Love Theory (Remix)",
+    "title_version": "",
+    "isrc": "USA5W2000262",
+    "duration": 222,
+    "rank": 188438,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 171152612,
+     "title": "Love Theory (Remix)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6a60c7a50fb39a36c61b940cf74f4785/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2329624845,
+    "title": "My Life, My Love, My All (Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "title_short": "My Life, My Love, My All",
+    "title_version": "(Live at Lakewood Church, Houston, TX - June 16, 2000)",
+    "isrc": "USGCR0200007",
+    "duration": 382,
+    "rank": 383875,
+    "artist": {
+     "id": 295,
+     "name": "Kirk Franklin",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/2660594522987c3cf1ae90a879531cbc/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 453902385,
+     "title": "The Rebirth Of Kirk Franklin (Live)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/6eebf45510a5dcdc9af450ea81225ce5/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 3
+ }
+}

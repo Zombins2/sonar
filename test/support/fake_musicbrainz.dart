@@ -30,6 +30,10 @@ class FakeMusicBrainz {
   /// How long to take answering each request to a path, as a busy server would.
   final slow = <String, Duration>{};
 
+  /// The Retry-After sent with each queued 503 ("busy"), as MusicBrainz does
+  /// when it sheds load; none when null.
+  String? retryAfter;
+
   static const _recordings = [
     'artist_kanye_west',
     'artist_jpeg_mafia',
@@ -50,6 +54,15 @@ class FakeMusicBrainz {
     'songs_of_mbdtf',
     'pressings_of_graduation',
     'songs_of_graduation',
+    'artist_search_kanye_bully',
+    'artist_search_kanye',
+    'artist_search_kanye_west_bully',
+    'songs_by_ye_bully',
+    'albums_by_ye_bully',
+    'artist_search_bad_habit_steve_lacy',
+    'songs_by_steve_lacys_bad_habit',
+    'release_barcode_bully',
+    'songs_of_bully',
   ];
 
   String get base => 'http://127.0.0.1:${_server.port}';
@@ -112,6 +125,7 @@ class FakeMusicBrainz {
     final queue = queued[path];
     if (queue != null && queue.isNotEmpty) {
       final (status, reply) = queue.removeAt(0);
+      if (status == 503 && retryAfter != null) res.headers.set('retry-after', retryAfter!);
       return _reply(res, status, reply);
     }
     if (path.startsWith('/1/popularity/')) {
@@ -141,6 +155,7 @@ class FakeMusicBrainz {
       final listKey = switch (entity) {
         'artist' => 'artists',
         'recording' => 'recordings',
+        'release' => 'releases',
         _ => 'release-groups',
       };
       return _reply(res, 200, {'count': 0, 'offset': 0, listKey: <Object?>[]});

@@ -1,0 +1,491 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/search",
+  "query": {
+   "q": "kanye",
+   "limit": "25"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 830828822,
+    "title": "Manyè",
+    "title_short": "Manyè",
+    "title_version": "",
+    "isrc": "FR4EO1900126",
+    "duration": 275,
+    "rank": 404236,
+    "artist": {
+     "id": 70856,
+     "name": "David Walters",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/6b083950acb7f7a82e851416acc36731/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 122778472,
+     "title": "Soleil Kréyol",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/9e5a1a1938d571a9c501eeb60c5566d3/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1855507607,
+    "title": "American Boy",
+    "title_short": "American Boy",
+    "title_version": "",
+    "isrc": "USAT20706215",
+    "duration": 284,
+    "rank": 900317,
+    "artist": {
+     "id": 16745,
+     "name": "Estelle",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/0f8be74182d22ac32c4ec3b7cda49a47/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 343867647,
+     "title": "American Boy",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/fe5574a48d2d32c98484bd42e8406c7c/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 630827302,
+    "title": "Flashing Lights",
+    "title_short": "Flashing Lights",
+    "title_version": "",
+    "isrc": "USUM70749095",
+    "duration": 237,
+    "rank": 891802,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 86994002,
+     "title": "Graduation",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8c6578a2099561992fb7544e6826f767/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1366807262,
+    "title": "KANYE",
+    "title_short": "KANYE",
+    "title_version": "",
+    "isrc": "QZHN62106023",
+    "duration": 162,
+    "rank": 402476,
+    "artist": {
+     "id": 269444452,
+     "name": "FEEL",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/55529879c252c9432cd0f5bba40cffb5/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 228707292,
+     "title": "EKWA MWATO",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1e58b80991850eb6bf2f929bc3ffe10d/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 7667065,
+    "title": "Runaway",
+    "title_short": "Runaway",
+    "title_version": "",
+    "isrc": "USUM71027402",
+    "duration": 548,
+    "rank": 870128,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 707965,
+     "title": "My Beautiful Dark Twisted Fantasy",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/742aba8510ba803bea51d304cf2ca786/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 65601534,
+    "title": "No Church In The Wild (Album Version Edited)",
+    "title_short": "No Church In The Wild",
+    "title_version": "(Album Version Edited)",
+    "isrc": "USUM71111618",
+    "duration": 273,
+    "rank": 865070,
+    "artist": {
+     "id": 1309,
+     "name": "JAŸ-Z",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/a59aabd18e84d732ce3b9f6f5c4e5f50/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 6431434,
+     "title": "Watch The Throne (Deluxe)",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b0604c988a2d55f36e33b970e5a32851/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 95965912,
+    "title": "FourFiveSeconds",
+    "title_short": "FourFiveSeconds",
+    "title_version": "",
+    "isrc": "USJMT1500001",
+    "duration": 188,
+    "rank": 837121,
+    "artist": {
+     "id": 564,
+     "name": "Rihanna",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b78cdc205fae2641b89208e78b30e1b3/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 9760426,
+     "title": "FourFiveSeconds",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ebe39c7db49fedcc2c0e8b28daf6bf31/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 630827272,
+    "title": "Can't Tell Me Nothing",
+    "title_short": "Can't Tell Me Nothing",
+    "title_version": "",
+    "isrc": "USUM70739239",
+    "duration": 274,
+    "rank": 841255,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 86994002,
+     "title": "Graduation",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8c6578a2099561992fb7544e6826f767/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 630827332,
+    "title": "Homecoming",
+    "title_short": "Homecoming",
+    "title_version": "",
+    "isrc": "USUM70749093",
+    "duration": 203,
+    "rank": 812669,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 86994002,
+     "title": "Graduation",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8c6578a2099561992fb7544e6826f767/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1184309,
+    "title": "Gold Digger",
+    "title_short": "Gold Digger",
+    "title_version": "",
+    "isrc": "USUM70500143",
+    "duration": 208,
+    "rank": 806171,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 126525,
+     "title": "Late Registration",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/7cbfc94084895e59b5a313a98ab1bd9a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 7667059,
+    "title": "POWER",
+    "title_short": "POWER",
+    "title_version": "",
+    "isrc": "USUM71018220",
+    "duration": 292,
+    "rank": 788761,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 707965,
+     "title": "My Beautiful Dark Twisted Fantasy",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/742aba8510ba803bea51d304cf2ca786/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 130412300,
+    "title": "Heartless",
+    "title_short": "Heartless",
+    "title_version": "",
+    "isrc": "USUM70840511",
+    "duration": 210,
+    "rank": 794094,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 13833162,
+     "title": "808s & Heartbreak",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2877c6bf4fad750c54dd212fb50a366b/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 7667061,
+    "title": "All Of The Lights",
+    "title_short": "All Of The Lights",
+    "title_version": "",
+    "isrc": "USUM71027273",
+    "duration": 300,
+    "rank": 817041,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 707965,
+     "title": "My Beautiful Dark Twisted Fantasy",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/742aba8510ba803bea51d304cf2ca786/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 589730632,
+    "title": "Ni**as in Paris",
+    "title_short": "Ni**as in Paris",
+    "title_version": "",
+    "isrc": "FR0Z50036513",
+    "duration": 219,
+    "rank": 860851,
+    "artist": {
+     "id": 1309,
+     "name": "JAŸ-Z",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/a59aabd18e84d732ce3b9f6f5c4e5f50/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 79341742,
+     "title": "Once Upon a Time in 2011",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/89f4347a47338cecb4ebd849d4d3ce9c/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1617888392,
+    "title": "Kanye (Instrumental)",
+    "title_short": "Kanye",
+    "title_version": "(Instrumental)",
+    "isrc": "GX53U2061194",
+    "duration": 166,
+    "rank": 264979,
+    "artist": {
+     "id": 148051202,
+     "name": "JohnnyTheGreatOne",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/1080cde1f7ddfacc939757d8ee8539bb/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 286730352,
+     "title": "Kanye",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1080cde1f7ddfacc939757d8ee8539bb/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 68350113,
+    "title": "Bound 2",
+    "title_short": "Bound 2",
+    "title_version": "",
+    "isrc": "USUM71307523",
+    "duration": 229,
+    "rank": 777130,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 6694046,
+     "title": "Yeezus",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5a56530f7906bd9786fa47bd0be421b3/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 630827252,
+    "title": "I Wonder",
+    "title_short": "I Wonder",
+    "title_version": "",
+    "isrc": "USUM70749085",
+    "duration": 243,
+    "rank": 763200,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 86994002,
+     "title": "Graduation",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8c6578a2099561992fb7544e6826f767/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 4302194,
+    "title": "Forever (Explicit Version)",
+    "title_short": "Forever",
+    "title_version": "(Explicit Version)",
+    "isrc": "USUM70985104",
+    "duration": 357,
+    "rank": 742441,
+    "artist": {
+     "id": 246791,
+     "name": "Drake",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/eb0ed5b21d1ea5af021fc074ded0e91f/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 400170,
+     "title": "Forever",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e1e3e58f8f395010769d435ae3f14bb4/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 528869461,
+    "title": "All Falls Down",
+    "title_short": "All Falls Down",
+    "title_version": "",
+    "isrc": "USDJ20301703",
+    "duration": 223,
+    "rank": 722885,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 68440261,
+     "title": "The College Dropout",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/069a5dba671436da9301aad36fc9a983/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 126772731,
+    "title": "Father Stretch My Hands Pt. 1",
+    "title_short": "Father Stretch My Hands Pt. 1",
+    "title_version": "",
+    "isrc": "USUM71603067",
+    "duration": 135,
+    "rank": 734388,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 13357219,
+     "title": "The Life Of Pablo",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e055ecc8d01680cda0460017087728be/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 581609142,
+    "title": "Violent Crimes",
+    "title_short": "Violent Crimes",
+    "title_version": "",
+    "isrc": "USUM71807795",
+    "duration": 215,
+    "rank": 744487,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 77941202,
+     "title": "ye",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/71d34b7f041d43ea821a9afaeab73666/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 1184308,
+    "title": "Touch The Sky",
+    "title_short": "Touch The Sky",
+    "title_version": "",
+    "isrc": "USUM70502527",
+    "duration": 236,
+    "rank": 701735,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 126525,
+     "title": "Late Registration",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/7cbfc94084895e59b5a313a98ab1bd9a/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 2932385561,
+    "title": "CARNIVAL",
+    "title_short": "CARNIVAL",
+    "title_version": "",
+    "isrc": "QZ7XS2400012",
+    "duration": 264,
+    "rank": 729220,
+    "artist": {
+     "id": 14756433,
+     "name": "¥$",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/3e4b8ac499234eb020ead8b72e18c2f0/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 624563281,
+     "title": "VULTURES 1",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/cf8eacd91f5484666db893aa01c55f6b/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 785411522,
+    "title": "God Is",
+    "title_short": "God Is",
+    "title_version": "",
+    "isrc": "USUM71922073",
+    "duration": 203,
+    "rank": 723267,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 116355212,
+     "title": "JESUS IS KING",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/57e636dd1b26e8edce941a8450c10477/250x250-000000-80-0-0.jpg"
+    }
+   },
+   {
+    "id": 581609132,
+    "title": "Ghost Town",
+    "title_short": "Ghost Town",
+    "title_version": "",
+    "isrc": "USUM71807761",
+    "duration": 272,
+    "rank": 727147,
+    "artist": {
+     "id": 230,
+     "name": "Kanye West",
+     "picture_medium": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "album": {
+     "id": 77941202,
+     "title": "ye",
+     "cover_medium": "https://cdn-images.dzcdn.net/images/cover/71d34b7f041d43ea821a9afaeab73666/250x250-000000-80-0-0.jpg"
+    }
+   }
+  ],
+  "total": 248
+ }
+}
