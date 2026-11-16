@@ -4,22 +4,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/nav.dart';
 import '../../core/platform.dart';
 import '../../core/theme.dart';
+import '../../data/library_sort.dart';
 import '../../data/subsonic/models.dart';
 import '../../downloads/download_manager.dart';
 import '../../state/providers.dart';
 import '../widgets/common.dart';
 import '../widgets/cover_art.dart';
 import '../widgets/media_tiles.dart';
-
-enum LibrarySort {
-  recent('Recently added', AlbumListType.newest),
-  alpha('A–Z', AlbumListType.alphabeticalByName),
-  artist('Artist', AlbumListType.alphabeticalByArtist);
-
-  const LibrarySort(this.label, this.albumType);
-  final String label;
-  final AlbumListType albumType;
-}
 
 final librarySortProvider = StateProvider<LibrarySort>((_) => LibrarySort.recent);
 final libraryGridProvider = StateProvider<bool>((_) => true);
@@ -40,17 +31,7 @@ class LibraryScreen extends ConsumerWidget {
           toolbarHeight: 72,
           title: Text('Library', style: Theme.of(context).textTheme.headlineMedium),
           actions: [
-            PopupMenuButton<LibrarySort>(
-              tooltip: 'Sort',
-              icon: const Icon(Icons.sort_rounded),
-              color: SonarColors.surfaceElevated,
-              initialValue: sort,
-              onSelected: (s) => ref.read(librarySortProvider.notifier).state = s,
-              itemBuilder: (_) => [
-                for (final s in LibrarySort.values)
-                  CheckedPopupMenuItem(value: s, checked: s == sort, child: Text(s.label)),
-              ],
-            ),
+            const _SortButton(),
             IconButton(
               tooltip: grid ? 'List view' : 'Grid view',
               icon: Icon(grid ? Icons.view_list_rounded : Icons.grid_view_rounded),
@@ -72,14 +53,42 @@ class LibraryScreen extends ConsumerWidget {
         ),
         body: TabBarView(
           children: [
-            const _PlaylistsTab(),
-            _AlbumsTab(key: ValueKey(sort), sort: sort),
-            const _ArtistsTab(),
-            const _SongsTab(),
+            _PlaylistsTab(sort: LibraryTab.playlists.sortOf(sort)),
+            _AlbumsTab(key: ValueKey(sort), sort: LibraryTab.albums.sortOf(sort)),
+            _ArtistsTab(sort: LibraryTab.artists.sortOf(sort)),
+            _SongsTab(sort: LibraryTab.songs.sortOf(sort)),
             if (downloads) const _DownloadsTab(),
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Sort, with the choices the open tab has (none on Downloads).
+class _SortButton extends ConsumerWidget {
+  const _SortButton();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final tabs = DefaultTabController.of(context);
+    return AnimatedBuilder(
+      animation: tabs,
+      builder: (context, _) {
+        final tab = LibraryTab.values[tabs.index];
+        if (tab.sorts.isEmpty) return const SizedBox();
+        final sort = tab.sortOf(ref.watch(librarySortProvider));
+        return PopupMenuButton<LibrarySort>(
+          tooltip: 'Sort',
+          icon: const Icon(Icons.sort_rounded),
+          color: SonarColors.surfaceElevated,
+          initialValue: sort,
+          onSelected: (s) => ref.read(librarySortProvider.notifier).state = s,
+          itemBuilder: (_) => [
+            for (final s in tab.sorts) CheckedPopupMenuItem(value: s, checked: s == sort, child: Text(s.label)),
+          ],
+        );
+      },
     );
   }
 }
@@ -94,12 +103,12 @@ SliverGridDelegate get _gridDelegate => const SliverGridDelegateWithMaxCrossAxis
 );
 
 class _PlaylistsTab extends ConsumerWidget {
-  const _PlaylistsTab();
+  const _PlaylistsTab({required this.sort});
+  final LibrarySort sort;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final grid = ref.watch(libraryGridProvider);
-    final sort = ref.watch(librarySortProvider);
     return ref
         .watch(playlistsProvider)
         .when(
@@ -113,10 +122,8 @@ class _PlaylistsTab extends ConsumerWidget {
             switch (sort) {
               case LibrarySort.recent:
                 list.sort((a, b) => (b.changed ?? DateTime(0)).compareTo(a.changed ?? DateTime(0)));
-              case LibrarySort.alpha:
+              case LibrarySort.alpha || LibrarySort.artist:
                 list.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
-              case LibrarySort.artist:
-                list.sort((a, b) => (a.owner ?? '').compareTo(b.owner ?? ''));
             }
             return RefreshIndicator(
               onRefresh: () => ref.refresh(playlistsProvider.future),
@@ -139,20 +146,29 @@ class _PlaylistsTab extends ConsumerWidget {
 }
 
 class _ArtistsTab extends ConsumerWidget {
-  const _ArtistsTab();
+  const _ArtistsTab({required this.sort});
+  final LibrarySort sort;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final grid = ref.watch(libraryGridProvider);
+    final recent = sort == LibrarySort.recent;
+    final newest = recent ? ref.watch(newestAlbumsProvider) : const AsyncData(<Album>[]);
     return ref
         .watch(artistsProvider)
         .when(
           loading: () => const LoadingState(),
           error: (e, _) => ErrorState(error: e, onRetry: () => ref.invalidate(artistsProvider)),
-          data: (artists) {
-            if (artists.isEmpty) return const EmptyState(icon: Icons.person_rounded, title: 'No artists');
+          data: (all) {
+            if (all.isEmpty) return const EmptyState(icon: Icons.person_rounded, title: 'No artists');
+            if (newest.isLoading) return const LoadingState();
+            final artists = sortArtists(all, sort, newest.valueOrNull ?? const []);
             return RefreshIndicator(
-              onRefresh: () => ref.refresh(artistsProvider.future),
+              onRefresh: () async {
+                if (recent) ref.invalidate(newestAlbumsProvider);
+                ref.invalidate(artistsProvider);
+                await ref.read(artistsProvider.future);
+              },
               child: grid
                   ? GridView.builder(
                       padding: _listPadding(context).add(const EdgeInsets.symmetric(horizontal: SonarSpacing.gutter)),
@@ -274,24 +290,30 @@ class _AlbumsTabState extends _PagedState<_AlbumsTab, Album> {
 }
 
 class _SongsTab extends ConsumerStatefulWidget {
-  const _SongsTab();
+  const _SongsTab({required this.sort});
+  final LibrarySort sort;
 
   @override
   ConsumerState<_SongsTab> createState() => _SongsTabState();
 }
 
-class _SongsTabState extends _PagedState<_SongsTab, Song> {
+class _SongsTabState extends ConsumerState<_SongsTab> {
   /// The most random songs the Subsonic API hands out at once.
   static const shuffleSize = 500;
   bool _shuffling = false;
 
-  // Navidrome returns every song for an empty search3 query, paged by offset.
-  @override
-  Future<List<Song>> fetch(int offset) async => (await requireClientOf(
-    ref,
-  ).search3('', artistCount: 0, albumCount: 0, songCount: _PagedState.pageSize, songOffset: offset)).songs;
+  /// The last sort, kept while neither the songs nor the order change.
+  (List<Song>, LibrarySort, List<Song>)? _sorted;
 
-  /// Shuffles the whole library, not just the songs loaded so far.
+  List<Song> _inOrder(List<Song> songs) {
+    final s = _sorted;
+    if (s != null && identical(s.$1, songs) && s.$2 == widget.sort) return s.$3;
+    final out = sortSongs(songs, widget.sort);
+    _sorted = (songs, widget.sort, out);
+    return out;
+  }
+
+  /// Shuffles the whole library.
   Future<void> _shuffle() async {
     setState(() => _shuffling = true);
     try {
@@ -309,17 +331,26 @@ class _SongsTabState extends _PagedState<_SongsTab, Song> {
   }
 
   @override
-  Widget build(BuildContext context) => buildPaged(
-    context,
-    empty: const EmptyState(icon: Icons.music_note_rounded, title: 'No songs'),
-    builder: () => ListView.builder(
-      padding: _listPadding(context),
-      itemCount: items.length + 1,
-      itemBuilder: (_, i) => i == 0
-          ? _ShuffleHeader(label: 'All songs', busy: _shuffling, onShuffle: _shuffle)
-          : SongTile(song: items[i - 1], queue: items, index: i - 1),
-    ),
-  );
+  Widget build(BuildContext context) => ref
+      .watch(allSongsProvider)
+      .when(
+        loading: () => const LoadingState(),
+        error: (e, _) => ErrorState(error: e, onRetry: () => ref.invalidate(allSongsProvider)),
+        data: (all) {
+          if (all.isEmpty) return const EmptyState(icon: Icons.music_note_rounded, title: 'No songs');
+          final songs = _inOrder(all);
+          return RefreshIndicator(
+            onRefresh: () => ref.refresh(allSongsProvider.future),
+            child: ListView.builder(
+              padding: _listPadding(context),
+              itemCount: songs.length + 1,
+              itemBuilder: (_, i) => i == 0
+                  ? _ShuffleHeader(label: 'All songs', busy: _shuffling, onShuffle: _shuffle)
+                  : SongTile(song: songs[i - 1], queue: songs, index: i - 1),
+            ),
+          );
+        },
+      );
 }
 
 /// "N songs ... [Shuffle]" above the Songs and Downloads lists.

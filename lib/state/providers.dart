@@ -252,6 +252,20 @@ final artistProvider = FutureProvider.autoDispose.family<Artist, String>((ref, i
 
 final artistsProvider = FutureProvider.autoDispose<List<Artist>>((ref) => requireClient(ref).getArtists());
 
+/// Every album, newest first (the Artists tab's "Recently added").
+final newestAlbumsProvider = FutureProvider.autoDispose<List<Album>>((ref) async {
+  final client = requireClient(ref);
+  final albums = <Album>[];
+  while (true) {
+    final page = await client.getAlbumList2(AlbumListType.newest, size: 500, offset: albums.length);
+    albums.addAll(page);
+    if (page.length < 500) return albums;
+  }
+});
+
+/// Every song in the library, for the Songs tab to sort (the Subsonic API
+/// lists songs in no order of its own).
+final allSongsProvider = FutureProvider.autoDispose<List<Song>>((ref) => requireClient(ref).songsIn(null));
 
 /// Genres with music in them, biggest first.
 final genresProvider = FutureProvider.autoDispose<List<Genre>>((ref) async {
