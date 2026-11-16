@@ -57,6 +57,21 @@ New albums are filed into a `Soulbeet` folder inside your music folder, so
 Navidrome finds them. With Sonar Connect on, Navidrome rescans as soon as an
 album lands.
 
+### Discover
+
+With Get music, the installer also asks for a **Discover folder** (default:
+`Sonar Discover` next to your music folder, and never inside it). Sonar can
+download songs there for you to try. Navidrome shows them as a second library,
+"Discover", so they stay out of your own albums and artists. In the app, each
+song has **Keep**, which moves it into the `Soulbeet` folder with your music,
+and **Remove**, which deletes it.
+
+Sonar Connect does the moving and deleting. It sets up Navidrome's Discover
+library itself and gives your Navidrome users access. It only ever deletes
+inside the Discover folder, and never overwrites a song already in your
+library. Discover needs the Navidrome from this installer, plus Sonar Connect
+and Get music.
+
 > You are responsible for what you download and share. Respect the law where
 > you live.
 
@@ -94,8 +109,9 @@ docker compose --profile '*' down -v       # ...and Navidrome's and Soulbeet's d
 tailscale serve reset                      # stop serving over Tailscale
 ```
 
-Then delete the install folder. Your music folder is never changed (Get music
-only ever writes into its `Soulbeet` folder).
+Then delete the install folder, and the Discover folder if you made one. Your
+music folder is never changed: Get music only ever writes into its `Soulbeet`
+folder, and Discover only adds the songs you keep there.
 
 ## What's in here
 
@@ -104,7 +120,7 @@ install.cmd / install.ps1   Windows installer
 install.sh                  Mac / Linux installer
 docker-compose.yml          every part, switched on by COMPOSE_PROFILES in .env
 setup/configure.py          makes the logins and connects Get music (runs in Docker)
-sonar_connect/              the Sonar Connect relay (Python, no dependencies)
+sonar_connect/              the Sonar Connect relay, and Discover's keep / remove (Python, no dependencies)
 port-sync/                  keeps slskd on the port the VPN forwards
 beets/config.yaml           how beets tags and files new albums
 navidrome/navidrome.toml    reads synced lyrics from SYNCEDLYRICS tags too

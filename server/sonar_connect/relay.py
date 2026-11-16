@@ -11,6 +11,10 @@ Python standard library only. Plain HTTP both ways:
                  Soulbeet just filed). Needs an admin login, NAVIDROME_ADMIN_USER
                  and NAVIDROME_ADMIN_PASSWORD; 503 without them. At most one
                  scan per SCAN_GAP_SECONDS; the rest are answered as started.
+  GET  /discover         Bearer session -> {library, removed} (discover.py)
+  POST /discover/keep    Bearer session, {songs: [Navidrome song ids]} -> {done, failed}
+  POST /discover/remove  Bearer session, {songs: [...]} -> {done, failed}
+                 503 {"discover": "off"} unless the installer turned Discover on.
 
 Logins are checked with Navidrome's `ping` using the app's own token (t, s),
 which arrive in the request body, never the URL. Tokens, salts and sessions
@@ -32,6 +36,8 @@ import time
 import urllib.parse
 import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+
+import discover as discover_mod
 
 MAX_BODY = 2 * 1024 * 1024
 MAX_DEVICES = 8
@@ -208,7 +214,16 @@ def make_scanner(navidrome_url: str, admin_user: str, admin_password: str):
     return scan
 
 
-def make_handler(hub: Hub, check, scan=lambda: "off"):
+def _song_ids(body: dict) -> list[str] | None:
+    songs = body.get("songs")
+    if not isinstance(songs, list) or not 0 < len(songs) <= discover_mod.MAX_SONGS:
+        return None
+    if not all(isinstance(s, str) and 0 < len(s) <= 64 for s in songs):
+        return None
+    return list(dict.fromkeys(songs))
+
+
+def make_handler(hub: Hub, check, scan=lambda: "off", discover=None):
     class Handler(BaseHTTPRequestHandler):
         protocol_version = "HTTP/1.1"
         server_version = "SonarConnect/1"
@@ -268,6 +283,16 @@ def make_handler(hub: Hub, check, scan=lambda: "off"):
             path = self._path()
             if path == "/health":
                 return self._send(200, {"ok": True})
+            if path == "/discover":
+                if self._device() is None:
+                    return self._send(401)
+                if discover is None:
+                    return self._send(503, {"discover": "off"})
+                try:
+                    return self._send(200, discover.status())
+                except Exception as e:  # noqa: BLE001 - Navidrome unreachable or refusing
+                    log(f"discover: status failed: {type(e).__name__}")
+                    return self._send(502, {"discover": "unavailable"})
             if path != "/events":
                 return self._send(404)
             device = self._device()
@@ -335,16 +360,52 @@ def make_handler(hub: Hub, check, scan=lambda: "off"):
                 result = scan()
                 status = {"started": 200, "recent": 200, "failed": 502, "off": 503}[result]
                 return self._send(status, {"scan": result})
+            if path in ("/discover/keep", "/discover/remove"):
+                if discover is None:
+                    return self._send(503, {"discover": "off"})
+                songs = _song_ids(body)
+                if songs is None:
+                    return self._send(400)
+                action = discover.keep if path == "/discover/keep" else discover.remove
+                try:
+                    return self._send(200, action(songs))
+                except Exception as e:  # noqa: BLE001 - Navidrome unreachable or refusing
+                    log(f"discover: {path} failed: {type(e).__name__}")
+                    return self._send(502, {"discover": "unavailable"})
             return self._send(404)
 
     return Handler
 
 
+def prepare_discover(discover, attempts: int = 60, gap: float = 5.0) -> None:
+    """Sets up Navidrome's Discover library once Navidrome answers (it may
+    still be starting), on a thread so the relay serves meanwhile."""
+
+    def run() -> None:
+        last = "no attempt"
+        for _ in range(attempts):
+            try:
+                discover.ensure_library()
+                log("discover on")
+                return
+            except Exception as e:  # noqa: BLE001 - retried
+                last = type(e).__name__
+            time.sleep(gap)
+        log(f"discover: couldn't set up Navidrome's Discover library ({last}); will retry when the app asks")
+
+    threading.Thread(target=run, daemon=True).start()
+
+
 def serve(
-    port: int, navidrome_url: str, host: str = "0.0.0.0", admin_user: str = "", admin_password: str = ""
+    port: int,
+    navidrome_url: str,
+    host: str = "0.0.0.0",
+    admin_user: str = "",
+    admin_password: str = "",
+    discover=None,
 ) -> ThreadingHTTPServer:
     scan = make_scanner(navidrome_url, admin_user, admin_password)
-    server = ThreadingHTTPServer((host, port), make_handler(Hub(), make_checker(navidrome_url), scan))
+    server = ThreadingHTTPServer((host, port), make_handler(Hub(), make_checker(navidrome_url), scan, discover))
     server.daemon_threads = True
     return server
 
@@ -357,4 +418,11 @@ if __name__ == "__main__":
     admin_password = os.environ.get("NAVIDROME_ADMIN_PASSWORD", "")
     log(f"Sonar Connect on {host}:{port}, checking logins with {navidrome}")
     log("rescan " + ("on" if admin_user and admin_password else "off (no NAVIDROME_ADMIN_USER / PASSWORD)"))
-    serve(port, navidrome, host=host, admin_user=admin_user, admin_password=admin_password).serve_forever()
+    discover = discover_mod.from_env(navidrome, admin_user, admin_password)
+    if discover is None:
+        log("discover off")
+    else:
+        prepare_discover(discover)
+    serve(
+        port, navidrome, host=host, admin_user=admin_user, admin_password=admin_password, discover=discover
+    ).serve_forever()

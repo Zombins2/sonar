@@ -12,7 +12,7 @@
 # SONAR_EXISTING_NAVIDROME=yes|no, SONAR_NAVIDROME_URL, SONAR_ADMIN_USER,
 # SONAR_APP_USER, SONAR_CONNECT=yes|no, SONAR_GETMUSIC=yes|no,
 # SONAR_SOULSEEK_USER, SONAR_VPN_COUNTRIES, SONAR_DOWNLOADS_DIR,
-# SONAR_SHARE_DIR, SONAR_TAILSCALE=yes|no, SONAR_PROJECT_NAME, and the ports
+# SONAR_SHARE_DIR, SONAR_DISCOVER_DIR, SONAR_TAILSCALE=yes|no, SONAR_PROJECT_NAME, and the ports
 # SONAR_NAVIDROME_PORT / _CONNECT_PORT / _SOULBEET_PORT / _SLSKD_PORT.
 # Secrets: SONAR_ADMIN_PASSWORD, SONAR_USER_PASSWORD, WIREGUARD_PRIVATE_KEY,
 # SOULSEEK_PASSWORD.
@@ -270,6 +270,24 @@ if [ "$WANT_GETMUSIC" = yes ]; then
   # New albums are filed into a folder inside your library, so Navidrome sees them.
   mkdir -p "$music/Soulbeet"
   set_cfg GETMUSIC_DIR "$(abs_dir "$music/Soulbeet")"
+  if [ "$USE_EXISTING" = no ]; then
+    # Discover: songs Sonar downloads for you to try. Kept apart from your music
+    # (Navidrome shows them as a second library) until you keep them.
+    music_abs="$(abs_dir "$music")"
+    music_parent="$(dirname "$music_abs")"
+    if [ "$music_parent" = "/" ]; then disc_default="$INSTALL_DIR/discover"; else disc_default="$music_parent/Sonar Discover"; fi
+    while true; do
+      disc="${SONAR_DISCOVER_DIR:-$(ask "  Folder for Discover songs (outside your music folder)" "$(first_of "$(old DISCOVER_DIR)" "$disc_default")")}"
+      mkdir -p "$disc"
+      disc_abs="$(abs_dir "$disc")"
+      case "$disc_abs/" in "$music_abs"/*) overlaps=yes ;; *) overlaps=no ;; esac
+      case "$music_abs/" in "$disc_abs"/*) overlaps=yes ;; esac
+      [ "$overlaps" = no ] && break
+      { [ -n "${SONAR_DISCOVER_DIR:-}" ] || [ "$DEFAULTS" = yes ]; } && fail "The Discover folder must be outside your music folder: $disc"
+      warn "  It has to be outside your music folder, or Navidrome would list the songs twice."
+    done
+    set_cfg DISCOVER_DIR "$disc_abs"
+  fi
   take_port SOULBEET_PORT "${SONAR_SOULBEET_PORT:-}" 9765
   take_port SLSKD_PORT "${SONAR_SLSKD_PORT:-}" 5030
 fi

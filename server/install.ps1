@@ -31,6 +31,7 @@ param(
   [string]$VpnCountries,
   [string]$DownloadsDir,
   [string]$ShareDir,
+  [string]$DiscoverDir,
   [ValidateSet('', 'yes', 'no')][string]$Tailscale = '',
   [string]$ProjectName,
   [int]$NavidromePort,
@@ -288,6 +289,26 @@ if ($wantGetMusic) {
   $getDir = Join-Path $cfg['MUSIC_DIR'] 'Soulbeet'
   New-Item -ItemType Directory -Force -Path $getDir | Out-Null
   $cfg['GETMUSIC_DIR'] = ForwardSlashes $getDir
+  if (-not $useExisting) {
+    # Discover: songs Sonar downloads for you to try. Kept apart from your music
+    # (Navidrome shows them as a second library) until you keep them.
+    $musicFull = [IO.Path]::GetFullPath($cfg['MUSIC_DIR'].Replace('/', '\')).TrimEnd('\')
+    $musicParent = Split-Path $musicFull -Parent
+    $discDefault = if ($old['DISCOVER_DIR']) { $old['DISCOVER_DIR'].Replace('/', '\') }
+      elseif ($musicParent) { Join-Path $musicParent 'Sonar Discover' } else { Join-Path $InstallDir 'discover' }
+    while ($true) {
+      $disc = if ($DiscoverDir) { $DiscoverDir } else { Ask '  Folder for Discover songs (outside your music folder)' $discDefault }
+      $discFull = [IO.Path]::GetFullPath($disc).TrimEnd('\')
+      $overlaps = ($discFull -ieq $musicFull) -or
+        $discFull.StartsWith($musicFull + '\', [StringComparison]::OrdinalIgnoreCase) -or
+        $musicFull.StartsWith($discFull + '\', [StringComparison]::OrdinalIgnoreCase)
+      if (-not $overlaps) { break }
+      if ($DiscoverDir -or $Defaults) { Fail "The Discover folder must be outside your music folder: $disc" }
+      Say '  It has to be outside your music folder, or Navidrome would list the songs twice.' Yellow
+    }
+    New-Item -ItemType Directory -Force -Path $discFull | Out-Null
+    $cfg['DISCOVER_DIR'] = ForwardSlashes $discFull
+  }
   $cfg['SOULBEET_PORT'] = if ($SoulbeetPort) { $SoulbeetPort } else { FreePort 9765 $old['SOULBEET_PORT'] }
   $cfg['SLSKD_PORT'] = if ($SlskdPort) { $SlskdPort } else { FreePort 5030 $old['SLSKD_PORT'] }
 }

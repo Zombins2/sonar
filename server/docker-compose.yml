@@ -37,6 +37,9 @@ services:
       - navidrome-cache:/cache
       - ./navidrome:/config:ro
       - ${MUSIC_DIR:?run the installer, or set MUSIC_DIR in .env}:/music:ro
+      # Discover: songs downloaded for you to try, a second library (Sonar
+      # Connect adds it to Navidrome). Outside the music folder on purpose.
+      - ${DISCOVER_DIR:-./discover}:/discover:ro
 
   # ---- connect --------------------------------------------------------------
   sonar-connect:
@@ -44,6 +47,9 @@ services:
     build: ./sonar_connect
     image: sonar-connect:latest
     restart: unless-stopped
+    # Root, like Soulbeet: Discover moves and deletes files Soulbeet wrote,
+    # which only root may change.
+    user: root
     ports:
       - "127.0.0.1:${CONNECT_PORT:-4534}:4534"
     environment:
@@ -52,6 +58,17 @@ services:
       # imports an album (Navidrome only lets admins start a scan).
       NAVIDROME_ADMIN_USER: ${NAVIDROME_ADMIN_USER:-}
       NAVIDROME_ADMIN_PASSWORD: ${NAVIDROME_ADMIN_PASSWORD:-}
+      # Discover (keep / remove songs you're trying out): on when the
+      # installer set DISCOVER_DIR. Connect moves kept songs into Get music's
+      # folder and deletes removed ones, never anything else.
+      DISCOVER: ${DISCOVER_DIR:+on}
+      DISCOVER_DIR: /discover
+      GETMUSIC_DIR: /getmusic
+      STATE_DIR: /state
+    volumes:
+      - ${DISCOVER_DIR:-./discover}:/discover
+      - ${GETMUSIC_DIR:-./getmusic}:/getmusic
+      - connect-state:/state
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
@@ -140,6 +157,8 @@ services:
       - ${DOWNLOADS_DIR:-./downloads}:/downloads
       # The only part of the library Soulbeet can write to.
       - ${GETMUSIC_DIR:-./getmusic}:/music
+      # Discover songs, filed here until you keep or remove them.
+      - ${DISCOVER_DIR:-./discover}:/music-discover
 
   # ---- setup (run by the installer, then exits) ------------------------------
   setup:
@@ -166,3 +185,4 @@ volumes:
   navidrome-cache:
   slskd-app:
   soulbeet-data:
+  connect-state:

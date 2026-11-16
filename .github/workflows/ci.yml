@@ -21,9 +21,9 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
-      - name: Sonar Connect relay tests
+      - name: Sonar Connect relay and Discover tests
         working-directory: server/sonar_connect
-        run: python3 -m unittest -v test_relay
+        run: python3 -m unittest -v test_relay test_discover
       - name: Server installer syntax
         run: bash -n server/install.sh && docker compose -f server/docker-compose.yml config --quiet
         env:

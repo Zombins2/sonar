@@ -1,8 +1,9 @@
 FROM python:3.12-alpine
 WORKDIR /app
-COPY relay.py .
-# No packages: standard library only.
-RUN adduser -D -H relay
+COPY relay.py discover.py ./
+# No packages: standard library only. /state holds Discover's list of removed
+# songs (a named volume takes this folder's owner when first created).
+RUN adduser -D -H relay && mkdir /state && chown relay /state
 USER relay
 ENV PORT=4534 NAVIDROME_URL=http://navidrome:4533 PYTHONUNBUFFERED=1
 EXPOSE 4534
