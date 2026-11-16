@@ -1,6 +1,7 @@
 # Discover: new songs downloaded for you, kept only if you want them
 
-Status: plan, step 0 checks done, nothing built. Written 2026-11-15.
+Status: written 2026-11-15. Step 0 checks done; server step built and live
+(2026-11-15); app part 1 built 2026-11-16 (see "App part 1, as built").
 
 ## What it does
 
@@ -174,7 +175,8 @@ server was changed.
   keeps skipped imports in memory, not in its database, and the retry is
   addressed by the row's `item` (the sharer's file path). So once a Discover
   download's import is skipped with no app listening, nothing can retry it
-  later. **Open problem for app part 1.** Options: keep the app following
+  later. **Open problem for app part 1** (solved in the app, by keeping each
+  download's `item`: see "App part 1, as built"). Options: keep the app following
   Discover downloads until each import ends; have Connect follow Soulbeet's
   feed for them; or import skipped downloads by hand from
   `/downloads/<batch>` with Soulbeet's import driver (what the live check
@@ -204,6 +206,71 @@ server was changed.
   database has the song and its album, with `artpath` rewritten to `/music/…`.
   Discover's database is empty, and `beet update -p` finds nothing to change.
 - The kept song stays in the owner's library.
+
+### App part 1, as built (2026-11-16)
+
+- **Settings → Discover** (shown when Get music works): on / off (off by
+  default), songs at most (25 / 50 / 100 / 200, default 50), space at most
+  (1 / 2 / 5 / 10 / 20 GB, default 2), and "Make room by itself" (off).
+  Turning it on, or raising a limit, tops up straight away.
+- **Library screens show the main library only.** The app asks Connect which
+  library is Discover's and sends every other library's id as
+  `musicFolderId` on albums, artists, songs, search, random, genres and
+  favourites. Navidrome takes the id repeated when there are several. The ids
+  are kept, so the next start is filtered from the first screen. Discover's
+  song ids are also left out of similar and top songs (radio, autoplay,
+  mixes); part 2 mixes them back in at the chosen rate. With Discover off on
+  the server, nothing is filtered.
+- **Topping up** runs when Connect comes online, every 3 hours while the app
+  is open, after a keep or remove, and from the Discover screen's refresh.
+  Each run:
+  - starts at most 5 songs;
+  - looks at no more than 15 artists, at most one song per artist per run,
+    and never more than 2 undecided songs by one artist;
+  - picks the related artists of the ones played (the same artists Get
+    music suggests), and for each, the first of their 3 top Deezer songs that
+    isn't in Discover and wasn't removed;
+  - skips artists with two songs removed;
+  - files each song as its album's MusicBrainz release (by barcode, else the
+    album a MusicBrainz song search finds it on), never a compilation. That
+    rules out an album MusicBrainz marks as one, Deezer calls one ("compile"),
+    credited to Various Artists, or with a hits-style title ("100 Hits",
+    "Anthology"). MusicBrainz's search answers often leave the mark out;
+  - downloads each song only from someone's copy of that album, lossless
+    first, as that one file. If nobody shares one, it skips the song. (The
+    first live run let Soulbeet take any copy found by the song's name.
+    beets then filed some as the sharer's compilation, "Compilations\Reggae
+    Refreshers…", without skipping, so the "file it as this release" retry
+    never ran);
+  - never takes a song from an album that already has a song in Discover,
+    because beets would replace that one;
+  - counts songs still downloading against both limits, as 35 MB each for
+    space.
+- **Make room** removes the oldest undecided songs, never one from the last
+  day, until a top-up's worth fits. Those removals are noted on the device so
+  they don't count against the artist.
+- **Phone and PC:** a phone leaves topping up to a PC that's online in
+  Connect, so the two don't download the same songs.
+- **The skipped-import problem** (above) is solved in the app. Each Discover
+  download is saved on the device as soon as it starts, with its batch id,
+  its MusicBrainz release, and each file's `item` as the feed shows them.
+  - While the app is open, the usual retry files it as the release.
+  - If the app closed first, the next start picks it up. If the feed shows
+    it still going within 20 s, it's left to finish (and retried as usual).
+    If not, its import is retried with the saved `item` and release.
+  - Soulbeet keeps skipped imports until it restarts. After a Soulbeet
+    restart, or if the app closed before any file showed on the feed (the
+    first seconds), the download is given up on.
+  - A download is also dropped when it shows up in the Discover library,
+    fails, or is 2 days old.
+- **Discover screen** (Home's "Discover" row, the PC sidebar, Settings):
+  - how full Discover is, and what it's doing ("2 songs downloading",
+    "Discover is full: keep or remove some songs…");
+  - Play and Shuffle;
+  - each song with **Keep** (moved into the library) and **Remove**
+    (deleted after 5 seconds without Undo).
+- Not in part 1: Keep / Remove on the player screen, the Discover mix in
+  "Made for you", and new songs in autoplay (part 2).
 
 ### Soulbeet's own Discovery (found during step 0, not used)
 

@@ -33,13 +33,30 @@ class ServerCredentials {
   final String password;
 }
 
+/// Which of the server's libraries the app's library screens show, and songs
+/// left out of similar and top songs. Discover keeps the songs it downloaded
+/// to try in a library of their own until they're kept (docs/DISCOVER_PLAN.md).
+class LibraryScope {
+  LibraryScope({this.folders = const [], Set<String>? hidden}) : hidden = hidden ?? {};
+
+  /// Music folder ids to show; empty shows every library.
+  final List<String> folders;
+
+  /// Song ids left out of similar and top songs (Discover songs, which the
+  /// Discover screen offers instead). Changed in place as Discover changes.
+  final Set<String> hidden;
+
+  static final everything = LibraryScope();
+}
+
 /// Typed Subsonic API client. UI-agnostic: no Flutter imports.
 ///
 /// Uses token auth (`t = md5(password + salt)`, new salt per request), so the
 /// plain password never appears in a URL. Nothing here logs URLs or tokens.
 class SubsonicClient {
-  SubsonicClient(this.credentials, {this.cache, this.onReachability, Dio? dio})
-    : _dio =
+  SubsonicClient(this.credentials, {this.cache, this.onReachability, LibraryScope? scope, Dio? dio})
+    : scope = scope ?? LibraryScope.everything,
+      _dio =
           dio ??
           Dio(
             BaseOptions(
@@ -58,6 +75,20 @@ class SubsonicClient {
 
   final ServerCredentials credentials;
   final ResponseCache? cache;
+
+  /// What the library calls cover ([LibraryScope]).
+  final LibraryScope scope;
+
+  /// The `musicFolderId` for library calls: null for every library, one id,
+  /// or the ids repeated (Navidrome takes several).
+  Object? get _folders => switch (scope.folders) {
+    [] => null,
+    [final one] => one,
+    final many => many,
+  };
+
+  List<Song> _shown(List<Song> songs) =>
+      scope.hidden.isEmpty ? songs : songs.where((s) => !scope.hidden.contains(s.id)).toList();
 
   /// Called with `true` after any successful request, `false` after a network failure.
   final void Function(bool reachable)? onReachability;
@@ -113,9 +144,13 @@ class SubsonicClient {
   /// Builds an authenticated URL (cover art, streams, downloads). These
   /// contain a one-time token, never the password.
   Uri buildUrl(String endpoint, [Map<String, Object?> params = const {}]) {
-    final query = <String, String>{..._authParams()};
+    final query = <String, Object>{..._authParams()};
     params.forEach((k, v) {
-      if (v != null) query[k] = '$v';
+      if (v is List) {
+        query[k] = [for (final x in v) '$x'];
+      } else if (v != null) {
+        query[k] = '$v';
+      }
     });
     return Uri.parse('$_base/rest/$endpoint').replace(queryParameters: query);
   }
@@ -205,10 +240,37 @@ class SubsonicClient {
 
   Future<void> ping() => request('ping');
 
+  /// The server's libraries, as `(id, name)`.
+  Future<List<({String id, String name})>> getMusicFolders() async {
+    final body = await request('getMusicFolders');
+    return [
+      for (final f in jsonList((body['musicFolders'] as Map?)?['musicFolder']))
+        if (f['id'] != null) (id: '${f['id']}', name: '${f['name'] ?? ''}'),
+    ];
+  }
+
+  /// Every song in library [folder] (Discover's), or in the libraries the
+  /// [scope] shows, a page at a time.
+  Future<List<Song>> songsIn(String? folder, {int page = 500}) async {
+    final songs = <Song>[];
+    while (true) {
+      final r = await search3(
+        '',
+        artistCount: 0,
+        albumCount: 0,
+        songCount: page,
+        songOffset: songs.length,
+        folder: folder,
+      );
+      songs.addAll(r.songs);
+      if (r.songs.length < page) return songs;
+    }
+  }
+
   Future<List<Album>> getAlbumList2(AlbumListType type, {int size = 20, int offset = 0}) async {
     final body = await request(
       'getAlbumList2',
-      params: {'type': type.name, 'size': size, 'offset': offset},
+      params: {'type': type.name, 'size': size, 'offset': offset, 'musicFolderId': _folders},
       cached: type != AlbumListType.random,
     );
     return jsonList((body['albumList2'] as Map?)?['album']).map(Album.fromJson).toList();
@@ -222,14 +284,14 @@ class SubsonicClient {
   Future<List<Album>> getAlbumsByGenre(String genre, {int size = 60, int offset = 0}) async {
     final body = await request(
       'getAlbumList2',
-      params: {'type': 'byGenre', 'genre': genre, 'size': size, 'offset': offset},
+      params: {'type': 'byGenre', 'genre': genre, 'size': size, 'offset': offset, 'musicFolderId': _folders},
       cached: true,
     );
     return jsonList((body['albumList2'] as Map?)?['album']).map(Album.fromJson).toList();
   }
 
   Future<List<Song>> getRandomSongs({String? genre, int size = 50}) async {
-    final body = await request('getRandomSongs', params: {'size': size, 'genre': genre});
+    final body = await request('getRandomSongs', params: {'size': size, 'genre': genre, 'musicFolderId': _folders});
     return jsonList((body['randomSongs'] as Map?)?['song']).map(Song.fromJson).toList();
   }
 
@@ -237,13 +299,13 @@ class SubsonicClient {
   /// server's Last.fm / ListenBrainz agents. Empty when nothing matches.
   Future<List<Song>> getSimilarSongs2(String id, {int count = 50}) async {
     final body = await request('getSimilarSongs2', params: {'id': id, 'count': count});
-    return jsonList((body['similarSongs2'] as Map?)?['song']).map(Song.fromJson).toList();
+    return _shown(jsonList((body['similarSongs2'] as Map?)?['song']).map(Song.fromJson).toList());
   }
 
   /// An artist's most popular songs that are in the library. Takes the name, not the id.
   Future<List<Song>> getTopSongs(String artist, {int count = 10}) async {
     final body = await request('getTopSongs', params: {'artist': artist, 'count': count}, cached: true);
-    return jsonList((body['topSongs'] as Map?)?['song']).map(Song.fromJson).toList();
+    return _shown(jsonList((body['topSongs'] as Map?)?['song']).map(Song.fromJson).toList());
   }
 
   Future<ArtistInfo> getArtistInfo2(String id, {int count = 12}) async {
@@ -252,7 +314,7 @@ class SubsonicClient {
   }
 
   Future<List<Artist>> getArtists() async {
-    final body = await request('getArtists', cached: true);
+    final body = await request('getArtists', params: {'musicFolderId': _folders}, cached: true);
     final indexes = jsonList((body['artists'] as Map?)?['index']);
     return [for (final i in indexes) ...jsonList(i['artist']).map(Artist.fromJson)];
   }
@@ -281,11 +343,13 @@ class SubsonicClient {
     int albumOffset = 0,
     int artistOffset = 0,
     bool cached = false,
+    String? folder,
   }) async {
     final body = await request(
       'search3',
       cached: cached,
       params: {
+        'musicFolderId': folder ?? _folders,
         'query': query,
         'artistCount': artistCount,
         'albumCount': albumCount,
@@ -365,7 +429,7 @@ class SubsonicClient {
   }
 
   Future<SearchResult> getStarred2() async {
-    final body = await request('getStarred2', cached: true);
+    final body = await request('getStarred2', params: {'musicFolderId': _folders}, cached: true);
     return SearchResult.fromJson((body['starred2'] as Map?)?.cast() ?? const {});
   }
 

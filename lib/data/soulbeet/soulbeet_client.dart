@@ -198,8 +198,12 @@ class SoulbeetClient {
   }
 
   /// Imports a skipped (or failed) album again; progress follows on [updates].
-  Future<void> retryImport(SbProgress file, SbImportChoice choice) =>
-      _call('POST', '/api/downloads/retry-import', {'item': file.item, 'choice': choice.toJson()});
+  Future<void> retryImport(SbProgress file, SbImportChoice choice) => retryImportOf(file.item, choice);
+
+  /// [retryImport] by the file's `item` alone (kept from an earlier run).
+  /// Soulbeet holds skipped imports until it restarts.
+  Future<void> retryImportOf(String item, SbImportChoice choice) =>
+      _call('POST', '/api/downloads/retry-import', {'item': item, 'choice': choice.toJson()});
 
   /// Live download events, until the connection drops (the caller reconnects).
   Future<Stream<SbEvent>> updates() async {

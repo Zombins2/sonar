@@ -14,6 +14,7 @@ import 'data/db/database.dart';
 import 'data/subsonic/subsonic_client.dart';
 import 'downloads/download_manager.dart';
 import 'state/providers.dart';
+import 'state/soulbeet_providers.dart';
 import 'ui/desktop_shortcuts.dart';
 import 'ui/screens/search_screen.dart';
 import 'ui/shell/desktop_shell.dart';
@@ -93,6 +94,8 @@ class _SonarAppState extends ConsumerState<SonarApp> {
     // Sonar Connect runs while logged in, whatever screen is open.
     ref.listenManual(connectLinkProvider, (_, _) {}, fireImmediately: true);
     ref.listenManual(outputTargetProvider, (_, _) {}, fireImmediately: true);
+    // Discover keeps the library screens to the main library, and tops up.
+    ref.listenManual(discoverProvider, (_, _) {}, fireImmediately: true);
   }
 
   void _shortcut(PlayerShortcut s) {

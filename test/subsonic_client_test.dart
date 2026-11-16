@@ -1,6 +1,8 @@
 import 'dart:convert';
+import 'dart:typed_data';
 
 import 'package:crypto/crypto.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sonar/data/subsonic/models.dart';
 import 'package:sonar/data/subsonic/subsonic_client.dart';
@@ -211,6 +213,82 @@ void main() {
     });
   });
 
+  group('library scope (Discover kept apart)', () {
+    Map<String, Object> songs(String key, List<String> ids) => ok({
+      key: {
+        'song': [for (final id in ids) Song(id: id, title: id).toJson()],
+      },
+    });
+
+    Future<Map<String, List<String>?>> folderIdsAsked(LibraryScope scope) async {
+      final t = fakeServer({}, scope: scope, withCache: false);
+      await t.client.getAlbumList2(AlbumListType.newest);
+      await t.client.getAlbumsByGenre('Reggae');
+      await t.client.getRandomSongs();
+      await t.client.getArtists();
+      await t.client.search3('x');
+      await t.client.getStarred2();
+      return {for (final r in t.adapter.requests) r.pathSegments.last: r.queryParametersAll['musicFolderId']};
+    }
+
+    test('every library call names the libraries shown', () async {
+      final asked = await folderIdsAsked(LibraryScope(folders: ['1']));
+      expect(asked.keys, containsAll(['getAlbumList2', 'getRandomSongs', 'getArtists', 'search3', 'getStarred2']));
+      expect(asked.values, everyElement(['1']));
+    });
+
+    test('several libraries are each named, as Navidrome takes them', () async {
+      final asked = await folderIdsAsked(LibraryScope(folders: ['1', '3']));
+      expect(asked.values, everyElement(['1', '3']));
+    });
+
+    test('no scope: every library, no folder named', () async {
+      final asked = await folderIdsAsked(LibraryScope());
+      expect(asked.values, everyElement(isNull));
+    });
+
+    test('similar and top songs leave out the hidden ones', () async {
+      final scope = LibraryScope(hidden: {'d1'});
+      final t = fakeServer({
+        'getSimilarSongs2': songs('similarSongs2', ['a', 'd1', 'b']),
+        'getTopSongs': songs('topSongs', ['d1', 'c']),
+      }, scope: scope);
+      expect([for (final s in await t.client.getSimilarSongs2('x')) s.id], ['a', 'b']);
+      expect([for (final s in await t.client.getTopSongs('X')) s.id], ['c']);
+      scope.hidden.clear(); // Kept: changed in place.
+      expect([for (final s in await t.client.getSimilarSongs2('x')) s.id], ['a', 'd1', 'b']);
+    });
+
+    test('songsIn reads one library a page at a time, whatever the scope', () async {
+      final adapter = _PagedSongs(5);
+      final t = fakeServer(
+        {},
+        scope: LibraryScope(folders: ['1']),
+        adapter: adapter,
+      );
+      final all = await t.client.songsIn('2', page: 2);
+      expect([for (final s in all) s.id], ['s0', 's1', 's2', 's3', 's4']);
+      expect([for (final r in adapter.requests) r.queryParameters['songOffset']], ['0', '2', '4']);
+      expect({for (final r in adapter.requests) r.queryParameters['musicFolderId']}, {'2'});
+      expect(all.first.size, 1000, reason: 'the file size, for the space limit');
+      expect(all.first.created, DateTime.utc(2026, 11, 16));
+    });
+
+    test('getMusicFolders lists the libraries', () async {
+      final t = fakeServer({
+        'getMusicFolders': ok({
+          'musicFolders': {
+            'musicFolder': [
+              {'id': 1, 'name': 'Music Library'},
+              {'id': 2, 'name': 'Discover'},
+            ],
+          },
+        }),
+      });
+      expect(await t.client.getMusicFolders(), [(id: '1', name: 'Music Library'), (id: '2', name: 'Discover')]);
+    });
+  });
+
   test('Song round-trips through JSON for queue persistence', () {
     const s = Song(
       id: '1',
@@ -227,4 +305,26 @@ void main() {
     final back = Song.fromJson(s.toJson());
     expect(back.toJson(), s.toJson());
   });
+}
+
+/// [count] songs in a library, answered a page at a time as search3 does.
+class _PagedSongs extends FakeAdapter {
+  _PagedSongs(this.count) : super({});
+  final int count;
+
+  @override
+  Future<ResponseBody> fetch(RequestOptions options, Stream<Uint8List>? requestStream, Future<void>? cancelFuture) {
+    final q = options.uri.queryParameters;
+    final from = int.parse(q['songOffset'] ?? '0');
+    final page = int.parse(q['songCount'] ?? '20');
+    responses['search3'] = ok({
+      'searchResult3': {
+        'song': [
+          for (var i = from; i < count && i < from + page; i++)
+            {'id': 's$i', 'title': 'Song $i', 'size': 1000, 'created': '2026-11-16T00:00:00Z'},
+        ],
+      },
+    });
+    return super.fetch(options, requestStream, cancelFuture);
+  }
 }

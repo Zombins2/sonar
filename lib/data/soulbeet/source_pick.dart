@@ -30,3 +30,45 @@ int compareSources(SbSource a, SbSource b) {
   if (score != 0) return score;
   return a.itemCount.compareTo(b.itemCount);
 }
+
+String _plain(String s) => s.toLowerCase().replaceAll(RegExp(r'[^\p{L}\p{N}]', unicode: true), '');
+
+/// The same name, or one a longer form of the other ("BULLY" and "BULLY
+/// (Deluxe)", "Chase the Devil" and "Chase the Devil feat. ..."). Names too
+/// short to tell must match whole.
+bool _sameName(String a, String b) =>
+    a == b || (a.length >= 4 && b.length >= 4 && (a.startsWith(b) || b.startsWith(a)));
+
+/// Where to download [songs] (titles) of [album] (a title) from: one person's
+/// copy of that album with every song asked for, best first (lossless, then
+/// [compareSources]). Never a compilation or another album that has the
+/// songs too: beets files a song as whatever album its copy's tags say, so
+/// a copy from "Reggae Hits" gets filed as "Reggae Hits". Null when nobody
+/// shares one.
+({SbSource source, List<SbSourceFile> files})? pickSongs(
+  Iterable<SbSource> sources, {
+  required String album,
+  required List<String> songs,
+}) {
+  final want = _plain(album);
+  final picks = <({SbSource source, List<SbSourceFile> files})>[];
+  for (final s in sources) {
+    if (want.isEmpty || !_sameName(_plain(s.title), want)) continue;
+    final files = <SbSourceFile>[];
+    for (final song in songs) {
+      final title = _plain(song);
+      final f =
+          s.files.where((f) => _plain(f.title) == title).firstOrNull ??
+          s.files.where((f) => _sameName(_plain(f.title), title)).firstOrNull;
+      if (f == null) break;
+      files.add(f);
+    }
+    if (songs.isNotEmpty && files.length == songs.length) picks.add((source: s, files: files));
+  }
+  if (picks.isEmpty) return null;
+  picks.sort((a, b) {
+    if (a.source.lossless != b.source.lossless) return a.source.lossless ? -1 : 1;
+    return compareSources(a.source, b.source);
+  });
+  return picks.first;
+}

@@ -7,6 +7,7 @@ import '../../core/theme.dart';
 import '../../data/discovery.dart';
 import '../../data/subsonic/models.dart';
 import '../../state/providers.dart';
+import '../../state/soulbeet_providers.dart';
 import '../widgets/common.dart';
 import '../widgets/cover_art.dart';
 import '../widgets/media_tiles.dart';
@@ -93,6 +94,7 @@ class HomeScreen extends ConsumerWidget {
             else ...[
               if (quick.isNotEmpty) _QuickPicks(albums: quick.take(6).toList()),
               const _MadeForYou(),
+              const _DiscoverShelf(),
               for (final (type, title) in _topRows) _AlbumRow(type: type, title: title),
               _DiscoveryRow(title: 'Rediscover', albums: ref.watch(rediscoverProvider).valueOrNull, id: 'rediscover'),
               _DiscoveryRow(title: 'Not played yet', albums: ref.watch(unplayedProvider).valueOrNull, id: 'unplayed'),
@@ -182,6 +184,63 @@ class _DiscoveryRow extends StatelessWidget {
         children: [
           SectionHeader(title),
           AlbumCarousel(albums: list, heroPrefix: 'home-$id'),
+        ],
+      ),
+    );
+  }
+}
+
+/// Discover's songs to try, newest first, while Discover is on.
+class _DiscoverShelf extends ConsumerWidget {
+  const _DiscoverShelf();
+
+  static const _width = 148.0;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final d = ref.watch(discoverProvider);
+    final on = ref.watch(discoverSettingsProvider.select((s) => s.on));
+    if (d == null || !on || d.songs.isEmpty) return const SliverToBoxAdapter();
+    final songs = d.songs;
+    final text = Theme.of(context).textTheme;
+    return SliverToBoxAdapter(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SectionHeader(
+            'Discover',
+            trailing: TextButton(onPressed: () => context.openDiscover(), child: const Text('Keep or remove')),
+          ),
+          SizedBox(
+            height: _width + 52,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: SonarSpacing.gutter),
+              itemCount: songs.length,
+              separatorBuilder: (_, _) => const SizedBox(width: 14),
+              itemBuilder: (_, i) => SizedBox(
+                width: _width,
+                child: GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onTap: () => ref.read(controlsProvider).playSongs(songs, index: i),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CoverArt(coverArt: songs[i].coverArt, size: _width, radius: SonarRadius.art),
+                      const SizedBox(height: 8),
+                      Text(songs[i].title, maxLines: 1, overflow: TextOverflow.ellipsis, style: text.titleSmall),
+                      Text(
+                        songs[i].artist,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: text.bodySmall?.copyWith(color: SonarColors.textSecondary),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

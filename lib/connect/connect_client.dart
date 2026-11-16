@@ -67,6 +67,46 @@ class ConnectDevice {
   }
 }
 
+/// A song removed from Discover, so it isn't downloaded again.
+class RemovedSong {
+  const RemovedSong({required this.artist, required this.title});
+  final String artist;
+  final String title;
+}
+
+/// Discover on the server (`GET /discover`): Navidrome's Discover library
+/// and what was removed from it.
+class DiscoverServer {
+  const DiscoverServer({required this.library, this.removed = const []});
+
+  factory DiscoverServer.fromJson(Map<String, Object?> j) => DiscoverServer(
+    library: j['library'] == null ? null : '${j['library']}',
+    removed: [
+      for (final r in (j['removed'] is List ? j['removed']! as List : const []).whereType<Map<Object?, Object?>>())
+        RemovedSong(artist: '${r['artist'] ?? ''}', title: '${r['title'] ?? ''}'),
+    ],
+  );
+
+  /// Navidrome's id for the Discover library (its music folder id).
+  final String? library;
+  final List<RemovedSong> removed;
+}
+
+/// What a keep or remove did: the songs done, and why the others weren't.
+class DiscoverResult {
+  const DiscoverResult(this.done, this.failed);
+  final List<String> done;
+  final Map<String, String> failed;
+}
+
+/// Sonar Connect couldn't do it: not connected, or the server failed.
+class ConnectUnavailable implements Exception {
+  const ConnectUnavailable(this.message);
+  final String message;
+  @override
+  String toString() => message;
+}
+
 class ConnectCommand {
   const ConnectCommand(this.from, this.cmd, this.args);
   final String from;
@@ -319,6 +359,53 @@ class ConnectClient {
       return r.$1 == 200;
     } catch (_) {
       return false;
+    }
+  }
+
+  /// Discover on the server, or null when the server has it off. Throws
+  /// [ConnectUnavailable] while not connected or when the server can't say.
+  Future<DiscoverServer?> discover() async {
+    final (status, body) = await _discoverCall('GET', '/discover', null);
+    if (status == 503 && body['discover'] == 'off') return null;
+    if (status != 200) throw const ConnectUnavailable('The server couldn\'t say what\'s in Discover.');
+    return DiscoverServer.fromJson(body);
+  }
+
+  /// Moves Discover songs into the library (by Navidrome song id).
+  Future<DiscoverResult> keep(List<String> songIds) => _discoverChange('/discover/keep', songIds);
+
+  /// Deletes Discover songs from the server.
+  Future<DiscoverResult> remove(List<String> songIds) => _discoverChange('/discover/remove', songIds);
+
+  Future<DiscoverResult> _discoverChange(String path, List<String> songIds) async {
+    final (status, body) = await _discoverCall('POST', path, {'songs': songIds});
+    if (status == 503) throw const ConnectUnavailable('Discover is off on the server.');
+    if (status != 200) throw const ConnectUnavailable('The server couldn\'t do that just now.');
+    final failed = body['failed'] is Map ? (body['failed']! as Map).cast<Object?, Object?>() : const {};
+    return DiscoverResult(
+      [for (final d in body['done'] is List ? body['done']! as List : const []) '$d'],
+      {for (final e in failed.entries) '${e.key}': '${e.value}'},
+    );
+  }
+
+  Future<(int, Map<String, Object?>)> _discoverCall(String method, String path, Map<String, Object?>? body) async {
+    final session = _session;
+    if (session == null) throw const ConnectUnavailable('Not connected to Sonar Connect.');
+    try {
+      if (body != null) return await _post(path, body, session: session);
+      final request = await _http.openUrl(method, _url(path)).timeout(const Duration(seconds: 10));
+      request.headers.set(HttpHeaders.authorizationHeader, 'Bearer $session');
+      final response = await request.close().timeout(const Duration(seconds: 10));
+      final text = await response.transform(utf8.decoder).join().timeout(const Duration(seconds: 10));
+      Object? json;
+      try {
+        json = text.isEmpty ? null : jsonDecode(text);
+      } catch (_) {}
+      return (response.statusCode, json is Map<String, Object?> ? json : const <String, Object?>{});
+    } on ConnectUnavailable {
+      rethrow;
+    } catch (_) {
+      throw const ConnectUnavailable('Can\'t reach Sonar Connect.');
     }
   }
 

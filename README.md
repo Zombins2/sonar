@@ -29,6 +29,10 @@ make it yours. There's no support promise and no app store listing.
   download them through [Soulbeet](https://github.com/terry90/soulbeet), and
   watch them land in your library. Before you search, it suggests albums by
   artists like the ones you play most. Hidden unless you set it up.
+- **Discover** (optional, with Get music): songs you don't have, by artists
+  like the ones you play, downloaded to their own folder for you to try. Keep
+  the ones you like (they move into your library) and remove the rest. You
+  set how many songs and how much space it may use.
 
 ## Set up the server (one installer)
 
@@ -148,6 +152,7 @@ lib/
   data/soulbeet/   Get music: Soulbeet client, source picking, download flow
   data/deezer/     Get music: searching Deezer's catalogue
   data/musicbrainz/  Get music: MusicBrainz search, and what's picked as a release
+  data/discover/   Discover: songs downloaded to try, then kept or removed
   audio/           player (just_audio + audio_service), Android Auto menus
   connect/         Sonar Connect client
   state/           Riverpod providers
@@ -174,6 +179,12 @@ After changing `lib/data/db/database.dart`, regenerate the database code with
 - **Get music suggestions** send Deezer the names of your four most played
   artists, to find artists their listeners also play. Nothing else about your
   library or listening leaves your server.
+- **Discover** (off until you turn it on in Settings) sends Deezer the same
+  artist names, plus the names of the artists it finds, to get their most
+  played songs. It then downloads those songs from Soulseek by itself, within
+  the limits you set, through the server's VPN like any Get music download.
+  The songs wait in their own Discover folder and library, away from your
+  music, until you keep or remove each one (docs/DISCOVER_PLAN.md).
 - **Navidrome on Windows (Docker Desktop):** keep Navidrome's cache on a Docker
   volume (`ND_CACHEFOLDER=/cache` on a named volume), not a Windows folder.
   On a Windows bind mount, cached files can't be read back, which breaks

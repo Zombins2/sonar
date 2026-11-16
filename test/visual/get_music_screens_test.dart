@@ -66,6 +66,7 @@ class _RecordedDownloads extends SoulbeetDownloads {
     int? trackCount,
     SbSource? chosen,
     List<SbTrack> songs = const [],
+    bool forDiscover = false,
   }) async {
     asked.add((album: album, songs: songs));
     final d = AlbumDownload.debug('asked-${asked.length}', album: album, songs: songs);

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../state/providers.dart';
 import '../ui/screens/detail_screens.dart';
+import '../ui/screens/discover_screen.dart';
 import '../ui/screens/genre_screen.dart';
 import '../ui/screens/get_music_screen.dart';
 import '../ui/screens/home_screen.dart';
@@ -47,6 +48,7 @@ List<RouteBase> _detailRoutes() => [
     builder: (_, s) => GetMusicScreen(initialQuery: s.extra is String ? s.extra! as String : null),
     routes: [GoRoute(path: 'downloads', builder: (_, _) => const MusicDownloadsScreen())],
   ),
+  GoRoute(path: 'discover', builder: (_, _) => const DiscoverScreen()),
   // Wide windows open settings inside the page area, keeping the sidebar and player bar.
   GoRoute(path: 'settings', builder: (_, _) => const SettingsScreen()),
 ];

@@ -1,6 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../connect/connect_client.dart';
 import '../data/deezer/deezer_client.dart';
+import '../data/discover/discover.dart';
+import '../data/discovery.dart';
 import '../data/musicbrainz/musicbrainz_client.dart';
 import '../data/soulbeet/get_music_search.dart';
 import '../data/soulbeet/get_music_suggestions.dart';
@@ -9,6 +14,7 @@ import '../data/soulbeet/soulbeet_client.dart';
 import '../data/soulbeet/soulbeet_downloads.dart';
 import '../data/soulbeet/soulbeet_models.dart';
 import '../data/subsonic/models.dart';
+import '../data/subsonic/subsonic_client.dart';
 import 'providers.dart';
 
 /// Get music: Soulbeet beside Navidrome (docs/SOULBEET_PLAN.md).
@@ -121,13 +127,118 @@ final getMusicSuggestionsProvider = StreamProvider<MusicSuggestions>((ref) async
     yield const MusicSuggestions([], done: true);
     return;
   }
-  final top = await ref.watch(mixSeedsProvider.future);
-  final played = suggestionSeeds(
-    [for (final s in top) s.artist],
-    top.isNotEmpty ? const [] : [for (final a in await client.getAlbumList2(AlbumListType.newest, size: 20)) a.artist],
-  );
+  final played = await _playedArtists(ref, client, await ref.watch(mixSeedsProvider.future));
   final owned = [for (final a in await client.getArtists()) a.name];
   yield* suggestMusic(ref.watch(deezerClientProvider), played: played, owned: owned);
+});
+
+/// Whom suggestions and Discover are built around (see [suggestionSeeds]).
+Future<List<String>> _playedArtists(Ref ref, SubsonicClient client, List<MixSeed> top) async => suggestionSeeds([
+  for (final s in top) s.artist,
+], top.isNotEmpty ? const [] : [for (final a in await client.getAlbumList2(AlbumListType.newest, size: 20)) a.artist]);
+
+// ---- Discover (docs/DISCOVER_PLAN.md) ------------------------------------------
+
+class DiscoverSettingsNotifier extends Notifier<DiscoverSettings> {
+  static const _key = 'discover_settings';
+
+  /// Changed since it was built: what's saved is older, so it's not loaded.
+  bool _set = false;
+
+  @override
+  DiscoverSettings build() {
+    ref.read(dbProvider).getJson(_key).then((j) {
+      if (!_set && j != null) state = DiscoverSettings.fromJson(j);
+    });
+    return const DiscoverSettings();
+  }
+
+  Future<void> set(DiscoverSettings s) async {
+    _set = true;
+    state = s;
+    await ref.read(dbProvider).setJson(_key, s.toJson());
+  }
+}
+
+final discoverSettingsProvider = NotifierProvider<DiscoverSettingsNotifier, DiscoverSettings>(
+  DiscoverSettingsNotifier.new,
+);
+
+/// How often Discover tops up while the app is open.
+const discoverEvery = Duration(hours: 3);
+
+/// Waits (a little) for Sonar Connect to be online, for a Discover call.
+Future<ConnectClient> _online(ConnectClient c, {Duration within = const Duration(seconds: 20)}) async {
+  if (c.status.value == ConnectStatus.online) return c;
+  final up = Completer<void>();
+  void check() {
+    if (c.status.value == ConnectStatus.online && !up.isCompleted) up.complete();
+  }
+
+  c.status.addListener(check);
+  try {
+    await up.future.timeout(within);
+  } on TimeoutException {
+    throw const ConnectUnavailable('Not connected to Sonar Connect.');
+  } finally {
+    c.status.removeListener(check);
+  }
+  return c;
+}
+
+/// Discover, while logged in with Get music and Sonar Connect. Tops up when
+/// Connect comes online, every [discoverEvery], and when settings make room.
+final discoverProvider = ChangeNotifierProvider<Discover?>((ref) {
+  // `.notifier`: the downloads themselves, not their changes. Watching the
+  // provider would remake Discover on every progress event, each new one
+  // starting its own top-up (seen live: the Home row flashing, and more than
+  // a top-up's worth of downloads).
+  final downloads = ref.watch(soulbeetDownloadsProvider.notifier);
+  final link = ref.watch(connectLinkProvider);
+  // Not clientProvider: it's remade when Discover sets the library's scope.
+  if (downloads == null || link == null || ref.watch(sessionProvider).valueOrNull == null) return null;
+  final connect = link.client;
+  final db = ref.read(dbProvider);
+  final discover = Discover(
+    library: () => ref.read(clientProvider)!,
+    server: () async => (await _online(connect)).discover(),
+    keepSongs: (ids) async => (await _online(connect)).keep(ids),
+    removeSongs: (ids) async => (await _online(connect)).remove(ids),
+    downloads: downloads,
+    deezer: ref.read(deezerClientProvider),
+    musicBrainz: ref.read(musicBrainzClientProvider),
+    played: () async {
+      final client = ref.read(clientProvider)!;
+      return _playedArtists(ref, client, await ref.read(mixSeedsProvider.future));
+    },
+    read: () => db.getJson('discover_state'),
+    write: (state) => db.setJson('discover_state', state),
+    onFolders: (folders) => ref.read(libraryFoldersProvider.notifier).set(folders),
+    hidden: ref.read(libraryHiddenProvider),
+    // Only where Soulbeet can download; and a phone leaves it to a PC that's
+    // on, so the two don't race.
+    mayTopUp: () =>
+        ref.read(soulbeetAvailableProvider) &&
+        (connect.me.kind == 'pc' || !connect.devices.value.values.any((d) => d.kind == 'pc')),
+  )..settings = ref.read(discoverSettingsProvider);
+  ref.listen(discoverSettingsProvider, (_, s) => discover.settings = s);
+  var started = false;
+  void online() {
+    if (connect.status.value != ConnectStatus.online || started) return;
+    started = true;
+    // Learns the Discover library (for the library screens) even when off.
+    unawaited(discover.refresh().then((_) => discover.topUp()).catchError((Object _) {}));
+  }
+
+  connect.status.addListener(online);
+  online();
+  final timer = Timer.periodic(discoverEvery, (_) => unawaited(discover.topUp()));
+  ref.onDispose(() {
+    timer.cancel();
+    connect.status.removeListener(online);
+    discover.dispose();
+  });
+  return discover;
 });
 
 /// An album found in Get music, as the pressing to download, with its songs

@@ -89,11 +89,13 @@ class _Sidebar extends ConsumerWidget {
     final location = GoRouter.of(context).state.matchedLocation;
     final inSettings = isSettingsLocation(location);
     final inGetMusic = isGetMusicLocation(location);
+    final inDiscover = isDiscoverLocation(location);
     final getMusic = ref.watch(soulbeetAvailableProvider);
+    final discover = getMusic && ref.watch(discoverSettingsProvider.select((s) => s.on));
     final downloading = ref.watch(soulbeetDownloadsProvider)?.activeCount ?? 0;
     Widget nav(int i, IconData icon, IconData selected, String label) {
       final current = shell.currentIndex == i;
-      final on = current && !inSettings && !inGetMusic;
+      final on = current && !inSettings && !inGetMusic && !inDiscover;
       return _SideItem(
         icon: on ? selected : icon,
         label: label,
@@ -136,6 +138,13 @@ class _Sidebar extends ConsumerWidget {
             onTap: () {
               if (!inGetMusic) context.openGetMusic();
             },
+          ),
+        if (discover)
+          _SideItem(
+            icon: inDiscover ? Icons.explore_rounded : Icons.explore_outlined,
+            label: 'Discover',
+            selected: inDiscover,
+            onTap: () => context.openDiscover(),
           ),
         const Padding(padding: EdgeInsets.fromLTRB(20, 20, 20, 8), child: Divider(height: 1)),
         Padding(

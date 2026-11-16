@@ -18,7 +18,37 @@ class MusicSuggestions {
   final bool done;
 }
 
-String _plain(String s) => s.toLowerCase().replaceAll(RegExp(r'[^\p{L}\p{N}]', unicode: true), '');
+String _plain(String s) => plainName(s);
+
+/// A name for matching: lower case, letters and digits only.
+String plainName(String s) => s.toLowerCase().replaceAll(RegExp(r'[^\p{L}\p{N}]', unicode: true), '');
+
+/// Artists Deezer's listeners of [played] also play, likeliest first for
+/// each played artist in turn, leaving out anyone in [owned] under any
+/// billing (see [suggestMusic]), each once. Discover downloads songs by
+/// these, the same artists Get music suggests albums by.
+Stream<DeezerArtist> relatedArtists(
+  DeezerClient dz, {
+  required List<String> played,
+  required Iterable<String> owned,
+}) async* {
+  final have = {for (final a in owned) _plain(a)}..remove('');
+  final seeds = {for (final p in played) _plain(p): p}..remove('');
+  final shown = <String>{};
+  for (final MapEntry(key: want, value: seed) in seeds.entries) {
+    try {
+      final artist = (await dz.searchArtists(seed)).where((a) => _plain(a.name) == want).firstOrNull;
+      if (artist == null) continue;
+      for (final r in await dz.related(artist)) {
+        final name = _plain(r.name);
+        if (name.isEmpty || have.any((h) => _sameAct(name, h)) || !shown.add(name)) continue;
+        yield r;
+      }
+    } on DeezerException {
+      // This artist's are left out; the others may still come.
+    }
+  }
+}
 
 /// Whom suggestions are built around: the most played artists, else (before
 /// anything is played) those of the albums added last. "Various Artists"
@@ -80,7 +110,7 @@ Stream<MusicSuggestions> suggestMusic(
 bool _sameAct(String a, String b) => a == b || (a.length >= 4 && b.length >= 4 && (a.startsWith(b) || b.startsWith(a)));
 
 /// Deezer lists many hits sets as plain albums ("Best Of").
-final _hits = RegExp(
+final hitsTitle = RegExp(
   r'\b(best of|greatest|hits|anthology|collection|essential|definitive|gold|retrospective)\b',
   caseSensitive: false,
 );
@@ -90,7 +120,7 @@ final _hits = RegExp(
 Future<SbAlbum?> _bestAlbum(DeezerClient dz, DeezerArtist artist) async {
   try {
     final albums = await dz.albumsBy(artist);
-    return albums.where((a) => a.kinds.isEmpty && !_hits.hasMatch(a.title)).firstOrNull ?? albums.firstOrNull;
+    return albums.where((a) => a.kinds.isEmpty && !hitsTitle.hasMatch(a.title)).firstOrNull ?? albums.firstOrNull;
   } on DeezerException {
     return null;
   }

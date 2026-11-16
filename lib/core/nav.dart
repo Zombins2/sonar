@@ -56,6 +56,11 @@ extension SonarNav on BuildContext {
     if (!isMusicDownloadsLocation(GoRouter.of(this).state.matchedLocation)) push('/$_branch/get-music/downloads');
   }
 
+  /// Discover's songs to try (docs/DISCOVER_PLAN.md).
+  void openDiscover() {
+    if (!isDiscoverLocation(GoRouter.of(this).state.matchedLocation)) push('/$_branch/discover');
+  }
+
   void openNowPlaying() => push('/now-playing');
   void openQueue() => push('/queue');
   void openSettings() {
@@ -68,6 +73,7 @@ extension SonarNav on BuildContext {
 }
 
 bool isGetMusicLocation(String location) => location.contains('/get-music');
+bool isDiscoverLocation(String location) => location.endsWith('/discover');
 bool isMusicDownloadsLocation(String location) => location.endsWith('/get-music/downloads');
 
 /// Settings, either full-screen (phone) or inside a tab (wide windows).

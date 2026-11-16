@@ -406,6 +406,63 @@ void main() {
     expect(ConnectLink.queueWindow(0, null), (0, 0));
   });
 
+  group('Discover', () {
+    test('off on the server: null, and keep / remove say so', () async {
+      final phone = await device('phone', 'phone');
+      expect(await phone.client.discover(), isNull);
+      await expectLater(
+        phone.client.keep(['s1']),
+        throwsA(isA<ConnectUnavailable>().having((e) => e.message, 'message', contains('off'))),
+      );
+    });
+
+    test('not connected: says so, without asking anything', () async {
+      final idle = ConnectClient(
+        base: Uri.parse('http://127.0.0.1:${relay.port}'),
+        me: const ConnectDeviceInfo(id: 'idle', name: 'pc', kind: 'pc'),
+        loginProof: _proof,
+      );
+      addTearDown(idle.dispose);
+      await expectLater(idle.discover(), throwsA(isA<ConnectUnavailable>()));
+      await expectLater(idle.remove(['s1']), throwsA(isA<ConnectUnavailable>()));
+    });
+
+    test('on, but Navidrome refusing Connect\'s admin login: unavailable, not off', () async {
+      final folders = Directory.systemTemp.createTempSync('sonar-discover-');
+      addTearDown(() => folders.deleteSync(recursive: true));
+      for (final f in ['discover', 'music', 'state']) {
+        Directory('${folders.path}/$f').createSync();
+      }
+      final on = await _Relay.start(
+        navidrome.port,
+        env: {
+          'NAVIDROME_ADMIN_USER': _user,
+          'NAVIDROME_ADMIN_PASSWORD': _password,
+          'DISCOVER': 'on',
+          'DISCOVER_DIR': '${folders.path}/discover',
+          'GETMUSIC_DIR': '${folders.path}/music',
+          'STATE_DIR': '${folders.path}/state',
+        },
+      );
+      addTearDown(on.process.kill);
+      final phone = await _Device.start(harness, on, 'phone', 'phone');
+      devices.add(phone);
+      await expectLater(phone.client.discover(), throwsA(isA<ConnectUnavailable>()));
+    });
+
+    test('what the server says, read', () {
+      final s = DiscoverServer.fromJson({
+        'library': 2,
+        'removed': [
+          {'artist': 'Fred Hammond', 'title': 'No Weapon', 'album': 'Pages of Life', 'at': 1},
+          'junk',
+        ],
+      });
+      expect(s.library, '2');
+      expect([for (final r in s.removed) '${r.artist} - ${r.title}'], ['Fred Hammond - No Weapon']);
+    });
+  });
+
   test('a closed app leaves the other\'s list', () async {
     final pc = await device('pc', 'pc', songs: _album(2));
     final phone = await device('phone', 'phone');

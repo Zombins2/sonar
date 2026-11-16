@@ -60,11 +60,46 @@ final sessionProvider = AsyncNotifierProvider<SessionNotifier, ServerCredentials
 /// Whether the last request reached the server. Drives the offline banner.
 final reachableProvider = StateProvider<bool>((_) => true);
 
+/// The libraries (music folder ids) the library screens show: every one
+/// but Discover's, once Discover has said which that is. Empty shows all.
+/// Kept, so the library is right from the start of the next run.
+class LibraryFolders extends Notifier<List<String>> {
+  static const _key = 'library_folders';
+
+  /// Set since it was built: what's saved is older, so it's not loaded.
+  bool _set = false;
+
+  @override
+  List<String> build() {
+    ref.read(dbProvider).getJson(_key).then((v) {
+      if (!_set && v is List) _apply([for (final f in v) '$f']);
+    });
+    return const [];
+  }
+
+  void _apply(List<String> folders) {
+    if (folders.length == state.length && folders.every(state.contains)) return;
+    state = List.unmodifiable(folders);
+  }
+
+  void set(List<String> folders) {
+    _set = true;
+    _apply(folders);
+    ref.read(dbProvider).setJson(_key, folders);
+  }
+}
+
+final libraryFoldersProvider = NotifierProvider<LibraryFolders, List<String>>(LibraryFolders.new);
+
+/// Discover's song ids, left out of similar songs. One set, changed in place.
+final libraryHiddenProvider = Provider<Set<String>>((_) => <String>{});
+
 final clientProvider = Provider<SubsonicClient?>((ref) {
   final creds = ref.watch(sessionProvider).valueOrNull;
   if (creds == null) return null;
   return SubsonicClient(
     creds,
+    scope: LibraryScope(folders: ref.watch(libraryFoldersProvider), hidden: ref.read(libraryHiddenProvider)),
     cache: ref.read(dbProvider),
     onReachability: (ok) {
       final n = ref.read(reachableProvider.notifier);
@@ -216,6 +251,7 @@ final albumProvider = FutureProvider.autoDispose.family<Album, String>((ref, id)
 final artistProvider = FutureProvider.autoDispose.family<Artist, String>((ref, id) => requireClient(ref).getArtist(id));
 
 final artistsProvider = FutureProvider.autoDispose<List<Artist>>((ref) => requireClient(ref).getArtists());
+
 
 /// Genres with music in them, biggest first.
 final genresProvider = FutureProvider.autoDispose<List<Genre>>((ref) async {

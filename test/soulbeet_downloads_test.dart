@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:sonar/data/soulbeet/soulbeet_client.dart';
 import 'package:sonar/data/soulbeet/soulbeet_downloads.dart';
 import 'package:sonar/data/soulbeet/soulbeet_models.dart';
+import 'package:sonar/data/soulbeet/source_pick.dart';
 
 import 'support/fake_soulbeet.dart';
 
@@ -388,6 +389,200 @@ void main() {
     expect(d.error, contains('Nobody on Soulseek'));
   });
 
+  group('Discover', () {
+    const discoverFolder = {'id': 'f-discover', 'user_id': 'u1', 'name': 'Discover', 'path': '/music-discover'};
+    final library = (soulbeetFixture('folders')['response']! as List).single! as Map<String, Object?>;
+    List<SbTrack> oneSong() => [SbAlbumDetail.fromJson(soulbeetFixture('album')['response']! as SbJson).tracks[1]];
+
+    /// The files queued, as `(sharer's path, target folder)`.
+    List<(String, String)> queued() => [
+      for (final b in server.bodiesFor('/api/downloads/queue'))
+        for (final f in (((b! as Map)['req'] as Map)['items'] as List))
+          ('${(f as Map)['id']}', '${((b as Map)['req'] as Map)['target_folder']}'),
+    ];
+
+    test('a Discover song goes to its own folder, made the first time', () async {
+      final d = await downloads.download(legalizeIt(), songs: oneSong(), forDiscover: true);
+      expect(server.bodiesFor('/api/folders').whereType<Map>().single, {'name': 'Discover', 'path': '/music-discover'});
+      expect(queued().single.$2, '/music-discover');
+      expect(d.forDiscover, isTrue);
+    });
+
+    test('with both folders there, each download takes its own, whichever is listed first', () async {
+      server.overrides['/api/folders'] = (200, [discoverFolder, library]);
+      await downloads.download(legalizeIt(), songs: oneSong());
+      await downloads.download(legalizeIt(), songs: oneSong(), forDiscover: true);
+      expect(((server.bodiesFor('/api/auto-download').single! as Map)['req'] as Map)['folder_path'], '/music');
+      expect(queued().single.$2, '/music-discover');
+      expect(server.bodiesFor('/api/folders').whereType<Map>(), isEmpty, reason: 'nothing made');
+    });
+
+    test('a Discover song is taken from a copy of its own album: that one file, lossless', () async {
+      final d = await downloads.download(legalizeIt(), songs: oneSong(), forDiscover: true);
+      expect(server.bodiesFor('/api/download/search/start'), hasLength(1), reason: 'its album looked for');
+      expect(server.bodiesFor('/api/auto-download'), isEmpty, reason: 'not any copy found by its name');
+      expect(queued(), [(r'music\Peter Tosh\Legalize It\18 Burial.flac', '/music-discover')]);
+      expect((d.source, d.quality, d.phase), ('peer1', 'flac', AlbumPhase.downloading));
+    });
+
+    test('only on compilations: not downloaded, saying why (beets would file it as one)', () async {
+      final poll = soulbeetFixture('download_search_poll_done')['response']! as Map<String, Object?>;
+      server.overrides['/api/download/search/poll'] = (
+        200,
+        {
+          ...poll,
+          'groups': [
+            for (final g in (poll['groups']! as List).cast<Map<String, Object?>>())
+              {...g, 'title': 'Reggae Hits Volume 3'},
+          ],
+        },
+      );
+      final d = await downloads.download(legalizeIt(), songs: oneSong(), forDiscover: true);
+      expect(d.phase, AlbumPhase.failed);
+      expect(d.error, contains('"Burial" from Legalize It'));
+      expect(server.bodiesFor('/api/downloads/queue'), isEmpty);
+      expect(server.bodiesFor('/api/auto-download'), isEmpty);
+    });
+
+    test('an imported Discover song is rescanned in, but not looked for in the library', () async {
+      libraryId = 'nd-album-1';
+      final d = await downloads.download(legalizeIt(), songs: oneSong(), forDiscover: true);
+      await until(() => server.sockets.isNotEmpty, 'the live feed to open');
+      server.push(progress('Imported', files: 1, batch: 'batch-1', percent: 100));
+      await until(() => d.phase == AlbumPhase.imported, 'imported');
+      await until(() => rescans == 1, 'the rescan');
+      await Future<void>.delayed(const Duration(milliseconds: 50));
+      expect(d.libraryAlbumId, isNull);
+    });
+
+    group('picking up a download from before the app closed', () {
+      Future<AlbumDownload> resume({List<String> items = const ['@@share\\a\\01.flac']}) => downloads.resumeDiscover(
+        batchId: 'b1',
+        releaseId: 'rel-1',
+        items: items,
+        label: 'Country Road',
+        started: DateTime(2026, 11, 16),
+        quietFor: const Duration(milliseconds: 300),
+      );
+
+      test('nothing heard from it: its skipped import is filed as the release', () async {
+        final d = await resume();
+        final retry = server.bodiesFor('/api/downloads/retry-import').single! as Map;
+        expect(retry, {
+          'item': '@@share\\a\\01.flac',
+          'choice': {'MusicBrainz': 'rel-1'},
+        });
+        expect((d.key, d.forDiscover, d.phase), ('b1', true, AlbumPhase.importing));
+        server.push(progress('Importing', percent: 100));
+        server.push(progress('Imported', percent: 100));
+        await until(() => d.phase == AlbumPhase.imported, 'imported');
+      });
+
+      test('still going: left to finish, then filed as the release when skipped', () async {
+        final resumed = resume();
+        await until(() => server.sockets.isNotEmpty, 'the live feed to open');
+        // Every file in, beets about to import: still "importing", so only
+        // the files having shown up say it's under way.
+        server.push(progress('Completed', percent: 100));
+        final d = await resumed;
+        expect(d.phase, AlbumPhase.importing);
+        expect(server.bodiesFor('/api/downloads/retry-import'), isEmpty, reason: 'not while it\'s under way');
+        expect(d.files, hasLength(3));
+        server.push(progress('ImportSkipped', percent: 100, error: 'No close match'));
+        await until(() => server.bodiesFor('/api/downloads/retry-import').isNotEmpty, 'the retry');
+        expect((server.bodiesFor('/api/downloads/retry-import').single! as Map)['choice'], {'MusicBrainz': 'rel-1'});
+      });
+
+      test('Soulbeet no longer has it (it restarted): failed, saying why', () async {
+        server.overrides['/api/downloads/retry-import'] = (404, 'Import not found');
+        final d = await resume();
+        expect(d.phase, AlbumPhase.failed);
+        expect(d.error, 'Import not found');
+      });
+
+      test('no file seen before the app closed: nothing to retry with', () async {
+        final d = await resume(items: const []);
+        expect(server.bodiesFor('/api/downloads/retry-import'), isEmpty);
+        expect(d.phase, AlbumPhase.failed);
+      });
+    });
+  });
+
+  group('pickSongs: where a song alone comes from', () {
+    String? from(List<SbSource> copies, {String album = 'Legalize It', List<String> songs = const ['Burial']}) {
+      final p = pickSongs(copies, album: album, songs: songs);
+      return p == null ? null : '${p.source.user}: ${[for (final f in p.files) f.title].join(', ')}';
+    }
+
+    test('a copy of its album, never a compilation that has it too', () {
+      expect(
+        from([
+          _copy('a', 'Reggae Hits 3', ['Burial']),
+          _copy('b', 'Legalize It', ['Legalize It', 'Burial']),
+        ]),
+        'b: Burial',
+      );
+      expect(
+        from([
+          _copy('a', 'Reggae Hits 3', ['Burial']),
+        ]),
+        isNull,
+      );
+    });
+
+    test('lossless before a quicker lossy copy', () {
+      expect(
+        from([
+          _copy('mp3', 'Legalize It', ['Burial'], quality: 'mp3'),
+          _copy('flac', 'Legalize It', ['Burial'], queue: 9),
+        ]),
+        'flac: Burial',
+      );
+    });
+
+    test('every song asked for, or not that copy', () {
+      final copies = [
+        _copy('a', 'Legalize It', ['Burial']),
+        _copy('b', 'Legalize It', ['Burial', 'No Sympathy']),
+      ];
+      expect(from(copies, songs: ['Burial', 'No Sympathy']), 'b: Burial, No Sympathy');
+    });
+
+    test('longer forms of a name count, short names must match whole', () {
+      expect(
+        from(
+          [
+            _copy('a', 'BULLY (Deluxe)', ['BULLY']),
+          ],
+          album: 'BULLY',
+          songs: ['BULLY'],
+        ),
+        'a: BULLY',
+      );
+      expect(
+        from(
+          [
+            _copy('a', 'Super Ape', ['Chase the Devil feat. Jahdan']),
+          ],
+          album: 'Super Ape',
+          songs: ['Chase the Devil'],
+        ),
+        'a: Chase the Devil feat. Jahdan',
+      );
+      expect(
+        from(
+          [
+            _copy('a', 'Yeezus', ['Ye']),
+          ],
+          album: 'Ye',
+          songs: ['Ye'],
+        ),
+        isNull,
+        reason: 'Ye is not Yeezus',
+      );
+    });
+  });
+
   test('a login with no music folder yet gets one made, then downloads into it', () async {
     // Soulbeet keeps folders per user; a new login has none (recorded 2026-11-12).
     server.overrides['/api/folders'] = (200, <Object>[]);
@@ -420,3 +615,23 @@ void main() {
     expect(list.forFound(SbAlbum.found(pressing: 'p2', groupId: 'g2', title: 'X', artist: 'Y')), isNull);
   });
 }
+
+/// One sharer's copy: a folder titled [title] holding [songs].
+SbSource _copy(String user, String title, List<String> songs, {String quality = 'flac', int queue = 0}) =>
+    SbSource.fromJson({
+      'source': user,
+      'title': title,
+      'item_count': songs.length,
+      'quality': quality,
+      'score': 0.95,
+      'items': [
+        for (final s in songs)
+          {
+            'id': '$user/$title/$s.$quality',
+            'title': s,
+            'quality': quality,
+            'size': 1000,
+            'backend_data': '{"hasFreeUploadSlot": true, "queueLength": $queue}',
+          },
+      ],
+    });

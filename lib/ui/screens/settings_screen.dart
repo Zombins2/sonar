@@ -7,10 +7,13 @@ import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
 import '../../audio/transitions.dart';
+import '../../core/nav.dart';
 import '../../core/platform.dart';
 import '../../core/theme.dart';
+import '../../data/discover/discover.dart';
 import '../../data/subsonic/subsonic_client.dart';
 import '../../state/providers.dart';
+import '../../state/soulbeet_providers.dart';
 import '../desktop_shortcuts.dart';
 import '../widgets/common.dart';
 import '../widgets/cover_art.dart';
@@ -174,6 +177,7 @@ class SettingsScreen extends ConsumerWidget {
         value: stream.onlineLyrics,
         onChanged: (v) => ref.read(settingsProvider.notifier).set(onlineLyrics: v),
       ),
+      if (ref.watch(soulbeetAvailableProvider)) ...[const _Header('Discover'), const _DiscoverTiles()],
       if (isDesktopPlatform) ...[
         const _Header('Keyboard shortcuts'),
         for (final (keys, does) in playerShortcutHelp)
@@ -244,6 +248,89 @@ class _Header extends StatelessWidget {
     child: Text(text, style: Theme.of(context).textTheme.titleMedium?.copyWith(color: SonarColors.accentDefault)),
   );
 }
+
+/// Discover's settings: on or off, how much it may download, and whether it
+/// makes room by itself (docs/DISCOVER_PLAN.md).
+class _DiscoverTiles extends ConsumerWidget {
+  const _DiscoverTiles();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final s = ref.watch(discoverSettingsProvider);
+    final d = ref.watch(discoverProvider);
+    void set(DiscoverSettings v) => ref.read(discoverSettingsProvider.notifier).set(v);
+    final missing = d?.available == false;
+    Widget choose(int value, List<int> options, String Function(int) label, ValueChanged<int> onChanged) =>
+        DropdownButton<int>(
+          value: value,
+          underline: const SizedBox(),
+          dropdownColor: SonarColors.surfaceElevated,
+          borderRadius: BorderRadius.circular(SonarRadius.art),
+          items: [for (final o in options) DropdownMenuItem(value: o, child: Text(label(o)))],
+          onChanged: (v) => v == null ? null : onChanged(v),
+        );
+    return Column(
+      children: [
+        SwitchListTile(
+          secondary: const Icon(Icons.explore_rounded),
+          title: const Text('Download songs to try'),
+          subtitle: Text(
+            missing
+                ? 'Your server has no Discover folder yet. Run the server installer again with Get music to add one'
+                : 'Songs you don\'t have, by artists like the ones you play, downloaded to a Discover folder '
+                      'apart from your library until you keep or remove them (sends the names of artists you play '
+                      'to Deezer)',
+          ),
+          value: s.on && !missing,
+          onChanged: missing ? null : (v) => set(s.copyWith(on: v)),
+        ),
+        if (s.on && !missing) ...[
+          ListTile(
+            leading: const Icon(Icons.queue_music_rounded),
+            title: const Text('Songs at most'),
+            trailing: choose(
+              s.maxSongs,
+              DiscoverSettings.songOptions,
+              (n) => '$n',
+              (n) => set(s.copyWith(maxSongs: n)),
+            ),
+          ),
+          ListTile(
+            leading: const Icon(Icons.sd_storage_outlined),
+            title: const Text('Space at most'),
+            subtitle: const Text('Whichever limit comes first'),
+            trailing: choose(s.maxGb, DiscoverSettings.gbOptions, (n) => '$n GB', (n) => set(s.copyWith(maxGb: n))),
+          ),
+          SwitchListTile(
+            secondary: const Icon(Icons.autorenew_rounded),
+            title: const Text('Make room by itself'),
+            subtitle: const Text(
+              'When Discover is full, remove the oldest songs you haven\'t kept to fit new ones (never songs from '
+              'the last day). Off: new songs wait until you keep or remove some',
+            ),
+            value: s.makeRoom,
+            onChanged: (v) => set(s.copyWith(makeRoom: v)),
+          ),
+        ],
+        if (!missing)
+          ListTile(
+            leading: const Icon(Icons.library_music_outlined),
+            title: const Text('Open Discover'),
+            subtitle: d == null || d.available != true ? null : Text(discoverCount(d)),
+            trailing: const Icon(Icons.chevron_right_rounded),
+            onTap: () => context.openDiscover(),
+          ),
+      ],
+    );
+  }
+}
+
+/// "12 songs to try".
+String discoverCount(Discover d) => switch (d.songs.length) {
+  0 => 'No songs to try yet',
+  1 => '1 song to try',
+  final n => '$n songs to try',
+};
 
 /// Crossfade length, 0 (off) to [crossfadeMax] seconds.
 class _CrossfadeTile extends ConsumerStatefulWidget {

@@ -29,15 +29,32 @@ enum AlbumPhase {
 
 /// One album on its way into the library.
 class AlbumDownload {
-  AlbumDownload._(this.key, {this.album, String? label, this.releaseId, this.songs = const []})
-    : _label = label,
-      started = DateTime.now();
+  AlbumDownload._(
+    this.key, {
+    this.album,
+    String? label,
+    this.releaseId,
+    this.songs = const [],
+    this.forDiscover = false,
+    DateTime? started,
+  }) : _label = label,
+       started = started ?? DateTime.now();
 
   /// An album in a given state, for screenshots and widget tests.
   @visibleForTesting
-  AlbumDownload.debug(this.key, {this.album, String? label, this.releaseId, DateTime? started, this.songs = const []})
-    : _label = label,
-      started = started ?? DateTime.now();
+  AlbumDownload.debug(
+    this.key, {
+    this.album,
+    String? label,
+    this.releaseId,
+    DateTime? started,
+    this.songs = const [],
+    this.forDiscover = false,
+  }) : _label = label,
+       started = started ?? DateTime.now();
+
+  /// Downloaded into Discover, to try before keeping (docs/DISCOVER_PLAN.md).
+  final bool forDiscover;
 
   /// The songs asked for, when only some of the album were.
   final List<SbTrack> songs;
@@ -162,6 +179,10 @@ class SoulbeetDownloads extends ChangeNotifier {
   bool _disposed = false;
   int _localIds = 0;
   SbFolder? _folder;
+  SbFolder? _discoverFolder;
+
+  /// Where Soulbeet sees the Discover folder (server/docker-compose.yml).
+  static const discoverPath = '/music-discover';
 
   /// Shows [d] as if it had been started here (screenshots, widget tests).
   @visibleForTesting
@@ -174,6 +195,9 @@ class SoulbeetDownloads extends ChangeNotifier {
   List<AlbumDownload> get albums => _albums.values.toList()..sort((a, b) => b.started.compareTo(a.started));
 
   int get activeCount => _albums.values.where((a) => a.active).length;
+
+  /// The download Soulbeet calls [key] (its batch id), if it's known here.
+  AlbumDownload? byKey(String key) => _albums[key];
 
   /// The download for an album the user picked in search, if any.
   AlbumDownload? forAlbum(String albumId) => _albums.values.where((a) => a.album?.id == albumId).lastOrNull;
@@ -212,24 +236,53 @@ class SoulbeetDownloads extends ChangeNotifier {
   /// With [songs], only those: Soulbeet finds each by name. beets won't file
   /// part of an album on its own (missing songs make any match unsure), so
   /// it's filed as [album] when it asks ([releaseId]).
+  ///
+  /// [forDiscover] files it in Discover's folder instead of the library, and
+  /// takes [songs] only from someone's copy of [album] ([pickSongs]): any
+  /// copy found by name may be from a compilation, which beets then files it
+  /// as. Nobody sharing one fails it, so Discover tries another song.
   Future<AlbumDownload> download(
     SbAlbum album, {
     int? trackCount,
     SbSource? chosen,
     List<SbTrack> songs = const [],
+    bool forDiscover = false,
   }) async {
     final existing = forAlbum(album.id);
-    if (existing != null && existing.active) return existing;
-    final d = AlbumDownload._('local-${_localIds++}', album: album, releaseId: album.mbid, songs: songs);
+    if (existing != null && existing.active && existing.forDiscover == forDiscover) return existing;
+    final d = AlbumDownload._(
+      'local-${_localIds++}',
+      album: album,
+      releaseId: album.mbid,
+      songs: songs,
+      forDiscover: forDiscover,
+    );
     _albums[d.key] = d;
     _changed();
     unawaited(_listen());
     try {
-      // A login's first download: Soulbeet keeps folders per user, so make
-      // this one its own (the part of the library Soulbeet files into).
-      final folder = _folder ??= (await client.folders()).firstOrNull ?? await client.createFolder();
+      final folder = forDiscover ? await _discover() : await _library();
       var source = chosen;
       var asked = album;
+      if (songs.isNotEmpty && forDiscover) {
+        final pick = await _songsCopy(album, songs);
+        if (d.phase == AlbumPhase.cancelled) return d;
+        if (pick == null) {
+          throw SoulbeetException(
+            SoulbeetErrorKind.refused,
+            'Nobody on Soulseek is sharing "${songs.first.title}" from ${album.title} right now.',
+          );
+        }
+        d
+          ..source = pick.source.user
+          ..quality = pick.source.quality
+          ..phase = AlbumPhase.downloading;
+        for (final id in await client.queue(pick.files, folder)) {
+          _adopt(d, id);
+        }
+        _changed();
+        return d;
+      }
       if (songs.isNotEmpty) {
         final batch = await client.autoDownload(album, folder, songs: songs);
         _rekey(d, batch);
@@ -274,6 +327,75 @@ class SoulbeetDownloads extends ChangeNotifier {
         ..phase = AlbumPhase.failed
         ..error = e.toString();
     }
+    _changed();
+    return d;
+  }
+
+  /// The copy of [album] to take [songs] from ([pickSongs]), searching under
+  /// shorter artist names too; stops early at a free, lossless one.
+  Future<({SbSource source, List<SbSourceFile> files})?> _songsCopy(SbAlbum album, List<SbTrack> songs) async {
+    ({SbSource source, List<SbSourceFile> files})? best;
+    try {
+      await for (final r in _findSources(album, (_) {})) {
+        final pick = pickSongs(r.sources, album: album.title, songs: [for (final s in songs) s.title]);
+        if (pick == null) continue;
+        best = pick;
+        if (pick.source.lossless && pick.source.freeSlot && pick.source.queueLength == 0) break;
+      }
+    } on SoulbeetException {
+      // What was found before the search failed still counts.
+    }
+    return best;
+  }
+
+  /// The library's folder in Soulbeet. A login's first download makes it:
+  /// Soulbeet keeps folders per user, so this one needs its own.
+  Future<SbFolder> _library() async => _folder ??=
+      (await client.folders()).where((f) => f.path != discoverPath).firstOrNull ?? await client.createFolder();
+
+  /// Discover's folder in Soulbeet, made the first time.
+  Future<SbFolder> _discover() async => _discoverFolder ??=
+      (await client.folders()).where((f) => f.path == discoverPath).firstOrNull ??
+      await client.createFolder(name: 'Discover', path: discoverPath);
+
+  /// Picks up a Discover download started before the app last closed
+  /// (`batchId`, with the `items` its files had). Soulbeet's feed only sends
+  /// changes, so: if it's still going, the feed shows it within [quietFor];
+  /// if not, its import was skipped with nobody here to file it as
+  /// [releaseId], so that's asked for now. Soulbeet keeps a skipped import
+  /// until it restarts; after that this fails, and the download is lost.
+  Future<AlbumDownload> resumeDiscover({
+    required String batchId,
+    required String releaseId,
+    required List<String> items,
+    required String label,
+    required DateTime started,
+    Duration quietFor = const Duration(seconds: 20),
+  }) async {
+    final known = _albums[batchId];
+    if (known != null) return known;
+    final d = AlbumDownload._(batchId, label: label, releaseId: releaseId, forDiscover: true, started: started)
+      ..phase = AlbumPhase.importing;
+    _albums[batchId] = d;
+    _changed();
+    await _listen();
+    await Future<void>.delayed(quietFor);
+    if (_disposed || d.files.isNotEmpty || d.phase != AlbumPhase.importing) return d;
+    for (final item in items) {
+      try {
+        d
+          ..retriedWithRelease = true
+          ..retryAskedAt = DateTime.now();
+        await client.retryImportOf(item, SbChooseRelease(releaseId));
+        return d; // The feed follows it from here.
+      } on SoulbeetException catch (e) {
+        d.error = e.message;
+      }
+    }
+    d
+      ..retryAskedAt = null
+      ..phase = AlbumPhase.failed
+      ..error = d.error ?? 'Soulbeet no longer has this download.';
     _changed();
     return d;
   }
@@ -597,7 +719,7 @@ class SoulbeetDownloads extends ChangeNotifier {
   Future<void> _arrived(AlbumDownload d) async {
     await rescan?.call();
     final find = findInLibrary;
-    if (find == null) return;
+    if (find == null || d.forDiscover) return; // Discover songs aren't in the library.
     for (var i = 0; i < 20 && !_disposed; i++) {
       final id = await find(d.title, d.artist).catchError((Object _) => null);
       if (id != null) {

@@ -53,6 +53,8 @@ class Song {
     this.year,
     this.starred = false,
     this.replayGain,
+    this.size,
+    this.created,
   });
 
   final String id;
@@ -71,6 +73,12 @@ class Song {
   final bool starred;
   final ReplayGain? replayGain;
 
+  /// The file's size in bytes.
+  final int? size;
+
+  /// When the server first scanned it in.
+  final DateTime? created;
+
   factory Song.fromJson(Json j) => Song(
     id: _str(j['id']),
     title: _str(j['title']),
@@ -87,6 +95,8 @@ class Song {
     year: _intOrNull(j['year']),
     starred: j['starred'] != null,
     replayGain: ReplayGain.fromJson(j['replayGain']),
+    size: _intOrNull(j['size']),
+    created: _date(j['created']),
   );
 
   Json toJson() => {
@@ -105,6 +115,8 @@ class Song {
     'year': year,
     if (starred) 'starred': true,
     if (replayGain != null) 'replayGain': replayGain!.toJson(),
+    'size': ?size,
+    if (created != null) 'created': created!.toIso8601String(),
   };
 
   Song copyWith({bool? starred}) => Song(
@@ -123,6 +135,8 @@ class Song {
     year: year,
     starred: starred ?? this.starred,
     replayGain: replayGain,
+    size: size,
+    created: created,
   );
 }
 

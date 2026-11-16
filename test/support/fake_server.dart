@@ -62,11 +62,22 @@ const testCreds = ServerCredentials(baseUrl: 'https://music.example.ts.net/', us
 
 typedef FakeServer = ({SubsonicClient client, FakeAdapter adapter, MemoryCache cache, List<bool> reach});
 
-FakeServer fakeServer(Map<String, Object> responses, {bool withCache = true}) {
-  final adapter = FakeAdapter(responses);
+FakeServer fakeServer(
+  Map<String, Object> responses, {
+  bool withCache = true,
+  LibraryScope? scope,
+  FakeAdapter? adapter,
+}) {
+  adapter ??= FakeAdapter(responses);
   final dio = Dio()..httpClientAdapter = adapter;
   final cache = MemoryCache();
   final reach = <bool>[];
-  final client = SubsonicClient(testCreds, dio: dio, cache: withCache ? cache : null, onReachability: reach.add);
+  final client = SubsonicClient(
+    testCreds,
+    dio: dio,
+    cache: withCache ? cache : null,
+    onReachability: reach.add,
+    scope: scope,
+  );
   return (client: client, adapter: adapter, cache: cache, reach: reach);
 }
