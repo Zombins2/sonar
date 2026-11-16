@@ -1,0 +1,79 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/133395/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 778081291,
+    "title": "CORITOS Vol. 2",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/051dad78e4f4fba1e70580f1ab34913d/250x250-000000-80-0-0.jpg",
+    "fans": 309,
+    "release_date": "2025-09-19",
+    "record_type": "album"
+   },
+   {
+    "id": 726587041,
+    "title": "CORITOS Vol. 1",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/570a5ed930c7338a222d2df1675d064f/250x250-000000-80-0-0.jpg",
+    "fans": 641,
+    "release_date": "2025-05-09",
+    "record_type": "album"
+   },
+   {
+    "id": 699076071,
+    "title": "Feels Like Christmas (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/d00abe100ca22e694454bbf9cd5f90e9/250x250-000000-80-0-0.jpg",
+    "fans": 38,
+    "release_date": "2023-12-01",
+    "record_type": "album"
+   },
+   {
+    "id": 345196607,
+    "title": "Worship Anywhere: Live from Camp NewBreed",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/f3c0c47a7f0ae9f339870d4f1c827225/250x250-000000-80-0-0.jpg",
+    "fans": 669,
+    "release_date": "2022-10-07",
+    "record_type": "album"
+   },
+   {
+    "id": 214113182,
+    "title": "Feels Like Home, Vol. 2",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/c4653667af2a450be4b72268def83790/250x250-000000-80-0-0.jpg",
+    "fans": 1630,
+    "release_date": "2021-04-02",
+    "record_type": "album"
+   },
+   {
+    "id": 205217112,
+    "title": "Feels Like Home, Vol. 1",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e9b0826ebb0c97f7b616c7b80198f125/250x250-000000-80-0-0.jpg",
+    "fans": 1560,
+    "release_date": "2021-02-26",
+    "record_type": "album"
+   },
+   {
+    "id": 10816370,
+    "title": "Covered: Alive In Asia (Deluxe Version)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b43681af3eb5a1e3ce10e09e557bcd86/250x250-000000-80-0-0.jpg",
+    "fans": 8798,
+    "release_date": "2015-07-24",
+    "record_type": "album"
+   },
+   {
+    "id": 698949031,
+    "title": "You Are Good",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/c756bf642c6b8d31322726c1ee8fc9a5/250x250-000000-80-0-0.jpg",
+    "fans": 26,
+    "release_date": "2015-05-03",
+    "record_type": "album"
+   }
+  ],
+  "total": 44
+ }
+}

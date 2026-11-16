@@ -1,0 +1,135 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/295/related",
+  "query": {
+   "limit": "20"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 145890,
+    "name": "Kirk Franklin & The Family",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/88f1c58cf0f3eacdfb5d8f031a3024c1/250x250-000000-80-0-0.jpg",
+    "nb_fan": 2706
+   },
+   {
+    "id": 69999,
+    "name": "Fred Hammond",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/880561f8b036d533f974712ec169638c/250x250-000000-80-0-0.jpg",
+    "nb_fan": 84484
+   },
+   {
+    "id": 606398,
+    "name": "Jonathan McReynolds",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/f7a2998b63f66af9aa1a2ee22816e9d5/250x250-000000-80-0-0.jpg",
+    "nb_fan": 45360
+   },
+   {
+    "id": 145892,
+    "name": "Marvin Sapp",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/e27eebb83b872c4e5255bd8d63b5120b/250x250-000000-80-0-0.jpg",
+    "nb_fan": 57350
+   },
+   {
+    "id": 149515,
+    "name": "Donnie McClurkin",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/ee473a9aa44835faab3b4ed5b9d6e1fd/250x250-000000-80-0-0.jpg",
+    "nb_fan": 78616
+   },
+   {
+    "id": 129630,
+    "name": "Deitrick Haddon",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/e31830b853fb7806deaa3fc14b7b3de0/250x250-000000-80-0-0.jpg",
+    "nb_fan": 42024
+   },
+   {
+    "id": 418432,
+    "name": "Tye Tribbett",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b6c1a7ca39dddb6d6b413b1e348a466c/250x250-000000-80-0-0.jpg",
+    "nb_fan": 45779
+   },
+   {
+    "id": 133395,
+    "name": "Israel & New Breed",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/baf0212aa94769c2de47d5a0e65b5cee/250x250-000000-80-0-0.jpg",
+    "nb_fan": 62182
+   },
+   {
+    "id": 4339409,
+    "name": "Anthony Brown & group therAPy",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/1e49fa0d14dc669cbd084642498c3ca9/250x250-000000-80-0-0.jpg",
+    "nb_fan": 19544
+   },
+   {
+    "id": 274386,
+    "name": "J Moss",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/ff2e66aa96edcf093deecdd60ce7286d/250x250-000000-80-0-0.jpg",
+    "nb_fan": 23696
+   },
+   {
+    "id": 11174,
+    "name": "Mary Mary",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b379795fcefccf3c4d93bdd5d51adadc/250x250-000000-80-0-0.jpg",
+    "nb_fan": 93562
+   },
+   {
+    "id": 134128,
+    "name": "Israel Houghton",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/6985039c7d204adb41ec27a959d6b1ae/250x250-000000-80-0-0.jpg",
+    "nb_fan": 51327
+   },
+   {
+    "id": 70694,
+    "name": "Anthony Evans",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/b2e1bdbb6b65ed90551a5e9233babb40/250x250-000000-80-0-0.jpg",
+    "nb_fan": 18386
+   },
+   {
+    "id": 9813122,
+    "name": "Pastor Mike Jr.",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/309de2fc51af9de097e96ef858db754a/250x250-000000-80-0-0.jpg",
+    "nb_fan": 2569
+   },
+   {
+    "id": 2544871,
+    "name": "The Walls Group",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/f84b8d60c5d76c7f32199b4a2d9e5b35/250x250-000000-80-0-0.jpg",
+    "nb_fan": 13468
+   },
+   {
+    "id": 1155010,
+    "name": "James Fortune",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/702314e6326283a244b810077f054572/250x250-000000-80-0-0.jpg",
+    "nb_fan": 7603
+   },
+   {
+    "id": 171069,
+    "name": "Tamela Mann",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/f4c06df9d4c181cc963df826fd8484d0/250x250-000000-80-0-0.jpg",
+    "nb_fan": 24747
+   },
+   {
+    "id": 1408568,
+    "name": "Anita Wilson",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/1bc1c3b3430bb31550a94537c20a8edb/250x250-000000-80-0-0.jpg",
+    "nb_fan": 5276
+   },
+   {
+    "id": 70542502,
+    "name": "Maverick City Music",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/69e2e525e114a8128ea5e148b2e823f9/250x250-000000-80-0-0.jpg",
+    "nb_fan": 136216
+   },
+   {
+    "id": 2716351,
+    "name": "Tasha Cobbs",
+    "picture_medium": "https://cdn-images.dzcdn.net/images/artist/12a6d26caab843863c242efb786841b8/250x250-000000-80-0-0.jpg",
+    "nb_fan": 106083
+   }
+  ],
+  "total": 20
+ }
+}

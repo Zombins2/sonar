@@ -1,0 +1,79 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/4339409/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1070124442,
+    "title": "Full Disclosure",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b5fe426ecb210a5d8db5e93f3ace7b84/250x250-000000-80-0-0.jpg",
+    "fans": 1,
+    "release_date": "2026-09-18",
+    "record_type": "album"
+   },
+   {
+    "id": 501953481,
+    "title": "Affirmations",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/cd94fe67f6f3a6350eae02f4759de41b/250x250-000000-80-0-0.jpg",
+    "fans": 34,
+    "release_date": "2023-11-03",
+    "record_type": "album"
+   },
+   {
+    "id": 183979012,
+    "title": "Stuck In The House: The Pandemic Project",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/878b8c1da078c5916fe22a76905398b5/250x250-000000-80-0-0.jpg",
+    "fans": 74,
+    "release_date": "2020-11-06",
+    "record_type": "album"
+   },
+   {
+    "id": 114580522,
+    "title": "2econd Wind: Ready",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/66221edf7a9453489fb043e6ee1cd10b/250x250-000000-80-0-0.jpg",
+    "fans": 112,
+    "release_date": "2019-10-18",
+    "record_type": "album"
+   },
+   {
+    "id": 45063401,
+    "title": "A Long Way From Sunday",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/aa2dca139b0eb5af28fa03366e8f4fbb/250x250-000000-80-0-0.jpg",
+    "fans": 377,
+    "release_date": "2017-07-28",
+    "record_type": "album"
+   },
+   {
+    "id": 10766256,
+    "title": "Everyday Jesus",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/7261ce48c394763e5e95e8c9e4482523/250x250-000000-80-0-0.jpg",
+    "fans": 4080,
+    "release_date": "2015-07-17",
+    "record_type": "album"
+   },
+   {
+    "id": 6228365,
+    "title": "Anthony Brown & group therAPy",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/82fef8f6a4333efd3d34cea8d472ac19/250x250-000000-80-0-0.jpg",
+    "fans": 2064,
+    "release_date": "2012-08-21",
+    "record_type": "album"
+   },
+   {
+    "id": 1047191522,
+    "title": "Up To Something",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b5fe426ecb210a5d8db5e93f3ace7b84/250x250-000000-80-0-0.jpg",
+    "fans": 0,
+    "release_date": "2026-08-14",
+    "record_type": "single"
+   }
+  ],
+  "total": 24
+ }
+}

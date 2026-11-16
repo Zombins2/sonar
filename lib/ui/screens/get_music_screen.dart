@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/nav.dart';
 import '../../core/theme.dart';
 import '../../data/soulbeet/get_music_search.dart';
+import '../../data/soulbeet/get_music_suggestions.dart';
 import '../../data/soulbeet/soulbeet_downloads.dart';
 import '../../data/soulbeet/soulbeet_models.dart';
 import '../../data/soulbeet/source_pick.dart';
@@ -124,15 +125,7 @@ class _GetMusicScreenState extends ConsumerState<GetMusicScreen> {
   }
 
   Widget _results() {
-    if (_query.isEmpty) {
-      return const EmptyState(
-        icon: Icons.album_rounded,
-        title: 'Find music to add',
-        message:
-            'Search for an artist, an album or a song. Sonar downloads the best FLAC copy it can find and files '
-            'it in your library.',
-      );
-    }
+    if (_query.isEmpty) return const _Suggestions();
     final provider = _onMusicBrainz ? musicBrainzSearchProvider(_query) : soulbeetSearchProvider(_query);
     final results = ref.watch(provider);
     return results.when(
@@ -158,6 +151,62 @@ class _GetMusicScreenState extends ConsumerState<GetMusicScreen> {
           }),
         );
       },
+    );
+  }
+}
+
+/// Before a search: albums by artists like the ones played most, a row for
+/// each (see [suggestMusic]). Until the first row comes, or if none can,
+/// how to search.
+class _Suggestions extends ConsumerWidget {
+  const _Suggestions();
+
+  static const _howTo =
+      'Search for an artist, an album or a song. Sonar downloads the best FLAC copy it can find and files it in '
+      'your library.';
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final s = ref.watch(getMusicSuggestionsProvider).valueOrNull;
+    if (s == null || s.rows.isEmpty) {
+      return const EmptyState(icon: Icons.album_rounded, title: 'Find music to add', message: _howTo);
+    }
+    final secondary = Theme.of(context).textTheme.bodySmall?.copyWith(color: SonarColors.textSecondary);
+    return ListView(
+      padding: EdgeInsets.only(bottom: bottomInset(context)),
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(SonarSpacing.gutter, 4, SonarSpacing.gutter, 0),
+          child: Text(_howTo, style: secondary),
+        ),
+        for (final row in s.rows) ...[
+          SectionHeader('Because you play ${row.because}'),
+          SizedBox(
+            height: _AlbumCard.height,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: SonarSpacing.gutter),
+              itemCount: row.albums.length,
+              separatorBuilder: (_, _) => const SizedBox(width: 14),
+              itemBuilder: (_, i) => _AlbumCard(album: row.albums[i]),
+            ),
+          ),
+        ],
+        if (!s.done)
+          const Padding(
+            padding: EdgeInsets.all(SonarSpacing.gutter),
+            child: Center(child: SizedBox.square(dimension: 20, child: CircularProgressIndicator(strokeWidth: 2))),
+          )
+        else
+          Padding(
+            padding: const EdgeInsets.fromLTRB(SonarSpacing.gutter, 16, SonarSpacing.gutter, 8),
+            child: Text(
+              'Picked from what Deezer listeners of your most played artists also play.',
+              textAlign: TextAlign.center,
+              style: secondary,
+            ),
+          ),
+      ],
     );
   }
 }

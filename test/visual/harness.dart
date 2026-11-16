@@ -19,6 +19,7 @@ import 'package:sonar/audio/playback_source.dart';
 import 'package:sonar/core/router.dart';
 import 'package:sonar/core/theme.dart';
 import 'package:sonar/data/db/database.dart';
+import 'package:sonar/data/deezer/deezer_client.dart';
 import 'package:sonar/data/lyrics/lrclib_client.dart';
 import 'package:sonar/data/subsonic/subsonic_client.dart';
 import 'package:sonar/downloads/download_manager.dart';
@@ -199,6 +200,7 @@ Future<Harness> pumpSonar(
         lrclibProvider.overrideWithValue(_NoLrclib()),
         connectEnabledProvider.overrideWithValue(false), // No relay here.
         soulbeetEnabledProvider.overrideWithValue(false), // Nor Soulbeet, unless a test adds one.
+        deezerClientProvider.overrideWithValue(DeezerClient(base: 'http://127.0.0.1:9')), // Nor Deezer.
         coverImageOverrideProvider.overrideWithValue((id) => covers[id] ?? covers['c1']!),
         playingProvider.overrideWith((_) => Stream.value(true)),
         loopModeProvider.overrideWith((_) => Stream.value(LoopMode.off)),

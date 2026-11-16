@@ -1,0 +1,79 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/418432/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1139869051,
+    "title": "V20 First Semester (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4aa5197881ae182412d9d2e0083b5b71/250x250-000000-80-0-0.jpg",
+    "fans": 19,
+    "release_date": "2026-11-13",
+    "record_type": "album"
+   },
+   {
+    "id": 800529181,
+    "title": "Only On The Road (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1f9e5d917ae47e8c405399388e128430/250x250-000000-80-0-0.jpg",
+    "fans": 232,
+    "release_date": "2025-08-08",
+    "record_type": "album"
+   },
+   {
+    "id": 332035887,
+    "title": "All Things New",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a924da97c11bbb0e39610aad5f47f0be/250x250-000000-80-0-0.jpg",
+    "fans": 1101,
+    "release_date": "2022-07-08",
+    "record_type": "album"
+   },
+   {
+    "id": 411076977,
+    "title": "All Things New (Live In Orlando)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b05f64c6c53012b11e14a10512994d69/250x250-000000-80-0-0.jpg",
+    "fans": 572,
+    "release_date": "2023-03-03",
+    "record_type": "album"
+   },
+   {
+    "id": 291421752,
+    "title": "Kingdom Come",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/77ce1ac5e122a0b282147c7d9ee8dfe5/250x250-000000-80-0-0.jpg",
+    "fans": 153,
+    "release_date": "2022-02-04",
+    "record_type": "album"
+   },
+   {
+    "id": 49469782,
+    "title": "The Bloody Win (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/28000f02fdd94898a37d64937ad4626a/250x250-000000-80-0-0.jpg",
+    "fans": 4999,
+    "release_date": "2017-10-13",
+    "record_type": "album"
+   },
+   {
+    "id": 6770875,
+    "title": "Greater Than (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/fbebe1222ebfb56d93df592cd2a953d9/250x250-000000-80-0-0.jpg",
+    "fans": 3662,
+    "release_date": "2013-08-05",
+    "record_type": "album"
+   },
+   {
+    "id": 679536,
+    "title": "Fresh",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8b99b44c0879112c4c48af9ef651dcf0/250x250-000000-80-0-0.jpg",
+    "fans": 3159,
+    "release_date": "2010-10-15",
+    "record_type": "album"
+   }
+  ],
+  "total": 34
+ }
+}

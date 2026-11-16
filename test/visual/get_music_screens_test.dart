@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sonar/data/soulbeet/get_music_search.dart';
+import 'package:sonar/data/soulbeet/get_music_suggestions.dart';
 import 'package:sonar/data/soulbeet/soulbeet_client.dart';
 import 'package:sonar/data/soulbeet/soulbeet_downloads.dart';
 import 'package:sonar/data/soulbeet/soulbeet_models.dart';
@@ -403,6 +404,56 @@ void main() {
     await h.settle();
     expect(find.text('On Deezer', skipOffstage: false), findsWidgets, reason: 'a new search is on Deezer again');
     expect(onMusicBrainz, ['rare record']);
+    await h.close();
+  });
+
+  testWidgets('before a search, albums by artists like the ones played most, each opening to download', (tester) async {
+    final h = await pumpSonar(
+      tester,
+      extra: (_) => [
+        ...overrides(downloads: _seeded(legalize, exodus.first)),
+        getMusicSuggestionsProvider.overrideWith(
+          (_) => Stream.value(
+            MusicSuggestions([
+              SuggestionRow('Kirk Franklin', [
+                SbAlbum.deezer(id: '1', title: 'I Will Trust', artist: 'Fred Hammond', releaseDate: '2018-01-01'),
+                SbAlbum.deezer(id: '2', title: 'I Win', artist: 'Marvin Sapp'),
+              ]),
+              SuggestionRow('Bob Marley & The Wailers', [
+                SbAlbum.deezer(id: '3', title: 'Equal Rights', artist: 'Peter Tosh'),
+              ]),
+            ], done: true),
+          ),
+        ),
+      ],
+    );
+    h.router.go('/search');
+    await h.settle(4);
+    h.router.push('/search/get-music');
+    await h.shot('g11_get_music_suggestions');
+    expect(find.text('Because you play Kirk Franklin'), findsOneWidget);
+    expect(find.text('Because you play Bob Marley & The Wailers'), findsOneWidget);
+    expect(find.text('2018 · Fred Hammond'), findsOneWidget, reason: 'each album says whose it is');
+    expect(find.textContaining('Deezer listeners of your most played'), findsOneWidget);
+
+    await tester.tap(find.text('I Win'));
+    await h.settle(4);
+    expect(find.widgetWithText(FilledButton, 'Download'), findsOneWidget, reason: 'opens like a search result');
+
+    // A search replaces the suggestions.
+    await tester.tapAt(const Offset(20, 40));
+    await h.settle();
+    await tester.enterText(find.byType(TextField), 'kanye west');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await h.settle(4);
+    expect(find.text('Because you play Kirk Franklin'), findsNothing);
+    await h.close();
+  });
+
+  testWidgets('with nothing to suggest, how to search', (tester) async {
+    final h = await open(tester, '');
+    expect(find.text('Find music to add'), findsOneWidget);
+    expect(find.textContaining('Because you play'), findsNothing);
     await h.close();
   });
 

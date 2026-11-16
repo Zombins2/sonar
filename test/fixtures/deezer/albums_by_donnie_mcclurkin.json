@@ -1,0 +1,79 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/149515/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1120709962,
+    "title": "Finally",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/2b956879d39521ee4951118182c51df7/250x250-000000-80-0-0.jpg",
+    "fans": 33,
+    "release_date": "2026-10-16",
+    "record_type": "album"
+   },
+   {
+    "id": 114018482,
+    "title": "A Different Song",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/0c69bd65cd88fc9b4a763c9e81bb752a/250x250-000000-80-0-0.jpg",
+    "fans": 1795,
+    "release_date": "2019-11-15",
+    "record_type": "album"
+   },
+   {
+    "id": 13833538,
+    "title": "The Journey (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1ef78e09ddaaab8bc922ab394813104e/250x250-000000-80-0-0.jpg",
+    "fans": 7989,
+    "release_date": "2016-08-19",
+    "record_type": "album"
+   },
+   {
+    "id": 9849512,
+    "title": "Ministry Series: Now!",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e88dfb675b59ba03ca5ee1467bb5985d/250x250-000000-80-0-0.jpg",
+    "fans": 455,
+    "release_date": "2015-03-12",
+    "record_type": "album"
+   },
+   {
+    "id": 9849528,
+    "title": "Ministry Series: Power of Praise",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/0f12cae8a1b60db077e984f0d24b1696/250x250-000000-80-0-0.jpg",
+    "fans": 522,
+    "release_date": "2015-03-12",
+    "record_type": "album"
+   },
+   {
+    "id": 7408932,
+    "title": "Duets",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5ecff92e9c8c38f63815bf706d50e92c/250x250-000000-80-0-0.jpg",
+    "fans": 4267,
+    "release_date": "2014-02-28",
+    "record_type": "album"
+   },
+   {
+    "id": 533455102,
+    "title": "Ministry Series: Attachments (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/693146a389633d8576e22008711afe20/250x250-000000-80-0-0.jpg",
+    "fans": 8,
+    "release_date": "2012-06-18",
+    "record_type": "album"
+   },
+   {
+    "id": 533455052,
+    "title": "Ministry Series: God Sees (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/036163195ecd41bee162a341ef786694/250x250-000000-80-0-0.jpg",
+    "fans": 7,
+    "release_date": "2012-05-25",
+    "record_type": "album"
+   }
+  ],
+  "total": 29
+ }
+}

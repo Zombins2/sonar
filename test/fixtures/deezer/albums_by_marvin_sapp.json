@@ -1,0 +1,79 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/145892/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1110659052,
+    "title": "Restoration",
+    "cover_medium": null,
+    "fans": 18,
+    "release_date": "2026-11-20",
+    "record_type": "album"
+   },
+   {
+    "id": 635584141,
+    "title": "Then and Now (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e7dbedcd4fefb2ee3436a9a085b2442f/250x250-000000-80-0-0.jpg",
+    "fans": 308,
+    "release_date": "2024-08-30",
+    "record_type": "album"
+   },
+   {
+    "id": 308332787,
+    "title": "Substance",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/35b79ac11e909b3720b9b7c0d864107c/250x250-000000-80-0-0.jpg",
+    "fans": 588,
+    "release_date": "2022-06-10",
+    "record_type": "album"
+   },
+   {
+    "id": 166972032,
+    "title": "Chosen Vessel",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5c80a2f2be65ed7ac31118c6c32eaf4f/250x250-000000-80-0-0.jpg",
+    "fans": 2046,
+    "release_date": "2020-10-09",
+    "record_type": "album"
+   },
+   {
+    "id": 47133632,
+    "title": "Close",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/da4daee2998ba62d4706755ee8c7ffab/250x250-000000-80-0-0.jpg",
+    "fans": 5741,
+    "release_date": "2017-09-29",
+    "record_type": "album"
+   },
+   {
+    "id": 10212694,
+    "title": "You Shall Live",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a1edd47036449b8aa07ba0e0bf69b09d/250x250-000000-80-0-0.jpg",
+    "fans": 6332,
+    "release_date": "2015-05-29",
+    "record_type": "album"
+   },
+   {
+    "id": 7026520,
+    "title": "Christmas Card",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/90b057a908b80bd425481762a403ae09/250x250-000000-80-0-0.jpg",
+    "fans": 1955,
+    "release_date": "2013-10-18",
+    "record_type": "album"
+   },
+   {
+    "id": 1586970,
+    "title": "I Win",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/91581d12fe5f521558ee78599ba55f8e/250x250-000000-80-0-0.jpg",
+    "fans": 7177,
+    "release_date": "2012-03-30",
+    "record_type": "album"
+   }
+  ],
+  "total": 36
+ }
+}

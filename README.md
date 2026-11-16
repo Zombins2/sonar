@@ -27,7 +27,8 @@ make it yours. There's no support promise and no app store listing.
   what each other is playing, control each other, and hand playback over.
 - **Get music** (optional, server add-on): search for albums you don't have,
   download them through [Soulbeet](https://github.com/terry90/soulbeet), and
-  watch them land in your library. Hidden unless you set it up.
+  watch them land in your library. Before you search, it suggests albums by
+  artists like the ones you play most. Hidden unless you set it up.
 
 ## Set up the server (one installer)
 
@@ -170,6 +171,9 @@ After changing `lib/data/db/database.dart`, regenerate the database code with
   on MusicBrainz by its barcode, as beets files music by MusicBrainz. If what
   you want isn't in Deezer's results, **Search MusicBrainz** below them
   searches there alone, for rare and older music no shop sells.
+- **Get music suggestions** send Deezer the names of your four most played
+  artists, to find artists their listeners also play. Nothing else about your
+  library or listening leaves your server.
 - **Navidrome on Windows (Docker Desktop):** keep Navidrome's cache on a Docker
   volume (`ND_CACHEFOLDER=/cache` on a named volume), not a Windows folder.
   On a Windows bind mount, cached files can't be read back, which breaks

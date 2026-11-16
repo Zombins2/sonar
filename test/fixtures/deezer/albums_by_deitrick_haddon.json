@@ -1,0 +1,79 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/129630/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1101917202,
+    "title": "Live in Los Angeles",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/32490aff7590d95e3ab106aca3512082/250x250-000000-80-0-0.jpg",
+    "fans": 4,
+    "release_date": "2026-10-16",
+    "record_type": "album"
+   },
+   {
+    "id": 833973402,
+    "title": "Homecoming Live in Detroit",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e3762062f03fbe0d17c2649350cc3496/250x250-000000-80-0-0.jpg",
+    "fans": 31,
+    "release_date": "2025-11-21",
+    "record_type": "album"
+   },
+   {
+    "id": 587774282,
+    "title": "One Night in California",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/9b67c2cdd7b63db8d6d6cecc2dc6e8c6/250x250-000000-80-0-0.jpg",
+    "fans": 51,
+    "release_date": "2024-05-17",
+    "record_type": "album"
+   },
+   {
+    "id": 373781357,
+    "title": "A Deitrick Haddon Christmas",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/d23344fb1f92f697a0c94e4f9ed8cb9c/250x250-000000-80-0-0.jpg",
+    "fans": 51,
+    "release_date": "2022-11-24",
+    "record_type": "album"
+   },
+   {
+    "id": 329317657,
+    "title": "The Fallen Movie Soundtrack",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/53793c460fce8a3dad653003e396b972/250x250-000000-80-0-0.jpg",
+    "fans": 139,
+    "release_date": "2022-06-30",
+    "record_type": "album"
+   },
+   {
+    "id": 128878162,
+    "title": "TIME (Truth Is My Energy)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4dbea624c51805c8d21745092b70fce5/250x250-000000-80-0-0.jpg",
+    "fans": 798,
+    "release_date": "2020-03-13",
+    "record_type": "album"
+   },
+   {
+    "id": 43968661,
+    "title": "Deitrick Haddon & Hill City Worship Camp",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/71e3a58791b71d28999cf22d0aa4f02c/250x250-000000-80-0-0.jpg",
+    "fans": 2108,
+    "release_date": "2017-08-04",
+    "record_type": "album"
+   },
+   {
+    "id": 69230052,
+    "title": "Masterpiece Track By Track Commentary Album",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5da9ad5b02f2a114468d94ebf8df381c/250x250-000000-80-0-0.jpg",
+    "fans": 281,
+    "release_date": "2015-11-06",
+    "record_type": "album"
+   }
+  ],
+  "total": 67
+ }
+}

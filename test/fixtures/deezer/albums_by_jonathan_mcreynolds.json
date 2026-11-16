@@ -1,0 +1,79 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/606398/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 943726831,
+    "title": "Closer (Live In Chicago)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8a03c6207019cb304ebfd87f5f19dde3/250x250-000000-80-0-0.jpg",
+    "fans": 109,
+    "release_date": "2026-03-27",
+    "record_type": "album"
+   },
+   {
+    "id": 399085047,
+    "title": "My Truth",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/4067a8700145bf981af9dc75ccf10cf2/250x250-000000-80-0-0.jpg",
+    "fans": 840,
+    "release_date": "2023-02-17",
+    "record_type": "album"
+   },
+   {
+    "id": 137135532,
+    "title": "People",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/c4f6ed25ceedfa046d4de66da882073e/250x250-000000-80-0-0.jpg",
+    "fans": 4275,
+    "release_date": "2020-04-24",
+    "record_type": "album"
+   },
+   {
+    "id": 55149192,
+    "title": "Make Room",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/1dfda31e871fc8bc4014453c571d14c8/250x250-000000-80-0-0.jpg",
+    "fans": 4351,
+    "release_date": "2018-03-09",
+    "record_type": "album"
+   },
+   {
+    "id": 69382192,
+    "title": "Make More Room",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/985eca98290f44c69bc5f2bfb3060ca3/250x250-000000-80-0-0.jpg",
+    "fans": 6621,
+    "release_date": "2018-09-07",
+    "record_type": "album"
+   },
+   {
+    "id": 11022744,
+    "title": "Life Music: Stage Two",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/8a5829a6b09c6947fe5c8ec9d04a16be/250x250-000000-80-0-0.jpg",
+    "fans": 5181,
+    "release_date": "2015-09-18",
+    "record_type": "album"
+   },
+   {
+    "id": 6460523,
+    "title": "Life Music",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/690efb20ddc89842705113c4294115f7/250x250-000000-80-0-0.jpg",
+    "fans": 5477,
+    "release_date": "2012-09-25",
+    "record_type": "album"
+   },
+   {
+    "id": 670374261,
+    "title": "Red & Green",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/0e8a297080cfb581c83c5f15bd379ce2/250x250-000000-80-0-0.jpg",
+    "fans": 92,
+    "release_date": "2024-11-22",
+    "record_type": "ep"
+   }
+  ],
+  "total": 35
+ }
+}

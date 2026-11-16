@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../data/deezer/deezer_client.dart';
 import '../data/musicbrainz/musicbrainz_client.dart';
 import '../data/soulbeet/get_music_search.dart';
+import '../data/soulbeet/get_music_suggestions.dart';
 import '../data/soulbeet/library_match.dart';
 import '../data/soulbeet/soulbeet_client.dart';
 import '../data/soulbeet/soulbeet_downloads.dart';
@@ -109,6 +110,24 @@ final musicBrainzSearchProvider = StreamProvider.autoDispose.family<GetMusicResu
   final cancel = MbCancel();
   ref.onDispose(cancel.cancel);
   return searchGetMusic(ref.watch(musicBrainzClientProvider), raw, cancel: cancel);
+});
+
+/// What Get music suggests before anything is searched (see
+/// [suggestMusic]). Kept for the session: an album downloaded from it shows
+/// as downloading, then as yours.
+final getMusicSuggestionsProvider = StreamProvider<MusicSuggestions>((ref) async* {
+  final client = ref.watch(soulbeetClientProvider) == null ? null : ref.watch(clientProvider);
+  if (client == null) {
+    yield const MusicSuggestions([], done: true);
+    return;
+  }
+  final top = await ref.watch(mixSeedsProvider.future);
+  final played = suggestionSeeds(
+    [for (final s in top) s.artist],
+    top.isNotEmpty ? const [] : [for (final a in await client.getAlbumList2(AlbumListType.newest, size: 20)) a.artist],
+  );
+  final owned = [for (final a in await client.getArtists()) a.name];
+  yield* suggestMusic(ref.watch(deezerClientProvider), played: played, owned: owned);
 });
 
 /// An album found in Get music, as the pressing to download, with its songs

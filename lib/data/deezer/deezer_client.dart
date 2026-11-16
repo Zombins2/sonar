@@ -113,6 +113,11 @@ class DeezerClient {
     return _once([for (final (album, _) in found) album]);
   }
 
+  /// Artists whose listeners also play [artist], likeliest first.
+  Future<List<DeezerArtist>> related(DeezerArtist artist) async => [
+    for (final a in _list((await _get('/artist/${artist.id}/related', {'limit': '20'}))['data'])) ?_artist(a),
+  ];
+
   /// [artist]'s most played songs, each once.
   Future<List<SbTrack>> topSongs(DeezerArtist artist) async => _once([
     for (final t in _list((await _get('/artist/${artist.id}/top', {'limit': '10'}))['data'])) ?_song(t),

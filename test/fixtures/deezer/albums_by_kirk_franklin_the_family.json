@@ -1,0 +1,31 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/145890/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1213151,
+    "title": "Christmas",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/88f1c58cf0f3eacdfb5d8f031a3024c1/250x250-000000-80-0-0.jpg",
+    "fans": 5580,
+    "release_date": "2007-12-14",
+    "record_type": "album"
+   },
+   {
+    "id": 1421305,
+    "title": "Whatcha Lookin' 4",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/b91b1097843c6720d53d008eecdd5fb5/250x250-000000-80-0-0.jpg",
+    "fans": 3836,
+    "release_date": "2001-11-01",
+    "record_type": "album"
+   }
+  ],
+  "total": 2
+ }
+}

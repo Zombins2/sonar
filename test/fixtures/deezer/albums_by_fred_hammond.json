@@ -1,0 +1,79 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/artist/69999/albums",
+  "query": {
+   "limit": "100"
+  }
+ },
+ "status": 200,
+ "response": {
+  "data": [
+   {
+    "id": 1054364282,
+    "title": "Time Capsule II",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/fd741fa21fc58191be409d6f9c20bff7/250x250-000000-80-0-0.jpg",
+    "fans": 38,
+    "release_date": "2026-08-28",
+    "record_type": "album"
+   },
+   {
+    "id": 628695491,
+    "title": "Time Capsule - The Trilogy",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/159e634059d60678c8e837cd72ec18fb/250x250-000000-80-0-0.jpg",
+    "fans": 153,
+    "release_date": "2024-08-30",
+    "record_type": "album"
+   },
+   {
+    "id": 272196262,
+    "title": "Sunday Morning Fred",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ff79e1678ff71404e63517822caac990/250x250-000000-80-0-0.jpg",
+    "fans": 531,
+    "release_date": "2021-11-14",
+    "record_type": "album"
+   },
+   {
+    "id": 64220272,
+    "title": "The Best of Fred Hammond",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/67753072207a5a68328130fb4a36fe36/250x250-000000-80-0-0.jpg",
+    "fans": 3525,
+    "release_date": "2018-06-15",
+    "record_type": "album"
+   },
+   {
+    "id": 62769062,
+    "title": "Uncle Fred - Texture Of A Man - Collectors Edition",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/ac7217788f599024c1c50cd9f97b3083/250x250-000000-80-0-0.jpg",
+    "fans": 776,
+    "release_date": "2018-05-11",
+    "record_type": "album"
+   },
+   {
+    "id": 14167108,
+    "title": "Worship Journal (Live)",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/e4f973e73a687d23ca776055c96d00f2/250x250-000000-80-0-0.jpg",
+    "fans": 5744,
+    "release_date": "2016-09-30",
+    "record_type": "album"
+   },
+   {
+    "id": 8951245,
+    "title": "I Will Trust",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/55a4e9240e975eeecce8e2ca233023bd/250x250-000000-80-0-0.jpg",
+    "fans": 5951,
+    "release_date": "2014-11-14",
+    "record_type": "album"
+   },
+   {
+    "id": 6412111,
+    "title": "United Tenors Hammond Hollister Roberson Wilson",
+    "cover_medium": "https://cdn-images.dzcdn.net/images/cover/5bfb26bd0255e54496de5194dd3ce21a/250x250-000000-80-0-0.jpg",
+    "fans": 4959,
+    "release_date": "2013-03-22",
+    "record_type": "album"
+   }
+  ],
+  "total": 51
+ }
+}
